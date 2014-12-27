@@ -1,6 +1,6 @@
 {
   "name": "ngoldman-style",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "one style is all that is needed",
   "scripts": {
     "build": "node build.js",
