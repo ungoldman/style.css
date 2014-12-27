@@ -90,3 +90,24 @@ body > footer {
   font-size: .75rem;
   color: #999;
 }
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 1rem 0;
+}
+
+figure img {
+  max-width: 98%;
+  background: #fafafa;
+  padding: 1%;
+  border: 1px solid #ddd;
+}
+
+figcaption {
+  margin: .5rem 0;
+  font-size: .75rem;
+  color: #777;
+}
