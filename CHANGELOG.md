@@ -1,5 +1,8 @@
 # style changelog
 
+## v0.1.4
+* generate guide from markdown
+
 ## v0.1.3
 * only include style.css on install
 
