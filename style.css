@@ -1,1 +1,88 @@
-@import url('//normalize-css.googlecode.com/svn/trunk/normalize.css');
+@import url('./normalize.css');
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family:  'Lucida Grande',
+                'Segoe UI',
+                'Arial',
+                sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6,
+body > header > a {
+  font-family:  'Helvetica Neue',
+                'Helvetica',
+                'Arial',
+                sans-serif;
+}
+
+code {
+  font-family:  'Consolas',
+                'Andale Mono',
+                'Lucida Console',
+                'Monaco',
+                'Courier New',
+                Courier,
+                monospace;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 620px;
+  padding: 0 1rem;
+}
+
+body > header {
+  margin: 2rem 0 3rem;
+}
+
+.site-title,
+.site-link {
+  color: #aaa;
+  font-size: 1rem;
+  font-weight: 200;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  margin-right: 10px;
+}
+.site-link:hover {
+  color: #666;
+}
+
+.site-link.current,
+.site-link.current:hover {
+  color: #666;
+}
+
+.site-title,
+.site-title:hover {
+  color: #555;
+  font-weight: 600;
+}
+
+main > article {
+  line-height: 1.4rem;
+  margin: 3rem 0;
+}
+
+main > article > footer {
+  margin: 1.5rem 0;
+  border-top: 1px solid #eee;
+}
+
+main > article > footer > p {
+  font-size: .75rem;
+  color: #999;
+  margin: .75rem 0;
+}
+
+body > footer {
+  margin: 3rem 0 2rem;
+  font-size: .75rem;
+  color: #999;
+}
