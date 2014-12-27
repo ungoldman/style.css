@@ -1,4 +1,4 @@
-# style
+# style.css
 
 ![One note is all that is needed](http://33.media.tumblr.com/tumblr_ll0hehFlU81qz8jl5o1_500.gif)
 
@@ -15,14 +15,25 @@
 * classes are only used outside the context of primary page content, and only when absolutely necessary
 * bandwidth is not assumed to be broadband -- the site loads and functions quickly in suboptimal conditions
 
-## build
+## usage
 
-builds `style.css` from `source/`.
+```html
+<link rel="stylesheet" href="style.css">
+```
 
-```
-npm install
-npm run build
-```
+## development
+
+### install
+
+Install dependencies with `npm install`.
+
+### develop
+
+Edit `scss` source files in `source/`. Run `npm run serve` to view changes at `localhost:3000`.
+
+### build
+
+Build `style.css` from `source/` by running `npm run build`.
 
 ## license
 
