@@ -13,6 +13,15 @@ body {
   color: #333;
 }
 
+a {
+  color: #c3c;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+a:hover {
+  color: #f3c;
+}
+
 h1, h2, h3, h4, h5, h6,
 body > header > a {
   font-family:  'Helvetica Neue',
@@ -46,23 +55,18 @@ body > header {
   color: #aaa;
   font-size: 1rem;
   font-weight: 200;
-  text-decoration: none;
-  transition: all 0.5s ease;
   margin-right: 10px;
 }
-.site-link:hover {
-  color: #666;
-}
 
-.site-link.current,
-.site-link.current:hover {
-  color: #666;
-}
-
-.site-title,
-.site-title:hover {
+.site-title {
   color: #555;
   font-weight: 600;
+}
+
+.current,
+.current:hover {
+  color: #f3c;
+  cursor: default;
 }
 
 main > article {
