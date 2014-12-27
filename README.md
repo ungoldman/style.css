@@ -17,6 +17,12 @@
 
 ## usage
 
+```
+npm install style.css
+```
+
+do whatever you're into
+
 ```html
 <link rel="stylesheet" href="style.css">
 ```
