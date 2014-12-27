@@ -1,0 +1,29 @@
+{
+  "name": "ngoldman-style",
+  "version": "1.0.0",
+  "description": "one style is all that is needed",
+  "scripts": {
+    "build": "node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngoldman/style.git"
+  },
+  "keywords": [
+    "style",
+    "markdown",
+    "css",
+    "sass"
+  ],
+  "author": "Nate Goldman <nate@ngoldman.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngoldman/style/issues"
+  },
+  "homepage": "https://github.com/ngoldman/style",
+  "devDependencies": {
+    "clean-css": "^3.0.1",
+    "node-sass": "^2.0.0-beta"
+  }
+}
