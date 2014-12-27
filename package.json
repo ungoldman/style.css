@@ -1,7 +1,10 @@
 {
   "name": "style.css",
-  "version": "0.1.2",
-  "description": "one style is all that is needed",
+  "version": "0.1.3",
+  "description": "One style is all that is needed.",
+  "files": [
+    "style.css"
+  ],
   "scripts": {
     "serve": "node serve.js",
     "build": "node build.js",
