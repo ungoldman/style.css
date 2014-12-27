@@ -1,6 +1,6 @@
 {
   "name": "style.css",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "one style is all that is needed",
   "scripts": {
     "serve": "node serve.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngoldman/style.git"
+    "url": "https://github.com/ngoldman/style.css.git"
   },
   "keywords": [
     "style",
@@ -20,9 +20,9 @@
   "author": "Nate Goldman <nate@ngoldman.me>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ngoldman/style/issues"
+    "url": "https://github.com/ngoldman/style.css/issues"
   },
-  "homepage": "https://github.com/ngoldman/style",
+  "homepage": "https://github.com/ngoldman/style.css",
   "devDependencies": {
     "clean-css": "^3.0.1",
     "node-sass": "^2.0.0-beta",
