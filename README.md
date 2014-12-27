@@ -1,10 +1,12 @@
 # style.css
 
-[![NPM](https://nodei.co/npm/style.css.png?compact=true)](https://nodei.co/npm/style.css/)
+*One style is all that is needed.*
 
 ![One note is all that is needed](http://33.media.tumblr.com/tumblr_ll0hehFlU81qz8jl5o1_500.gif)
 
-*One style is all that is needed.*
+[![NPM](https://nodei.co/npm/style.css.png?compact=true)](https://nodei.co/npm/style.css/)
+
+This is a work in progress. Currently it's just normalize, github flavored markdown, and some basics to for header, nav, footer, and wrapping page content.
 
 ## principles
 

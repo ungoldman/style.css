@@ -1,20 +1,14 @@
-@import '../node_modules/normalize.css/normalize.css';
-
-// resets
-
-html, body {
-  margin: 0;
-}
-
 // variables
 
-$base-font-size: 16px;
+$base-font-size: 17px;
 
-$header-family: 'Helvetica Neue',
+$header-family: 'Montserrat',
+                'Helvetica Neue',
                 'Helvetica',
                 'Arial',
                 sans-serif;
-$body-family:   'Lucida Grande',
+$body-family:   'Lora',
+                'Lucida Grande',
                 'Segoe UI',
                 'Arial',
                 sans-serif;
@@ -29,11 +23,15 @@ $code-family:   'Consolas',
 // typography
 
 h1, h2, h3, h4, h5, h6,
-body > header > a {
+body > header > nav > a {
   font-family: $header-family;
+
+  .markdown-body & {
+    font-family: $header-family;
+  }
 }
 
-code {
+code, .markdown-body code {
   font-family: $code-family;
 }
 
@@ -51,30 +49,7 @@ a {
   }
 }
 
-.site-title,
-.site-link {
-  color: #aaa;
-  font-size: 1rem;
-  font-weight: 200;
-  margin-right: 10px;
-
-  &.current,
-  &.current:hover {
-    color: #f3c;
-    cursor: default;
-  }
-}
-
-.site-title {
-  color: #555;
-  font-weight: 600;
-}
-
 // images
-
-img {
-  max-width: 100%;
-}
 
 figure {
   margin: 1.5rem 0;
@@ -94,13 +69,12 @@ figure {
 }
 
 body {
-
   font-family: $body-family;
   font-size: $base-font-size;
   color: #333;
 
   margin: 0 auto;
-  max-width: 620px;
+  max-width: 38rem;
   padding: 0 1rem;
 
   // persistent ancillary elements
@@ -109,6 +83,32 @@ body {
 
   > header {
     margin: 2rem 0 3rem;
+
+    > nav {
+
+      > a,
+      > a.site-title {
+        color: #aaa;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-right: 10px;
+
+        &:hover {
+          color: #f3c;
+        }
+
+        &.current-page,
+        &.current-page:hover {
+          color: #f3c;
+          cursor: default;
+        }
+      }
+
+      > a.site-title {
+        color: #555;
+        font-weight: 600;
+      }
+    }
   }
 
   // footer
@@ -122,20 +122,26 @@ body {
 
 // primary page content
 
-main {
-  > article {
-    line-height: 1.4rem;
-    margin: 3rem 0;
+.markdown-body {
 
-    > footer {
-      margin: 1.5rem 0;
-      border-top: 1px solid #eee;
+  font-family: $body-family;
+  font-size: $base-font-size;
+  color: #333;
 
-      > p {
-        font-size: .75rem;
-        color: #999;
-        margin: .75rem 0;
-      }
+  margin: 3rem 0;
+
+  table {
+    font-family: $code-family;
+  }
+
+  > footer {
+    margin: 1.5rem 0;
+    border-top: 1px solid #eee;
+
+    > p {
+      font-size: .75rem;
+      color: #999;
+      margin: .75rem 0;
     }
   }
 }

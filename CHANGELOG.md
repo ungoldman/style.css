@@ -1,5 +1,14 @@
 # style changelog
 
+## v0.1.5
+* rename `.current` to `.current-page`
+* remove `html,body` margin reset (a little margin is fine with this style)
+* add sass css `@import` issue workaround
+* realize I just want slightly tweaked normalize + gfm
+* add `github-markdown.css`
+* experiment with header & body fonts, use montserrat + lora for now
+* add more filler to guide from https://markdown-it.github.io
+
 ## v0.1.4
 * generate guide from markdown
 

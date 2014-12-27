@@ -5,7 +5,7 @@ var pkg = require('./package.json');
 var md = require('markdown-it')('full', {
   html: true,
   linkify: true,
-  typographer: false
+  typographer: true
 });
 
 sass.render({
@@ -27,10 +27,15 @@ function buildGuide () {
 }
 
 function buildStyle (result) {
-  var minimized = new CleanCSS().minify(result.css).styles;
+  console.log(result.css);
+  var normalize = fs.readFileSync('./node_modules/normalize.css/normalize.css', { encoding: 'utf8' });
+  var gfm = fs.readFileSync('./node_modules/github-markdown-css/github-markdown.css', { encoding: 'utf8' });
+  var style = new CleanCSS().minify(normalize + gfm + result.css).styles;
   var banner = '/* ' + pkg.name + ' v' + pkg.version  + ' - ' +
                 getDate() + ' - ' + pkg.homepage + ' */\n';
-  fs.writeFile('style.css', banner + minimized, function (err) {
+  var imports = '@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic);' +
+                '@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);';
+  fs.writeFile('style.css', banner + imports + style, function (err) {
     if (err) { throw err; }
     console.log('built style.css');
   });
