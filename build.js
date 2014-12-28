@@ -27,7 +27,6 @@ function buildGuide () {
 }
 
 function buildStyle (result) {
-  console.log(result.css);
   var normalize = fs.readFileSync('./node_modules/normalize.css/normalize.css', { encoding: 'utf8' });
   var gfm = fs.readFileSync('./node_modules/github-markdown-css/github-markdown.css', { encoding: 'utf8' });
   var style = new CleanCSS().minify(normalize + gfm + result.css).styles;

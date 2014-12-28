@@ -1,5 +1,9 @@
 # style changelog
 
+## v0.1.6
+* add `.site-link` class for nav links
+* style tweaks
+
 ## v0.1.5
 * rename `.current` to `.current-page`
 * remove `html,body` margin reset (a little margin is fine with this style)

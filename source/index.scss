@@ -82,16 +82,15 @@ body {
   // header
 
   > header {
-    margin: 2rem 0 3rem;
+    margin: 2rem 0;
 
     > nav {
+      overflow: auto;
 
-      > a,
-      > a.site-title {
-        color: #aaa;
+      .site-link,
+      .site-title {
+        float: left;
         font-size: 1rem;
-        font-weight: 200;
-        margin-right: 10px;
 
         &:hover {
           color: #f3c;
@@ -102,9 +101,19 @@ body {
           color: #f3c;
           cursor: default;
         }
+
+        &.right {
+          float: right;
+        }
       }
 
-      > a.site-title {
+      .site-link {
+        color: #aaa;
+        font-weight: 200;
+        margin-left: 1rem;
+      }
+
+      .site-title {
         color: #555;
         font-weight: 600;
       }
@@ -128,7 +137,7 @@ body {
   font-size: $base-font-size;
   color: #333;
 
-  margin: 3rem 0;
+  margin: 0 0 3rem;
 
   table {
     font-family: $code-family;
