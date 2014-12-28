@@ -181,6 +181,8 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
+User input: <kbd>ctrl</kbd><kbd>alt</kbd><kbd>delete</kbd>
+
 ## Tables
 
 | Option | Description |

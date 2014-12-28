@@ -6,7 +6,7 @@
 
 [![NPM](https://nodei.co/npm/style.css.png?compact=true)](https://nodei.co/npm/style.css/)
 
-This is a work in progress. Currently it's just [normalize.css](https://github.com/necolas/normalize.css/), [github-markdown-css](https://github.com/sindresorhus/github-markdown-css), and some basics for page, header, nav, and footer.
+This is a work in progress. Currently it's just [normalize.css](https://github.com/necolas/normalize.css/), gfm, and some basics for page, header, nav, and footer.
 
 ## Principles
 

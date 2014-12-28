@@ -28,8 +28,7 @@ function buildGuide () {
 
 function buildStyle (result) {
   var normalize = fs.readFileSync('./node_modules/normalize.css/normalize.css', { encoding: 'utf8' });
-  var gfm = fs.readFileSync('./node_modules/github-markdown-css/github-markdown.css', { encoding: 'utf8' });
-  var style = new CleanCSS().minify(normalize + gfm + result.css).styles;
+  var style = new CleanCSS().minify(normalize + result.css).styles;
   var banner = '/* ' + pkg.name + ' v' + pkg.version  + ' - ' +
                 getDate() + ' - ' + pkg.homepage + ' */\n';
   var imports = '@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic);' +

@@ -1,5 +1,9 @@
 # style changelog
 
+## v0.1.7
+* clean up github markdown css, convert to scss
+* remove dependency on [github-markdown-css](https://github.com/sindresorhus/github-markdown-css)
+
 ## v0.1.6
 * add `.site-link` class for nav links
 * style tweaks
