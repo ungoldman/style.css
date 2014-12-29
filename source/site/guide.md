@@ -1,4 +1,4 @@
-This is a style guide showing how elements are styled with `style.css`.
+See how elements are styled with [`style.css`](https://github.com/ngoldman/style.css/).
 
 # Article Title
 

@@ -1,5 +1,9 @@
 # style changelog
 
+## v0.1.10
+* redesign site header
+* add `.site-header`, `.site-nav`, `.site-nav-right`, & `.site-footer`
+
 ## v0.1.9
 * fix gfm config
 

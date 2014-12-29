@@ -1,25 +1,26 @@
 // variables
 
-$base-font-size: 17px;
-$code-font-size: 13px;
+$base-font-size:  17px    !default;
+$code-font-size:  13px    !default;
+$content-width:   38rem   !default;
 
 $body-family:   'Lora',
                 'Lucida Grande',
                 'Segoe UI',
                 'Arial',
-                sans-serif;
+                sans-serif  !default;
 $header-family: 'Montserrat',
                 'Helvetica Neue',
                 'Helvetica',
                 'Arial',
-                sans-serif;
+                sans-serif  !default;
 $code-family:   'Consolas',
                 'Andale Mono',
                 'Lucida Console',
                 'Monaco',
                 'Courier New',
                 Courier,
-                monospace;
+                monospace   !default;
 
 // gfm config
 
@@ -49,7 +50,7 @@ code {
 a {
   color: #c3c;
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: color 0.5s ease;
 
   &:hover {
     color: #f3c;
@@ -79,67 +80,80 @@ body {
   font-family: $body-family;
   font-size: $base-font-size;
   color: #333;
+}
 
-  margin: 0 auto;
-  max-width: 38rem;
-  padding: 0 1rem;
+// persistent ancillary elements
 
-  // persistent ancillary elements
+// header
 
-  // header
+.site-header {
+  padding: 1rem;
+  margin: 0 0 2rem;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
 
-  > header {
-    margin: 2rem 0;
+  // header nav
 
-    > nav {
-      overflow: auto;
+  .site-nav {
+    overflow: auto;
 
-      .site-link,
-      .site-title {
-        float: left;
-        font-size: 1rem;
+    .site-link,
+    .site-title {
+      float: left;
+      font-size: 1rem;
 
-        &:hover {
-          color: #f3c;
-        }
-
-        &.current-page,
-        &.current-page:hover {
-          color: #f3c;
-          cursor: default;
-        }
-
-        &.right {
-          float: right;
-        }
+      &:hover {
+        color: #f3c;
       }
 
-      .site-link {
-        color: #aaa;
-        font-weight: 200;
-        margin-left: 1rem;
+      &.current-page,
+      &.current-page:hover {
+        color: #f3c;
+        cursor: default;
       }
 
-      .site-title {
-        color: #555;
-        font-weight: 600;
+      &.right {
+        float: right;
       }
     }
-  }
 
-  // footer
+    .site-link {
+      color: #aaa;
+      font-weight: 200;
+      margin-left: 1rem;
+    }
 
-  > footer {
-    margin: 3rem 0 2rem;
-    font-size: .75rem;
-    color: #999;
+    .site-title {
+      color: #555;
+      font-weight: 600;
+    }
+
+    .site-nav-right {
+      float: right;
+    }
   }
+}
+
+// main
+
+.site-main {
+  margin: 0 auto;
+  max-width: $content-width;
+  padding: 0 1rem;
+}
+
+// footer
+
+.site-footer {
+  margin: 3rem auto 2rem;
+  max-width: $content-width;
+  font-size: .75rem;
+  color: #999;
 }
 
 // primary page content
 
 .markdown-body {
-
   font-family: $body-family;
   font-size: $base-font-size;
   color: #333;
@@ -148,16 +162,5 @@ body {
 
   table {
     font-family: $code-family;
-  }
-
-  > footer {
-    margin: 1.5rem 0;
-    border-top: 1px solid #eee;
-
-    > p {
-      font-size: .75rem;
-      color: #999;
-      margin: .75rem 0;
-    }
   }
 }
