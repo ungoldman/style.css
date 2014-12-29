@@ -1,5 +1,8 @@
 # style changelog
 
+## v0.1.9
+* fix gfm config
+
 ## v0.1.8
 * break gfm styles out into separate module ([gfm.css](https://github.com/ngoldman/gfm.css))
 * remove any explicit references to `.markdown-body` from source

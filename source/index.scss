@@ -1,5 +1,3 @@
-@import '../node_modules/gfm.css/source/gfm.scss';
-
 // variables
 
 $base-font-size: 17px;
@@ -23,11 +21,15 @@ $code-family:   'Consolas',
                 Courier,
                 monospace;
 
+// gfm config
+
 $gfm-body-font-family: $body-family;
 $gfm-code-font-family: $code-family;
 $gfm-header-font-family: $header-family;
 $gfm-body-font-size: $base-font-size;
 $gfm-code-font-size: $code-font-size;
+
+@import '../node_modules/gfm.css/source/gfm';
 
 // typography
 
