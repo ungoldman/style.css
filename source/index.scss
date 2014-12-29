@@ -1,17 +1,18 @@
-@import 'gfm/gfm';
+@import '../node_modules/gfm.css/source/gfm.scss';
 
 // variables
 
 $base-font-size: 17px;
+$code-font-size: 13px;
 
-$header-family: 'Montserrat',
-                'Helvetica Neue',
-                'Helvetica',
-                'Arial',
-                sans-serif;
 $body-family:   'Lora',
                 'Lucida Grande',
                 'Segoe UI',
+                'Arial',
+                sans-serif;
+$header-family: 'Montserrat',
+                'Helvetica Neue',
+                'Helvetica',
                 'Arial',
                 sans-serif;
 $code-family:   'Consolas',
@@ -22,18 +23,20 @@ $code-family:   'Consolas',
                 Courier,
                 monospace;
 
+$gfm-body-font-family: $body-family;
+$gfm-code-font-family: $code-family;
+$gfm-header-font-family: $header-family;
+$gfm-body-font-size: $base-font-size;
+$gfm-code-font-size: $code-font-size;
+
 // typography
 
 h1, h2, h3, h4, h5, h6,
 body > header > nav > a {
   font-family: $header-family;
-
-  .markdown-body & {
-    font-family: $header-family;
-  }
 }
 
-code, .markdown-body code {
+code {
   font-family: $code-family;
 }
 

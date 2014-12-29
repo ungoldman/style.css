@@ -1,6 +1,6 @@
 {
   "name": "style.css",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "One style is all that is needed.",
   "files": [
     "style.css"
@@ -28,6 +28,7 @@
   "homepage": "https://github.com/ngoldman/style.css",
   "devDependencies": {
     "clean-css": "^3.0.1",
+    "gfm.css": "^0.1.3",
     "markdown-it": "^2.1.3",
     "node-sass": "^2.0.0-beta",
     "node-static": "^0.7.6",

@@ -1,5 +1,9 @@
 # style changelog
 
+## v0.1.8
+* break gfm styles out into separate module ([gfm.css](https://github.com/ngoldman/gfm.css))
+* remove any explicit references to `.markdown-body` from source
+
 ## v0.1.7
 * clean up github markdown css, convert to scss
 * remove dependency on [github-markdown-css](https://github.com/sindresorhus/github-markdown-css)
