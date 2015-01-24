@@ -1,5 +1,8 @@
 # style changelog
 
+## v0.1.12
+* bump for no reason because I prematurely published and am not allowed to republish unpublished version [ಠ_ಠ](https://github.com/npm/npm-registry-couchapp/issues/148)
+
 ## v0.1.11
 * bump gfm.css to v1.0.2
 
