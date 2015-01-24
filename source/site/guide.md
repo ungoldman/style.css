@@ -73,7 +73,6 @@ The rest borrowed from https://markdown-it.github.io/
 ##### h5 Heading
 ###### h6 Heading
 
-
 ## Horizontal Rules
 
 ___
@@ -81,7 +80,6 @@ ___
 ---
 
 ***
-
 
 ## Typographic replacements
 
@@ -94,7 +92,6 @@ test.. test... test..... test?..... test!....
 !!!!!! ???? ,,  -- ---
 
 "Smartypants, double quotes" and 'single quotes'
-
 
 ## Emphasis
 
@@ -116,14 +113,13 @@ Subscript: H~2~O
 
 ==Marked text==
 
-
 ## Blockquotes
-
 
 > Blockquotes can also be nested...
 >> ...by using additional greater-than signs right next to each other...
 > > > ...or with spaces between arrows.
 
+This is a paragraph following a blockquote.
 
 ## Lists
 
@@ -152,7 +148,6 @@ Start numbering with offset:
 57. foo
 1. bar
 
-
 ## Code
 
 Inline `code`
@@ -163,7 +158,6 @@ Indented code
     line 1 of code
     line 2 of code
     line 3 of code
-
 
 Block code "fences"
 
@@ -199,7 +193,6 @@ Right aligned columns
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-
 ## Links
 
 [link text](http://dev.nodeca.com)
@@ -207,7 +200,6 @@ Right aligned columns
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
 
 ## Images
 
@@ -222,7 +214,6 @@ With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
-
 # Emojies (via [plugin](https://github.com/markdown-it/markdown-it-emoji))
 
 > Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
@@ -230,7 +221,6 @@ With a reference later in the document defining the URL location:
 > Shortcuts (emoticons): :-) :-( 8-) ;)
 
 see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
 
 ## Footnotes
 
@@ -247,7 +237,6 @@ Duplicated footnote reference[^second].
     and multiple paragraphs.
 
 [^second]: Footnote text.
-
 
 ## Definition lists
 
@@ -272,7 +261,6 @@ Term 1
 Term 2
   ~ Definition 2a
   ~ Definition 2b
-
 
 ## Abbreviations
 

@@ -1,5 +1,8 @@
 # style changelog
 
+## v0.1.11
+* bump gfm.css to v1.0.2
+
 ## v0.1.10
 * redesign site header
 * add `.site-header`, `.site-nav`, `.site-nav-right`, & `.site-footer`
