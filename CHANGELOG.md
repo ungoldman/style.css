@@ -1,4 +1,4 @@
-# style changelog
+# style.css changelog
 
 ## v0.1.14
 * no more header border
