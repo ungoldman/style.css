@@ -1,5 +1,8 @@
 # style changelog
 
+## v0.1.14
+* no more header border
+
 ## v0.1.13
 * allow sass import
 * move scripts to `scripts`
