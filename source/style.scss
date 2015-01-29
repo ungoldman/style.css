@@ -29,10 +29,16 @@ $gfm-code-font-family: $code-family;
 $gfm-header-font-family: $header-family;
 $gfm-body-font-size: $base-font-size;
 $gfm-code-font-size: $code-font-size;
+$top-bar-family: $header-family;
 
 @import '../node_modules/gfm.css/source/gfm';
+@import '../node_modules/top-bar.css/source/top-bar';
 
 // typography
+
+html, html a {
+  -webkit-font-smoothing: antialiased;
+}
 
 h1, h2, h3, h4, h5, h6,
 body > header > nav > a {
@@ -48,12 +54,13 @@ code {
 // links
 
 a {
-  color: #c3c;
+  color: #f30;
   text-decoration: none;
   transition: color 0.5s ease;
 
   &:hover {
-    color: #f3c;
+    color: #f30;
+    text-decoration: underline;
   }
 }
 
@@ -84,71 +91,12 @@ body {
 
 // persistent ancillary elements
 
-// header
+// page wrapper
 
-.site-header {
-  padding: 1rem;
-  margin: 0 0 2rem;
-  background: #fafafa;
-  border-bottom: 1px solid #eee;
-
-  // header nav
-
-  .site-nav {
-    overflow: auto;
-
-    .site-link,
-    .site-title {
-      float: left;
-      font-size: 1rem;
-
-      &:hover {
-        color: #f3c;
-      }
-
-      &.current-page,
-      &.current-page:hover {
-        color: #f3c;
-        cursor: default;
-      }
-
-      &.right {
-        float: right;
-      }
-    }
-
-    .site-link {
-      color: #aaa;
-      font-weight: 200;
-      margin-left: 1rem;
-    }
-
-    .site-title {
-      color: #555;
-      font-weight: 600;
-    }
-
-    .site-nav-right {
-      float: right;
-    }
-  }
-}
-
-// main
-
-.site-main {
-  margin: 0 auto;
+.page {
+  margin: 3rem auto;
   max-width: $content-width;
   padding: 0 1rem;
-}
-
-// footer
-
-.site-footer {
-  margin: 3rem auto 2rem;
-  max-width: $content-width;
-  font-size: .75rem;
-  color: #999;
 }
 
 // primary page content
@@ -157,8 +105,6 @@ body {
   font-family: $body-family;
   font-size: $base-font-size;
   color: #333;
-
-  margin: 0 0 3rem;
 
   table {
     font-family: $code-family;

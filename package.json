@@ -1,31 +1,11 @@
 {
   "name": "style.css",
-  "version": "0.1.12",
   "description": "One style is all that is needed.",
-  "files": [
-    "style.css"
-  ],
-  "scripts": {
-    "serve": "node serve.js",
-    "build": "node build.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ngoldman/style.css.git"
-  },
-  "keywords": [
-    "style",
-    "markdown",
-    "css",
-    "sass"
-  ],
+  "version": "0.1.13",
   "author": "Nate Goldman <nate@ngoldman.me>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ngoldman/style.css/issues"
   },
-  "homepage": "https://github.com/ngoldman/style.css",
   "devDependencies": {
     "clean-css": "^3.0.1",
     "gfm.css": "^1.0.2",
@@ -33,5 +13,26 @@
     "node-sass": "^2.0.0-beta",
     "node-static": "^0.7.6",
     "normalize.css": "^3.0.2"
+  },
+  "files": [
+    "style.css",
+    "source/style.scss"
+  ],
+  "homepage": "https://github.com/ngoldman/style.css",
+  "keywords": [
+    "style",
+    "markdown",
+    "css",
+    "sass"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngoldman/style.css.git"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "serve": "node scripts/serve.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

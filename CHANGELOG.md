@@ -1,5 +1,12 @@
 # style changelog
 
+## v0.1.13
+* allow sass import
+* move scripts to `scripts`
+* move `site` out of `source`
+* add `.md` to LICENSE
+* remove `.site-nav`, break out & use [top-bar.css](https://github.com/ngoldman/top-bar.css)
+
 ## v0.1.12
 * bump for no reason because I prematurely published and am not allowed to republish unpublished version [ಠ_ಠ](https://github.com/npm/npm-registry-couchapp/issues/148)
 

@@ -3,29 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ngoldman/style.css</title>
+  <title>style.css</title>
   <link rel="stylesheet" href="./style.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="site-nav">
-      <a class="site-title current-page" href="./">style.css</a>
-      <a class="site-link" href="./guide.html">guide</a>
-      <div class="site-nav-right">
-        <a class="site-link" href="https://github.com/ngoldman/style.css/"><i class="fa fa-fw fa-github"></i></a>
-      </div>
-    </nav>
-  </header>
-  <main class="site-main">
-    <h1>style.css</h1>
-    <p><em>One style is all that is needed.</em></p>
-    <img src="http://33.media.tumblr.com/tumblr_ll0hehFlU81qz8jl5o1_500.gif" alt="One note is all that is needed.">
-    <p>Work in progress. See the <a href="https://github.com/ngoldman/style.css/blob/gh-pages/README.md">README</a> for more details.</p>
-  </main>
-  <footer class="site-footer">
-    <p><a href="https://github.com/ngoldman/style.css/">view on github</a></p>
-    <p>ツ</p>
-  </footer>
+<main class="page">
+
+<nav class="top-bar">
+  <a class="top-bar-title" href="./">style.css</a>
+  <a class="top-bar-link" href="./guide.html">guide</a>
+  <div class="top-bar-right">
+    <a class="top-bar-link" href="https://github.com/ngoldman/style.css/">
+      <i class="fa fa-fw fa-github"></i> fork it
+    </a>
+  </div>
+</nav>
+
+<article class="markdown-body">
+<h1>style.css</h1>
+<p><em>One style is all that is needed.</em></p>
+<p><a href="http://youtu.be/HBtRNgflb4g"><img src="http://33.media.tumblr.com/tumblr_ll0hehFlU81qz8jl5o1_500.gif" alt="One note is all that is needed"></a></p>
+<p>This is a work in progress. Currently it’s just <a href="https://github.com/necolas/normalize.css/">normalize.css</a>, <a href="https://github.com/ngoldman/top-bar.css/">top-bar.css</a>, <a href="https://github.com/ngoldman/gfm.css/">gfm.css</a>, and some basics for layout.</p>
+<h2>Principles</h2>
+<ul>
+<li>Markup is semantic and minimal.</li>
+<li>Markdown is the sole source for primary page content.</li>
+<li>A site’s style handles…
+<ol>
+<li>Any HTML generated from markdown.</li>
+<li>Ancillary elements (header, nav, footer).</li>
+<li>Nothing else.</li>
+</ol>
+</li>
+<li>Classes are only used outside the context of primary page content, and only when absolutely necessary.</li>
+<li>Bandwidth is not assumed to be broadband – the site loads and functions quickly in suboptimal conditions.</li>
+</ul>
+<h2>Usage</h2>
+<pre><code>npm install style.css
+</code></pre>
+<p><em>…do whatever you’re into, then…</em></p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+</code></pre>
+<h2>Development</h2>
+<h3>Install</h3>
+<p>Install dependencies with <code>npm install</code>.</p>
+<h3>Develop</h3>
+<p>Edit <code>scss</code> source files in <code>source/</code>. Run <code>npm run serve</code> to view changes at <code>localhost:3000</code>.</p>
+<h3>Build</h3>
+<p>Build <code>style.css</code> from <code>source/</code> by running <code>npm run build</code>.</p>
+<h2>License</h2>
+<p><a href="LICENSE.md">ISC</a></p>
+</article>
+</main>
 </body>
 </html>
