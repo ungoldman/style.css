@@ -2,7 +2,7 @@
 
 *One style is all that is needed.*
 
-![One note is all that is needed](http://33.media.tumblr.com/tumblr_ll0hehFlU81qz8jl5o1_500.gif)
+[![One note is all that is needed](http://33.media.tumblr.com/tumblr_ll0hehFlU81qz8jl5o1_500.gif)](http://youtu.be/HBtRNgflb4g)
 
 This is a work in progress. Currently it's just [normalize.css](https://github.com/necolas/normalize.css/), [gfm.css](https://github.com/ngoldman/gfm.css/), and some basics for page, header, nav, and footer.
 
