@@ -1,47 +1,47 @@
 # style.css changelog
 
-## v0.1.15
+## 0.1.15
 * bump `node-sass` to non-beta version
 * fix missing `top-bar.css` dev dependency in package.json
 * use [standard](https://github.com/feross/standard) for basic test
 * add `CONTRIBUTING.md`
 
-## v0.1.14
+## 0.1.14
 * no more header border
 
-## v0.1.13
+## 0.1.13
 * allow sass import
 * move scripts to `scripts`
 * move `site` out of `source`
 * add `.md` to LICENSE
 * remove `.site-nav`, break out & use [top-bar.css](https://github.com/ngoldman/top-bar.css)
 
-## v0.1.12
+## 0.1.12
 * bump for no reason because I prematurely published and am not allowed to republish unpublished version [ಠ_ಠ](https://github.com/npm/npm-registry-couchapp/issues/148)
 
-## v0.1.11
+## 0.1.11
 * bump gfm.css to v1.0.2
 
-## v0.1.10
+## 0.1.10
 * redesign site header
 * add `.site-header`, `.site-nav`, `.site-nav-right`, & `.site-footer`
 
-## v0.1.9
+## 0.1.9
 * fix gfm config
 
-## v0.1.8
+## 0.1.8
 * break gfm styles out into separate module ([gfm.css](https://github.com/ngoldman/gfm.css))
 * remove any explicit references to `.markdown-body` from source
 
-## v0.1.7
+## 0.1.7
 * clean up github markdown css, convert to scss
 * remove dependency on [github-markdown-css](https://github.com/sindresorhus/github-markdown-css)
 
-## v0.1.6
+## 0.1.6
 * add `.site-link` class for nav links
 * style tweaks
 
-## v0.1.5
+## 0.1.5
 * rename `.current` to `.current-page`
 * remove `html,body` margin reset (a little margin is fine with this style)
 * add sass css `@import` issue workaround
@@ -50,20 +50,20 @@
 * experiment with header & body fonts, use montserrat + lora for now
 * add more filler to guide from https://markdown-it.github.io
 
-## v0.1.4
+## 0.1.4
 * generate guide from markdown
 
-## v0.1.3
+## 0.1.3
 * only include style.css on install
 
-## v0.1.2
+## 0.1.2
 * fix links in package.json
 
-## v0.1.1
+## 0.1.1
 * use proper normalize.css
 * tweak figure, figure > img
 * add serve.js
 * add more doc
 
-## v0.1.0
+## 0.1.0
 * first pass
