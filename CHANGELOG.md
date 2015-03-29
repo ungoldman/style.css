@@ -1,5 +1,11 @@
 # style.css changelog
 
+## v0.1.15
+* bump `node-sass` to non-beta version
+* fix missing `top-bar.css` dev dependency in package.json
+* use [standard](https://github.com/feross/standard) for basic test
+* add `CONTRIBUTING.md`
+
 ## v0.1.14
 * no more header border
 

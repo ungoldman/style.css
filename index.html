@@ -22,9 +22,24 @@
 
 <article class="markdown-body">
 <h1>style.css</h1>
+<p><a href="https://www.npmjs.com/package/style.css"><img src="https://img.shields.io/npm/v/style.css.svg?style=flat-square" alt=""></a>
+<a href="https://travis-ci.org/ngoldman/style.css"><img src="https://img.shields.io/travis/ngoldman/style.css.svg?style=flat-square" alt=""></a></p>
 <p><em>One style is all that is needed.</em></p>
 <p><a href="http://youtu.be/HBtRNgflb4g"><img src="http://33.media.tumblr.com/tumblr_ll0hehFlU81qz8jl5o1_500.gif" alt="One note is all that is needed"></a></p>
-<p>This is a work in progress. Currently it’s just <a href="https://github.com/necolas/normalize.css/">normalize.css</a>, <a href="https://github.com/ngoldman/top-bar.css/">top-bar.css</a>, <a href="https://github.com/ngoldman/gfm.css/">gfm.css</a>, and some basics for layout.</p>
+<p>An attempt at creating a set of independent and complementary style modules.</p>
+<p>Includes:</p>
+<ul>
+<li><a href="https://github.com/ngoldman/top-bar.css/">top-bar.css</a></li>
+<li><a href="https://github.com/ngoldman/gfm.css/">gfm.css</a></li>
+<li>and some basics for page layout</li>
+</ul>
+<p>Built on top of <a href="https://github.com/necolas/normalize.css/">normalize.css</a>.</p>
+<h2>Usage</h2>
+<pre><code>npm install style.css
+</code></pre>
+<p><em>…do whatever you’re into, then…</em></p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/style.css&quot;&gt;
+</code></pre>
 <h2>Principles</h2>
 <ul>
 <li>Markup is semantic and minimal.</li>
@@ -39,12 +54,6 @@
 <li>Classes are only used outside the context of primary page content, and only when absolutely necessary.</li>
 <li>Bandwidth is not assumed to be broadband – the site loads and functions quickly in suboptimal conditions.</li>
 </ul>
-<h2>Usage</h2>
-<pre><code>npm install style.css
-</code></pre>
-<p><em>…do whatever you’re into, then…</em></p>
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-</code></pre>
 <h2>Development</h2>
 <h3>Install</h3>
 <p>Install dependencies with <code>npm install</code>.</p>
@@ -52,6 +61,12 @@
 <p>Edit <code>scss</code> source files in <code>source/</code>. Run <code>npm run serve</code> to view changes at <code>localhost:3000</code>.</p>
 <h3>Build</h3>
 <p>Build <code>style.css</code> from <code>source/</code> by running <code>npm run build</code>.</p>
+<h2>Contributing</h2>
+<p><code>style.css</code> is an <strong>OPEN Open Source Project</strong>. This means that:</p>
+<blockquote>
+<p>Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.</p>
+</blockquote>
+<p>See the <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> file for more details.</p>
 <h2>License</h2>
 <p><a href="LICENSE.md">ISC</a></p>
 </article>

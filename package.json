@@ -1,7 +1,7 @@
 {
   "name": "style.css",
   "description": "One style is all that is needed (wip).",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "author": "Nate Goldman <nate@ngoldman.me>",
   "bugs": {
     "url": "https://github.com/ngoldman/style.css/issues"
