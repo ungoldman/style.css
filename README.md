@@ -1,5 +1,8 @@
 # style.css
 
+[![](https://img.shields.io/npm/v/style.css.svg?style=flat-square)](https://www.npmjs.com/package/style.css)
+[![](https://img.shields.io/travis/ngoldman/style.css.svg?style=flat-square)](https://travis-ci.org/ngoldman/style.css)
+
 *One style is all that is needed.*
 
 [![One note is all that is needed](http://33.media.tumblr.com/tumblr_ll0hehFlU81qz8jl5o1_500.gif)](http://youtu.be/HBtRNgflb4g)
