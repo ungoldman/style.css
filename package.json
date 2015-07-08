@@ -22,12 +22,13 @@
   ],
   "homepage": "https://github.com/ngoldman/style.css",
   "keywords": [
-    "style",
-    "markdown",
     "css",
-    "sass"
+    "markdown",
+    "sass",
+    "style"
   ],
   "license": "ISC",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ngoldman/style.css.git"
@@ -36,5 +37,6 @@
     "build": "node scripts/build.js",
     "serve": "node scripts/serve.js",
     "test": "standard"
-  }
+  },
+  "style": "style.css"
 }

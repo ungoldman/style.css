@@ -1,5 +1,8 @@
 # style.css changelog
 
+## Unreleased
+* add `style` field for better [css-via-npm](https://github.com/sethvincent/css-via-npm) support
+
 ## 0.1.15
 * bump `node-sass` to non-beta version
 * fix missing `top-bar.css` dev dependency in package.json
