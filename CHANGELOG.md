@@ -2,6 +2,7 @@
 
 ## Unreleased
 * add `style` field for better [css-via-npm](https://github.com/sethvincent/css-via-npm) support
+* add `main` field and blank `index.js` for parcelify
 
 ## 0.1.15
 * bump `node-sass` to non-beta version
