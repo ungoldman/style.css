@@ -1,8 +1,9 @@
 # style.css changelog
 
-## Unreleased
+## 0.1.16
 * add `style` field for better [css-via-npm](https://github.com/sethvincent/css-via-npm) support
 * add `main` field and blank `index.js` for parcelify
+* bump `node-sass` to 3.8.x and `normalize.css` to 4.2.x
 
 ## 0.1.15
 * bump `node-sass` to non-beta version
@@ -18,7 +19,7 @@
 * move scripts to `scripts`
 * move `site` out of `source`
 * add `.md` to LICENSE
-* remove `.site-nav`, break out & use [top-bar.css](https://github.com/ngoldman/top-bar.css)
+* remove `.site-nav`, break out & use [top-bar.css](https://github.com/ungoldman/top-bar.css)
 
 ## 0.1.12
 * bump for no reason because I prematurely published and am not allowed to republish unpublished version [ಠ_ಠ](https://github.com/npm/npm-registry-couchapp/issues/148)
@@ -34,7 +35,7 @@
 * fix gfm config
 
 ## 0.1.8
-* break gfm styles out into separate module ([gfm.css](https://github.com/ngoldman/gfm.css))
+* break gfm styles out into separate module ([gfm.css](https://github.com/ungoldman/gfm.css))
 * remove any explicit references to `.markdown-body` from source
 
 ## 0.1.7

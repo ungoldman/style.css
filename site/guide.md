@@ -1,6 +1,6 @@
 # Style Guide
 
-See how elements are styled with [`style.css`](https://github.com/ngoldman/style.css/).
+See how elements are styled with [`style.css`](https://github.com/ungoldman/style.css/).
 
 # Article Title
 

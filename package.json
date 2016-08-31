@@ -1,18 +1,18 @@
 {
   "name": "style.css",
   "description": "One style is all that is needed (wip).",
-  "version": "0.1.15",
-  "author": "Nate Goldman <nate@ngoldman.me>",
+  "version": "0.1.16",
+  "author": "Nate Goldman <ungoldman@gmail.com>",
   "bugs": {
-    "url": "https://github.com/ngoldman/style.css/issues"
+    "url": "https://github.com/ungoldman/style.css/issues"
   },
   "devDependencies": {
     "clean-css": "^3.0.1",
     "gfm.css": "^1.0.5",
     "markdown-it": "^2.1.3",
-    "node-sass": "^2.1.1",
+    "node-sass": "^3.8.0",
     "node-static": "^0.7.6",
-    "normalize.css": "^3.0.2",
+    "normalize.css": "^4.2.0",
     "standard": "^3.3.0",
     "top-bar.css": "^1.0.0"
   },
@@ -20,7 +20,7 @@
     "style.css",
     "source/style.scss"
   ],
-  "homepage": "https://github.com/ngoldman/style.css",
+  "homepage": "https://github.com/ungoldman/style.css",
   "keywords": [
     "css",
     "markdown",
@@ -31,7 +31,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngoldman/style.css.git"
+    "url": "https://github.com/ungoldman/style.css.git"
   },
   "scripts": {
     "build": "node scripts/build.js",

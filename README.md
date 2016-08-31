@@ -1,7 +1,7 @@
 # style.css
 
 [![](https://img.shields.io/npm/v/style.css.svg?style=flat-square)](https://www.npmjs.com/package/style.css)
-[![](https://img.shields.io/travis/ngoldman/style.css.svg?style=flat-square)](https://travis-ci.org/ngoldman/style.css)
+[![](https://img.shields.io/travis/ungoldman/style.css.svg?style=flat-square)](https://travis-ci.org/ungoldman/style.css)
 
 *One style is all that is needed.*
 
@@ -11,8 +11,8 @@ An attempt at creating a set of independent and complementary style modules.
 
 Includes:
 
-* [top-bar.css](https://github.com/ngoldman/top-bar.css/)
-* [gfm.css](https://github.com/ngoldman/gfm.css/)
+* [top-bar.css](https://github.com/ungoldman/top-bar.css/)
+* [gfm.css](https://github.com/ungoldman/gfm.css/)
 * and some basics for page layout
 
 Built on top of [normalize.css](https://github.com/necolas/normalize.css/).
