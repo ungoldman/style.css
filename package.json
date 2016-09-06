@@ -1,20 +1,32 @@
 {
   "name": "style.css",
+<<<<<<< HEAD
   "description": "Universal classless stylesheet.",
+=======
+  "description": "Style without class",
+>>>>>>> 80391b0644efb5005b138451f686129cb62025c9
   "version": "0.1.16",
   "author": "Nate Goldman <ungoldman@gmail.com>",
   "bugs": {
     "url": "https://github.com/ungoldman/style.css/issues"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "cssnano": "^3.7.4",
     "node-static": "^0.7.8",
     "postcss": "^5.1.2",
+=======
+    "node-sass": "^3.9.3",
+    "node-static": "^0.7.8",
+    "npm-run-all": "^3.1.0",
+    "parallelshell": "^2.0.0",
+>>>>>>> 80391b0644efb5005b138451f686129cb62025c9
     "sitedown": "^2.1.0",
     "standard": "^8.0.0"
   },
   "files": [
     "style.css",
+    "style.min.css",
     "source/style.scss"
   ],
   "homepage": "https://github.com/ungoldman/style.css",
@@ -31,8 +43,17 @@
   },
   "scripts": {
     "minify": "node minify.js",
+<<<<<<< HEAD
     "build-site": "rm -rf site/* && sitedown . -b site/ -l layout.html --pretty=false && cp style* site",
     "serve": "static site -p 8000",
+=======
+    "sass": "node-sass src/ -o ./",
+    "watch:sass": "node-sass src/ -o site/ -w",
+    "build:site": "rm -rf site/* && sitedown . -b site/ -l layout.html --pretty=false && cp style* site",
+    "serve": "static site -p 8000",
+    "prestart": "npm run build:site",
+    "start": "npm-run-all --parallel serve watch:sass",
+>>>>>>> 80391b0644efb5005b138451f686129cb62025c9
     "test": "standard"
   },
   "style": "style.css"
