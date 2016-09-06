@@ -29,7 +29,6 @@
     "url": "https://github.com/ungoldman/style.css.git"
   },
   "scripts": {
-    "minify": "node minify.js",
     "build-site": "rm -rf site/* && sitedown . -b site/ -l layout.html --pretty=false && cp style* site",
     "serve": "static site -p 8000",
     "test": "standard"
