@@ -485,7 +485,7 @@ body {
   > header,
   > main,
   > footer {
-    max-width: 45rem;
+    max-width: 40rem;
     margin: auto;
   }
 
@@ -496,9 +496,10 @@ body {
     -webkit-text-size-adjust: 100%;
     color: #333;
     overflow: hidden;
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: calc(1rem + .25vw);
+    line-height: 1.45;
     word-wrap: break-word;
+    margin: auto;
 
     > *:first-child { margin-top: 0 !important; }
     > *:last-child { margin-bottom: 0 !important; }
@@ -540,11 +541,11 @@ body {
     h4,
     h5,
     h6 {
+      font-family: Charter, Constania, serif;
       position: relative;
       margin-top: 1em;
       margin-bottom: 1em;
       font-weight: bold;
-      line-height: 1.4;
     }
 
     // borders and extra padding for major headers
@@ -555,10 +556,10 @@ body {
     }
 
     // header sizes
-    h1 { font-size: 2.25em; line-height: 1.2; }
-    h2 { font-size: 1.75em; line-height: 1.225; }
-    h3 { font-size: 1.5em; }
-    h4 { font-size: 1.25em; }
+    h1 { font-size: 2.074em; line-height: 1.2; }
+    h2 { font-size: 1.728em; line-height: 1.225; }
+    h3 { font-size: 1.44em; }
+    h4 { font-size: 1.2em; }
     h5 { font-size: 1em; }
     h6 { font-size: 1em; color: #777; }
   }
