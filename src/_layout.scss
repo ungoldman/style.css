@@ -82,5 +82,220 @@ body {
     h4 { font-size: 1.2em; }
     h5 { font-size: 1em; }
     h6 { font-size: 1em; color: #777; }
+
+    /* pre/code */
+
+    code,
+    pre,
+    kbd {
+      // TODO: make sure code/pre/kbd have proper font family
+      // font-family: $gfm-code-font-family;
+      // font-size: $gfm-code-font-size;
+    }
+
+    code {
+      padding: .2em 0;
+      margin: 0;
+      font-size: 85%;
+      background-color: rgba(0,0,0,0.04);
+      border-radius: 3px;
+
+      &:before,
+      &:after {
+        letter-spacing: -0.2em;
+        content: '\00a0';
+      }
+    }
+
+    pre {
+      overflow: auto;
+      word-wrap: normal;
+      padding: 1em;
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #f7f7f7;
+      border-radius: 3px;
+
+      code {
+        display: inline;
+        max-width: initial;
+        padding: 0;
+        margin: 0;
+        overflow: initial;
+        line-height: inherit;
+        word-wrap: normal;
+        background: transparent;
+
+        &:before,
+        &:after { content: normal; }
+      }
+
+      > code {
+        font-size: 1em;
+        word-break: normal;
+        white-space: pre;
+        border: 0;
+      }
+    }
+
+    kbd {
+      background-color: #e7e7e7;
+      background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+      background-image: linear-gradient(#fefefe, #e7e7e7);
+      background-repeat: repeat-x;
+      display: inline-block;
+      padding: 5px 5px 1px;
+      margin: 0 1px;
+      font-size: 11px;
+      line-height: 10px;
+      color: #000;
+      border: 1px solid #cfcfcf;
+      border-radius: 2px;
+      box-shadow: 0 1px 0 #ccc;
+    }
+
+    /* forms */
+
+    input {
+      color: inherit;
+      font: inherit;
+      margin: 0;
+      line-height: normal;
+      font-size: 13px;
+      line-height: 1.4;
+      // note: make sure inputs have proper font fam
+      // font-family: $gfm-input-font-family;
+
+      &[disabled] {
+        cursor: default;
+      }
+
+      &[type='checkbox'] {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+      }
+    }
+
+    /* blockquotes */
+
+    blockquote {
+      margin: 0 0 1em;
+      padding: 0 15px;
+      color: #777;
+      border-left: 4px solid #ddd;
+
+      &>:first-child { margin-top: 0; }
+      &>:last-child { margin-bottom: 0; }
+    }
+
+    /* images */
+
+    img {
+      border: 0;
+      max-width: 100%;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    /* horizontal rules */
+
+    hr {
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      height: 0;
+      overflow: hidden;
+      background: transparent;
+      height: 4px;
+      padding: 0;
+      margin: 1em 0;
+      background-color: #e7e7e7;
+      border: 0 none;
+
+      &:before {
+        display: table;
+        content: '';
+      }
+
+      &:after {
+        display: table;
+        clear: both;
+        content: '';
+      }
+    }
+
+    /* tables */
+
+    td,
+    th { padding: 0; }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      display: block;
+      width: 100%;
+      overflow: auto;
+      word-break: normal;
+      word-break: keep-all;
+
+      th,
+      td {
+        padding: 6px 13px;
+        border: 1px solid #ddd;
+      }
+
+      th { font-weight: bold; }
+
+      tr {
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+
+        &:nth-child(2n) { background-color: #f8f8f8; }
+      }
+    }
+
+    /* lists */
+
+    ul,
+    ol {
+      padding: 0;
+      padding-left: 2em;
+
+      ol { list-style-type: lower-roman; }
+
+      ul,
+      ol {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        ol { list-style-type: lower-alpha; }
+      }
+    }
+
+    li > p { margin-top: 1em; }
+
+    /* definitions */
+
+    dd {
+      margin-left: 0;
+    }
+
+    dl {
+      padding: 0;
+
+      dt {
+        padding: 0;
+        margin-top: 1em;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      dd {
+        padding: 0 1em;
+        margin-bottom: 1em;
+      }
+    }
   }
 }
