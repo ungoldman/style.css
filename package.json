@@ -1,23 +1,19 @@
 {
   "name": "style.css",
-  "description": "One style is all that is needed (wip).",
+  "description": "Style without class",
   "version": "0.1.16",
   "author": "Nate Goldman <ungoldman@gmail.com>",
   "bugs": {
     "url": "https://github.com/ungoldman/style.css/issues"
   },
   "devDependencies": {
-    "clean-css": "^3.0.1",
-    "gfm.css": "^1.0.5",
-    "markdown-it": "^2.1.3",
-    "node-sass": "^3.8.0",
-    "node-static": "^0.7.6",
-    "normalize.css": "^4.2.0",
-    "standard": "^3.3.0",
-    "top-bar.css": "^1.0.0"
+    "node-static": "^0.7.8",
+    "sitedown": "^2.1.0",
+    "standard": "^8.0.0"
   },
   "files": [
     "style.css",
+    "style.min.css",
     "source/style.scss"
   ],
   "homepage": "https://github.com/ungoldman/style.css",
@@ -33,8 +29,9 @@
     "url": "https://github.com/ungoldman/style.css.git"
   },
   "scripts": {
-    "build": "node scripts/build.js",
-    "serve": "node scripts/serve.js",
+    "minify": "node minify.js",
+    "build-site": "rm -rf site/* && sitedown . -b site/ -l layout.html --pretty=false && cp style* site",
+    "serve": "static site -p 8000",
     "test": "standard"
   },
   "style": "style.css"
