@@ -7,7 +7,10 @@
     "url": "https://github.com/ungoldman/style.css/issues"
   },
   "devDependencies": {
+    "node-sass": "^3.9.3",
     "node-static": "^0.7.8",
+    "npm-run-all": "^3.1.0",
+    "parallelshell": "^2.0.0",
     "sitedown": "^2.1.0",
     "standard": "^8.0.0"
   },
@@ -29,8 +32,13 @@
     "url": "https://github.com/ungoldman/style.css.git"
   },
   "scripts": {
-    "build-site": "rm -rf site/* && sitedown . -b site/ -l layout.html --pretty=false && cp style* site",
+    "minify": "node minify.js",
+    "sass": "node-sass src/ -o ./",
+    "watch:sass": "node-sass src/ -o site/ -w",
+    "build:site": "rm -rf site/* && sitedown . -b site/ -l layout.html --pretty=false && cp style* site",
     "serve": "static site -p 8000",
+    "prestart": "npm run build:site",
+    "start": "npm-run-all --parallel serve watch:sass",
     "test": "standard"
   },
   "style": "style.css"
