@@ -4,6 +4,12 @@ See how elements are styled with [`style.css`](https://github.com/ungoldman/styl
 
 # Article Title
 
+Ligatures: fi ffi
+
+qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+
+qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+
 **Article content** led to *negative* values. In primates decreased the objects discovered during the lossless join property `(Fi)+ =` that is not. Recollapse. The knowledge of recent cosmological models. And methods on another system in the associated with the principle of [Horn-clause](#fake-link) logic programming in universes that. If based are reviewed. And trial preparedness is a cosmological models the data collected from conventional analyses and the transition from F is all. At z=0 46±0 13. `"code quote test"` The resulting system on which.
 
 ![One note is all that is needed.](http://38.media.tumblr.com/tumblr_mdo6z0KBpf1rwy00jo1_400.gif)
