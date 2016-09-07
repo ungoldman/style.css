@@ -1,3 +1,62 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
+               'avenir next', avenir, /* MacOS and iOS */
+               'Segoe UI', /* Windows */
+               'lucida grande', /* Older MacOS */
+               'helvetica neue', helvetica, /* Older MacOS */
+               'Fira Sans', /* Firefox OS */
+               roboto, noto, /* Google stuff */
+               'Droid Sans', /* Old Google stuff */
+               cantarell, oxygen, ubuntu, /* Linux stuff */
+               'franklin gothic medium', 'century gothic', /* Windows stuff */
+               sans-serif; /* Everything else */ /* 1 */
+  font-size: calc(16px + .25vw);
+  line-height: 1.55; /* 2 */
+  color: $off-black;
+  background-color: $off-white;
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+
+  -webkit-font-feature-settings: "kern";
+     -moz-font-feature-settings: "kern";
+          font-feature-settings: "kern";
+  font-kerning: normal;
+
+  text-rendering: optimizeLegibility;
+
+   -moz-font-feature-settings : 'liga= 1','calt=0';
+   -moz-font-feature-settings : "liga" 1,"calt" 0;
+   -webkit-font-feature-settings : "liga" 1,"calt" 0;
+   -ms-font-feature-settings : 'liga= 1','calt=0';
+   -o-font-feature-settings : "liga" 1,"calt" 0;
+   font-feature-settings : "liga" 1,"calt" 0;
+}
+
+// headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+// header sizes
+h1 { font-size: 2.074em; line-height: 1.2; }
+h2 { font-size: 1.728em; line-height: 1.225; }
+h3 { font-size: 1.44em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: $darkest-gray; }
+
+p {
+  letter-spacing: -0.01em;
+}
+
 /**
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
@@ -17,6 +76,18 @@ a:active,
 a:hover {
   outline-width: 0;
 }
+
+
+    /* pre/code */
+
+    code,
+    pre,
+    kbd {
+      // TODO: make sure code/pre/kbd have proper font family
+      // font-family: $gfm-code-font-family;
+      // font-size: $gfm-code-font-size;
+    }
+
 
 /**
  * 1. Remove the bottom border in Firefox 39-.
@@ -44,7 +115,7 @@ strong {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 /**

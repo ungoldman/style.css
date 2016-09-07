@@ -4,7 +4,7 @@ body {
   > header,
   > main,
   > footer {
-    max-width: 40rem;
+    max-width: 42rem;
     margin: auto;
   }
 
@@ -14,11 +14,10 @@ body {
   > main {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    color: #333;
     overflow: hidden;
-    font-size: calc(1rem + .25vw);
-    line-height: 1.45;
     word-wrap: break-word;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: auto;
 
     > *:first-child { margin-top: 0 !important; }
@@ -27,7 +26,6 @@ body {
     // anchor tags
     a {
       background: transparent;
-      color: #4183c4;
       text-decoration: none;
 
       &:active,
@@ -38,10 +36,6 @@ body {
       &:hover { text-decoration: underline; }
     }
 
-    // defaults for strong/em, just in case
-    strong { font-weight: bold; }
-    em { font-style: italic; }
-
     // same margins for all typographic block elements
     p,
     blockquote,
@@ -51,55 +45,14 @@ body {
     table,
     pre {
       margin-top: 0;
-      margin-bottom: 1em;
-    }
-
-    // headers
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: Charter, Constania, serif;
-      position: relative;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      font-weight: bold;
-    }
-
-    // borders and extra padding for major headers
-    h1,
-    h2 {
-      padding-bottom: 0.3em;
-      border-bottom: 1px solid #eee;
-    }
-
-    // header sizes
-    h1 { font-size: 2.074em; line-height: 1.2; }
-    h2 { font-size: 1.728em; line-height: 1.225; }
-    h3 { font-size: 1.44em; }
-    h4 { font-size: 1.2em; }
-    h5 { font-size: 1em; }
-    h6 { font-size: 1em; color: #777; }
-
-    /* pre/code */
-
-    code,
-    pre,
-    kbd {
-      // TODO: make sure code/pre/kbd have proper font family
-      // font-family: $gfm-code-font-family;
-      // font-size: $gfm-code-font-size;
+      margin-bottom: 1rem;
     }
 
     code {
       padding: .2em 0;
       margin: 0;
-      font-size: 85%;
       background-color: rgba(0,0,0,0.04);
       border-radius: 3px;
-
       &:before,
       &:after {
         letter-spacing: -0.2em;
@@ -112,8 +65,6 @@ body {
       word-wrap: normal;
       padding: 1em;
       overflow: auto;
-      font-size: 85%;
-      line-height: 1.45;
       background-color: #f7f7f7;
       border-radius: 3px;
 
@@ -132,9 +83,6 @@ body {
       }
 
       > code {
-        font-size: 1em;
-        word-break: normal;
-        white-space: pre;
         border: 0;
       }
     }
@@ -158,14 +106,7 @@ body {
     /* forms */
 
     input {
-      color: inherit;
-      font: inherit;
       margin: 0;
-      line-height: normal;
-      font-size: 13px;
-      line-height: 1.4;
-      // note: make sure inputs have proper font fam
-      // font-family: $gfm-input-font-family;
 
       &[disabled] {
         cursor: default;
@@ -181,11 +122,6 @@ body {
     /* blockquotes */
 
     blockquote {
-      margin: 0 0 1em;
-      padding: 0 15px;
-      color: #777;
-      border-left: 4px solid #ddd;
-
       &>:first-child { margin-top: 0; }
       &>:last-child { margin-bottom: 0; }
     }
