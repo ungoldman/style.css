@@ -14,9 +14,9 @@ A classless stylesheet for long-form web documents.
 
 ## Features
 - **minimal size:** weighs in at an adorable `10kb` (`5kb` minified).
-- **great for text:** designed to be easy on the eyes.
-- **system fonts:** looks native on macOS, Ubuntu, and Windows.
-- **small api:** with zero classes, there's nothing to learn!
+- **system fonts:** looks native on macOS, iOS, windows, linux, firefox OS, android.
+- **great for text:** designed to be highly readable and easy on the eyes.
+- **very small api:** with zero classes, there's nothing to learn!
 - **omakase:** composed out of a balanced selection of stylistic practices.
 - **very stylish:** indeed.
 
@@ -24,13 +24,7 @@ A classless stylesheet for long-form web documents.
 
 ### Manual
 
-Copy [`style.css`](/style.css) to your project's assets directory:
-
-```sh
-cp node_modules/style.css/style.css assets/
-```
-
-Then link to it where appropriate:
+Copy [`style.css`](/style.css) into your project, then link to it:
 
 ```html
 <link rel="stylesheet" href="assets/style.css">
@@ -55,10 +49,6 @@ sf('style.css')
 ```
 
 Note that this method requires a little extra work behind the scenes. Any external CSS files imported with sheetify must be compiled using [browserify](https://github.com/substack/node-browserify) or [sheetify-postcss](https://github.com/stackcss/sheetify-postcss).
-
-### CDN
-
-Coming soon?
 
 ## Development
 
