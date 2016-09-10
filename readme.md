@@ -13,7 +13,7 @@
 A classless stylesheet for long-form web documents.
 
 ## Features
-- **minimal size:** weighs in at an adorable `5kb`.
+- **minimal size:** weighs in at an adorable `10kb` (`5kb` minified).
 - **great for text:** designed to be easy on the eyes.
 - **system fonts:** looks native on macOS, Ubuntu, and Windows.
 - **small api:** with zero classes, there's nothing to learn!
