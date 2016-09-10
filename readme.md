@@ -54,11 +54,11 @@ const sf = require('sheetify')
 sf('style.css')
 ```
 
-Note that this method requires a little extra work. Any external CSS files imported with sheetify must be compiled using [browserify](https://github.com/substack/node-browserify) or [sheetify-postcss](https://github.com/stackcss/sheetify-postcss).
+Note that this method requires a little extra work behind the scenes. Any external CSS files imported with sheetify must be compiled using [browserify](https://github.com/substack/node-browserify) or [sheetify-postcss](https://github.com/stackcss/sheetify-postcss).
 
 ### CDN
 
-Coming soon.
+Coming soon?
 
 ## Development
 
@@ -70,9 +70,9 @@ To get started, clone the repository and install dependencies with `npm install`
 - Edit `scss` source files in `src/`.
 - Watch the style guide at `localhost:8000/guide.html` for changes.
 
-### Build
+### Release
 
-Build `style.css` and `style.min.css` from `src/` by running `npm run release`.
+Generate `style.css` and `style.min.css` from `src/` by running `npm run release`.
 
 ## Contributing
 
