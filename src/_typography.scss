@@ -1,5 +1,5 @@
 html {
-  font-family: $system-fonts;
+  font-family: $system-sans;
   font-size: calc(16px + .25vw);
   line-height: 1.55;
   color: $off-black;
@@ -95,7 +95,7 @@ pre {
   word-wrap: normal;
   padding: 1em;
   overflow: auto;
-  background-color: $lighter-gray;
+  background-color: $lightest-gray;
   border-radius: 3px;
 
   code {
@@ -125,14 +125,14 @@ code,
 pre,
 kbd,
 samp {
-  font-family: $system-code-fonts; /* 1 */
+  font-family: $system-mono; /* 1 */
   font-size: calc(12px + .25vw); /* 2 */
 }
 
 code {
   padding: .2em 0;
   margin: 0;
-  background-color: $lighter-gray;
+  background-color: $lightest-gray;
   border-radius: 3px;
   &:before,
   &:after {
