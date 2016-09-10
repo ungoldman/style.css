@@ -32,7 +32,6 @@
     "url": "https://github.com/ungoldman/style.css.git"
   },
   "scripts": {
-    "minify": "node minify.js",
     "sass": "node-sass src/ -o ./",
     "watch:sass": "node-sass src/ -o site/ -w",
     "build:site": "rm -rf site/* && sitedown . -b site/ -l layout.html --pretty=false && cp style* site",
