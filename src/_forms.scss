@@ -1,3 +1,5 @@
+input { margin: 0 }
+
 /**
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
@@ -152,6 +154,9 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
+// disabled things should respond to cursor accordingly
+[disabled] { cursor: default }
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.

@@ -1,0 +1,17 @@
+$system-fonts: -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
+               'avenir next', avenir, /* MacOS and iOS */
+               'Segoe UI', /* Windows */
+               'lucida grande', /* Older MacOS */
+               'helvetica neue', helvetica, /* Older MacOS */
+               'Fira Sans', /* Firefox OS */
+               roboto, noto, /* Google stuff */
+               'Droid Sans', /* Old Google stuff */
+               cantarell, oxygen, ubuntu, /* Linux stuff */
+               'franklin gothic medium', 'century gothic', /* Windows stuff */
+               sans-serif; /* Everything else */
+
+$system-code-fonts: Consolas,
+                    'Liberation Mono',
+                    Menlo,
+                    Courier,
+                    monospace;

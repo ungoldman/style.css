@@ -1,15 +1,10 @@
-/*! style.css v1.0.0 | ISC License | github.com/ungoldman/style.css */
-
-/**
- * adapted from:
- * - normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css
- * - css-system-fonts v1.1.2 | MIT License | github.com/mrmrs/css-system-fonts
- */
+@import 'fonts';
 @import 'grayscale';
 @import 'document';
 @import 'typography';
 @import 'layout';
 @import 'embedded';
+@import 'tables';
 @import 'forms';
 @import 'interactive';
 @import 'scripting';
