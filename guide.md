@@ -1,18 +1,24 @@
 # Style Guide
 
-See how elements are styled with [`style.css`](https://github.com/ungoldman/style.css/).
+See how elements are styled with [`style.css`](readme.md).
 
 # Article Title
-
-Ligatures: fi ffi
-
-qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
-
-qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
 
 **Article content** led to *negative* values. In primates decreased the objects discovered during the lossless join property `(Fi)+ =` that is not. Recollapse. The knowledge of recent cosmological models. And methods on another system in the associated with the principle of [Horn-clause](#fake-link) logic programming in universes that. If based are reviewed. And trial preparedness is a cosmological models the data collected from conventional analyses and the transition from F is all. At z=0 46±0 13. `"code quote test"` The resulting system on which.
 
 ![One note is all that is needed.](http://38.media.tumblr.com/tumblr_mdo6z0KBpf1rwy00jo1_400.gif)
+
+Keyboard input via `<kbd>`: <kbd>ctrl</kbd><kbd>alt</kbd><kbd>delete</kbd>
+
+## Ligatures
+
+fi ffi
+
+## Very long words
+
+qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+
+qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
 
 > Despite double-blind randomized controlled clinical trials choosing an efficacy measure and that. `Xi ⊂ U` and interpreting these. New rules intuitionistically (`('single quotes too')`) in particular networks of natural selection on body size. And human cost in spatially homogeneous spacetimes.
 

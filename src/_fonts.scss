@@ -1,0 +1,17 @@
+$system-sans:  -apple-system, BlinkMacSystemFont, // mac, ios
+               'avenir next', avenir, // mac, ios
+               'segoe ui', // windows
+               'lucida grande', 'helvetica neue', helvetica, // older mac
+               'fira sans', // firefox os
+               roboto, noto, 'droid sans', // android
+               cantarell, oxygen, ubuntu, // linux
+               'franklin gothic medium', 'century gothic', // windows
+               sans-serif; // fallback
+
+$system-mono:  menlo, // mac
+               inconsolata, consolas, // windows
+               'fira mono', // firefox os
+               'noto mono', 'droid sans mono', // android
+               'dejavu sans mono', 'liberation mono', 'ubuntu mono', // linux
+               monaco, 'courier new', // older systems
+               monospace // fallback

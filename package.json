@@ -7,11 +7,12 @@
     "url": "https://github.com/ungoldman/style.css/issues"
   },
   "devDependencies": {
+    "cssnano-cli": "^1.0.4",
+    "live-server": "^1.1.0",
     "node-sass": "^3.9.3",
-    "node-static": "^0.7.8",
     "npm-run-all": "^3.1.0",
     "parallelshell": "^2.0.0",
-    "sitedown": "^2.1.0",
+    "sitedown": "^2.1.2",
     "standard": "^8.0.0"
   },
   "files": [
@@ -27,18 +28,21 @@
     "style"
   ],
   "license": "ISC",
+  "main": "style.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/ungoldman/style.css.git"
   },
   "scripts": {
-    "minify": "node minify.js",
-    "sass": "node-sass src/ -o ./",
-    "watch:sass": "node-sass src/ -o site/ -w",
-    "build:site": "rm -rf site/* && sitedown . -b site/ -l layout.html --pretty=false && cp style* site",
-    "serve": "static site -p 8000",
-    "prestart": "npm run sass && npm run build:site",
-    "start": "npm-run-all --parallel serve watch:sass",
+    "prestart": "rm -rf site/* && npm-run-all --parallel site:*",
+    "release": "npm-run-all release:*",
+    "release:generate": "node-sass src/ -o ./",
+    "release:minify": "cssnano < style.css > style.min.css",
+    "serve:site": "live-server site --port=8000",
+    "serve:watch": "npm run site:sass -- -w",
+    "site:html": "sitedown . -b site/ -l layout.html --pretty=false",
+    "site:sass": "node-sass src/ -o site/",
+    "start": "npm-run-all --parallel serve:*",
     "test": "standard"
   },
   "style": "style.css"

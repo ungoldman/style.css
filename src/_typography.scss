@@ -1,35 +1,27 @@
 html {
-  font-family: -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
-               'avenir next', avenir, /* MacOS and iOS */
-               'Segoe UI', /* Windows */
-               'lucida grande', /* Older MacOS */
-               'helvetica neue', helvetica, /* Older MacOS */
-               'Fira Sans', /* Firefox OS */
-               roboto, noto, /* Google stuff */
-               'Droid Sans', /* Old Google stuff */
-               cantarell, oxygen, ubuntu, /* Linux stuff */
-               'franklin gothic medium', 'century gothic', /* Windows stuff */
-               sans-serif; /* Everything else */ /* 1 */
+  font-family: $system-sans;
   font-size: calc(16px + .25vw);
-  line-height: 1.55; /* 2 */
+  line-height: 1.55;
   color: $off-black;
   background-color: $off-white;
-  -ms-text-size-adjust: 100%; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 3 */
 
-  -webkit-font-feature-settings: "kern";
-     -moz-font-feature-settings: "kern";
-          font-feature-settings: "kern";
   font-kerning: normal;
-
   text-rendering: optimizeLegibility;
 
-   -moz-font-feature-settings : 'liga= 1','calt=0';
-   -moz-font-feature-settings : "liga" 1,"calt" 0;
-   -webkit-font-feature-settings : "liga" 1,"calt" 0;
-   -ms-font-feature-settings : 'liga= 1','calt=0';
-   -o-font-feature-settings : "liga" 1,"calt" 0;
-   font-feature-settings : "liga" 1,"calt" 0;
+  // weird vendor stuff
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  -webkit-font-feature-settings: "kern";
+ -moz-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+
+  -moz-font-feature-settings : 'liga= 1','calt=0';
+  -moz-font-feature-settings : "liga" 1,"calt" 0;
+  -webkit-font-feature-settings : "liga" 1,"calt" 0;
+  -ms-font-feature-settings : 'liga= 1','calt=0';
+  -o-font-feature-settings : "liga" 1,"calt" 0;
+  font-feature-settings : "liga" 1,"calt" 0;
 }
 
 // headers
@@ -53,113 +45,148 @@ h4 { font-size: 1.2em; }
 h5 { font-size: 1em; }
 h6 { font-size: 1em; color: $darkest-gray; }
 
-p {
-  letter-spacing: -0.01em;
+// same margins for all typographic block elements
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
+// tighten up body copy just a smidge
+p { letter-spacing: -0.01em; }
 
+// 1. Remove the gray background on active links in IE 10.
+// 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  text-decoration: none;
+
+  // Remove the outline on focused links when they are also active or hovered
+  // in all browsers (opinionated).
+  &:active,
+  &:hover {
+    outline-width: 0;
+    outline: 0;
+  }
+
+  &:active,
+  &:focus,
+  &:hover { text-decoration: underline; }
 }
 
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
+blockquote {
+  margin: 0 0 1rem;
+  padding: 0 1rem;
+  color: $darker-gray;
+  border-left: 4px solid $light-gray;
 
-a:active,
-a:hover {
-  outline-width: 0;
+  &>:first-child { margin-top: 0; }
+  &>:last-child { margin-bottom: 0; }
 }
 
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  padding: 1em;
+  overflow: auto;
+  background-color: $lightest-gray;
+  border-radius: 3px;
 
-    /* pre/code */
+  code {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background: transparent;
 
-    code,
-    pre,
-    kbd {
-      // TODO: make sure code/pre/kbd have proper font family
-      // font-family: $gfm-code-font-family;
-      // font-size: $gfm-code-font-size;
-    }
+    &:before,
+    &:after { content: normal; }
+  }
 
+  > code {
+    word-break: normal;
+    white-space: pre;
+    border: 0;
+  }
+}
 
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
+// 1. Correct the inheritance and scaling of font size in all browsers.
+// 2. Correct the odd `em` font sizing in all browsers.
+code,
+pre,
+kbd,
+samp {
+  font-family: $system-mono; /* 1 */
+  font-size: calc(12px + .25vw); /* 2 */
+}
 
+code {
+  padding: .2em 0;
+  margin: 0;
+  background-color: $lightest-gray;
+  border-radius: 3px;
+  &:before,
+  &:after {
+    letter-spacing: -0.2em;
+    content: '\00a0';
+  }
+}
+
+kbd {
+  background-color: $lighter-gray;
+  background-image: -webkit-linear-gradient($off-white, $lighter-gray);
+  background-image: linear-gradient($off-white, $lighter-gray);
+  background-repeat: repeat-x;
+  display: inline-block;
+  padding: 5px 5px 1px;
+  margin: 0 1px;
+  font-size: .75em;
+  line-height: .95em;
+  color: $black;
+  border: 1px solid $light-gray;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 $light-gray;
+}
+
+// 1. Remove the bottom border in Firefox 39-.
+// 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
 
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-
+// 1. Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+// 2. Add the correct font weight in Chrome, Edge, and Safari.
 b,
 strong {
-  font-weight: inherit;
+  font-weight: inherit; /* 1 */
+  font-weight: 600; /* 2 */
 }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
+// Add the correct font style in Android 4.3-.
+dfn { font-style: italic; }
 
-b,
-strong {
-  font-weight: 600;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-
+// Add the correct background and color in IE 9-.
 mark {
   background-color: #ff0;
   color: #000;
 }
 
-/**
- * Add the correct font size in all browsers.
- */
+// Add the correct font size in all browsers.
+small { font-size: 80%; }
 
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
+// Prevent `sub` and `sup` elements from affecting the line height in
+// all browsers.
 sub,
 sup {
   font-size: 75%;
@@ -168,10 +195,70 @@ sup {
   vertical-align: baseline;
 }
 
-sub {
-  bottom: -0.25em;
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: hidden;
+  background: transparent;
+  height: 4px;
+  padding: 0;
+  margin: 1em 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+
+  &:before {
+    display: table;
+    content: '';
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
 }
 
-sup {
-  top: -0.5em;
+// lists
+
+ul,
+ol {
+  padding: 0;
+  padding-left: 2em;
+
+  ol { list-style-type: lower-roman; }
+
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    ol { list-style-type: lower-alpha; }
+  }
+}
+
+li > p { margin-top: 1em; }
+
+// definitions
+
+dd { margin-left: 0; }
+
+dl {
+  padding: 0;
+
+  dt {
+    padding: 0;
+    margin-top: 1em;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  dd {
+    padding: 0 1em;
+    margin-bottom: 1em;
+  }
 }
