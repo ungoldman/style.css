@@ -1,14 +1,11 @@
-# style.css
-
-> Style without class.
-
-[![latest version][npm-img]][npm-url]
-[![build status][travis-img]][travis-url]
+# style.css [![latest version][npm-img]][npm-url] [![build status][travis-img]][travis-url] [![stability][stability-img]][stability-url]
 
 [npm-img]: https://img.shields.io/npm/v/style.css.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/style.css
 [travis-img]: https://img.shields.io/travis/ungoldman/style.css.svg?style=flat-square
 [travis-url]: https://travis-ci.org/ungoldman/style.css
+[stability-img]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
+[stability-url]: https://nodejs.org/api/documentation.html#documentation_stability_index"
 
 A classless stylesheet for long-form web documents.
 
