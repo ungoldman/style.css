@@ -2,8 +2,8 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "lucida grande", "helvetica neue", helvetica, "fira sans", roboto, noto, "droid sans", cantarell, oxygen, ubuntu, "franklin gothic medium", "century gothic", sans-serif;
   font-size: calc(16px + 0.25vw);
   line-height: 1.55;
-  color: #404040;
-  background-color: #fafafa;
+  color: #303030;
+  background-color: white;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern", "liga" 1, "calt" 0;
@@ -127,69 +127,6 @@ blockquote > :last-child {
   margin-bottom: 0;
 }
 
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-  overflow: auto;
-  word-wrap: normal;
-  padding: 1em;
-  background-color: #f2f2f2;
-  border-radius: 3px;
-}
-
-pre code {
-  display: inline;
-  padding: 0;
-  line-height: inherit;
-  word-wrap: normal;
-  background: transparent;
-}
-
-pre code::before, pre code::after {
-  content: normal;
-}
-
-pre > code {
-  word-break: normal;
-  white-space: pre;
-  border: 0;
-}
-
-code,
-pre,
-kbd,
-samp {
-  font-family: menlo, inconsolata, consolas, "fira mono", "noto mono", "droid sans mono", "dejavu sans mono", "liberation mono", "ubuntu mono", monaco, "courier new", monospace;
-  font-size: calc(12px + 0.25vw);
-}
-
-code {
-  padding: 0.2em 0;
-  margin: 0;
-  background-color: #f2f2f2;
-  border-radius: 3px;
-}
-
-code::before, code::after {
-  letter-spacing: -0.2em;
-  content: '\00a0';
-}
-
-kbd {
-  background-color: #e6e6e6;
-  background-image: linear-gradient(#fafafa, #e6e6e6);
-  background-repeat: repeat-x;
-  display: inline-block;
-  padding: 5px 5px 1px;
-  margin: 0 1px;
-  font-size: 0.75em;
-  line-height: 0.95em;
-  color: #303030;
-  border: 1px solid #d6d6d6;
-  border-radius: 2px;
-  box-shadow: 0 1px 0 #d6d6d6;
-}
-
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -302,6 +239,68 @@ dl dt {
 dl dd {
   padding: 0 1em;
   margin-bottom: 1em;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: menlo, inconsolata, consolas, "fira mono", "noto mono", "droid sans mono", "dejavu sans mono", "liberation mono", "ubuntu mono", monaco, "courier new", monospace;
+  font-size: calc(12px + 0.25vw);
+}
+
+pre, code {
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  padding: 1em;
+}
+
+pre code {
+  background: transparent;
+  display: inline;
+  padding: 0;
+  line-height: inherit;
+  word-wrap: normal;
+}
+
+pre code::before, pre code::after {
+  content: normal;
+}
+
+pre > code {
+  border: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+code {
+  padding: 0.2em 0;
+  margin: 0;
+}
+
+code::before, code::after {
+  letter-spacing: -0.2em;
+  content: '\00a0';
+}
+
+kbd {
+  background-color: #e6e6e6;
+  background-image: linear-gradient(#fafafa, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #d6d6d6;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 #d6d6d6;
+  color: #303030;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 0.95em;
+  margin: 0 1px;
+  padding: 5px 5px 1px;
 }
 
 figure {
