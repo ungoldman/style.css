@@ -11,7 +11,7 @@ A classless stylesheet for markdown documents.
 
 **Total rewrite under active development!**
 
-For the old version please see the readme at [v0.1.16](https://github.com/ungoldman/style.css/tree/v0.1.16).
+For the old version (up to v0.1.16) please go [here](https://github.com/ungoldman/style.css/tree/v0.1.16#readme).
 
 ## Features
 - **minimal size:** weighs in at an adorable `5kb` when minified.
