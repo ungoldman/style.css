@@ -9,6 +9,10 @@
 
 A classless stylesheet for markdown documents.
 
+**Total rewrite under active development!**
+
+For the old version please see the readme at [v0.1.16](https://github.com/ungoldman/style.css/tree/v0.1.16).
+
 ## Features
 - **minimal size:** weighs in at an adorable `5kb` when minified.
 - **system fonts:** looks native on macOS, iOS, windows, linux, firefox OS, android.
