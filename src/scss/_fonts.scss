@@ -14,7 +14,7 @@ $system-mono:  menlo, // mac
                'noto mono', 'droid sans mono', // android
                'dejavu sans mono', 'liberation mono', 'ubuntu mono', // linux
                monaco, 'courier new', // older systems
-               monospace // fallback
+               monospace; // fallback
 
 // this is a stub, please help fill out!
 $system-serif: charter; // mac
