@@ -9,10 +9,6 @@
 
 A classless stylesheet for markdown documents.
 
-**Total rewrite under active development!**
-
-For the old version (up to v0.1.16) please go [here](https://github.com/ungoldman/style.css/tree/v0.1.16#readme).
-
 ## Features
 - **minimal size:** weighs in at an adorable `5kb` when minified.
 - **system fonts:** looks native on macOS, iOS, windows, linux, firefox OS, android.
@@ -79,6 +75,10 @@ Generate `style.css` and `style.min.css` from `src/` by running `npm run release
 ## Contributing
 
 Contributions welcome! Please read the [contributing guidelines](contributing.md) first.
+
+## Note
+
+This module was rewritten after v0.1.16 to serve a slightly different purpose. All of the old releases along with their readme files are still available on the [releases](https://github.com/ungoldman/style.css/releases) page.
 
 ## License
 
