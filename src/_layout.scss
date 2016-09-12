@@ -2,13 +2,10 @@
 
 main {
   max-width: 42rem;
-  margin: auto;
-
+  margin: 2em auto;
+  padding: 0 1em;
   overflow: hidden;
   word-wrap: break-word;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 2rem;
 
   > *:first-child { margin-top: 0 !important; }
   > *:last-child { margin-bottom: 0 !important; }

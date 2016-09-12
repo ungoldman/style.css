@@ -1,60 +1,33 @@
-/**
- * Remove the margin in all browsers.
- */
-
+// Remove the margin in all browsers.
 body {
   margin: 0;
 }
 
-/**
- * Add the correct display in IE 9-.
- */
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
+// 1. Add the correct display in IE 9-.
+// 2. Add the correct display in IE.
+article,  // 1
+aside,  // 1
+footer,  // 1
+header,  // 1
+nav,  // 1
+section,  // 1
+figcaption, // 1
+figure, // 1
+main { // 2
   display: block;
 }
 
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-
-figcaption,
-figure,
-main { /* 1 */
-  display: block;
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
+// 1. Add the correct box sizing in Firefox.
+// 2. Show the overflow in Edge and IE.
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box; // 1
+  height: 0; // 1
+  overflow: visible; // 2
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
+// 1. Correct the inheritance and scaling of font size in all browsers.
+// 2. Correct the odd `em` font sizing in all browsers.
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace; // 1
+  font-size: 1em; // 2
 }
