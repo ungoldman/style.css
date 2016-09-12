@@ -62,6 +62,12 @@ To get started, clone the repository and install dependencies with `npm install`
 - Edit `scss` source files in `src/`.
 - Watch the style guide at `localhost:8000/guide.html` for changes.
 
+### Test
+
+Run `npm test` to check the generated CSS for errors and issues not caught by the Sass compiler.
+
+We're using [stylelint](https://github.com/stylelint/stylelint) with a slightly modified version of [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) for now.
+
 ### Release
 
 Generate `style.css` and `style.min.css` from `src/` by running `npm run release`.
