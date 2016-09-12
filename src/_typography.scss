@@ -64,26 +64,29 @@ blockquote {
   &>:last-child { margin-bottom: 0; }
 }
 
+// 1. Correct the inheritance and scaling of font size in all browsers.
+// 2. Correct the odd `em` font sizing in all browsers.
 pre {
+  font-family: monospace, monospace; // 1
+  font-size: 1em; // 2
   overflow: auto;
   word-wrap: normal;
   padding: 1em;
-  overflow: auto;
   background-color: $lightest-gray;
   border-radius: 3px;
 
   code {
     display: inline;
-    max-width: initial;
+    // max-width: initial; declaration-block-no-ignored-properties
     padding: 0;
-    margin: 0;
-    overflow: initial;
+    // margin: 0; declaration-block-no-ignored-properties
+    // overflow: initial; declaration-block-no-ignored-properties
     line-height: inherit;
     word-wrap: normal;
     background: transparent;
 
-    &:before,
-    &:after { content: normal; }
+    &::before,
+    &::after { content: normal; }
   }
 
   > code {
@@ -100,16 +103,16 @@ pre,
 kbd,
 samp {
   font-family: $system-mono; // 1
-  font-size: calc(12px + .25vw); // 2
+  font-size: calc(12px + 0.25vw); // 2
 }
 
 code {
-  padding: .2em 0;
+  padding: 0.2em 0;
   margin: 0;
   background-color: $lightest-gray;
   border-radius: 3px;
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     letter-spacing: -0.2em;
     content: '\00a0';
   }
@@ -117,14 +120,13 @@ code {
 
 kbd {
   background-color: $lighter-gray;
-  background-image: -webkit-linear-gradient($off-white, $lighter-gray);
   background-image: linear-gradient($off-white, $lighter-gray);
   background-repeat: repeat-x;
   display: inline-block;
   padding: 5px 5px 1px;
   margin: 0 1px;
-  font-size: .75em;
-  line-height: .95em;
+  font-size: 0.75em;
+  line-height: 0.95em;
   color: $black;
   border: 1px solid $light-gray;
   border-radius: 2px;
@@ -172,11 +174,11 @@ sup {
 sub { bottom: -0.25em; }
 sup { top: -0.5em; }
 
+// 1. Add the correct box sizing in Firefox.
+// 2. Show the overflow in Edge and IE.
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-  overflow: hidden;
+  box-sizing: content-box; // 1
+  overflow: visible; // 2
   background: transparent;
   height: 4px;
   padding: 0;
@@ -184,12 +186,12 @@ hr {
   background-color: #e7e7e7;
   border: 0 none;
 
-  &:before {
+  &::before {
     display: table;
     content: '';
   }
 
-  &:after {
+  &::after {
     display: table;
     clear: both;
     content: '';

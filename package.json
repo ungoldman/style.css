@@ -8,12 +8,14 @@
   },
   "devDependencies": {
     "cssnano-cli": "^1.0.4",
+    "gh-release": "^2.1.0",
     "live-server": "^1.1.0",
     "node-sass": "^3.9.3",
     "npm-run-all": "^3.1.0",
     "parallelshell": "^2.0.0",
     "sitedown": "^2.1.2",
-    "standard": "^8.0.0"
+    "stylelint": "^7.2.0",
+    "stylelint-config-standard": "^13.0.0"
   },
   "files": [
     "style.css",
@@ -35,15 +37,16 @@
   },
   "scripts": {
     "prestart": "rm -rf site/* && npm-run-all --parallel site:*",
-    "release": "npm-run-all release:*",
-    "release:generate": "node-sass src/ -o ./",
+    "prerelease": "npm-run-all release:generate test release:minify",
+    "release": "gh-release",
+    "release:generate": "node-sass src/ -o ./ --output-style=expanded",
     "release:minify": "cssnano < style.css > style.min.css",
     "serve:site": "live-server site --port=8000",
     "serve:watch": "npm run site:sass -- -w",
     "site:html": "sitedown . -b site/ -l layout.html --pretty=false",
     "site:sass": "node-sass src/ -o site/",
     "start": "npm-run-all --parallel serve:*",
-    "test": "standard"
+    "test": "stylelint \"style.css\""
   },
   "style": "style.css"
 }
