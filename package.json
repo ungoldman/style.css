@@ -36,7 +36,7 @@
     "url": "https://github.com/ungoldman/style.css.git"
   },
   "scripts": {
-    "prerelease": "npm-run-all release:generate test release:minify",
+    "prerelease": "npm-run-all test release:minify",
     "prestart": "rm -rf site/* && npm-run-all --parallel site:*",
     "release": "gh-release",
     "release:generate": "node-sass src/scss/ -o ./ --output-style=expanded",
@@ -46,6 +46,7 @@
     "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
     "site:sass": "node-sass src/scss/ -o site/",
     "start": "npm-run-all --parallel serve:*",
+    "pretest": "npm run release:generate",
     "test": "stylelint \"style.css\""
   },
   "style": "style.css"
