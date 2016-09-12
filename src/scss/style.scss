@@ -1,5 +1,5 @@
 @import 'fonts';
-@import 'grayscale';
+@import 'colors';
 
 // html should be at the top
 html {
@@ -21,6 +21,7 @@ html {
 @import 'document';
 @import 'layout';
 @import 'typography';
+@import 'links';
 @import 'code';
 @import 'figures';
 @import 'embedded';
