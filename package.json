@@ -1,6 +1,6 @@
 {
   "name": "style.css",
-  "description": "Style without class",
+  "description": "Classless stylesheet for markdown documents.",
   "version": "0.1.16",
   "author": "Nate Goldman <ungoldman@gmail.com>",
   "bugs": {

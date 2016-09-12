@@ -7,7 +7,7 @@
 [stability-img]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
 [stability-url]: https://nodejs.org/api/documentation.html#documentation_stability_index"
 
-A classless stylesheet for long-form web documents.
+A classless stylesheet for markdown documents.
 
 ## Features
 - **minimal size:** weighs in at an adorable `5kb` when minified.
