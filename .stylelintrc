@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "selector-list-comma-newline-after": "always-multi-line",
+    "declaration-block-no-duplicate-properties": [true, {
+      ignore: ["consecutive-duplicates-with-different-values"]
+    }]
+  }
+}

@@ -1,0 +1,25 @@
+// Add the correct display in IE 9-.
+audio,
+video {
+  display: inline-block;
+}
+
+// Add the correct display in iOS 4-7.
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+// Remove the border on images inside links in IE 10-.
+img {
+  border-style: none;
+  border: 0;
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Hide the overflow in IE.
+svg:not(:root) {
+  overflow: hidden;
+}

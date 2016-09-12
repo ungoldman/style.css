@@ -1,0 +1,18 @@
+// Remove the margin in all browsers.
+body {
+  margin: 0;
+}
+
+// 1. Add the correct display in IE 9-.
+// 2. Add the correct display in IE.
+article,  // 1
+aside,  // 1
+footer,  // 1
+header,  // 1
+nav,  // 1
+section,  // 1
+figcaption, // 1
+figure, // 1
+main { // 2
+  display: block;
+}

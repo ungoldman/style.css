@@ -1,1 +1,5 @@
-node_modules/
+node_modules
+/site
+style.css
+style.min.css
+*.log

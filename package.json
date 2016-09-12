@@ -1,24 +1,26 @@
 {
   "name": "style.css",
-  "description": "One style is all that is needed (wip).",
+  "description": "Classless stylesheet for markdown documents.",
   "version": "0.1.16",
   "author": "Nate Goldman <ungoldman@gmail.com>",
   "bugs": {
     "url": "https://github.com/ungoldman/style.css/issues"
   },
   "devDependencies": {
-    "clean-css": "^3.0.1",
-    "gfm.css": "^1.0.5",
-    "markdown-it": "^2.1.3",
-    "node-sass": "^3.8.0",
-    "node-static": "^0.7.6",
-    "normalize.css": "^4.2.0",
-    "standard": "^3.3.0",
-    "top-bar.css": "^1.0.0"
+    "cssnano-cli": "^1.0.4",
+    "gh-release": "^2.1.0",
+    "live-server": "^1.1.0",
+    "node-sass": "^3.9.3",
+    "npm-run-all": "^3.1.0",
+    "parallelshell": "^2.0.0",
+    "sitedown": "^2.1.2",
+    "stylelint": "^7.2.0",
+    "stylelint-config-standard": "^13.0.0"
   },
   "files": [
     "style.css",
-    "source/style.scss"
+    "style.min.css",
+    "src/scss"
   ],
   "homepage": "https://github.com/ungoldman/style.css",
   "keywords": [
@@ -28,14 +30,24 @@
     "style"
   ],
   "license": "ISC",
+  "main": "style.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/ungoldman/style.css.git"
   },
   "scripts": {
-    "build": "node scripts/build.js",
-    "serve": "node scripts/serve.js",
-    "test": "standard"
+    "prerelease": "npm-run-all test release:minify",
+    "prestart": "rm -rf site/* && npm-run-all --parallel site:*",
+    "release": "gh-release",
+    "release:generate": "node-sass src/scss/ -o ./ --output-style=expanded",
+    "release:minify": "cssnano < style.css > style.min.css",
+    "serve:site": "live-server site --port=8000",
+    "serve:watch": "npm run site:sass -- -w",
+    "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
+    "site:sass": "node-sass src/scss/ -o site/",
+    "start": "npm-run-all --parallel serve:*",
+    "pretest": "npm run release:generate",
+    "test": "stylelint \"style.css\""
   },
   "style": "style.css"
 }

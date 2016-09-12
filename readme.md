@@ -1,65 +1,80 @@
-# style.css
-
-> One style is all that is needed.
-
-[![latest version][npm-img]][npm-url]
-[![build status][travis-img]][travis-url]
-
-[![One note is all that is needed][joke-url]][joke-vid]
+# style.css [![latest version][npm-img]][npm-url] [![build status][travis-img]][travis-url] [![stability][stability-img]][stability-url]
 
 [npm-img]: https://img.shields.io/npm/v/style.css.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/style.css
 [travis-img]: https://img.shields.io/travis/ungoldman/style.css.svg?style=flat-square
 [travis-url]: https://travis-ci.org/ungoldman/style.css
-[joke-url]: http://33.media.tumblr.com/tumblr_ll0hehFlU81qz8jl5o1_500.gif
-[joke-vid]: http://youtu.be/HBtRNgflb4g
+[stability-img]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
+[stability-url]: https://nodejs.org/api/documentation.html#documentation_stability_index"
 
-An attempt at creating a set of independent and complementary style modules.
+A classless stylesheet for markdown documents.
 
-Includes:
+**Total rewrite under active development!**
 
-* [top-bar.css](https://github.com/ungoldman/top-bar.css/)
-* [gfm.css](https://github.com/ungoldman/gfm.css/)
-* and some basics for page layout
+For the old version (up to v0.1.16) please go [here](https://github.com/ungoldman/style.css/tree/v0.1.16#readme).
 
-Built on top of [normalize.css](https://github.com/necolas/normalize.css/).
+## Features
+- **minimal size:** weighs in at an adorable `5kb` when minified.
+- **system fonts:** looks native on macOS, iOS, windows, linux, firefox OS, android.
+- **great for text:** designed to be highly readable and easy on the eyes.
+- **very small api:** with zero classes, there's nothing to learn!
+- **omakase:** composed out of a balanced selection of stylistic practices.
+- **very stylish:** indeed.
 
 ## Usage
 
+### Node
+
 ```
-npm install style.css
+npm install style.css --save-dev
 ```
 
-*..do whatever you're into, then..*
+You can use a CSS bundler like [sheetify](https://github.com/stackcss/sheetify#use-npm-packages) to require `style.css` like a node module!
+
+```js
+const sf = require('sheetify')
+
+sf('style.css')
+```
+
+Note that this method requires a little extra work behind the scenes. Any external CSS files imported with sheetify must be compiled using [browserify](https://github.com/substack/node-browserify) or [sheetify-postcss](https://github.com/stackcss/sheetify-postcss).
+
+Here are some other modules out there for requiring CSS using JavaScript:
+
+- [browserify-css](https://www.npmjs.com/package/browserify-css)
+- [css-modules](https://github.com/css-modules/css-modules)
+- [parcelify](https://www.npmjs.com/package/parcelify)
+- [rework-npm](https://www.npmjs.com/package/rework-npm)
+
+See something missing from this list? Please make an issue or send a pull request!
+
+### Manual
+
+Copy [`style.css`](/style.css) into your project, then link to it:
 
 ```html
-<link rel="stylesheet" href="path/to/style.css">
+<link rel="stylesheet" href="assets/style.css">
 ```
-
-## Principles
-
-* Markup is semantic and minimal.
-* Markdown is the sole source for primary page content.
-* A site's style handles..
-  1. Any HTML generated from markdown.
-  2. Ancillary elements (header, nav, footer).
-  3. Nothing else.
-* Classes are only used outside the context of primary page content, and only when absolutely necessary.
-* Bandwidth is not assumed to be broadband -- the site loads and functions quickly in suboptimal conditions.
 
 ## Development
 
-### Install
+To get started, clone the repository and install dependencies with `npm install`.
 
-Install dependencies with `npm install`.
+### Tinker
 
-### Develop
+- Run `npm start` to start the site.
+- Edit `scss` source files in `src/`.
+- Watch the style guide at `localhost:8000/guide.html` for changes.
 
-Edit `scss` source files in `source/`. Run `npm run serve` to view changes at `localhost:3000`.
+### Test
 
-### Build
+Run `npm test` to check the generated CSS for errors and issues not caught by the Sass compiler.
 
-Build `style.css` from `source/` by running `npm run build`.
+We're using [stylelint](https://github.com/stylelint/stylelint) with a slightly modified version of [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) for now.
+
+### Release
+
+Generate `style.css` and `style.min.css` from `src/` by running `npm run release`.
 
 ## Contributing
 

@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased - 2016-09-12
+* total rewrite
+
+---
+
 ## 0.1.16
 * add `style` field for better [css-via-npm](https://github.com/sethvincent/css-via-npm) support
 * add `main` field and blank `index.js` for parcelify
