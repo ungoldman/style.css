@@ -6,11 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased - 2016-09-12
-* **TOTAL REWRITE!**
+
+### TOTAL REWRITE!
 
 `style.css` is now a classless stylesheet for markdown documents.
 
 ### Features
+
 - **minimal size:** weighs in at an adorable `5kb` when minified.
 - **system fonts:** looks native on macOS, iOS, windows, linux, firefox OS, android.
 - **great for text:** designed to be highly readable and easy on the eyes.
