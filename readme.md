@@ -19,25 +19,13 @@ A classless stylesheet for long-form web documents.
 
 ## Usage
 
-### Manual
-
-Copy [`style.css`](/style.css) into your project, then link to it:
-
-```html
-<link rel="stylesheet" href="assets/style.css">
-```
-
-### Sheetify
-
-You can use a CSS bundler like [sheetify](https://github.com/stackcss/sheetify#use-npm-packages) to require `style.css` like a node module.
-
-First install it as a development dependency:
+### Node
 
 ```
 npm install style.css --save-dev
 ```
 
-Then require it like so:
+You can use a CSS bundler like [sheetify](https://github.com/stackcss/sheetify#use-npm-packages) to require `style.css` like a node module!
 
 ```js
 const sf = require('sheetify')
@@ -46,6 +34,23 @@ sf('style.css')
 ```
 
 Note that this method requires a little extra work behind the scenes. Any external CSS files imported with sheetify must be compiled using [browserify](https://github.com/substack/node-browserify) or [sheetify-postcss](https://github.com/stackcss/sheetify-postcss).
+
+Here are some other modules out there for requiring CSS using JavaScript:
+
+- [browserify-css](https://www.npmjs.com/package/browserify-css)
+- [css-modules](https://github.com/css-modules/css-modules)
+- [parcelify](https://www.npmjs.com/package/parcelify)
+- [rework-npm](https://www.npmjs.com/package/rework-npm)
+
+See something missing from this list? Please make an issue or send a pull request!
+
+### Manual
+
+Copy [`style.css`](/style.css) into your project, then link to it:
+
+```html
+<link rel="stylesheet" href="assets/style.css">
+```
 
 ## Development
 
