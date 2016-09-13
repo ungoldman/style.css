@@ -33,20 +33,26 @@
   "main": "style.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ungoldman/style.css.git"
+    "url": "git@github.com:ungoldman/style.css.git"
   },
   "scripts": {
+    "prepublish": "npm-run-all site:clean clone checkout",
+    "clone": "git clone $npm_package_repository_url site",
+    "checkout": "cd site && git checkout gh-pages",
+    "publish": "",
     "prerelease": "npm-run-all test release:minify",
-    "prestart": "rm -rf site/* && npm-run-all --parallel site:*",
+    "prestart": "npm-run-all site:*",
+    "pretest": "npm run release:generate",
     "release": "gh-release",
     "release:generate": "node-sass src/scss/ -o ./ --output-style=expanded",
     "release:minify": "cssnano < style.css > style.min.css",
     "serve:site": "live-server site --port=8000",
     "serve:watch": "npm run site:sass -- -w",
+    "site:clean": "rm -rf site/*",
+    "site:css": "node-sass src/scss/ -o site/",
     "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
-    "site:sass": "node-sass src/scss/ -o site/",
+    "site:minify": "cssnano < site/style.css > site/style.min.css",
     "start": "npm-run-all --parallel serve:*",
-    "pretest": "npm run release:generate",
     "test": "stylelint \"style.css\""
   },
   "style": "style.css"
