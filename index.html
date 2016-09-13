@@ -1,75 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>style.css</title>
+  <title>style.css   </title>
   <link rel="stylesheet" href="./style.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://ungoldman.github.io/top-bar.css/top-bar.css">
+  <style>.top-bar { margin: 0 auto 2em; }</style>
 </head>
 <body>
-<main class="page">
-
-<nav class="top-bar">
-  <a class="top-bar-title" href="./">style.css</a>
-  <a class="top-bar-link" href="./guide.html">guide</a>
-  <div class="top-bar-right">
-    <a class="top-bar-link" href="https://github.com/ungoldman/style.css/">
-      <i class="fa fa-fw fa-github"></i> fork it
-    </a>
-  </div>
-</nav>
-
-<article class="markdown-body">
-<h1>style.css</h1>
-<p><a href="https://www.npmjs.com/package/style.css"><img src="https://img.shields.io/npm/v/style.css.svg?style=flat-square" alt=""></a>
-<a href="https://travis-ci.org/ungoldman/style.css"><img src="https://img.shields.io/travis/ungoldman/style.css.svg?style=flat-square" alt=""></a></p>
-<p><em>One style is all that is needed.</em></p>
-<p><a href="http://youtu.be/HBtRNgflb4g"><img src="http://33.media.tumblr.com/tumblr_ll0hehFlU81qz8jl5o1_500.gif" alt="One note is all that is needed"></a></p>
-<p>An attempt at creating a set of independent and complementary style modules.</p>
-<p>Includes:</p>
+  <header class="top-bar">
+    <a class="top-bar-title" href="./">style.css</a>
+    <a class="top-bar-link" href="./guide.html">style guide</a>
+    <div class="top-bar-right">
+      <a class="top-bar-link" href="https://github.com/ungoldman/style.css/">github</a>
+    </div>
+  </header>
+  <main class="markdown-body"><h1>style.css <a href="https://www.npmjs.com/package/style.css"><img src="https://img.shields.io/npm/v/style.css.svg?style=flat-square" alt="latest version"></a> <a href="https://travis-ci.org/ungoldman/style.css"><img src="https://img.shields.io/travis/ungoldman/style.css.svg?style=flat-square" alt="build status"></a> <a href="https://nodejs.org/api/documentation.html#documentation_stability_index%22"><img src="https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square" alt="stability"></a></h1>
+<p>A classless stylesheet for markdown documents.</p>
+<h2>Features</h2>
 <ul>
-<li><a href="https://github.com/ungoldman/top-bar.css/">top-bar.css</a></li>
-<li><a href="https://github.com/ungoldman/gfm.css/">gfm.css</a></li>
-<li>and some basics for page layout</li>
+<li><strong>minimal size:</strong> weighs in at an adorable <code>5kb</code> when minified.</li>
+<li><strong>system fonts:</strong> looks native on macOS, iOS, windows, linux, firefox OS, android.</li>
+<li><strong>great for text:</strong> designed to be highly readable and easy on the eyes.</li>
+<li><strong>very small api:</strong> with zero classes, there&#x2019;s nothing to learn!</li>
+<li><strong>omakase:</strong> composed out of a balanced selection of stylistic practices.</li>
+<li><strong>very stylish:</strong> indeed.</li>
 </ul>
-<p>Built on top of <a href="https://github.com/necolas/normalize.css/">normalize.css</a>.</p>
 <h2>Usage</h2>
-<pre><code>npm install style.css
+<h3>Node</h3>
+<pre><code class="hljs">npm <span class="hljs-operator"><span class="hljs-keyword">install</span> <span class="hljs-keyword">style</span>.css <span class="hljs-comment">--save-dev</span>
+</span></code></pre>
+<p>You can use a CSS bundler like <a href="https://github.com/stackcss/sheetify#use-npm-packages">sheetify</a> to require <code>style.css</code> like a node module!</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> sf = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;sheetify&apos;</span>)
+
+sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 </code></pre>
-<p><em>…do whatever you’re into, then…</em></p>
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/style.css&quot;&gt;
-</code></pre>
-<h2>Principles</h2>
+<p>Note that this method requires a little extra work behind the scenes. Any external CSS files imported with sheetify must be compiled using <a href="https://github.com/substack/node-browserify">browserify</a> or <a href="https://github.com/stackcss/sheetify-postcss">sheetify-postcss</a>.</p>
+<p>Here are some other modules out there for requiring CSS using JavaScript:</p>
 <ul>
-<li>Markup is semantic and minimal.</li>
-<li>Markdown is the sole source for primary page content.</li>
-<li>A site’s style handles…
-<ol>
-<li>Any HTML generated from markdown.</li>
-<li>Ancillary elements (header, nav, footer).</li>
-<li>Nothing else.</li>
-</ol>
-</li>
-<li>Classes are only used outside the context of primary page content, and only when absolutely necessary.</li>
-<li>Bandwidth is not assumed to be broadband – the site loads and functions quickly in suboptimal conditions.</li>
+<li><a href="https://www.npmjs.com/package/browserify-css">browserify-css</a></li>
+<li><a href="https://github.com/css-modules/css-modules">css-modules</a></li>
+<li><a href="https://www.npmjs.com/package/parcelify">parcelify</a></li>
+<li><a href="https://www.npmjs.com/package/rework-npm">rework-npm</a></li>
 </ul>
+<p>See something missing from this list? Please make an issue or send a pull request!</p>
+<h3>Manual</h3>
+<p>Copy <a href="/style.css"><code>style.css</code></a> into your project, then link to it:</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;assets/style.css&quot;</span>&gt;</span>
+</code></pre>
 <h2>Development</h2>
-<h3>Install</h3>
-<p>Install dependencies with <code>npm install</code>.</p>
-<h3>Develop</h3>
-<p>Edit <code>scss</code> source files in <code>source/</code>. Run <code>npm run serve</code> to view changes at <code>localhost:3000</code>.</p>
-<h3>Build</h3>
-<p>Build <code>style.css</code> from <code>source/</code> by running <code>npm run build</code>.</p>
+<p>To get started, clone the repository and install dependencies with <code>npm install</code>.</p>
+<h3>Tinker</h3>
+<ul>
+<li>Run <code>npm start</code> to start the site.</li>
+<li>Edit <code>scss</code> source files in <code>src/</code>.</li>
+<li>Watch the style guide at <code>localhost:8000/guide.html</code> for changes.</li>
+</ul>
+<h3>Test</h3>
+<p>Run <code>npm test</code> to check the generated CSS for errors and issues not caught by the Sass compiler.</p>
+<p>We&#x2019;re using <a href="https://github.com/stylelint/stylelint">stylelint</a> with a slightly modified version of <a href="https://github.com/stylelint/stylelint-config-standard">stylelint-config-standard</a> for now.</p>
+<h3>Release</h3>
+<p>Generate <code>style.css</code> and <code>style.min.css</code> from <code>src/</code> by running <code>npm run release</code>.</p>
 <h2>Contributing</h2>
-<p><code>style.css</code> is an <strong>OPEN Open Source Project</strong>. This means that:</p>
-<blockquote>
-<p>Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.</p>
-</blockquote>
-<p>See the <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> file for more details.</p>
+<p>Contributions welcome! Please read the <a href="contributing.html">contributing guidelines</a> first.</p>
+<h2>Note</h2>
+<p>This module was rewritten after v0.1.16 to serve a slightly different purpose. All of the old releases along with their readme files are still available on the <a href="https://github.com/ungoldman/style.css/releases">releases</a> page.</p>
 <h2>License</h2>
-<p><a href="LICENSE.md">ISC</a></p>
-</article>
+<p><a href="license.html">ISC</a></p>
 </main>
 </body>
 </html>

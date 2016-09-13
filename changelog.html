@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>style.css change log</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="http://ungoldman.github.io/top-bar.css/top-bar.css">
+  <style>.top-bar { margin: 0 auto 2em; }</style>
+</head>
+<body>
+  <header class="top-bar">
+    <a class="top-bar-title" href="./">style.css</a>
+    <a class="top-bar-link" href="./guide.html">style guide</a>
+    <div class="top-bar-right">
+      <a class="top-bar-link" href="https://github.com/ungoldman/style.css/">github</a>
+    </div>
+  </header>
+  <main class="markdown-body"><h1>style.css change log</h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a href="http://keepachangelog.com/">Keep a Changelog</a>
+and this project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
+<h2>Unreleased - 2016-09-12</h2>
+<h3>TOTAL REWRITE!</h3>
+<p><code>style.css</code> is now a classless stylesheet for markdown documents.</p>
+<h3>Features</h3>
+<ul>
+<li><strong>minimal size:</strong> weighs in at an adorable <code>5kb</code> when minified.</li>
+<li><strong>system fonts:</strong> looks native on macOS, iOS, windows, linux, firefox OS, android.</li>
+<li><strong>great for text:</strong> designed to be highly readable and easy on the eyes.</li>
+<li><strong>very small api:</strong> with zero classes, there&#x2019;s nothing to learn!</li>
+<li><strong>omakase:</strong> composed out of a balanced selection of stylistic practices.</li>
+<li><strong>very stylish:</strong> indeed.</li>
+</ul>
+<h2>0.1.16</h2>
+<ul>
+<li>add <code>style</code> field for better <a href="https://github.com/sethvincent/css-via-npm">css-via-npm</a> support</li>
+<li>add <code>main</code> field and blank <code>index.js</code> for parcelify</li>
+<li>bump <code>node-sass</code> to 3.8.x and <code>normalize.css</code> to 4.2.x</li>
+</ul>
+<h2>0.1.15</h2>
+<ul>
+<li>bump <code>node-sass</code> to non-beta version</li>
+<li>fix missing <code>top-bar.css</code> dev dependency in package.json</li>
+<li>use <a href="https://github.com/feross/standard">standard</a> for basic test</li>
+<li>add <code>CONTRIBUTING.md</code></li>
+</ul>
+<h2>0.1.14</h2>
+<ul>
+<li>no more header border</li>
+</ul>
+<h2>0.1.13</h2>
+<ul>
+<li>allow sass import</li>
+<li>move scripts to <code>scripts</code></li>
+<li>move <code>site</code> out of <code>source</code></li>
+<li>add <code>.md</code> to LICENSE</li>
+<li>remove <code>.site-nav</code>, break out &amp; use <a href="https://github.com/ungoldman/top-bar.css">top-bar.css</a></li>
+</ul>
+<h2>0.1.12</h2>
+<ul>
+<li>bump for no reason because I prematurely published and am not allowed to republish unpublished version <a href="https://github.com/npm/npm-registry-couchapp/issues/148">&#xCA0;_&#xCA0;</a></li>
+</ul>
+<h2>0.1.11</h2>
+<ul>
+<li>bump gfm.css to v1.0.2</li>
+</ul>
+<h2>0.1.10</h2>
+<ul>
+<li>redesign site header</li>
+<li>add <code>.site-header</code>, <code>.site-nav</code>, <code>.site-nav-right</code>, &amp; <code>.site-footer</code></li>
+</ul>
+<h2>0.1.9</h2>
+<ul>
+<li>fix gfm config</li>
+</ul>
+<h2>0.1.8</h2>
+<ul>
+<li>break gfm styles out into separate module (<a href="https://github.com/ungoldman/gfm.css">gfm.css</a>)</li>
+<li>remove any explicit references to <code>.markdown-body</code> from source</li>
+</ul>
+<h2>0.1.7</h2>
+<ul>
+<li>clean up github markdown css, convert to scss</li>
+<li>remove dependency on <a href="https://github.com/sindresorhus/github-markdown-css">github-markdown-css</a></li>
+</ul>
+<h2>0.1.6</h2>
+<ul>
+<li>add <code>.site-link</code> class for nav links</li>
+<li>style tweaks</li>
+</ul>
+<h2>0.1.5</h2>
+<ul>
+<li>rename <code>.current</code> to <code>.current-page</code></li>
+<li>remove <code>html,body</code> margin reset (a little margin is fine with this style)</li>
+<li>add sass css <code>@import</code> issue workaround</li>
+<li>realize I just want slightly tweaked normalize + gfm</li>
+<li>add <code>github-markdown.css</code></li>
+<li>experiment with header &amp; body fonts, use montserrat + lora for now</li>
+<li>add more filler to guide from <a href="https://markdown-it.github.io">https://markdown-it.github.io</a></li>
+</ul>
+<h2>0.1.4</h2>
+<ul>
+<li>generate guide from markdown</li>
+</ul>
+<h2>0.1.3</h2>
+<ul>
+<li>only include style.css on install</li>
+</ul>
+<h2>0.1.2</h2>
+<ul>
+<li>fix links in package.json</li>
+</ul>
+<h2>0.1.1</h2>
+<ul>
+<li>use proper normalize.css</li>
+<li>tweak figure, figure &gt; img</li>
+<li>add serve.js</li>
+<li>add more doc</li>
+</ul>
+<h2>0.1.0</h2>
+<ul>
+<li>first pass</li>
+</ul>
+</main>
+</body>
+</html>
