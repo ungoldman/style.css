@@ -1,13 +1,20 @@
 # style.css [![latest version][npm-img]][npm-url] [![build status][travis-img]][travis-url] [![stability][stability-img]][stability-url]
 
+A classless stylesheet for markdown documents.
+
+[![download style.css][dl-img]][dl-url]
+[![download style.min.css][dl-min-img]][dl-min-url]
+
 [npm-img]: https://img.shields.io/npm/v/style.css.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/style.css
 [travis-img]: https://img.shields.io/travis/ungoldman/style.css.svg?style=flat-square
 [travis-url]: https://travis-ci.org/ungoldman/style.css
 [stability-img]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
 [stability-url]: https://nodejs.org/api/documentation.html#documentation_stability_index"
-
-A classless stylesheet for markdown documents.
+[dl-img]: https://img.shields.io/badge/download-style.css%20(6.4kb)-6495ED.svg?style=flat-square
+[dl-min-img]: https://img.shields.io/badge/download-style.min.css%20(5kb)-6495ED.svg?style=flat-square
+[dl-url]: style.css
+[dl-min-url]: style.min.css
 
 ## Features
 - **minimal size:** weighs in at an adorable `5kb` when minified.
@@ -72,13 +79,31 @@ We're using [stylelint](https://github.com/stylelint/stylelint) with a slightly 
 
 Generate `style.css` and `style.min.css` from `src/` by running `npm run release`.
 
+## Thanks
+
+`style.css` is only possible due to the excellent work of the following collaborators:
+
+<table>
+  <tbody>
+    <tr><th align="left">nikolaswise</th><td><a href="https://github.com/nikolaswise">github/nikolaswise</a></td></tr>
+    <tr><th align="left">paulcpederson</th><td><a href="https://github.com/paulcpederson">github/paulcpederson</a></td></tr>
+    <tr><th align="left">ungoldman</th><td><a href="https://github.com/ungoldman">github/ungoldman</a></td></tr>
+  </tbody>
+</table>
+
+The following projects were major influences on `style.css`:
+
+- **[writ](https://writ.cmcenroe.me)** by [programble](https://github.com/programble)
+- **[normalize.css](https://github.com/necolas/normalize.css)** by [necolas](https://github.com/necolas)
+- **[css-system-fonts](https://github.com/mrmrs/css-system-fonts/)** by [mrmrs](https://github.com/mrmrs)
+
 ## Contributing
 
 Contributions welcome! Please read the [contributing guidelines](contributing.md) first.
 
 ## Note
 
-This module was rewritten after v0.1.16 to serve a slightly different purpose. All of the old releases along with their readme files are still available on the [releases](https://github.com/ungoldman/style.css/releases) page.
+This module was rewritten after [`v0.1.16`](https://github.com/ungoldman/style.css/tree/v0.1.16#readme) to serve a slightly different purpose. All of the old releases along with their readme files are still available on the [releases](https://github.com/ungoldman/style.css/releases) page.
 
 ## License
 
