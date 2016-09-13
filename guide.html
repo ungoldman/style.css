@@ -20,17 +20,22 @@
 <p>See how elements are styled with <a href="/"><code>style.css</code></a>.</p>
 <h2>Headers</h2>
 <h1>h1 Heading</h1>
+<pre><code class="hljs language-md"><span class="hljs-header"># h1 Heading</span>
+</code></pre>
 <h2>h2 Heading</h2>
+<pre><code class="hljs"><span class="hljs-preprocessor">## h2 Heading</span>
+</code></pre>
 <h3>h3 Heading</h3>
+<pre><code class="hljs"><span class="hljs-preprocessor">### h3 Heading</span>
+</code></pre>
 <h4>h4 Heading</h4>
+<pre><code class="hljs"><span class="hljs-preprocessor">#### h4 Heading</span>
+</code></pre>
 <h5>h5 Heading</h5>
+<pre><code class="hljs"><span class="hljs-preprocessor">##### h5 Heading</span>
+</code></pre>
 <h6>h6 Heading</h6>
-<pre><code class="hljs language-html"># h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+<pre><code class="hljs"><span class="hljs-preprocessor">###### h6 Heading</span>
 </code></pre>
 <h2>Paragraphs</h2>
 <p><strong>At the base of the mainmast</strong>, full beneath the doubloon and the flame, the Parsee was kneeling in Ahab&#x2019;s front, but with his head bowed away from him; while near by, from the arched and overhanging rigging, where they had just been engaged securing a spar, a number of the seamen, arrested by the glare, now cohered together, and hung pendulous, like a knot of numbed wasps from a drooping, orchard twig. In various enchanted attitudes, like the standing, or stepping, or running skeletons in Herculaneum, others remained rooted to the deck; but all their eyes upcast.</p>
@@ -47,28 +52,34 @@ The large underestimations also led <span class="hljs-keyword">to</span> *negati
 </code></pre>
 <h2>Links</h2>
 <p><a href="http://dev.nodeca.com">link text</a></p>
-<p><a href="http://nodeca.github.io/pica/demo/" title="title text!">link with title</a></p>
-<p>Autoconverted link <a href="https://github.com/nodeca/pica">https://github.com/nodeca/pica</a> (enable linkify to see)</p>
 <pre><code class="hljs">[<span class="hljs-link_label">link text</span>](<span class="hljs-link_url">http://dev.nodeca.com</span>)
+</code></pre>
+<p><a href="http://nodeca.github.io/pica/demo/" title="title text!">link with title</a></p>
+<pre><code class="hljs">[<span class="hljs-link_label">link with title</span>](<span class="hljs-link_url">http://nodeca.github.io/pica/demo/ &quot;title text!&quot;</span>)
+</code></pre>
+<p>Autoconverted link <a href="https://github.com/nodeca/pica">https://github.com/nodeca/pica</a> (enable linkify to see)</p>
+<pre><code class="hljs">Autoconverted link http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/nodeca/pica (enable linkify <span class="hljs-keyword">to</span> see)
+</code></pre>
+<p><a href="https://en.wikipedia.org/wiki/Note_(typography)">link with footnote style syntax</a></p>
+<pre><code class="hljs">[<span class="hljs-link_label">link with footnote style syntax</span>][<span class="hljs-link_reference">footnote style</span>]
 
-[<span class="hljs-link_label">link with title</span>](<span class="hljs-link_url">http://nodeca.github.io/pica/demo/ &quot;title text!&quot;</span>)
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+[<span class="hljs-link_reference">footnote style</span>]:<span class="hljs-link_url"> https://en.wikipedia.org/wiki/Note_(typography)</span>
 </code></pre>
 <h2>Images</h2>
-<p><img src="http://38.media.tumblr.com/tumblr_mdo6z0KBpf1rwy00jo1_400.gif" alt="Finn and Jake" title="One style is all that is needed.">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/1996.164.1-65_IMLS_SL2.jpg" alt="Captain Story-Martense House" title="Captain Story-Martense House, Front Door, Church Avenue and East 38th Street, Flatbush, Brooklyn, ca. 1899-1909."></p>
-<p>Like links, Images also have a footnote style syntax</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Ries.PNG" alt="Alt text" title="1550 Woodcut of 58-year-old Adam Ries, inscription: ANNO 1550 ADAM RIES SEINS ALTERS IM LVIII"></p>
-<p>With a reference later in the document defining the URL location:</p>
+<p><img src="http://38.media.tumblr.com/tumblr_mdo6z0KBpf1rwy00jo1_400.gif" alt="Finn and Jake" title="One style is all that is needed."></p>
 <pre><code class="hljs">![<span class="hljs-link_label">Finn and Jake</span>](<span class="hljs-link_url">http://38.media.tumblr.com/tumblr_mdo6z0KBpf1rwy00jo1_400.gif &quot;One style is all that is needed.&quot;</span>)
-![<span class="hljs-link_label">Captain Story-Martense House</span>](<span class="hljs-link_url">https://upload.wikimedia.org/wikipedia/commons/6/66/1996.164.1-65_IMLS_SL2.jpg &quot;Captain Story-Martense House, Front Door, Church Avenue and East 38th Street, Flatbush, Brooklyn, ca. 1899-1909.&quot;</span>)
-
-Like links, Images also have a footnote style syntax
+</code></pre>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/1996.164.1-65_IMLS_SL2.jpg" alt="Captain Story-Martense House" title="Captain Story-Martense House, Front Door, Church Avenue and East 38th Street, Flatbush, Brooklyn, ca. 1899-1909."></p>
+<pre><code class="hljs">![<span class="hljs-link_label">Captain Story-Martense House</span>](<span class="hljs-link_url">https://upload.wikimedia.org/wikipedia/commons/6/66/1996.164.1-65_IMLS_SL2.jpg &quot;Captain Story-Martense House, Front Door, Church Avenue and East 38th Street, Flatbush, Brooklyn, ca. 1899-1909.&quot;</span>)
+</code></pre>
+<p>Like links, images also have a footnote style syntax.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Ries.PNG" alt="Alt text" title="1550 Woodcut of 58-year-old Adam Ries, inscription: ANNO 1550 ADAM RIES SEINS ALTERS IM LVIII"></p>
+<p>The reference defining the URL location can be later in the document.</p>
+<pre><code class="hljs">Like links, images also have a footnote style syntax.
 
 ![<span class="hljs-link_label">Alt text</span>][<span class="hljs-link_reference">id</span>]
 
-With a reference later in the document defining the URL location:
+The reference defining the URL location can be later in the document.
 
 [<span class="hljs-link_reference">id</span>]:<span class="hljs-link_url"> https://upload.wikimedia.org/wikipedia/commons/1/1f/Ries.PNG  &quot;1550 Woodcut of 58-year-old Adam Ries, inscription: ANNO 1550 ADAM RIES SEINS ALTERS IM LVIII&quot;</span>
 </code></pre>
