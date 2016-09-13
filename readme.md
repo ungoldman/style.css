@@ -46,7 +46,7 @@ See something missing from this list? Please make an issue or send a pull reques
 
 ### Manual
 
-Copy [`style.css`](/style.css) into your project, then link to it:
+Copy [`style.css`](style.css) into your project, then link to it:
 
 ```html
 <link rel="stylesheet" href="assets/style.css">
