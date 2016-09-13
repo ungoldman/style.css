@@ -30,7 +30,6 @@
 <li><strong>very stylish:</strong> indeed.</li>
 </ul>
 <h2>Usage</h2>
-<h3>Node</h3>
 <pre><code class="hljs">npm <span class="hljs-operator"><span class="hljs-keyword">install</span> <span class="hljs-keyword">style</span>.css <span class="hljs-comment">--save-dev</span>
 </span></code></pre>
 <p>You can use a CSS bundler like <a href="https://github.com/stackcss/sheetify#use-npm-packages">sheetify</a> to require <code>style.css</code> like a node module!</p>
@@ -38,8 +37,8 @@
 
 sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 </code></pre>
-<p>Note that this method requires a little extra work behind the scenes. Any external CSS files imported with sheetify must be compiled using <a href="https://github.com/substack/node-browserify">browserify</a> or <a href="https://github.com/stackcss/sheetify-postcss">sheetify-postcss</a>.</p>
-<p>Here are some other modules out there for requiring CSS using JavaScript:</p>
+<p>Note that any external CSS files imported with sheetify must be compiled using <a href="https://github.com/substack/node-browserify">browserify</a> or <a href="https://github.com/stackcss/sheetify-postcss">sheetify-postcss</a>.</p>
+<p>Here are some other modules out there for requiring CSS using JavaScript that should also work just fine:</p>
 <ul>
 <li><a href="https://www.npmjs.com/package/browserify-css">browserify-css</a></li>
 <li><a href="https://github.com/css-modules/css-modules">css-modules</a></li>
@@ -47,9 +46,26 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <li><a href="https://www.npmjs.com/package/rework-npm">rework-npm</a></li>
 </ul>
 <p>See something missing from this list? Please make an issue or send a pull request!</p>
+<h3>Sass</h3>
+<p>You can also use this as a <a href="http://sass-lang.com/">Sass</a> library.</p>
+<pre><code class="hljs language-scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;node_modules/style.css/src/scss/style.scss&apos;</span>
+</span></code></pre>
 <h3>Manual</h3>
-<p>Copy <a href="style.css"><code>style.css</code></a> into your project, then link to it:</p>
-<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;assets/style.css&quot;</span>&gt;</span>
+<p>If you&#x2019;d rather keep it simple, you can do it the old fashioned way. Just copy <a href="style.css"><code>style.css</code></a> into your project, then link to it like so:</p>
+<pre><code class="hljs language-html"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;viewport&quot;</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;style.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">main</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Hooray!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">main</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
 </code></pre>
 <h2>Development</h2>
 <p>To get started, clone the repository and install dependencies with <code>npm install</code>.</p>
