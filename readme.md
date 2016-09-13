@@ -100,9 +100,15 @@ Run `npm test` to check the generated CSS for errors and issues not caught by th
 
 We're using [stylelint](https://github.com/stylelint/stylelint) with a slightly modified version of [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) for now.
 
+### Generate
+
+Generate `style.css` and `style.min.css` by running `npm run generate`.
+
 ### Release
 
-Generate `style.css` and `style.min.css` from `src/` by running `npm run release`.
+Publish a new release with `npm run release`.
+
+The `prerelease` task will generate and minify CSS, run tests, check if the git index is dirty, and exit if there are any problems. If all goes well, `gh-release` and `npm publish` will be run sequentially.
 
 ## Thanks
 
