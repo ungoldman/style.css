@@ -37,7 +37,7 @@
     "url": "git@github.com:ungoldman/style.css.git"
   },
   "scripts": {
-    "gh-pages": "npm run site:* && gh-pages -d site",
+    "gh-pages": "npm-run-all site:* && gh-pages -d site",
     "prerelease": "npm-run-all test release:minify",
     "prestart": "npm-run-all site:*",
     "pretest": "npm run release:generate",
