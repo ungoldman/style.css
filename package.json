@@ -38,7 +38,6 @@
   "scripts": {
     "gh-pages": "npm-run-all site:* && gh-pages -d site",
     "prerelease": "npm-run-all test release:minify",
-    "prestart": "npm-run-all site:*",
     "pretest": "npm run release:generate",
     "release": "gh-release && npm publish",
     "release:generate": "node-sass src/scss/ -o ./ --output-style=expanded",
@@ -49,7 +48,7 @@
     "site:css": "node-sass src/scss/ -o site/",
     "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
     "site:minify": "cssnano < site/style.css > site/style.min.css",
-    "start": "npm-run-all --parallel serve:*",
+    "start": "npm-run-all site:* --parallel serve:*",
     "test": "stylelint \"style.css\""
   },
   "style": "style.css"
