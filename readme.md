@@ -26,8 +26,6 @@ A classless stylesheet for markdown documents.
 
 ## Usage
 
-### Node
-
 ```
 npm install style.css --save-dev
 ```
@@ -40,9 +38,9 @@ const sf = require('sheetify')
 sf('style.css')
 ```
 
-Note that this method requires a little extra work behind the scenes. Any external CSS files imported with sheetify must be compiled using [browserify](https://github.com/substack/node-browserify) or [sheetify-postcss](https://github.com/stackcss/sheetify-postcss).
+Note that any external CSS files imported with sheetify must be compiled using [browserify](https://github.com/substack/node-browserify) or [sheetify-postcss](https://github.com/stackcss/sheetify-postcss).
 
-Here are some other modules out there for requiring CSS using JavaScript:
+Here are some other modules out there for requiring CSS using JavaScript that should also work just fine:
 
 - [browserify-css](https://www.npmjs.com/package/browserify-css)
 - [css-modules](https://github.com/css-modules/css-modules)
@@ -51,12 +49,33 @@ Here are some other modules out there for requiring CSS using JavaScript:
 
 See something missing from this list? Please make an issue or send a pull request!
 
+### Sass
+
+You can also use this as a [Sass](http://sass-lang.com/) library.
+
+```scss
+@import 'node_modules/style.css/src/scss/style.scss'
+```
+
 ### Manual
 
-Copy [`style.css`](style.css) into your project, then link to it:
+If you'd rather keep it simple, you can do it the old fashioned way. Just copy [`style.css`](style.css) into your project, then link to it like so:
 
 ```html
-<link rel="stylesheet" href="assets/style.css">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Hooray!</h1>
+  </main>
+</body>
+</html>
 ```
 
 ## Development
