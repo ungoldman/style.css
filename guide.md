@@ -5,18 +5,38 @@ See how elements are styled with [`style.css`](readme.md).
 ## Headers
 
 # h1 Heading
+
+```md
+# h1 Heading
+```
+
 ## h2 Heading
+
+```
+## h2 Heading
+```
+
 ### h3 Heading
+
+```
+### h3 Heading
+```
+
 #### h4 Heading
+
+```
+#### h4 Heading
+```
+
 ##### h5 Heading
+
+```
+##### h5 Heading
+```
+
 ###### h6 Heading
 
-```html
-# h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
+```
 ###### h6 Heading
 ```
 
@@ -44,40 +64,60 @@ The large underestimations also led to *negative* values. In primates decreased 
 
 [link text](http://dev.nodeca.com)
 
+```
+[link text](http://dev.nodeca.com)
+```
+
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+```
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+```
 
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ```
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+```
+
+[link with footnote style syntax][footnote style]
+
+[footnote style]: https://en.wikipedia.org/wiki/Note_(typography)
+
+```
+[link with footnote style syntax][footnote style]
+
+[footnote style]: https://en.wikipedia.org/wiki/Note_(typography)
 ```
 
 ## Images
 
 ![Finn and Jake](http://38.media.tumblr.com/tumblr_mdo6z0KBpf1rwy00jo1_400.gif "One style is all that is needed.")
+
+```
+![Finn and Jake](http://38.media.tumblr.com/tumblr_mdo6z0KBpf1rwy00jo1_400.gif "One style is all that is needed.")
+```
+
 ![Captain Story-Martense House](https://upload.wikimedia.org/wikipedia/commons/6/66/1996.164.1-65_IMLS_SL2.jpg "Captain Story-Martense House, Front Door, Church Avenue and East 38th Street, Flatbush, Brooklyn, ca. 1899-1909.")
 
-Like links, Images also have a footnote style syntax
+```
+![Captain Story-Martense House](https://upload.wikimedia.org/wikipedia/commons/6/66/1996.164.1-65_IMLS_SL2.jpg "Captain Story-Martense House, Front Door, Church Avenue and East 38th Street, Flatbush, Brooklyn, ca. 1899-1909.")
+```
+
+Like links, images also have a footnote style syntax.
 
 ![Alt text][id]
 
-With a reference later in the document defining the URL location:
+The reference defining the URL location can be later in the document.
 
 [id]: https://upload.wikimedia.org/wikipedia/commons/1/1f/Ries.PNG  "1550 Woodcut of 58-year-old Adam Ries, inscription: ANNO 1550 ADAM RIES SEINS ALTERS IM LVIII"
 
 ```
-![Finn and Jake](http://38.media.tumblr.com/tumblr_mdo6z0KBpf1rwy00jo1_400.gif "One style is all that is needed.")
-![Captain Story-Martense House](https://upload.wikimedia.org/wikipedia/commons/6/66/1996.164.1-65_IMLS_SL2.jpg "Captain Story-Martense House, Front Door, Church Avenue and East 38th Street, Flatbush, Brooklyn, ca. 1899-1909.")
-
-Like links, Images also have a footnote style syntax
+Like links, images also have a footnote style syntax.
 
 ![Alt text][id]
 
-With a reference later in the document defining the URL location:
+The reference defining the URL location can be later in the document.
 
 [id]: https://upload.wikimedia.org/wikipedia/commons/1/1f/Ries.PNG  "1550 Woodcut of 58-year-old Adam Ries, inscription: ANNO 1550 ADAM RIES SEINS ALTERS IM LVIII"
 ```
