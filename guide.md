@@ -1,12 +1,12 @@
 # Style Guide
 
-See how elements are styled with [`style.css`](readme.md).
+See how elements are styled with `style.css`.
 
 ## Headers
 
 # h1 Heading
 
-```md
+```
 # h1 Heading
 ```
 
