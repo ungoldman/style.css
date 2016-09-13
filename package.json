@@ -48,7 +48,7 @@
     "release:minify": "cssnano < style.css > style.min.css",
     "serve:site": "live-server site --port=8000",
     "serve:watch": "npm run site:sass -- -w",
-    "site:clean": "rm -rf site/*",
+    "site:clean": "rm -rf site/* site/.gitignore site/.travis.yml",
     "site:css": "node-sass src/scss/ -o site/",
     "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
     "site:minify": "cssnano < site/style.css > site/style.min.css",
