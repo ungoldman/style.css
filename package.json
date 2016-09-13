@@ -45,7 +45,7 @@
     "release:generate": "node-sass src/scss/ -o ./ --output-style=expanded",
     "release:minify": "cssnano < style.css > style.min.css",
     "serve:site": "live-server site --port=8000",
-    "serve:watch": "npm run site:sass -- -w",
+    "serve:watch": "npm run site:css -- -w",
     "site:clean": "rm -rf site",
     "site:css": "node-sass src/scss/ -o site/",
     "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
