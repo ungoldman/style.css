@@ -1,9 +1,8 @@
-# style.css [![latest version][npm-img]][npm-url] [![build status][travis-img]][travis-url] [![stability][stability-img]][stability-url]
+# style.css
 
 A classless stylesheet for markdown documents.
 
-[![download style.css][dl-img]][dl-url]
-[![download style.min.css][dl-min-img]][dl-min-url]
+[![latest version][npm-img]][npm-url] [![build status][travis-img]][travis-url] [![stability][stability-img]][stability-url] [![downloads][downloads-img]][npm-url]
 
 [npm-img]: https://img.shields.io/npm/v/style.css.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/style.css
@@ -11,10 +10,7 @@ A classless stylesheet for markdown documents.
 [travis-url]: https://travis-ci.org/ungoldman/style.css
 [stability-img]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
 [stability-url]: https://nodejs.org/api/documentation.html#documentation_stability_index"
-[dl-img]: https://img.shields.io/badge/download-style.css%20(6.4kb)-6495ED.svg?style=flat-square
-[dl-min-img]: https://img.shields.io/badge/download-style.min.css%20(5kb)-6495ED.svg?style=flat-square
-[dl-url]: style.css
-[dl-min-url]: style.min.css
+[downloads-img]: https://img.shields.io/npm/dm/style.css.svg?style=flat-square
 
 ## Features
 - **minimal size:** weighs in at an adorable `5kb` when minified.
@@ -59,7 +55,17 @@ You can also use this as a [Sass](http://sass-lang.com/) library.
 
 ### Manual
 
-If you'd rather keep it simple, you can do it the old fashioned way. Just copy [`style.css`](style.css) into your project, then link to it like so:
+If you'd rather keep it simple, you can do it the old fashioned way.
+
+[![download style.css][dl-img]][dl-url]
+[![download style.min.css][dl-min-img]][dl-min-url]
+
+[dl-img]: https://img.shields.io/badge/download-style.css%20(6.4kb)-6495ED.svg?style=flat-square
+[dl-min-img]: https://img.shields.io/badge/download-style.min.css%20(5kb)-6495ED.svg?style=flat-square
+[dl-url]: style.css
+[dl-min-url]: style.min.css
+
+Just copy [`style.css`](style.css) into your project, then link to it like so:
 
 ```html
 <!doctype html>
