@@ -7,12 +7,14 @@
     "url": "https://github.com/ungoldman/style.css/issues"
   },
   "devDependencies": {
+    "autoprefixer": "^6.4.1",
     "cssnano-cli": "^1.0.4",
     "gh-pages": "^0.11.0",
     "gh-release": "^2.1.0",
     "live-server": "^1.1.0",
     "node-sass": "^3.9.3",
     "npm-run-all": "^3.1.0",
+    "postcss-cli": "^2.6.0",
     "sitedown": "^2.2.0",
     "stylelint": "^7.2.0",
     "stylelint-config-standard": "^13.0.0"
@@ -37,8 +39,9 @@
   },
   "scripts": {
     "dirty": "[[ $(git status --porcelain) != \"\" ]] && echo \"dirty branch\" && exit 1",
-    "generate": "run-s generate:*",
+    "generate": "run-s generate:**",
     "generate:css": "node-sass src/scss/ -o ./ --output-style=expanded",
+    "generate:css:prefix": "postcss -u autoprefixer -r style.css",
     "generate:min": "cssnano < style.css > style.min.css",
     "gh-pages": "run-s site:* && gh-pages -d site",
     "prerelease": "run-s generate:* test dirty",
