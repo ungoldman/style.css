@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
-    "cssnano-cli": "^1.0.4",
     "gh-pages": "^0.11.0",
     "gh-release": "^2.1.0",
     "live-server": "^1.1.0",
@@ -21,7 +20,6 @@
   },
   "files": [
     "style.css",
-    "style.min.css",
     "src/scss"
   ],
   "homepage": "https://github.com/ungoldman/style.css",
@@ -40,11 +38,11 @@
   "scripts": {
     "dirty": "[[ $(git status --porcelain) != \"\" ]] && echo \"dirty branch\" && exit 1",
     "generate": "run-s generate:**",
-    "generate:css": "node-sass src/scss/ -o ./ --output-style=expanded",
-    "generate:css:prefix": "postcss -u autoprefixer -r style.css",
-    "generate:min": "cssnano < style.css > style.min.css",
+    "generate:css": "node-sass src/scss/style.scss -o ./ --output-style=expanded",
+    "generate:prefix": "postcss -u autoprefixer -r style.css",
+    "generate:sign": "cat style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > style.css && pbpaste >> style.css",
     "gh-pages": "run-s site:* && gh-pages -d site",
-    "prerelease": "run-s generate:* test dirty",
+    "prerelease": "run-s test generate dirty",
     "pretest": "npm run generate:css",
     "release": "gh-release && npm publish",
     "serve:site": "live-server site --port=8000",
@@ -52,7 +50,6 @@
     "site:clean": "rm -rf site",
     "site:css": "node-sass src/scss/ -o site/",
     "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
-    "site:min": "cssnano < site/style.css > site/style.min.css",
     "start": "npm-run-all site:* --parallel serve:*",
     "test": "stylelint \"style.css\"",
     "watch:html": "npm run site:html -- -w",

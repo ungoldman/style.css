@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - use liberation sans for linux, change font stack ordering
 - use autoprefixer
 - updates to style guide, docs
+- remove minified version
+- add banner to dist file
 
 [Unreleased]: https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-1...HEAD
 
