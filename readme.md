@@ -23,6 +23,34 @@ A classless stylesheet for markdown documents.
 
 ## Usage
 
+If you want to keep it simple, you can do it the old fashioned way.
+
+[![download style.css][dl-img]][dl-url]
+
+[dl-img]: https://img.shields.io/badge/download-style.css%20(6.4kb)-6495ED.svg?style=flat-square
+[dl-url]: style.css
+
+Just copy [`style.css`](style.css) into your project, then link to it like so:
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h1>Hooray!</h1>
+    </main>
+  </body>
+</html>
+```
+
+### Node
+
 ```
 npm install style.css --save-dev
 ```
@@ -81,34 +109,6 @@ node-sass style.scss -o style.css --include-path node_modules/
 ```
 
 This way you can exclude the `node_modules/` path prefix in your Sass source code.
-
-### Manual
-
-If you'd rather keep it simple, you can do it the old fashioned way.
-
-[![download style.css][dl-img]][dl-url]
-
-[dl-img]: https://img.shields.io/badge/download-style.css%20(6.4kb)-6495ED.svg?style=flat-square
-[dl-url]: style.css
-
-Just copy [`style.css`](style.css) into your project, then link to it like so:
-
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <main>
-      <h1>Hooray!</h1>
-    </main>
-  </body>
-</html>
-```
 
 ## Development
 
