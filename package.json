@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
+    "exit-on-dirty-git": "^1.0.1",
     "gh-pages": "^0.11.0",
     "gh-release": "^2.1.0",
     "live-server": "^1.1.0",
@@ -36,7 +37,7 @@
     "url": "git@github.com:ungoldman/style.css.git"
   },
   "scripts": {
-    "dirty": "[[ $(git status --porcelain) != \"\" ]] && echo \"dirty branch\" && exit 1",
+    "dirty": "exit-on-dirty-git",
     "generate": "run-s generate:**",
     "generate:css": "node-sass src/scss/style.scss -o ./ --output-style=expanded",
     "generate:prefix": "postcss -u autoprefixer -r style.css",
