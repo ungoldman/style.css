@@ -55,7 +55,7 @@ Just copy [`style.css`](style.css) into your project, then link to it like so:
 npm install style.css --save-dev
 ```
 
-You can use a CSS bundler like [sheetify](https://github.com/stackcss/sheetify#use-npm-packages) to require `style.css` like a node module!
+You can use a CSS bundler like [sheetify](https://github.com/stackcss/sheetify#use-npm-packages) to require `style.css` like a node module.
 
 ```js
 const sf = require('sheetify')
@@ -76,7 +76,7 @@ See something missing from this list? Please make an issue or send a pull reques
 
 ### Sass
 
-You can also use this as a [Sass](http://sass-lang.com/) library.
+You can also use `style.css` with [Sass](http://sass-lang.com/).
 
 ```scss
 @import 'node_modules/style.css/style.scss'
