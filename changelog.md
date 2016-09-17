@@ -5,21 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [1.0.0-alpha-2] - 2016-09-16
+## [1.0.0-alpha-2](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-2) - 2016-09-16
+
+[view diff](https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-1...v1.0.0-alpha-2)
+
 - use liberation sans for linux, change font stack ordering
 - use autoprefixer
 - updates to style guide, docs
 - remove minified version
 - add banner to dist file
 
-[1.0.0-alpha-2]: https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-1...v1.0.0-alpha-2
+## [1.0.0-alpha-1](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-1) - 2016-09-12
 
-## [1.0.0-alpha-1] - 2016-09-12
+[view diff](https://github.com/ungoldman/style.css/compare/v1.0.0-alpha...v1.0.0-alpha-1)
+
 - bump for faulty npm publish
 
-[1.0.0-alpha-1]: https://github.com/ungoldman/style.css/compare/v1.0.0-alpha...v1.0.0-alpha-1
-
-## 1.0.0-alpha - 2016-09-12
+## [1.0.0-alpha](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha) - 2016-09-12
 
 ### TOTAL REWRITE!
 
@@ -33,6 +35,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - **very small api:** with zero classes, there's nothing to learn!
 - **omakase:** composed out of a balanced selection of stylistic practices.
 - **very stylish:** indeed.
+
+---
 
 ## 0.1.16
 * add `style` field for better [css-via-npm](https://github.com/sethvincent/css-via-npm) support
