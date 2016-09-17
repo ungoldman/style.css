@@ -45,7 +45,7 @@
     "gh-pages": "run-s site:* && gh-pages -d site",
     "prerelease": "run-s test generate dirty",
     "pretest": "npm run generate:css",
-    "release": "gh-release && npm publish",
+    "release": "git push origin master && gh-release && npm publish",
     "serve:site": "live-server site --port=8000",
     "serve:watch": "run-p watch:*",
     "site:clean": "rm -rf site",
