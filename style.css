@@ -1,12 +1,15 @@
+/*! style.css v1.0.0-alpha-2 | ISC License | https://github.com/ungoldman/style.css */
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "lucida grande", "helvetica neue", helvetica, "fira sans", roboto, noto, "droid sans", cantarell, oxygen, ubuntu, "franklin gothic medium", "century gothic", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "fira sans", roboto, noto, "droid sans", "liberation sans", "lucida grande", "helvetica neue", helvetica, "franklin gothic medium", "century gothic", cantarell, oxygen, ubuntu, sans-serif;
   font-size: calc(16px + 0.25vw);
   line-height: 1.55;
   color: #303030;
   background-color: white;
-  font-kerning: normal;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "kern", "liga" 1, "calt" 0;
+  -webkit-font-feature-settings: "kern", "liga" 1, "calt" 0;
+          font-feature-settings: "kern", "liga" 1, "calt" 0;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -246,7 +249,7 @@ code,
 pre,
 kbd,
 samp {
-  font-family: menlo, inconsolata, consolas, "fira mono", "noto mono", "droid sans mono", "dejavu sans mono", "liberation mono", "ubuntu mono", monaco, "courier new", monospace;
+  font-family: menlo, inconsolata, consolas, "fira mono", "noto mono", "droid sans mono", "liberation mono", "dejavu sans mono", "ubuntu mono", monaco, "courier new", monospace;
   font-size: calc(12px + 0.25vw);
 }
 
@@ -291,6 +294,7 @@ code::before, code::after {
 
 kbd {
   background-color: #e6e6e6;
+  background-image: -webkit-linear-gradient(#fafafa, #e6e6e6);
   background-image: linear-gradient(#fafafa, #e6e6e6);
   background-repeat: repeat-x;
   border: 1px solid #d6d6d6;
@@ -335,7 +339,6 @@ img {
   border-style: none;
   border: 0;
   max-width: 100%;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 

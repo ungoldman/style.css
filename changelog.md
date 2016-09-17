@@ -5,14 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [1.0.0-alpha-2] - 2016-09-16
 - use liberation sans for linux, change font stack ordering
 - use autoprefixer
 - updates to style guide, docs
 - remove minified version
 - add banner to dist file
 
-[Unreleased]: https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-1...HEAD
+[1.0.0-alpha-2]: https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-1...v1.0.0-alpha-2
 
 ## [1.0.0-alpha-1] - 2016-09-12
 - bump for faulty npm publish
