@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Additions
 
-- pull major settings out into overridable variables
+- pull major settings out into overridable variables (#25)
 
     ```scss
     $font-size-body:    16px !default;
@@ -28,6 +28,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Breaking changes
 
 - `$link` renamed to `$link-color`
+- move main `scss` file to root (#24)
 
 ## [1.0.0-alpha-2](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-2) - 2016-09-16
 
