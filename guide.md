@@ -2,92 +2,20 @@
 
 See how elements are styled with `style.css`.
 
-## Headers
-
-# h1 Heading
-
-```
-# h1 Heading
-```
-
-## h2 Heading
-
-```
-## h2 Heading
-```
-
-### h3 Heading
-
-```
-### h3 Heading
-```
-
-#### h4 Heading
-
-```
-#### h4 Heading
-```
-
-##### h5 Heading
-
-```
-##### h5 Heading
-```
-
-###### h6 Heading
-
-```
-###### h6 Heading
-```
-
 ## Paragraphs
 
 **At the base of the mainmast**, full beneath the doubloon and the flame, the Parsee was kneeling in Ahab's front, but with his head bowed away from him; while near by, from the arched and overhanging rigging, where they had just been engaged securing a spar, a number of the seamen, arrested by the glare, now cohered together, and hung pendulous, like a knot of numbed wasps from a drooping, orchard twig. In various enchanted attitudes, like the standing, or stepping, or running skeletons in Herculaneum, others remained rooted to the deck; but all their eyes upcast.
 
-"No fairy fingers can have pressed the gold, but devil's claws must have left their mouldings there since yesterday," murmured Starbuck to himself, leaning against the bulwarks. "The old man seems to read Belshazzar's awful writing. I have never marked the coin inspectingly. He goes below; let me read. A dark valley between three mighty, heaven-abiding peaks, that almost seem the Trinity, in some faint earthly symbol. So in this vale of Death, God girds us round; and over all our gloom, the sun of Righteousness still shines a beacon and a hope. If we bend down our eyes, the dark vale shows her mouldy soil; but if we lift them, the bright sun meets our glance half way, to cheer. Yet, oh, the great sun is no fixture; and if, at midnight, we would fain snatch some sweet solace from him, we gaze for him in vain! This coin speaks wisely, mildly, truly, but still sadly to me. I will quit it, lest Truth shake me falsely."
+The large underestimations also led to negative, *ineffectual* values. In primates the decrease in objects discovered during the application of the lossless join property `(Fi)+ =` was not negligable. The knowledge of recent cosmological models, and methods on another system in the associated source matieral, with the principle of [Horn-clause](https://en.wikipedia.org/wiki/Horn_clause) logic programming in universes that are non-contingent, was inconclusive. If rebased conclusions are reviewed, and trial data is collected from conventional analyses, the transition from F at z=0 46±0 13 reverses.  Consequently, `"cogito, ergo sum"`, or so it is said in certain parts of the old country.
 
 "There it is again—under the hatches—don't you hear it—a cough—it sounded like a cough."
-
-The large underestimations also led to *negative* values. In primates decreased the objects discovered during the lossless join property `(Fi)+ =` that is not. Recollapse. The knowledge of recent cosmological models. And methods on another system in the associated with the principle of [Horn-clause](#fake-link) logic programming in universes that. If based are reviewed. And trial preparedness is a cosmological models the data collected from conventional analyses and the transition from F is all. At z=0 46±0 13. `"code quote test"` The resulting system on which.
 
 ```
 **At the base of the mainmast**, full beneath the doubloon and the flame, the Parsee was kneeling in Ahab's front, but with his head bowed away from him; while near by, from the arched and overhanging rigging, where they had just been engaged securing a spar, a number of the seamen, arrested by the glare, now cohered together, and hung pendulous, like a knot of numbed wasps from a drooping, orchard twig. In various enchanted attitudes, like the standing, or stepping, or running skeletons in Herculaneum, others remained rooted to the deck; but all their eyes upcast.
 
-"No fairy fingers can have pressed the gold, but devil's claws must have left their mouldings there since yesterday," murmured Starbuck to himself, leaning against the bulwarks. "The old man seems to read Belshazzar's awful writing. I have never marked the coin inspectingly. He goes below; let me read. A dark valley between three mighty, heaven-abiding peaks, that almost seem the Trinity, in some faint earthly symbol. So in this vale of Death, God girds us round; and over all our gloom, the sun of Righteousness still shines a beacon and a hope. If we bend down our eyes, the dark vale shows her mouldy soil; but if we lift them, the bright sun meets our glance half way, to cheer. Yet, oh, the great sun is no fixture; and if, at midnight, we would fain snatch some sweet solace from him, we gaze for him in vain! This coin speaks wisely, mildly, truly, but still sadly to me. I will quit it, lest Truth shake me falsely."
+The large underestimations also led to negative, *ineffectual* values. In primates the decrease in objects discovered during the application of the lossless join property `(Fi)+ =` was not negligable. The knowledge of recent cosmological models, and methods on another system in the associated source matieral, with the principle of [Horn-clause](https://en.wikipedia.org/wiki/Horn_clause) logic programming in universes that are non-contingent, was inconclusive. If rebased conclusions are reviewed, and trial data is collected from conventional analyses, the transition from F at z=0 46±0 13 reverses.  Consequently, `"cogito, ergo sum"`, or so it is said in certain parts of the old country.
 
 "There it is again—under the hatches—don't you hear it—a cough—it sounded like a cough."
-
-The large underestimations also led to *negative* values. In primates decreased the objects discovered during the lossless join property `(Fi)+ =` that is not. Recollapse. The knowledge of recent cosmological models. And methods on another system in the associated with the principle of [Horn-clause](#fake-link) logic programming in universes that. If based are reviewed. And trial preparedness is a cosmological models the data collected from conventional analyses and the transition from F is all. At z=0 46±0 13. `"code quote test"` The resulting system on which.
-```
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-```
-[link text](http://dev.nodeca.com)
-```
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-```
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-```
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-```
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-```
-
-[link with footnote style syntax][footnote style]
-
-[footnote style]: https://en.wikipedia.org/wiki/Note_(typography)
-
-```
-[link with footnote style syntax][footnote style]
-
-[footnote style]: https://en.wikipedia.org/wiki/Note_(typography)
 ```
 
 ## Images
@@ -136,20 +64,66 @@ The reference defining the URL location can be later in the document.
 </figure>
 ```
 
-## Horizontal Rules
+## Links
 
-___
-
----
-
-***
+[link text](http://dev.nodeca.com)
 
 ```
-___
+[link text](http://dev.nodeca.com)
+```
 
----
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
-***
+```
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+```
+
+[link with footnote style syntax][footnote style]
+
+[footnote style]: https://en.wikipedia.org/wiki/Note_(typography)
+
+```
+[link with footnote style syntax][footnote style]
+
+[footnote style]: https://en.wikipedia.org/wiki/Note_(typography)
+```
+
+## Headings
+
+# h1 Heading
+
+```
+# h1 Heading
+```
+
+## h2 Heading
+
+```
+## h2 Heading
+```
+
+### h3 Heading
+
+```
+### h3 Heading
+```
+
+#### h4 Heading
+
+```
+#### h4 Heading
+```
+
+##### h5 Heading
+
+```
+##### h5 Heading
+```
+
+###### h6 Heading
+
+```
+###### h6 Heading
 ```
 
 ## Emphasis
@@ -163,14 +137,6 @@ __This is bold text__
 _This is italic text_
 
 ~~Deleted text~~
-
-Superscript: 19^th^
-
-Subscript: H~2~O
-
-++Inserted text++
-
-==Marked text==
 
 ```
 **This is bold text**
@@ -330,16 +296,6 @@ console.log(foo(5));
 <kbd>a</kbd><kbd>z</kbd><kbd>e</kbd><kbd>r</kbd><kbd>t</kbd><kbd>y</kbd>
 ```
 
-## Ligatures
-
-fi ffi
-
-## Very long words
-
-qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
-
-qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
-
 ## Tables
 
 | Option | Description |
@@ -372,25 +328,43 @@ Right aligned columns
 | ext    | extension to be used for dest files. |
 ```
 
+## Horizontal Rules
+
+___
+
+---
+
+***
+
+```
+___
+
+---
+
+***
+```
+
 ## Extras (plugins required)
 
-### Emojis (via [plugin](https://github.com/markdown-it/markdown-it-emoji))
+The following markup falls outside the [CommonMark](http://commonmark.org) specification and requires plugins to render properly. We're using [markdown-it](https://github.com/markdown-it/markdown-it) and related [plugins](https://www.npmjs.com/browse/keyword/markdown-it) to show how the following elements look when using `style.css`.
 
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+### Emojis (via [markdown-it-emoji](https://github.com/markdown-it/markdown-it-emoji))
+
+> Classic markup: :smile: :smiley: :grinning: :hourglass: :x: :wink: :sunglasses:
 >
 > Shortcuts (emoticons): :-) :-( 8-) ;)
 
 see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
 
 ```
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+> Classic markup: :smile: :smiley: :grinning: :hourglass: :x: :wink: :sunglasses:
 >
 > Shortcuts (emoticons): :-) :-( 8-) ;)
 
 see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
 ```
 
-### Definition lists
+### Definition lists (via [markdown-it-deflist](https://github.com/markdown-it/markdown-it-deflist))
 
 Term 1
 
@@ -438,7 +412,7 @@ Term 2
   ~ Definition 2b
 ```
 
-### Abbreviations
+### Abbreviations (via [markdown-it-abbr](https://github.com/markdown-it/markdown-it-abbr))
 
 This is HTML abbreviation example.
 
@@ -454,9 +428,9 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 *[HTML]: Hyper Text Markup Language
 ```
 
-### Typographic replacements
+### Typographic replacements (via `typographer` in [markdown-it](https://github.com/markdown-it) options)
 
-Enable typographer option to see result.
+Enable [typographer](https://github.com/markdown-it/markdown-it#init-with-presets-and-options) option to see result.
 
 (c) (C) (r) (R) (tm) (TM) (p) (P) +-
 
@@ -467,7 +441,7 @@ test.. test... test..... test?..... test!....
 "Smartypants, double quotes" and 'single quotes'
 
 ```
-Enable typographer option to see result.
+Enable [typographer](https://github.com/markdown-it/markdown-it#init-with-presets-and-options) option to see result.
 
 (c) (C) (r) (R) (tm) (TM) (p) (P) +-
 
@@ -478,7 +452,15 @@ test.. test... test..... test?..... test!....
 "Smartypants, double quotes" and 'single quotes'
 ```
 
-### Footnotes
+### Autoconverted links (via `linkify` in [markdown-it](https://github.com/markdown-it) options)
+
+Autoconverted URL-like text such as http://hmpg.net can be enabled with the [linkify](https://github.com/markdown-it/markdown-it#init-with-presets-and-options) option in [markdown-it](https://github.com/markdown-it/markdown-it))
+
+```
+Autoconverted URL-like text such as http://hmpg.net can be enabled with the [linkify](https://github.com/markdown-it/markdown-it#init-with-presets-and-options) option in [markdown-it](https://github.com/markdown-it/markdown-it))
+```
+
+### Footnotes (via [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote))
 
 Footnote 1 link[^first].
 
@@ -508,4 +490,24 @@ Duplicated footnote reference[^second].
     and multiple paragraphs.
 
 [^second]: Footnote text.
+```
+
+### Special kinds of emphasis
+
+Superscript: 19^th^ (via [markdown-it-sup](https://github.com/markdown-it/markdown-it-sup))
+
+Subscript: H~2~O (via [markdown-it-sub](https://github.com/markdown-it/markdown-it-sub))
+
+++Inserted text++ (via [markdown-it-ins](https://github.com/markdown-it/markdown-it-ins))
+
+==Marked text== (via [markdown-it-mark](https://github.com/markdown-it/markdown-it-mark))
+
+```
+Superscript: 19^th^ (via [markdown-it-sup](https://github.com/markdown-it/markdown-it-sup))
+
+Subscript: H~2~O (via [markdown-it-sub](https://github.com/markdown-it/markdown-it-sub))
+
+++Inserted text++ (via [markdown-it-ins](https://github.com/markdown-it/markdown-it-ins))
+
+==Marked text== (via [markdown-it-mark](https://github.com/markdown-it/markdown-it-mark))
 ```
