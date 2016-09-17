@@ -1,22 +1,23 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>style.css</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="http://ungoldman.github.io/top-bar.css/top-bar.css">
-  <style>.top-bar { margin: 0 auto 2em; }</style>
-</head>
-<body>
-  <header class="top-bar">
-    <a class="top-bar-title" href="./">style.css</a>
-    <a class="top-bar-link" href="./guide.html">style guide</a>
-    <div class="top-bar-right">
-      <a class="top-bar-link" href="https://github.com/ungoldman/style.css/">github</a>
-    </div>
-  </header>
-  <main class="markdown-body"><h1>style.css</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>style.css</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://ungoldman.github.io/top-bar.css/top-bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/github.min.css">
+    <style>.top-bar { margin: 0 auto 2em; }</style>
+  </head>
+  <body>
+    <header class="top-bar">
+      <a class="top-bar-title" href="./">style.css</a>
+      <a class="top-bar-link" href="./guide.html">style guide</a>
+      <div class="top-bar-right">
+        <a class="top-bar-link" href="https://github.com/ungoldman/style.css/">github</a>
+      </div>
+    </header>
+    <main class="markdown-body"><h1>style.css</h1>
 <p>A classless stylesheet for markdown documents.</p>
 <p><a href="https://www.npmjs.com/package/style.css"><img src="https://img.shields.io/npm/v/style.css.svg?style=flat-square" alt="latest version"></a> <a href="https://travis-ci.org/ungoldman/style.css"><img src="https://img.shields.io/travis/ungoldman/style.css.svg?style=flat-square" alt="build status"></a> <a href="https://nodejs.org/api/documentation.html#documentation_stability_index%22"><img src="https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square" alt="stability"></a> <a href="https://www.npmjs.com/package/style.css"><img src="https://img.shields.io/npm/dm/style.css.svg?style=flat-square" alt="downloads"></a></p>
 <h2>Features</h2>
@@ -29,10 +30,10 @@
 <li><strong>very stylish:</strong> indeed.</li>
 </ul>
 <h2>Usage</h2>
-<pre><code class="hljs">npm <span class="hljs-operator"><span class="hljs-keyword">install</span> <span class="hljs-keyword">style</span>.css <span class="hljs-comment">--save-dev</span>
-</span></code></pre>
+<pre><code>npm install style.css --save-dev
+</code></pre>
 <p>You can use a CSS bundler like <a href="https://github.com/stackcss/sheetify#use-npm-packages">sheetify</a> to require <code>style.css</code> like a node module!</p>
-<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> sf = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;sheetify&apos;</span>)
+<pre><code class="language-js"><span class="hljs-keyword">const</span> sf = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;sheetify&apos;</span>)
 
 sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 </code></pre>
@@ -47,26 +48,26 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <p>See something missing from this list? Please make an issue or send a pull request!</p>
 <h3>Sass</h3>
 <p>You can also use this as a <a href="http://sass-lang.com/">Sass</a> library.</p>
-<pre><code class="hljs language-scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;node_modules/style.css/src/scss/style.scss&apos;</span>
-</span></code></pre>
+<pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;node_modules/style.css/src/scss/style.scss&apos;</span>
+</code></pre>
 <h3>Manual</h3>
 <p>If you&#x2019;d rather keep it simple, you can do it the old fashioned way.</p>
 <p><a href="style.css"><img src="https://img.shields.io/badge/download-style.css%20(6.4kb)-6495ED.svg?style=flat-square" alt="download style.css"></a></p>
 <p>Just copy <a href="style.css"><code>style.css</code></a> into your project, then link to it like so:</p>
-<pre><code class="hljs language-html"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&quot;en&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;viewport&quot;</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;style.css&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">main</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Hooray!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">main</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+<pre><code class="language-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hooray!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 <h2>Development</h2>
 <p>To get started, clone the repository and install dependencies with <code>npm install</code>.</p>
@@ -106,5 +107,5 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <h2>License</h2>
 <p><a href="license.html">ISC</a></p>
 </main>
-</body>
+  </body>
 </html>
