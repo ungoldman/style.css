@@ -51,10 +51,10 @@ See something missing from this list? Please make an issue or send a pull reques
 You can also use this as a [Sass](http://sass-lang.com/) library.
 
 ```scss
-@import 'node_modules/style.css/src/scss/style.scss'
+@import 'node_modules/style.css/style.scss'
 ```
 
-Sass allows you to override defaults more easily:
+Sass allows you to override defaults more easily. Here are the default settings for `style.css`:
 
 ```scss
 $font-size-body:    16px !default;
@@ -65,6 +65,22 @@ $line-height-pre:   1.45em !default;
 $link-color:        steelblue !default;
 $layout-width:      42em !default;
 ```
+
+You can override them like so:
+
+```scss
+$font-size-body: 14px;
+
+@import 'node_modules/style.css/style.scss'
+```
+
+**Protip**: Sass is easier to use with `node_modules` when you use the `include-path` option. Here's an example of how to use it with `node-sass` on the command line.
+
+```
+node-sass style.scss -o style.css --include-path node_modules/
+```
+
+This way you can exclude the `node_modules/` path prefix in your Sass source code.
 
 ### Manual
 

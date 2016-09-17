@@ -1,0 +1,27 @@
+// default settings
+
+$font-size-body:    16px !default;
+$font-size-code:    12px !default;
+$font-size-scale:   0.25vw !default;
+$line-height-body:  1.55em !default;
+$line-height-pre:   1.45em !default;
+$link-color:        steelblue !default;
+$layout-width:      42em !default;
+
+// optimal line length for readability:
+// http://baymard.com/blog/line-length-readability
+
+@import 'src/scss/fonts';
+@import 'src/scss/colors';
+@import 'src/scss/document';
+@import 'src/scss/layout';
+@import 'src/scss/typography';
+@import 'src/scss/links';
+@import 'src/scss/code';
+@import 'src/scss/figures';
+@import 'src/scss/embedded';
+@import 'src/scss/tables';
+@import 'src/scss/forms';
+@import 'src/scss/interactive';
+@import 'src/scss/scripting';
+@import 'src/scss/hidden';
