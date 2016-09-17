@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - pull major settings out into overridable variables
 
-    ```
+    ```scss
     $font-size-body:    16px !default;
     $font-size-code:    12px !default;
     $font-size-scale:   0.25vw !default;
