@@ -7,7 +7,27 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+### Additions
+
+- pull major settings out into overridable variables
+
+    ```
+    $font-size-body:    16px !default;
+    $font-size-code:    12px !default;
+    $font-size-scale:   0.25vw !default;
+    $line-height-body:  1.55em !default;
+    $line-height-pre:   1.45em !default;
+    $link-color:        steelblue !default;
+    $layout-width:      42em !default;
+    ```
+
+### Changes
+
 - switch link color to `steelblue`
+
+### Breaking changes
+
+- `$link` renamed to `$link-color`
 
 ## [1.0.0-alpha-2](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-2) - 2016-09-16
 

@@ -5,7 +5,7 @@ pre,
 kbd,
 samp {
   font-family: $system-mono; // 1
-  font-size: calc(12px + 0.25vw); // 2
+  font-size: calc(#{$font-size-code} + #{$font-size-scale}); // 2
 }
 
 pre, code {
@@ -17,6 +17,7 @@ pre {
   overflow: auto;
   word-wrap: normal;
   padding: 1em;
+  line-height: $line-height-pre;
 
   code {
     background: transparent;
