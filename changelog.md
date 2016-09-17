@@ -25,7 +25,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changes
 
-- switch link color to `steelblue`
+- switch link color to `steelblue` (#19)
 
 ### Breaking changes
 
