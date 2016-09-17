@@ -13,6 +13,7 @@ A classless stylesheet for markdown documents.
 [downloads-img]: https://img.shields.io/npm/dm/style.css.svg?style=flat-square
 
 ## Features
+
 - **minimal size:** weighs in at an adorable `7kb` unminified.
 - **system fonts:** looks native on macOS, iOS, windows, linux, firefox OS, android.
 - **great for text:** designed to be highly readable and easy on the eyes.
@@ -51,6 +52,18 @@ You can also use this as a [Sass](http://sass-lang.com/) library.
 
 ```scss
 @import 'node_modules/style.css/src/scss/style.scss'
+```
+
+Sass allows you to override defaults more easily:
+
+```scss
+$font-size-body:    16px !default;
+$font-size-code:    12px !default;
+$font-size-scale:   0.25vw !default;
+$line-height-body:  1.55em !default;
+$line-height-pre:   1.45em !default;
+$link-color:        steelblue !default;
+$layout-width:      42em !default;
 ```
 
 ### Manual
