@@ -30,28 +30,7 @@
 <li><strong>very stylish:</strong> indeed.</li>
 </ul>
 <h2>Usage</h2>
-<pre><code>npm install style.css --save-dev
-</code></pre>
-<p>You can use a CSS bundler like <a href="https://github.com/stackcss/sheetify#use-npm-packages">sheetify</a> to require <code>style.css</code> like a node module!</p>
-<pre><code class="language-js"><span class="hljs-keyword">const</span> sf = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;sheetify&apos;</span>)
-
-sf(<span class="hljs-string">&apos;style.css&apos;</span>)
-</code></pre>
-<p>Note that any external CSS files imported with sheetify must be compiled using <a href="https://github.com/substack/node-browserify">browserify</a> or <a href="https://github.com/stackcss/sheetify-postcss">sheetify-postcss</a>.</p>
-<p>Here are some other modules out there for requiring CSS using JavaScript that should also work just fine:</p>
-<ul>
-<li><a href="https://www.npmjs.com/package/browserify-css">browserify-css</a></li>
-<li><a href="https://github.com/css-modules/css-modules">css-modules</a></li>
-<li><a href="https://www.npmjs.com/package/parcelify">parcelify</a></li>
-<li><a href="https://www.npmjs.com/package/rework-npm">rework-npm</a></li>
-</ul>
-<p>See something missing from this list? Please make an issue or send a pull request!</p>
-<h3>Sass</h3>
-<p>You can also use this as a <a href="http://sass-lang.com/">Sass</a> library.</p>
-<pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;node_modules/style.css/src/scss/style.scss&apos;</span>
-</code></pre>
-<h3>Manual</h3>
-<p>If you&#x2019;d rather keep it simple, you can do it the old fashioned way.</p>
+<p>If you want to keep it simple, you can do it the old fashioned way.</p>
 <p><a href="style.css"><img src="https://img.shields.io/badge/download-style.css%20(6.4kb)-6495ED.svg?style=flat-square" alt="download style.css"></a></p>
 <p>Just copy <a href="style.css"><code>style.css</code></a> into your project, then link to it like so:</p>
 <pre><code class="language-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
@@ -69,6 +48,45 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
+<h3>Node</h3>
+<pre><code>npm install style.css --save-dev
+</code></pre>
+<p>You can use a CSS bundler like <a href="https://github.com/stackcss/sheetify#use-npm-packages">sheetify</a> to require <code>style.css</code> like a node module.</p>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> sf = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;sheetify&apos;</span>)
+
+sf(<span class="hljs-string">&apos;style.css&apos;</span>)
+</code></pre>
+<p>Note that any external CSS files imported with sheetify must be compiled using <a href="https://github.com/substack/node-browserify">browserify</a> or <a href="https://github.com/stackcss/sheetify-postcss">sheetify-postcss</a>.</p>
+<p>Here are some other modules out there for requiring CSS using JavaScript that should also work just fine:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/browserify-css">browserify-css</a></li>
+<li><a href="https://github.com/css-modules/css-modules">css-modules</a></li>
+<li><a href="https://www.npmjs.com/package/parcelify">parcelify</a></li>
+<li><a href="https://www.npmjs.com/package/rework-npm">rework-npm</a></li>
+</ul>
+<p>See something missing from this list? Please make an issue or send a pull request!</p>
+<h3>Sass</h3>
+<p>You can also use <code>style.css</code> with <a href="http://sass-lang.com/">Sass</a>.</p>
+<pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;node_modules/style.css/style.scss&apos;</span>
+</code></pre>
+<p>Sass allows you to override defaults more easily. Here are the default settings for <code>style.css</code>:</p>
+<pre><code class="language-scss"><span class="hljs-variable">$font-size-body</span>:    <span class="hljs-number">16px</span> !default;
+<span class="hljs-variable">$font-size-code</span>:    <span class="hljs-number">12px</span> !default;
+<span class="hljs-variable">$font-size-scale</span>:   <span class="hljs-number">0.25vw</span> !default;
+<span class="hljs-variable">$line-height-body</span>:  <span class="hljs-number">1.55em</span> !default;
+<span class="hljs-variable">$line-height-pre</span>:   <span class="hljs-number">1.45em</span> !default;
+<span class="hljs-variable">$link-color</span>:        steelblue !default;
+<span class="hljs-variable">$layout-width</span>:      <span class="hljs-number">42em</span> !default;
+</code></pre>
+<p>You can override them like so:</p>
+<pre><code class="language-scss"><span class="hljs-variable">$font-size-body</span>: <span class="hljs-number">14px</span>;
+
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;node_modules/style.css/style.scss&apos;</span>
+</code></pre>
+<p><strong>Protip</strong>: Sass is easier to use with <code>node_modules</code> when you use the <code>include-path</code> option. Here&#x2019;s an example of how to use it with <code>node-sass</code> on the command line.</p>
+<pre><code>node-sass style.scss -o style.css --include-path node_modules/
+</code></pre>
+<p>This way you can exclude the <code>node_modules/</code> path prefix in your Sass source code.</p>
 <h2>Development</h2>
 <p>To get started, clone the repository and install dependencies with <code>npm install</code>.</p>
 <h3>Tinker</h3>

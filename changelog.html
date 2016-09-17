@@ -21,6 +21,31 @@
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="http://keepachangelog.com/">Keep a Changelog</a>
 and this project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
+<h2><a href="https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-3">1.0.0-alpha-3</a> - 2016-09-17</h2>
+<p><a href="https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-2...v1.0.0-alpha-3">view diff</a></p>
+<h3>Additions</h3>
+<ul>
+<li>
+<p>pull major settings out into overridable variables (#25)</p>
+<pre><code class="language-scss"><span class="hljs-variable">$font-size-body</span>:    <span class="hljs-number">16px</span> !default;
+<span class="hljs-variable">$font-size-code</span>:    <span class="hljs-number">12px</span> !default;
+<span class="hljs-variable">$font-size-scale</span>:   <span class="hljs-number">0.25vw</span> !default;
+<span class="hljs-variable">$line-height-body</span>:  <span class="hljs-number">1.55em</span> !default;
+<span class="hljs-variable">$line-height-pre</span>:   <span class="hljs-number">1.45em</span> !default;
+<span class="hljs-variable">$link-color</span>:        steelblue !default;
+<span class="hljs-variable">$layout-width</span>:      <span class="hljs-number">42em</span> !default;
+</code></pre>
+</li>
+</ul>
+<h3>Changes</h3>
+<ul>
+<li>switch link color to <code>steelblue</code> (#19)</li>
+</ul>
+<h3>Breaking changes</h3>
+<ul>
+<li><code>$link</code> renamed to <code>$link-color</code></li>
+<li>move main <code>scss</code> file to root (#24)</li>
+</ul>
 <h2><a href="https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-2">1.0.0-alpha-2</a> - 2016-09-16</h2>
 <p><a href="https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-1...v1.0.0-alpha-2">view diff</a></p>
 <ul>

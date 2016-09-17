@@ -1,8 +1,8 @@
-/*! style.css v1.0.0-alpha-2 | ISC License | https://github.com/ungoldman/style.css */
+/*! style.css v1.0.0-alpha-3 | ISC License | https://github.com/ungoldman/style.css */
 html {
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "fira sans", roboto, noto, "droid sans", "liberation sans", "lucida grande", "helvetica neue", helvetica, "franklin gothic medium", "century gothic", cantarell, oxygen, ubuntu, sans-serif;
   font-size: calc(16px + 0.25vw);
-  line-height: 1.55;
+  line-height: 1.55em;
   color: #303030;
   background-color: white;
   font-kerning: normal;
@@ -26,7 +26,7 @@ main {
   display: block; }
 
 main {
-  max-width: 42rem;
+  max-width: 42em;
   margin: 2em auto;
   padding: 0 1em;
   overflow: hidden;
@@ -181,7 +181,7 @@ dl {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: royalblue;
+  color: steelblue;
   text-decoration: none; }
   a:active, a:hover {
     outline-width: 0;
@@ -203,7 +203,8 @@ pre, code {
 pre {
   overflow: auto;
   word-wrap: normal;
-  padding: 1em; }
+  padding: 1em;
+  line-height: 1.45em; }
   pre code {
     background: transparent;
     display: inline;
