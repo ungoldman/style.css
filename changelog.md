@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+### Changes
+
+- use modular scale for headings (base: 1em, ratio: 1.125)
+- reorganize typographic elements
+- update style guide
+
 ## [1.0.0-alpha-3](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-3) - 2016-09-17
 
 [view diff](https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-2...v1.0.0-alpha-3)
