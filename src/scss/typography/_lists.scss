@@ -1,0 +1,17 @@
+ul,
+ol {
+  padding: 0;
+  padding-left: 2em;
+
+  ol { list-style-type: lower-roman; }
+
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    ol { list-style-type: lower-alpha; }
+  }
+}
+
+li > p { margin-top: 1em; }

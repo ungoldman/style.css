@@ -1,3 +1,12 @@
+// dependencies
+
+@import 'modularscale-sass/stylesheets/modular-scale';
+
+// variables
+
+@import 'src/scss/fonts';
+@import 'src/scss/colors';
+
 // default settings
 
 $font-size-body:    16px !default;
@@ -8,19 +17,16 @@ $line-height-pre:   1.45em !default;
 $link-color:        steelblue !default;
 $layout-width:      42em !default;
 
-// optimal line length for readability:
+// a note on optimal line length for readability:
 // http://baymard.com/blog/line-length-readability
 
-@import 'src/scss/fonts';
-@import 'src/scss/colors';
+$ms-base:           1em;
+$ms-ratio:          $major-second;
+
 @import 'src/scss/document';
 @import 'src/scss/layout';
-@import 'src/scss/typography';
-@import 'src/scss/links';
-@import 'src/scss/code';
-@import 'src/scss/figures';
+@import 'src/scss/typography/index';
 @import 'src/scss/embedded';
-@import 'src/scss/tables';
 @import 'src/scss/forms';
 @import 'src/scss/interactive';
 @import 'src/scss/scripting';

@@ -9,16 +9,3 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
-
-// Remove the border on images inside links in IE 10-.
-img {
-  border-style: none;
-  border: 0;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-// Hide the overflow in IE.
-svg:not(:root) {
-  overflow: hidden;
-}

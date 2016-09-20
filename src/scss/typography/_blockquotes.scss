@@ -1,0 +1,9 @@
+blockquote {
+  margin: 0 0 1rem;
+  padding: 0 1rem;
+  color: $darker-gray;
+  border-left: 4px solid $light-gray;
+
+  &>:first-child { margin-top: 0; }
+  &>:last-child { margin-bottom: 0; }
+}
