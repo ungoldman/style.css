@@ -128,13 +128,13 @@ We're using [stylelint](https://github.com/stylelint/stylelint) with a slightly 
 
 ### Generate
 
-Generate `style.css` and `style.min.css` by running `npm run generate`.
+Generate `style.css` from `style.scss` by running `npm run generate`.
 
 ### Release
 
 Publish a new release with `npm run release`.
 
-The `prerelease` task will generate and minify CSS, run tests, check if the git index is dirty, and exit if there are any problems. If all goes well, `gh-release` and `npm publish` will be run sequentially.
+The `prerelease` task will generate CSS, run tests, check if the git index is dirty, and exit if there are any problems. If all goes well, `gh-release` and `npm publish` will be run sequentially.
 
 ## Thanks
 
