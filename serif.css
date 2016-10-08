@@ -1,6 +1,5 @@
-/*! style.css v1.0.0-alpha-7 | ISC License | https://github.com/ungoldman/style.css */
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "fira sans", roboto, noto, "droid sans", "liberation sans", "lucida grande", "helvetica neue", helvetica, "franklin gothic medium", "century gothic", cantarell, oxygen, ubuntu, sans-serif;
+  font-family: charter, constantia, "lucida bright", lucidabright, "lucida serif", lucida, "dejavu serif", "bitstream vera serif", "liberation serif", georgia, serif;
   font-size: calc(16px + 0.25vw);
   line-height: 1.55em;
   color: #303030;

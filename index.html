@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://ungoldman.github.io/top-bar.css/top-bar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/github.min.css">
-    <style>.top-bar { margin: 0 auto 2em; }</style>
+    <style>
+      .top-bar { margin: 0 auto 2em; }
+      .current { color: #777; }
+    </style>
   </head>
   <body>
     <header class="top-bar">
       <a class="top-bar-title" href="./">style.css</a>
       <a class="top-bar-link" href="./guide.html">style guide</a>
+      <a class="top-bar-link style-sans current">sans</a>
+      <a class="top-bar-link style-serif">serif</a>
       <div class="top-bar-right">
         <a class="top-bar-link" href="https://github.com/ungoldman/style.css/">github</a>
       </div>
@@ -31,7 +36,7 @@
 </ul>
 <h2>Usage</h2>
 <p>If you want to keep it simple, you can do it the old fashioned way.</p>
-<p><a href="style.css"><img src="https://img.shields.io/badge/download-style.css%20(6.4kb)-6495ED.svg?style=flat-square" alt="download style.css"></a></p>
+<p><a href="style.css"><img src="https://img.shields.io/badge/download-style.css%20(6.7kb)-6495ED.svg?style=flat-square" alt="download style.css"></a></p>
 <p>Just copy <a href="style.css"><code>style.css</code></a> into your project, then link to it like so:</p>
 <pre><code class="language-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
@@ -48,6 +53,8 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
+<p>A very nice looking <a href="serif.css"><code>serif.css</code></a> stylesheet (also using system fonts) is also included for your convenience.</p>
+<p><a href="serif.css"><img src="https://img.shields.io/badge/download-serif.css%20(6.3kb)-6495ED.svg?style=flat-square" alt="download serif.css"></a></p>
 <h3>Node</h3>
 <pre><code>npm install style.css --save-dev
 </code></pre>
@@ -67,10 +74,15 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <p>See something missing from this list? Please make an issue or send a pull request!</p>
 <h3>Sass</h3>
 <p>You can also use <code>style.css</code> with <a href="http://sass-lang.com/">Sass</a>.</p>
-<pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;node_modules/style.css/style.scss&apos;</span>
+<pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;path/to/node_modules/style.css/style.scss&apos;</span>;
+</code></pre>
+<p>Same goes for the serif variant.</p>
+<pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;path/to/node_modules/style.css/serif.scss&apos;</span>;
 </code></pre>
 <p>Sass allows you to override defaults more easily. Here are the default settings for <code>style.css</code>:</p>
-<pre><code class="language-scss"><span class="hljs-variable">$font-size-body</span>:    <span class="hljs-number">16px</span> !default;
+<pre><code class="language-scss"><span class="hljs-variable">$font-body</span>:         <span class="hljs-variable">$system-sans</span> !default;
+<span class="hljs-variable">$font-code</span>:         <span class="hljs-variable">$system-mono</span> !default;
+<span class="hljs-variable">$font-size-body</span>:    <span class="hljs-number">16px</span> !default;
 <span class="hljs-variable">$font-size-code</span>:    <span class="hljs-number">12px</span> !default;
 <span class="hljs-variable">$font-size-scale</span>:   <span class="hljs-number">0.25vw</span> !default;
 <span class="hljs-variable">$line-height-body</span>:  <span class="hljs-number">1.55em</span> !default;
@@ -78,15 +90,25 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <span class="hljs-variable">$link-color</span>:        steelblue !default;
 <span class="hljs-variable">$layout-width</span>:      <span class="hljs-number">42em</span> !default;
 </code></pre>
-<p>You can override them like so:</p>
-<pre><code class="language-scss"><span class="hljs-variable">$font-size-body</span>: <span class="hljs-number">14px</span>;
-
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;node_modules/style.css/style.scss&apos;</span>
-</code></pre>
+<h4>Using Sass with <code>node_modules</code></h4>
 <p><strong>Protip</strong>: Sass is easier to use with <code>node_modules</code> when you use the <code>include-path</code> option. Here&#x2019;s an example of how to use it with <code>node-sass</code> on the command line.</p>
 <pre><code>node-sass style.scss -o style.css --include-path node_modules/
 </code></pre>
 <p>This way you can exclude the <code>node_modules/</code> path prefix in your Sass source code.</p>
+<h4>Overriding settings</h4>
+<p>You can override settings like so:</p>
+<pre><code class="language-scss"><span class="hljs-variable">$font-size-body</span>: <span class="hljs-number">14px</span>;
+
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;style.css/style.scss&apos;</span>;
+</code></pre>
+<p>If you want to use the font stacks to override global font settings, you can do so like this:</p>
+<pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;style.css/src/scss/fonts.scss&apos;</span>;
+
+<span class="hljs-variable">$font-body</span>: <span class="hljs-variable">$system-serif</span>;
+
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;style.css/style.scss&apos;</span>;
+</code></pre>
+<p>The above snippet is how <a href="serif.css"><code>serif.css</code></a> is generated.</p>
 <h2>Development</h2>
 <p>To get started, clone the repository and install dependencies with <code>npm install</code>.</p>
 <h3>Tinker</h3>
@@ -99,10 +121,10 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <p>Run <code>npm test</code> to check the generated CSS for errors and issues not caught by the Sass compiler.</p>
 <p>We&#x2019;re using <a href="https://github.com/stylelint/stylelint">stylelint</a> with a slightly modified version of <a href="https://github.com/stylelint/stylelint-config-standard">stylelint-config-standard</a> for now.</p>
 <h3>Generate</h3>
-<p>Generate <code>style.css</code> and <code>style.min.css</code> by running <code>npm run generate</code>.</p>
+<p>Generate <code>style.css</code> from <code>style.scss</code> by running <code>npm run generate</code>.</p>
 <h3>Release</h3>
 <p>Publish a new release with <code>npm run release</code>.</p>
-<p>The <code>prerelease</code> task will generate and minify CSS, run tests, check if the git index is dirty, and exit if there are any problems. If all goes well, <code>gh-release</code> and <code>npm publish</code> will be run sequentially.</p>
+<p>The <code>prerelease</code> task will generate CSS, run tests, check if the git index is dirty, and exit if there are any problems. If all goes well, <code>gh-release</code> and <code>npm publish</code> will be run sequentially.</p>
 <h2>Thanks</h2>
 <p><code>style.css</code> is only possible due to the excellent work of the following collaborators:</p>
 <table>
@@ -125,5 +147,23 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <h2>License</h2>
 <p><a href="license.html">ISC</a></p>
 </main>
+    <script>
+      (function () {
+        var style = document.querySelector('link')
+        var sansButton = document.querySelector('.style-sans')
+        var serifButton = document.querySelector('.style-serif')
+
+        sansButton.onclick = function () {
+          style.setAttribute('href', './style.css')
+          serifButton.className = 'top-bar-link style-serif'
+          sansButton.className += ' current'
+        }
+        serifButton.onclick = function () {
+          style.setAttribute('href', './serif.css')
+          sansButton.className = 'top-bar-link sans-serif'
+          serifButton.className += ' current'
+        }
+      })()
+    </script>
   </body>
 </html>

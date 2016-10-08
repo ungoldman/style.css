@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://ungoldman.github.io/top-bar.css/top-bar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/github.min.css">
-    <style>.top-bar { margin: 0 auto 2em; }</style>
+    <style>
+      .top-bar { margin: 0 auto 2em; }
+      .current { color: #777; }
+    </style>
   </head>
   <body>
     <header class="top-bar">
       <a class="top-bar-title" href="./">style.css</a>
       <a class="top-bar-link" href="./guide.html">style guide</a>
+      <a class="top-bar-link style-sans current">sans</a>
+      <a class="top-bar-link style-serif">serif</a>
       <div class="top-bar-right">
         <a class="top-bar-link" href="https://github.com/ungoldman/style.css/">github</a>
       </div>
@@ -21,6 +26,28 @@
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="http://keepachangelog.com/">Keep a Changelog</a>
 and this project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
+<h2><a href="https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-7">1.0.0-alpha-7</a> - 2016-10-08</h2>
+<p><a href="https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-6...v1.0.0-alpha-7">view diff</a></p>
+<h3>Fixes</h3>
+<ul>
+<li>move <code>modularscale-sass</code> from devDeps to deps to fix Sass import bug (ungoldman/style.css#27)</li>
+</ul>
+<h2><a href="https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-6">1.0.0-alpha-6</a> - 2016-10-08</h2>
+<p><a href="https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-5...v1.0.0-alpha-6">view diff</a></p>
+<h3>Fixes</h3>
+<ul>
+<li>fix missing files in distribution</li>
+</ul>
+<h2><a href="https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-5">1.0.0-alpha-5</a> - 2016-10-08</h2>
+<p><a href="https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-4...v1.0.0-alpha-5">view diff</a></p>
+<h3>Additions</h3>
+<ul>
+<li>add serif font stack (#9)</li>
+<li>add <code>$font-body</code> and <code>$font-code</code> settings</li>
+<li>add <code>serif.scss</code> &amp; <code>serif.css</code></li>
+<li>add sans &amp; serif buttons to site layout</li>
+<li>add serif to docs</li>
+</ul>
 <h2><a href="https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-4">1.0.0-alpha-4</a> - 2016-09-19</h2>
 <p><a href="https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-3...v1.0.0-alpha-4">view diff</a></p>
 <h3>Changes</h3>
@@ -172,5 +199,23 @@ and this project adheres to <a href="http://semver.org/">Semantic Versioning</a>
 <li>first pass</li>
 </ul>
 </main>
+    <script>
+      (function () {
+        var style = document.querySelector('link')
+        var sansButton = document.querySelector('.style-sans')
+        var serifButton = document.querySelector('.style-serif')
+
+        sansButton.onclick = function () {
+          style.setAttribute('href', './style.css')
+          serifButton.className = 'top-bar-link style-serif'
+          sansButton.className += ' current'
+        }
+        serifButton.onclick = function () {
+          style.setAttribute('href', './serif.css')
+          sansButton.className = 'top-bar-link sans-serif'
+          serifButton.className += ' current'
+        }
+      })()
+    </script>
   </body>
 </html>
