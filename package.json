@@ -39,7 +39,7 @@
   },
   "scripts": {
     "generate": "run-s generate:**",
-    "generate:css": "npm run sass -- -o ./",
+    "generate:css": "run-p 'sass:* -- -o ./'",
     "generate:prefix": "postcss -u autoprefixer -r style.css",
     "generate:sign": "cat style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > style.css && pbpaste >> style.css",
     "gh-pages": "npm run site && gh-pages -d site",
@@ -47,18 +47,19 @@
     "prerelease": "run-s test generate git-dirty",
     "pretest": "npm run generate:css",
     "release": "git push origin master && gh-release && npm publish",
-    "sass": "node-sass style.scss --output-style=expanded --include-path node_modules/",
+    "sass:serif": "node-sass serif.scss --output-style=expanded --include-path node_modules/",
+    "sass:style": "node-sass style.scss --output-style=expanded --include-path node_modules/",
     "serve:site": "live-server site --port=8000",
     "serve:watch": "run-p watch:*",
     "site": "run-s site:**",
     "site:clean": "rm -rf site",
-    "site:css": "npm run sass -- -o site/",
+    "site:css": "run-p 'sass:* -- -o ./site'",
     "site:css:sign": "cat site/style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > site/style.css && pbpaste >> site/style.css",
     "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
     "start": "npm-run-all site --parallel serve:*",
     "test": "stylelint \"style.css\"",
     "watch:html": "npm run site:html -- -w",
-    "watch:scss": "npm run site:css -- -w"
+    "watch:scss": "run-p 'sass:* -- -o ./site -w'"
   },
   "style": "style.css"
 }
