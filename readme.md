@@ -25,10 +25,10 @@ A classless stylesheet for markdown documents.
 
 If you want to keep it simple, you can do it the old fashioned way.
 
-[![download style.css][dl-img]][dl-url]
+[![download style.css][dl-sans-img]][dl-sans-url]
 
-[dl-img]: https://img.shields.io/badge/download-style.css%20(6.4kb)-6495ED.svg?style=flat-square
-[dl-url]: style.css
+[dl-sans-img]: https://img.shields.io/badge/download-style.css%20(6.7kb)-6495ED.svg?style=flat-square
+[dl-sans-url]: style.css
 
 Just copy [`style.css`](style.css) into your project, then link to it like so:
 
@@ -48,6 +48,13 @@ Just copy [`style.css`](style.css) into your project, then link to it like so:
   </body>
 </html>
 ```
+
+A very nice looking [`serif.css`](serif.css) stylesheet (also using system fonts) is also included for your convenience.
+
+[![download serif.css][dl-serif-img]][dl-serif-url]
+
+[dl-serif-img]: https://img.shields.io/badge/download-serif.css%20(6.3kb)-6495ED.svg?style=flat-square
+[dl-serif-url]: serif.css
 
 ### Node
 
@@ -79,7 +86,13 @@ See something missing from this list? Please make an issue or send a pull reques
 You can also use `style.css` with [Sass](http://sass-lang.com/).
 
 ```scss
-@import 'node_modules/style.css/style.scss'
+@import 'path/to/node_modules/style.css/style.scss';
+```
+
+Same goes for the serif variant.
+
+```scss
+@import 'path/to/node_modules/style.css/serif.scss';
 ```
 
 Sass allows you to override defaults more easily. Here are the default settings for `style.css`:
@@ -97,10 +110,6 @@ $layout-width:      42em !default;
 ```
 
 #### Using Sass with `node_modules`
-
-```scss
-@import 'path/to/node_modules/style.css/style.scss';
-```
 
 **Protip**: Sass is easier to use with `node_modules` when you use the `include-path` option. Here's an example of how to use it with `node-sass` on the command line.
 
@@ -129,6 +138,8 @@ $font-body: $system-serif;
 
 @import 'style.css/style.scss';
 ```
+
+The above snippet is how [`serif.css`](serif.css) is generated.
 
 ## Development
 
