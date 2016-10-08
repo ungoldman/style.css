@@ -16,5 +16,8 @@ $system-mono:  menlo, // mac
                monaco, 'courier new', // older systems
                monospace; // fallback
 
-// this is a stub, please help fill out!
-$system-serif: charter; // mac
+$system-serif: charter, constantia, // mac
+               'lucida bright', lucidabright, 'lucida serif', lucida, // windows
+               'dejavu serif', 'bitstream vera serif', 'liberation serif', // linux
+               georgia, // old systems
+               serif; // fallback

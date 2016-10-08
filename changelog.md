@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+### Additions
+
+- add serif font stack (#9)
+
 ## [1.0.0-alpha-4](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-4) - 2016-09-19
 
 [view diff](https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-3...v1.0.0-alpha-4)
