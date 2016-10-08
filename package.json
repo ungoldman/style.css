@@ -22,6 +22,9 @@
   },
   "files": [
     "style.css",
+    "style.scss",
+    "serif.css",
+    "serif.scss",
     "src/scss"
   ],
   "homepage": "https://github.com/ungoldman/style.css",
