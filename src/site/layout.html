@@ -7,16 +7,39 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://ungoldman.github.io/top-bar.css/top-bar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/github.min.css">
-    <style>.top-bar { margin: 0 auto 2em; }</style>
+    <style>
+      .top-bar { margin: 0 auto 2em; }
+      .current { color: #777; }
+    </style>
   </head>
   <body>
     <header class="top-bar">
       <a class="top-bar-title" href="./">style.css</a>
       <a class="top-bar-link" href="./guide.html">style guide</a>
+      <a class="top-bar-link style-sans current">sans</a>
+      <a class="top-bar-link style-serif">serif</a>
       <div class="top-bar-right">
         <a class="top-bar-link" href="https://github.com/ungoldman/style.css/">github</a>
       </div>
     </header>
     <main class="markdown-body"></main>
+    <script>
+      (function () {
+        var style = document.querySelector('link')
+        var sansButton = document.querySelector('.style-sans')
+        var serifButton = document.querySelector('.style-serif')
+
+        sansButton.onclick = function () {
+          style.setAttribute('href', './style.css')
+          serifButton.className = 'top-bar-link style-serif'
+          sansButton.className += ' current'
+        }
+        serifButton.onclick = function () {
+          style.setAttribute('href', './serif.css')
+          sansButton.className = 'top-bar-link sans-serif'
+          serifButton.className += ' current'
+        }
+      })()
+    </script>
   </body>
 </html>
