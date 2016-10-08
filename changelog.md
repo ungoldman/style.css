@@ -5,7 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## Unreleased
+## [1.0.0-alpha-6](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-6) - 2016-10-08
+
+[view diff](https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-5...v1.0.0-alpha-6)
 
 ### Fixes
 
