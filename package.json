@@ -57,7 +57,7 @@
     "site:css:sign": "cat site/style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > site/style.css && pbpaste >> site/style.css",
     "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
     "start": "npm-run-all site --parallel serve:*",
-    "test": "stylelint \"style.css\"",
+    "test": "stylelint \"style.css\" && stylelint \"serif.css\"",
     "watch:html": "npm run site:html -- -w",
     "watch:scss": "run-p 'sass:* -- -o ./site -w'"
   },
