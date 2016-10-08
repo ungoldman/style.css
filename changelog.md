@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Additions
 
 - add serif font stack (#9)
+- add `$font-body` and `$font-code` settings
 
 ## [1.0.0-alpha-4](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-4) - 2016-09-19
 

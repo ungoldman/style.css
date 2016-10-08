@@ -4,7 +4,7 @@ code,
 pre,
 kbd,
 samp {
-  font-family: $system-mono; // 1
+  font-family: $font-code; // 1
   font-size: calc(#{$font-size-code} + #{$font-size-scale}); // 2
 }
 

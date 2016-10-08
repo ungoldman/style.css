@@ -1,6 +1,6 @@
 // html should be at the top
 html {
-  font-family: $system-sans;
+  font-family: $font-body;
   font-size: calc(#{$font-size-body} + #{$font-size-scale});
   line-height: $line-height-body;
   color: $black;

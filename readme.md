@@ -85,6 +85,8 @@ You can also use `style.css` with [Sass](http://sass-lang.com/).
 Sass allows you to override defaults more easily. Here are the default settings for `style.css`:
 
 ```scss
+$font-body:         $system-sans !default;
+$font-code:         $system-mono !default;
 $font-size-body:    16px !default;
 $font-size-code:    12px !default;
 $font-size-scale:   0.25vw !default;
@@ -94,12 +96,10 @@ $link-color:        steelblue !default;
 $layout-width:      42em !default;
 ```
 
-You can override them like so:
+#### Using Sass with `node_modules`
 
 ```scss
-$font-size-body: 14px;
-
-@import 'node_modules/style.css/style.scss'
+@import 'path/to/node_modules/style.css/style.scss';
 ```
 
 **Protip**: Sass is easier to use with `node_modules` when you use the `include-path` option. Here's an example of how to use it with `node-sass` on the command line.
@@ -109,6 +109,26 @@ node-sass style.scss -o style.css --include-path node_modules/
 ```
 
 This way you can exclude the `node_modules/` path prefix in your Sass source code.
+
+#### Overriding settings
+
+You can override settings like so:
+
+```scss
+$font-size-body: 14px;
+
+@import 'style.css/style.scss';
+```
+
+If you want to use the font stacks to override global font settings, you can do so like this:
+
+```scss
+@import 'style.css/src/scss/fonts.scss';
+
+$font-body: $system-serif;
+
+@import 'style.css/style.scss';
+```
 
 ## Development
 
