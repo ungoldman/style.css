@@ -6,13 +6,15 @@
   "bugs": {
     "url": "https://github.com/ungoldman/style.css/issues"
   },
+  "dependencies": {
+    "modularscale-sass": "^2.1.1"
+  },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
     "exit-on-dirty-git": "^1.0.1",
     "gh-pages": "^0.11.0",
     "gh-release": "^2.1.0",
     "live-server": "^1.1.0",
-    "modularscale-sass": "^2.1.1",
     "node-sass": "^3.9.3",
     "npm-run-all": "^3.1.0",
     "postcss-cli": "^2.6.0",

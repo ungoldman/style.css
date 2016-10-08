@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+### Fixes
+
+- move `modularscale-sass` from devDeps to deps to fix Sass import bug (ungoldman/style.css#27)
+
 ## [1.0.0-alpha-6](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-6) - 2016-10-08
 
 [view diff](https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-5...v1.0.0-alpha-6)
