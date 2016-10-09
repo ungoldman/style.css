@@ -9,6 +9,14 @@ h6 {
   margin-bottom: 1rem;
   font-weight: 600;
   position: relative;
+
+  // rep the smallies
+  small {
+    font-weight: 400;
+    font-size: .7em;
+    margin-left: .5em;
+    color: #777;
+  }
 }
 
 // modular scale: 1.2
