@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - apply natural box layout model using [paulirish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) method
 - add style for small text inside headings
+- use unitless line heights based on [css-tricks](https://css-tricks.com/almanac/properties/l/line-height/#article-header-id-0) recommendation
 
 ## [1.0.0-alpha-7](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-7) - 2016-10-08
 

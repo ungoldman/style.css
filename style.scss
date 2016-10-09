@@ -14,14 +14,17 @@ $font-code:         $system-mono !default;
 $font-size-body:    16px !default;
 $font-size-code:    12px !default;
 $font-size-scale:   0.25vw !default;
-$line-height-body:  1.55em !default;
-$line-height-pre:   1.45em !default;
+
+// use unitless line heights
+// https://css-tricks.com/almanac/properties/l/line-height/#article-header-id-0
+$line-height-body:  1.55 !default;
+$line-height-pre:   1.45 !default;
+
 $link-color:        steelblue !default;
 $layout-width:      42em !default;
 
 // a note on optimal line length for readability:
 // http://baymard.com/blog/line-length-readability
-
 $ms-base:           1em;
 $ms-ratio:          $major-second;
 
