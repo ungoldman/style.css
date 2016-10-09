@@ -65,7 +65,6 @@ fieldset {
 // 3. Remove the padding so developers are not caught out when they zero out
 //    `fieldset` elements in all browsers.
 legend {
-  box-sizing: border-box; // 1
   color: inherit; // 2
   display: table; // 1
   max-width: 100%; // 1
@@ -89,7 +88,6 @@ textarea {
 // 2. Remove the padding in IE 10-.
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; // 1
   padding: 0; // 2
 }
 
