@@ -1,10 +1,11 @@
-/*! style.css v1.0.0-alpha-7 | ISC License | https://github.com/ungoldman/style.css */
+/*! style.css v1.0.0-alpha-8 | ISC License | https://github.com/ungoldman/style.css */
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "fira sans", roboto, noto, "droid sans", "liberation sans", "lucida grande", "helvetica neue", helvetica, "franklin gothic medium", "century gothic", cantarell, oxygen, ubuntu, sans-serif;
-  font-size: calc(16px + 0.25vw);
-  line-height: 1.55em;
   color: #303030;
   background-color: white;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "fira sans", roboto, noto, "droid sans", "liberation sans", "lucida grande", "helvetica neue", helvetica, "franklin gothic medium", "century gothic", cantarell, oxygen, ubuntu, sans-serif;
+  font-size: calc(16px + 0.25vw);
+  line-height: 1.55;
   -webkit-font-kerning: normal;
           font-kerning: normal;
   text-rendering: optimizeLegibility;
@@ -28,6 +29,12 @@ figcaption,
 figure,
 main {
   display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 main {
@@ -72,6 +79,18 @@ h6 {
   margin-bottom: 1rem;
   font-weight: 600;
   position: relative;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: 400;
+  font-size: 0.7em;
+  margin-left: 0.5em;
+  color: #777;
 }
 
 h1 {
@@ -208,7 +227,7 @@ pre {
   overflow: auto;
   word-wrap: normal;
   padding: 1em;
-  line-height: 1.45em;
+  line-height: 1.45;
 }
 
 pre code {
@@ -315,7 +334,6 @@ img {
   border-style: none;
   border: 0;
   max-width: 100%;
-  box-sizing: border-box;
 }
 
 svg:not(:root) {
@@ -434,7 +452,6 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -453,7 +470,6 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
   padding: 0;
 }
 

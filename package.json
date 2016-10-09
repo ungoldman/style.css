@@ -1,7 +1,7 @@
 {
   "name": "style.css",
   "description": "Classless stylesheet for markdown documents.",
-  "version": "1.0.0-alpha-7",
+  "version": "1.0.0-alpha-8",
   "author": "Nate Goldman <ungoldman@gmail.com>",
   "bugs": {
     "url": "https://github.com/ungoldman/style.css/issues"
