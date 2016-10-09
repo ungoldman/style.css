@@ -1,4 +1,3 @@
-/*! style.css v1.0.0-alpha-8 | ISC License | https://github.com/ungoldman/style.css */
 html {
   color: #303030;
   background-color: white;
@@ -6,11 +5,9 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "fira sans", roboto, noto, "droid sans", "liberation sans", "lucida grande", "helvetica neue", helvetica, "franklin gothic medium", "century gothic", cantarell, oxygen, ubuntu, sans-serif;
   font-size: calc(16px + 0.25vw);
   line-height: 1.55;
-  -webkit-font-kerning: normal;
-          font-kerning: normal;
+  font-kerning: normal;
   text-rendering: optimizeLegibility;
-  -webkit-font-feature-settings: "kern", "liga" 1, "calt" 0;
-          font-feature-settings: "kern", "liga" 1, "calt" 0;
+  font-feature-settings: "kern", "liga" 1, "calt" 0;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -260,7 +257,6 @@ code::before, code::after {
 
 kbd {
   background-color: #e6e6e6;
-  background-image: -webkit-linear-gradient(#fafafa, #e6e6e6);
   background-image: linear-gradient(#fafafa, #e6e6e6);
   background-repeat: repeat-x;
   border: 1px solid #d6d6d6;
@@ -516,4 +512,240 @@ template {
 
 [hidden] {
   display: none;
+}
+
+.top-bar {
+  padding: 0 1rem;
+  margin: 0 0 2rem;
+  overflow: auto;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+}
+
+.page .top-bar {
+  padding: 0;
+}
+
+.top-bar-link, .top-bar-title {
+  color: #aaa;
+  cursor: pointer;
+  float: left;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 1rem 0;
+}
+
+.top-bar-link:hover, .top-bar-title:hover {
+  text-decoration: none;
+}
+
+.top-bar-link.current-page, .top-bar-link.current-page:hover, .top-bar-title.current-page, .top-bar-title.current-page:hover {
+  cursor: default;
+}
+
+.top-bar-link {
+  font-weight: 200;
+  margin-left: 1rem;
+}
+
+.top-bar-link:hover {
+  color: #555;
+}
+
+.top-bar-title {
+  color: #555;
+  font-weight: 600;
+}
+
+.top-bar-right {
+  float: right;
+}
+
+.top-bar {
+  background-color: #eee;
+  background-color: rgba(246, 246, 246, 0.96);
+  color: #bbb;
+  transition: all .1s ease;
+  margin: 0;
+}
+
+.top-bar-link,
+.top-bar-title {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 2;
+  padding: .5rem 0 .5rem .25rem;
+}
+
+.top-bar-right {
+  padding-right: 1rem;
+}
+
+.top-bar-title {
+  color: #666;
+  padding-left: 1rem;
+}
+
+.top-bar-link:hover {
+  color: #666;
+}
+
+.serif {
+  font-family: charter, constantia, "lucida bright", lucidabright, "lucida serif", lucida, "dejavu serif", "bitstream vera serif", "liberation serif", georgia, serif;
+}
+
+.current {
+  color: #666;
+}
+
+.page {
+  margin: 0 0 5rem 50px;
+  transition: margin .1s ease;
+}
+
+.page.nav-open {
+  margin-left: 180px;
+}
+
+.page.nav-open .nav {
+  width: 180px;
+}
+
+.page > main {
+  margin: 5em auto;
+}
+
+.page > main > h1:first-child {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3em;
+}
+
+.page > main .byline {
+  color: #999;
+  font-size: calc(12px + 0.25vw);
+  margin-top: -0.5rem;
+}
+
+.nav {
+  background-color: #292c2f;
+  color: #bbb;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "fira sans", roboto, noto, "droid sans", "liberation sans", "lucida grande", "helvetica neue", helvetica, "franklin gothic medium", "century gothic", cantarell, oxygen, ubuntu, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  overflow: hidden;
+  z-index: 9001;
+  transition: width .1s ease;
+}
+
+.nav a {
+  color: #b3bcc5;
+}
+
+.nav a:hover, .nav a:active, .nav a:focus {
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav li a {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto 1px auto;
+  padding: .5rem 0 .5rem .25rem;
+  background-color: #35393e;
+  text-align: left;
+  color: #b3bcc5;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 2;
+  border-left-width: 3px;
+  border-left-style: solid;
+  white-space: nowrap;
+}
+
+.nav li a.home {
+  color: #FC6E51;
+}
+
+.nav li a.contact {
+  color: #A0D468;
+}
+
+.nav li a.cv {
+  color: #4FC1E9;
+}
+
+.nav li a:hover {
+  background-color: #3c4146;
+}
+
+.nav li a.active {
+  background: #fff;
+}
+
+.nav li a i.fa {
+  position: relative;
+  font-size: 20px;
+  top: 2px;
+  width: 40px;
+  text-align: center;
+}
+
+.nav .id {
+  color: #48CFAD;
+  cursor: context-menu;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.nav .name {
+  color: #d0d6db;
+  text-decoration: none;
+}
+
+.nav .external li a {
+  background-color: #303439;
+  color: #798999;
+}
+
+.nav .external li a:hover {
+  background-color: #35393e;
+  color: #b3bcc5;
+}
+
+@media screen and (max-width: 42rem) {
+  .page {
+    margin: 42px 0 5rem 0;
+  }
+  .page > main {
+    margin: 1rem auto;
+  }
+  .page .nav {
+    background: none;
+    bottom: auto;
+    width: 100%;
+  }
+  .page .nav .site, .page .nav .external {
+    display: none;
+  }
+  .page.nav-open {
+    margin-left: 0;
+  }
+  .page.nav-open .nav {
+    background-color: #292c2f;
+    bottom: 0;
+    width: 100%;
+  }
+  .page.nav-open .nav .site, .page.nav-open .nav .external {
+    display: block;
+  }
 }

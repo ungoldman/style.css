@@ -1,9 +1,11 @@
+/*! style.css v1.0.0-alpha-8 | ISC License | https://github.com/ungoldman/style.css */
 html {
-  font-family: charter, constantia, "lucida bright", lucidabright, "lucida serif", lucida, "dejavu serif", "bitstream vera serif", "liberation serif", georgia, serif;
-  font-size: calc(16px + 0.25vw);
-  line-height: 1.55em;
   color: #303030;
   background-color: white;
+  box-sizing: border-box;
+  font-family: charter, constantia, "lucida bright", lucidabright, "lucida serif", lucida, "dejavu serif", "bitstream vera serif", "liberation serif", georgia, serif;
+  font-size: calc(16px + 0.25vw);
+  line-height: 1.55;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern", "liga" 1, "calt" 0;
@@ -25,6 +27,12 @@ figcaption,
 figure,
 main {
   display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 main {
@@ -69,6 +77,18 @@ h6 {
   margin-bottom: 1rem;
   font-weight: 600;
   position: relative;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: 400;
+  font-size: 0.7em;
+  margin-left: 0.5em;
+  color: #777;
 }
 
 h1 {
@@ -205,7 +225,7 @@ pre {
   overflow: auto;
   word-wrap: normal;
   padding: 1em;
-  line-height: 1.45em;
+  line-height: 1.45;
 }
 
 pre code {
@@ -311,7 +331,6 @@ img {
   border-style: none;
   border: 0;
   max-width: 100%;
-  box-sizing: border-box;
 }
 
 svg:not(:root) {
@@ -430,7 +449,6 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -449,7 +467,6 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
   padding: 0;
 }
 
