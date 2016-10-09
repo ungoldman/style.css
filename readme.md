@@ -17,8 +17,8 @@ A classless stylesheet for markdown documents.
 - **minimal size:** weighs in at an adorable `7kb` unminified.
 - **system fonts:** looks native on macOS, iOS, windows, linux, firefox OS, android.
 - **great for text:** designed to be highly readable and easy on the eyes.
-- **very small api:** with zero classes, there's nothing to learn!
-- **omakase:** composed out of a balanced selection of stylistic practices.
+- **very small API:** with zero classes, there's nothing to learn!
+- **expertly crafted:** composed out of a balanced selection of stylistic practices.
 - **very stylish:** indeed.
 
 ## Usage
