@@ -20,7 +20,8 @@
     "postcss-cli": "^2.6.0",
     "sitedown": "^3.0.0",
     "stylelint": "^7.2.0",
-    "stylelint-config-standard": "^13.0.0"
+    "stylelint-config-standard": "^13.0.0",
+    "top-bar.css": "^1.1.0"
   },
   "files": [
     "style.css",
@@ -47,6 +48,7 @@
     "generate:css": "run-p 'sass:* -- -o ./'",
     "generate:prefix": "postcss -u autoprefixer -r style.css",
     "generate:sign": "cat style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > style.css && pbpaste >> style.css",
+    "generate:sign-2": "cat serif.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > serif.css && pbpaste >> serif.css",
     "gh-pages": "npm run site && gh-pages -d site",
     "git-dirty": "exit-on-dirty-git",
     "prerelease": "run-s test generate git-dirty",
@@ -58,13 +60,13 @@
     "serve:watch": "run-p watch:*",
     "site": "run-s site:**",
     "site:clean": "rm -rf site",
-    "site:css": "run-p 'sass:* -- -o ./site'",
-    "site:css:sign": "cat site/style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > site/style.css && pbpaste >> site/style.css",
+    "site:css": "node-sass src/site/site.scss --output-style=expanded --include-path node_modules/ -o ./site",
     "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
+    "site:release": "cp *.css site",
     "start": "npm-run-all site --parallel serve:*",
     "test": "stylelint \"style.css\" && stylelint \"serif.css\"",
     "watch:html": "npm run site:html -- -w",
-    "watch:scss": "run-p 'sass:* -- -o ./site -w'"
+    "watch:scss": "run-p 'site:css -- -w'"
   },
   "style": "style.css"
 }
