@@ -19,6 +19,7 @@ A classless stylesheet for markdown documents.
 - **great for text:** designed to be highly readable and easy on the eyes.
 - **very small API:** with zero classes, there's nothing to learn!
 - **expertly crafted:** composed out of a balanced selection of stylistic practices.
+- **we've got serif:** includes a serif variant for that edgy look.
 - **very stylish:** indeed.
 
 The best way to get familiar with the look and feel of `style.css` is to visit the [style guide](https://ungoldman.github.io/style.css/guide.html).
