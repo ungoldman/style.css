@@ -1,4 +1,4 @@
-# [style.css](https://github.com/ungoldman/style.css/)
+# style.css
 
 A classless stylesheet for markdown documents.
 

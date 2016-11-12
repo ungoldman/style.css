@@ -4,193 +4,65 @@
 $top-bar-family: $system-sans;
 
 .top-bar {
-  background-color: #eee;
-  background-color: rgba(246,246,246,.96);
-  color: #bbb;
-  transition: all .1s ease;
-  margin: 0;
+  font-family: inherit;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.top-bar-link,
-.top-bar-title {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 2;
-  padding: .5rem 0 .5rem .25rem;
+@media screen and (min-width: 84em) {
+  .top-bar {
+    position: sticky;
+    top: -1px;
+  }
 }
 
-.top-bar-right {
-  padding-right: 1rem;
-}
+footer {
+  text-align: center;
+  margin: 3rem auto;
 
-.top-bar-title {
-  color: #666;
-  padding-left: 1rem;
-}
-
-.top-bar-link:hover {
-  color: #666;
+  & a {
+    color: #777;
+    text-decoration: none;
+  }
 }
 
 // style.css site specific stuff
 .serif { font-family: $system-serif; }
-.current { color: #666; }
 
 // inherited from ungoldman.com
-.page {
-  margin: 0 0 5rem 50px;
-  transition: margin .1s ease;
+/* print styles */
 
-  &.nav-open {
-    margin-left: 180px;
-
-    .nav {
-      width: 180px;
-    }
+@media print {
+  @page {
+    margin: 3.75rem;
   }
 
-  > main {
-    margin: 5em auto;
-
-    > h1:first-child {
-      border-bottom: 1px solid #eee;
-      padding-bottom: 0.3em;
-    }
-
-    .byline {
-      color: #999;
-      font-size: calc(12px + 0.25vw);
-      margin-top: -0.5rem;
-    }
-  }
-}
-
-.nav {
-  background-color: #292c2f;
-  color: #bbb;
-  font-family: $system-sans;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 50px;
-  overflow: hidden;
-  z-index: 9001;
-
-  transition: width .1s ease;
-
-  a {
-    color: #b3bcc5;
-    &:hover, &:active, &:focus {
-      text-decoration: none;
-    }
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  li a {
-    display: block;
-    text-decoration: none;
-    margin: 0 auto 1px auto;
-    padding: .5rem 0 .5rem .25rem;
-    background-color: #35393e;
-    text-align: left;
-    color: #b3bcc5;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 2;
-    border-left-width: 3px;
-    border-left-style: solid;
-    white-space: nowrap;
-
-    &.home {
-      color: #FC6E51;
-    }
-
-    &.contact {
-      color: #A0D468;
-    }
-
-    &.cv {
-      color: #4FC1E9;
-    }
-
-    &:hover {
-      background-color: lighten(#35393e, 3%);
-    }
-
-    &.active {
-      background: #fff;
-    }
-
-    i.fa {
-      position: relative;
-      font-size: 20px;
-      top: 2px;
-      width: 40px;
-      text-align: center;
-    }
-  }
-
-  .id {
-    color: #48CFAD;
-    cursor: context-menu;
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-  }
-
-  .name {
-    color: lighten(#b3bcc5, 10%);
-    text-decoration: none;
-  }
-
-  .external {
-    li a {
-      background-color: darken(#35393e, 2%);
-      color: darken(#b3bcc5, 20%);
-
-      &:hover {
-        background-color: #35393e;
-        color: #b3bcc5;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 42rem) {
   .page {
-    margin: 42px 0 5rem 0;
+    margin: 0;
 
-    > main {
-      margin: 1rem auto;
-    }
-
-    .nav {
-      background: none;
-      bottom: auto;
-      width: 100%;
-
-      .site, .external { display: none }
-    }
-
-    &.nav-open {
-      margin-left: 0;
-
-      .nav {
-        background-color: #292c2f;
-        bottom: 0;
-        width: 100%;
-
-        .site, .external { display: block }
-      }
+    > header {
+      display: none;
     }
   }
+
+  html { background: white }
+  body { border: 0 }
+
+  .subject { display: none }
+  .subject .title { margin: 0 auto .5rem }
+  .content { padding: 0; }
+  .nav { display: none }
+
+  .markdown-body {
+    h1 { padding: 0 }
+    font-size: 13px;
+  }
+
+  .page-break {
+    page-break-before: always;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  .pdf-download { display: none }
 }
