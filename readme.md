@@ -24,6 +24,13 @@ A classless stylesheet for markdown documents.
 
 The best way to get familiar with the look and feel of `style.css` is to visit the [style guide](https://ungoldman.github.io/style.css/guide.html).
 
+### Sites Using `style.css`
+
+- https://ungoldman.github.io/style.css
+- https://hypermodules.github.io/sitedown
+- https://ungoldman.com
+- https://bret.io
+
 ## Usage
 
 If you want to keep it simple, you can do it the old fashioned way.
