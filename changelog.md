@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.0-beta](https://github.com/ungoldman/style.css/releases/v1.0.0) - 2016-09-01
+
+This release marks the end of a very long alpha phase!
+
+I've made several major changes in this release, some of which are breaking. All breaking changes are marked as such below.
+
+### Changes
+
+- **breaking**: remove `modularscale-sass` dependency
+  - this brings dependencies down to zero!
+- heading sizes reworked (no longer using modular scale)
+- `$link-color` updated (`steelblue` -> `#0074D9`)
+  - links are now much more visible on screens with poor contrast
+- **breaking**: remove layout styles (`main` element)
+  - assigning layout styles to `main` was a bad idea
+  - users can set their own width constraints for now
+- **breaking**: remove `$font-size-code` variable
+  - `pre`, `samp`, `code`, and `kbd` now default to `font-size: .75em`
+- increase bottom margin for all block elements (`1em` -> `1.25em`)
+  - more white space and breathing room for text is good
+- decrease heading font weight to 400
+  - nice lighter/thinner style without going overboard
+- **fix**: `code` in headings now renders correctly
+
 ## [1.0.0-alpha-8](https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-8) - 2016-10-08
 
 [view diff](https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-7...v1.0.0-alpha-8)

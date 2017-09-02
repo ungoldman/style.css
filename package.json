@@ -6,9 +6,6 @@
   "bugs": {
     "url": "https://github.com/ungoldman/style.css/issues"
   },
-  "dependencies": {
-    "modularscale-sass": "^2.1.1"
-  },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
     "exit-on-dirty-git": "^1.0.1",
@@ -18,7 +15,7 @@
     "node-sass": "^3.9.3",
     "npm-run-all": "^3.1.0",
     "postcss-cli": "^2.6.0",
-    "sitedown": "^3.1.0",
+    "sitedown": "^3.2.0",
     "stylelint": "^7.2.0",
     "stylelint-config-standard": "^13.0.0",
     "top-bar.css": "^1.2.0"

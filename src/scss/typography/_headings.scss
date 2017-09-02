@@ -6,24 +6,26 @@ h5,
 h6 {
   line-height: 1.25em;
   margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
   position: relative;
 
   // rep the smallies
   small {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.7em;
     margin-left: 0.5em;
     color: #777;
   }
+
+  code { font-size: 90% }
 }
 
 // modular scale: 1.2
 // http://www.modularscale.com/?1&em&1.125&sass&text
-h1 { font-size: ms(6); }
-h2 { font-size: ms(5); }
-h3 { font-size: ms(4); }
-h4 { font-size: ms(3); }
-h5 { font-size: ms(2); }
-h6 { font-size: ms(1); color: $darkest-gray; }
+h1 { font-size: 3em; }
+h2 { font-size: 2.25em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1.15em; color: $darkest-gray; }

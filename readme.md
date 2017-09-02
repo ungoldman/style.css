@@ -110,13 +110,11 @@ Sass allows you to override defaults more easily. Here are the default settings 
 ```scss
 $font-body:         $system-sans !default;
 $font-code:         $system-mono !default;
-$font-size-body:    16px !default;
-$font-size-code:    12px !default;
+$font-size-body:    14px !default;
 $font-size-scale:   0.25vw !default;
-$line-height-body:  1.55em !default;
-$line-height-pre:   1.45em !default;
-$link-color:        steelblue !default;
-$layout-width:      42em !default;
+$line-height-body:  1.55 !default;
+$line-height-pre:   1.45 !default;
+$link-color:        #0074D9 !default;
 ```
 
 #### Using Sass with `node_modules`

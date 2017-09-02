@@ -1,7 +1,3 @@
-// dependencies
-
-@import 'modularscale-sass/stylesheets/modular-scale';
-
 // variables
 
 @import 'src/scss/fonts';
@@ -11,25 +7,16 @@
 
 $font-body:         $system-sans !default;
 $font-code:         $system-mono !default;
-$font-size-body:    16px !default;
-$font-size-code:    12px !default;
+$font-size-body:    14px !default;
 $font-size-scale:   0.25vw !default;
-
-// use unitless line heights
-// https://css-tricks.com/almanac/properties/l/line-height/#article-header-id-0
 $line-height-body:  1.55 !default;
 $line-height-pre:   1.45 !default;
+$link-color:        #0074D9 !default;
 
-$link-color:        steelblue !default;
-$layout-width:      42em !default;
-
-// a note on optimal line length for readability:
-// http://baymard.com/blog/line-length-readability
-$ms-base:           1em;
-$ms-ratio:          $major-second;
+// note: use unitless line heights
+// https://css-tricks.com/almanac/properties/l/line-height/#article-header-id-0
 
 @import 'src/scss/document';
-@import 'src/scss/layout';
 @import 'src/scss/typography/index';
 @import 'src/scss/embedded';
 @import 'src/scss/forms';
