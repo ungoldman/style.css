@@ -114,7 +114,7 @@ $font-size-body:    14px !default;
 $font-size-scale:   0.25vw !default;
 $line-height-body:  1.55 !default;
 $line-height-pre:   1.45 !default;
-$link-color:        #0074D9 !default;
+$link-color:        #0074d9 !default;
 ```
 
 #### Using Sass with `node_modules`
