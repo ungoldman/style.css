@@ -34,6 +34,13 @@
 <li><strong>very stylish:</strong> indeed.</li>
 </ul>
 <p>The best way to get familiar with the look and feel of <code>style.css</code> is to visit the <a href="https://ungoldman.github.io/style.css/guide.html">style guide</a>.</p>
+<h3>Sites Using <code>style.css</code></h3>
+<ul>
+<li><a href="https://ungoldman.github.io/style.css">https://ungoldman.github.io/style.css</a></li>
+<li><a href="https://hypermodules.github.io/sitedown">https://hypermodules.github.io/sitedown</a></li>
+<li><a href="https://ungoldman.com">https://ungoldman.com</a></li>
+<li><a href="https://bret.io">https://bret.io</a></li>
+</ul>
 <h2>Usage</h2>
 <p>If you want to keep it simple, you can do it the old fashioned way.</p>
 <p><a href="style.css"><img src="https://img.shields.io/badge/download-style.css%20(6.7kb)-6495ED.svg?style=flat-square" alt="download style.css"></a></p>
@@ -82,13 +89,11 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <p>Sass allows you to override defaults more easily. Here are the default settings for <code>style.css</code>:</p>
 <pre><code class="language-scss"><span class="hljs-variable">$font-body</span>:         <span class="hljs-variable">$system-sans</span> !default;
 <span class="hljs-variable">$font-code</span>:         <span class="hljs-variable">$system-mono</span> !default;
-<span class="hljs-variable">$font-size-body</span>:    <span class="hljs-number">16px</span> !default;
-<span class="hljs-variable">$font-size-code</span>:    <span class="hljs-number">12px</span> !default;
+<span class="hljs-variable">$font-size-body</span>:    <span class="hljs-number">14px</span> !default;
 <span class="hljs-variable">$font-size-scale</span>:   <span class="hljs-number">0.25vw</span> !default;
-<span class="hljs-variable">$line-height-body</span>:  <span class="hljs-number">1.55em</span> !default;
-<span class="hljs-variable">$line-height-pre</span>:   <span class="hljs-number">1.45em</span> !default;
-<span class="hljs-variable">$link-color</span>:        steelblue !default;
-<span class="hljs-variable">$layout-width</span>:      <span class="hljs-number">42em</span> !default;
+<span class="hljs-variable">$line-height-body</span>:  <span class="hljs-number">1.55</span> !default;
+<span class="hljs-variable">$line-height-pre</span>:   <span class="hljs-number">1.45</span> !default;
+<span class="hljs-variable">$link-color</span>:        <span class="hljs-number">#0074d9</span> !default;
 </code></pre>
 <h4>Using Sass with <code>node_modules</code></h4>
 <p><strong>Protip</strong>: Sass is easier to use with <code>node_modules</code> when you use the <code>include-path</code> option. Here&#x2019;s an example of how to use it with <code>node-sass</code> on the command line.</p>

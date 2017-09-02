@@ -3,7 +3,7 @@ html {
   background-color: white;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "fira sans", roboto, noto, "droid sans", "liberation sans", "lucida grande", "helvetica neue", helvetica, "franklin gothic medium", "century gothic", cantarell, oxygen, ubuntu, sans-serif;
-  font-size: calc(16px + 0.25vw);
+  font-size: calc(14px + 0.25vw);
   line-height: 1.55;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
@@ -34,22 +34,6 @@ main {
   box-sizing: inherit;
 }
 
-main {
-  max-width: 42em;
-  margin: 2em auto;
-  padding: 0 1em;
-  overflow: hidden;
-  word-wrap: break-word;
-}
-
-main > *:first-child {
-  margin-top: 0 !important;
-}
-
-main > *:last-child {
-  margin-bottom: 0 !important;
-}
-
 p,
 blockquote,
 ul,
@@ -58,7 +42,7 @@ dl,
 table,
 pre {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
 }
 
 small {
@@ -73,8 +57,8 @@ h5,
 h6 {
   line-height: 1.25em;
   margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
   position: relative;
 }
 
@@ -84,34 +68,43 @@ h3 small,
 h4 small,
 h5 small,
 h6 small {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 0.7em;
   margin-left: 0.5em;
   color: #777;
 }
 
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+  font-size: 90%;
+}
+
 h1 {
-  font-size: 2.02729em;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 1.80203em;
+  font-size: 2.25em;
 }
 
 h3 {
-  font-size: 1.60181em;
+  font-size: 1.75em;
 }
 
 h4 {
-  font-size: 1.42383em;
+  font-size: 1.5em;
 }
 
 h5 {
-  font-size: 1.26562em;
+  font-size: 1.25em;
 }
 
 h6 {
-  font-size: 1.125em;
+  font-size: 1.15em;
   color: #575757;
 }
 
@@ -122,7 +115,7 @@ p {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: steelblue;
+  color: #0074d9;
   text-decoration: none;
 }
 
@@ -212,7 +205,7 @@ pre,
 kbd,
 samp {
   font-family: menlo, inconsolata, consolas, "fira mono", "noto mono", "droid sans mono", "liberation mono", "dejavu sans mono", "ubuntu mono", monaco, "courier new", monospace;
-  font-size: calc(12px + 0.25vw);
+  font-size: 0.75em;
 }
 
 pre, code {
@@ -241,6 +234,7 @@ pre code::before, pre code::after {
 
 pre > code {
   border: 0;
+  font-size: 1em;
   white-space: pre;
   word-break: normal;
 }
@@ -264,7 +258,6 @@ kbd {
   box-shadow: 0 1px 0 #d6d6d6;
   color: #303030;
   display: inline-block;
-  font-size: 0.75em;
   line-height: 0.95em;
   margin: 0 1px;
   padding: 5px 5px 1px;
@@ -376,12 +369,12 @@ dl dt {
   margin-top: 1em;
   font-size: 1em;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 dl dd {
   padding: 0 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
 }
 
 audio,
@@ -558,6 +551,22 @@ template {
 
 .top-bar-right {
   float: right;
+}
+
+main {
+  max-width: 50em;
+  margin: 2em auto;
+  padding: 0 1em;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+main > *:first-child {
+  margin-top: 0 !important;
+}
+
+main > *:last-child {
+  margin-bottom: 0 !important;
 }
 
 .top-bar {

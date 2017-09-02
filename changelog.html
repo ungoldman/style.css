@@ -24,6 +24,45 @@
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="http://keepachangelog.com/">Keep a Changelog</a>
 and this project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
+<h2><a href="https://github.com/ungoldman/style.css/releases/v1.0.0">1.0.0-beta</a> - 2016-09-01</h2>
+<p>This release marks the end of a very long alpha phase!</p>
+<p>I&#x2019;ve made several major changes in this release, some of which are breaking. All breaking changes are marked as such below.</p>
+<h3>Changes</h3>
+<ul>
+<li><strong>breaking</strong>: remove <code>modularscale-sass</code> dependency
+<ul>
+<li>this brings dependencies down to zero!</li>
+</ul>
+</li>
+<li>heading sizes reworked (no longer using modular scale)</li>
+<li><code>$link-color</code> updated (<code>steelblue</code> -&gt; <code>#0074D9</code>)
+<ul>
+<li>links are now much more visible on screens with poor contrast</li>
+</ul>
+</li>
+<li><strong>breaking</strong>: remove layout styles (<code>main</code> element)
+<ul>
+<li>assigning layout styles to <code>main</code> was a bad idea</li>
+<li>users can set their own width constraints for now</li>
+</ul>
+</li>
+<li><strong>breaking</strong>: remove <code>$font-size-code</code> variable
+<ul>
+<li><code>pre</code>, <code>samp</code>, <code>code</code>, and <code>kbd</code> now default to <code>font-size: .75em</code></li>
+</ul>
+</li>
+<li>increase bottom margin for all block elements (<code>1em</code> -&gt; <code>1.25em</code>)
+<ul>
+<li>more white space and breathing room for text is good</li>
+</ul>
+</li>
+<li>decrease heading font weight to 400
+<ul>
+<li>nice lighter/thinner style without going overboard</li>
+</ul>
+</li>
+<li><strong>fix</strong>: <code>code</code> in headings now renders correctly</li>
+</ul>
 <h2><a href="https://github.com/ungoldman/style.css/releases/v1.0.0-alpha-8">1.0.0-alpha-8</a> - 2016-10-08</h2>
 <p><a href="https://github.com/ungoldman/style.css/compare/v1.0.0-alpha-7...v1.0.0-alpha-8">view diff</a></p>
 <h3>Changes</h3>
