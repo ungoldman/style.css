@@ -22,8 +22,6 @@ See how elements are styled with `style.css`.
 
 ## <a id="headings" href="#headings">Headings</a>
 
-Headings sizes are on a [modular scale](http://www.modularscale.com/?1&em&1.125&sass&text) using a base of `1em` and a [major-second](https://github.com/modularscale/modularscale-sass#ratios) (`1.125`) ratio.
-
 # h1 Heading `with code` <small>and small text</small>
 ## h2 Heading `with code` <small>and small text</small>
 ### h3 Heading `with code` <small>and small text</small>
