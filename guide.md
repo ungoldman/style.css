@@ -24,20 +24,20 @@ See how elements are styled with `style.css`.
 
 Headings sizes are on a [modular scale](http://www.modularscale.com/?1&em&1.125&sass&text) using a base of `1em` and a [major-second](https://github.com/modularscale/modularscale-sass#ratios) (`1.125`) ratio.
 
-# h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+# h1 Heading `with code` <small>and small text</small>
+## h2 Heading `with code` <small>and small text</small>
+### h3 Heading `with code` <small>and small text</small>
+#### h4 Heading `with code` <small>and small text</small>
+##### h5 Heading `with code` <small>and small text</small>
+###### h6 Heading `with code` <small>and small text</small>
 
 ```
-# h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+# h1 Heading `with code` <small>and small text</small>
+## h2 Heading `with code` <small>and small text</small>
+### h3 Heading `with code` <small>and small text</small>
+#### h4 Heading `with code` <small>and small text</small>
+##### h5 Heading `with code` <small>and small text</small>
+###### h6 Heading `with code` <small>and small text</small>
 ```
 
 ## <a id="paragraphs" href="#paragraphs">Paragraphs</a>
