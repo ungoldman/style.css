@@ -33,35 +33,35 @@
 <li><strong>we&#x2019;ve got serif:</strong> includes a serif variant for that edgy look.</li>
 <li><strong>very stylish:</strong> indeed.</li>
 </ul>
-<p>The best way to get familiar with the look and feel of <code>style.css</code> is to visit the <a href="https://ungoldman.github.io/style.css/guide.html">style guide</a>.</p>
-<h3>Sites Using <code>style.css</code></h3>
-<ul>
-<li><a href="https://ungoldman.github.io/style.css">https://ungoldman.github.io/style.css</a></li>
-<li><a href="https://hypermodules.github.io/sitedown">https://hypermodules.github.io/sitedown</a></li>
-<li><a href="https://ungoldman.com">https://ungoldman.com</a></li>
-<li><a href="https://bret.io">https://bret.io</a></li>
-</ul>
+<h2>Install</h2>
+<p><a href="style.css"><img src="https://img.shields.io/badge/download-style.css-6495ED.svg?style=flat-square" alt="download style.css"></a> <a href="serif.css"><img src="https://img.shields.io/badge/download-serif.css-6495ED.svg?style=flat-square" alt="download serif.css"></a></p>
+<pre><code class="language-html"><span class="hljs-comment">&lt;!-- CDN Development (always latest) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/style.css/style.css&quot;</span>&gt;</span>
+</code></pre>
+<pre><code class="language-html"><span class="hljs-comment">&lt;!-- CDN Production (specific release) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/style.css@1.0.0-beta/style.css&quot;</span>&gt;</span>
+</code></pre>
+<pre><code class="language-sh"><span class="hljs-comment"># npm package</span>
+$ npm install style.css
+</code></pre>
+<pre><code class="language-css"><span class="hljs-comment">/* CSS file */</span>
+@<span class="hljs-keyword">import</span> url(<span class="hljs-string">&apos;https://unpkg.com/style.css/style.css&apos;</span>);
+</code></pre>
 <h2>Usage</h2>
-<p>If you want to keep it simple, you can do it the old fashioned way.</p>
-<p><a href="style.css"><img src="https://img.shields.io/badge/download-style.css%20(6.7kb)-6495ED.svg?style=flat-square" alt="download style.css"></a></p>
-<p>Just copy <a href="style.css"><code>style.css</code></a> into your project, then link to it like so:</p>
 <pre><code class="language-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/style.css@latest/style.css&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hooray!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hooray!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<p>A very nice looking <a href="serif.css"><code>serif.css</code></a> stylesheet (also using system fonts) is also included for your convenience.</p>
-<p><a href="serif.css"><img src="https://img.shields.io/badge/download-serif.css%20(6.3kb)-6495ED.svg?style=flat-square" alt="download serif.css"></a></p>
+<p>The best way to get familiar with the look and feel of <code>style.css</code> is to visit the <a href="https://ungoldman.github.io/style.css/guide.html">style guide</a>. Detailed examples of every HTML element (and how to write them in markdown) are available there.</p>
 <h3>Node</h3>
 <pre><code>npm install style.css --save-dev
 </code></pre>
@@ -78,7 +78,6 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <li><a href="https://www.npmjs.com/package/parcelify">parcelify</a></li>
 <li><a href="https://www.npmjs.com/package/rework-npm">rework-npm</a></li>
 </ul>
-<p>See something missing from this list? Please make an issue or send a pull request!</p>
 <h3>Sass</h3>
 <p>You can also use <code>style.css</code> with <a href="http://sass-lang.com/">Sass</a>.</p>
 <pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;path/to/node_modules/style.css/style.scss&apos;</span>;
@@ -86,7 +85,7 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <p>Same goes for the serif variant.</p>
 <pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;path/to/node_modules/style.css/serif.scss&apos;</span>;
 </code></pre>
-<p>Sass allows you to override defaults more easily. Here are the default settings for <code>style.css</code>:</p>
+<p>Sass allows you to override defaults more directly. Here are the default settings for <code>style.css</code>:</p>
 <pre><code class="language-scss"><span class="hljs-variable">$font-body</span>:         <span class="hljs-variable">$system-sans</span> !default;
 <span class="hljs-variable">$font-code</span>:         <span class="hljs-variable">$system-mono</span> !default;
 <span class="hljs-variable">$font-size-body</span>:    <span class="hljs-number">14px</span> !default;
@@ -147,6 +146,14 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 </ul>
 <h2>Contributing</h2>
 <p>Contributions welcome! Please read the <a href="contributing.html">contributing guidelines</a> first.</p>
+<h3>Sites Using <code>style.css</code></h3>
+<ul>
+<li><a href="http://pdxnode.org">http://pdxnode.org</a></li>
+<li><a href="https://bret.io">https://bret.io</a></li>
+<li><a href="https://ungoldman.com">https://ungoldman.com</a></li>
+<li><a href="https://hypermodules.github.io/sitedown">https://hypermodules.github.io/sitedown</a></li>
+<li><a href="https://ungoldman.github.io/style.css">https://ungoldman.github.io/style.css</a></li>
+</ul>
 <h2>Note</h2>
 <p>This module was rewritten after <a href="https://github.com/ungoldman/style.css/tree/v0.1.16#readme"><code>v0.1.16</code></a> to serve a slightly different purpose. All of the old releases along with their readme files are still available on the <a href="https://github.com/ungoldman/style.css/releases">releases</a> page.</p>
 <h2>License</h2>

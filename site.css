@@ -205,7 +205,7 @@ pre,
 kbd,
 samp {
   font-family: menlo, inconsolata, consolas, "fira mono", "noto mono", "droid sans mono", "liberation mono", "dejavu sans mono", "ubuntu mono", monaco, "courier new", monospace;
-  font-size: 0.75em;
+  font-size: 90%;
 }
 
 pre, code {
