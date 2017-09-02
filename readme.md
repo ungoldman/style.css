@@ -22,25 +22,36 @@ A classless stylesheet for markdown documents.
 - **we've got serif:** includes a serif variant for that edgy look.
 - **very stylish:** indeed.
 
-The best way to get familiar with the look and feel of `style.css` is to visit the [style guide](https://ungoldman.github.io/style.css/guide.html).
+## Install
 
-### Sites Using `style.css`
+[![download style.css][dl-sans-img]][dl-sans-url] [![download serif.css][dl-serif-img]][dl-serif-url]
 
-- https://ungoldman.github.io/style.css
-- https://hypermodules.github.io/sitedown
-- https://ungoldman.com
-- https://bret.io
+[dl-sans-img]: https://img.shields.io/badge/download-style.css-6495ED.svg?style=flat-square
+[dl-sans-url]: style.css
+[dl-serif-img]: https://img.shields.io/badge/download-serif.css-6495ED.svg?style=flat-square
+[dl-serif-url]: serif.css
+
+```html
+<!-- CDN Development (always latest) -->
+<link rel="stylesheet" href="https://unpkg.com/style.css/style.css">
+```
+
+```html
+<!-- CDN Production (specific release) -->
+<link rel="stylesheet" href="https://unpkg.com/style.css@1.0.0-beta/style.css">
+```
+
+```sh
+# npm package
+$ npm install style.css
+```
+
+```css
+/* CSS file */
+@import url('https://unpkg.com/style.css/style.css');
+```
 
 ## Usage
-
-If you want to keep it simple, you can do it the old fashioned way.
-
-[![download style.css][dl-sans-img]][dl-sans-url]
-
-[dl-sans-img]: https://img.shields.io/badge/download-style.css%20(6.7kb)-6495ED.svg?style=flat-square
-[dl-sans-url]: style.css
-
-Just copy [`style.css`](style.css) into your project, then link to it like so:
 
 ```html
 <!doctype html>
@@ -48,23 +59,16 @@ Just copy [`style.css`](style.css) into your project, then link to it like so:
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="https://unpkg.com/style.css@latest/style.css">
   </head>
   <body>
-    <main>
-      <h1>Hooray!</h1>
-    </main>
+    <h1>Hooray!</h1>
   </body>
 </html>
 ```
 
-A very nice looking [`serif.css`](serif.css) stylesheet (also using system fonts) is also included for your convenience.
-
-[![download serif.css][dl-serif-img]][dl-serif-url]
-
-[dl-serif-img]: https://img.shields.io/badge/download-serif.css%20(6.3kb)-6495ED.svg?style=flat-square
-[dl-serif-url]: serif.css
+The best way to get familiar with the look and feel of `style.css` is to visit the [style guide](https://ungoldman.github.io/style.css/guide.html). Detailed examples of every HTML element (and how to write them in markdown) are available there.
 
 ### Node
 
@@ -89,8 +93,6 @@ Here are some other modules out there for requiring CSS using JavaScript that sh
 - [parcelify](https://www.npmjs.com/package/parcelify)
 - [rework-npm](https://www.npmjs.com/package/rework-npm)
 
-See something missing from this list? Please make an issue or send a pull request!
-
 ### Sass
 
 You can also use `style.css` with [Sass](http://sass-lang.com/).
@@ -105,7 +107,7 @@ Same goes for the serif variant.
 @import 'path/to/node_modules/style.css/serif.scss';
 ```
 
-Sass allows you to override defaults more easily. Here are the default settings for `style.css`:
+Sass allows you to override defaults more directly. Here are the default settings for `style.css`:
 
 ```scss
 $font-body:         $system-sans !default;
@@ -196,6 +198,14 @@ The following projects were major influences on `style.css`:
 ## Contributing
 
 Contributions welcome! Please read the [contributing guidelines](contributing.md) first.
+
+### Sites Using `style.css`
+
+- http://pdxnode.org
+- https://bret.io
+- https://ungoldman.com
+- https://hypermodules.github.io/sitedown
+- https://ungoldman.github.io/style.css
 
 ## Note
 
