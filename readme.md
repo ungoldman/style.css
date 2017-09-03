@@ -33,12 +33,12 @@ A classless stylesheet for markdown documents.
 
 ```html
 <!-- CDN Development (always latest) -->
-<link rel="stylesheet" href="https://unpkg.com/style.css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/style.css">
 ```
 
 ```html
 <!-- CDN Production (specific release) -->
-<link rel="stylesheet" href="https://unpkg.com/style.css@1.0.0-beta/style.css">
+<link rel="stylesheet" href="https://unpkg.com/style.css@1.0.0-beta">
 ```
 
 ```sh
