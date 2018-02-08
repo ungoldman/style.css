@@ -1,4 +1,4 @@
-/*! style.css v1.0.0-beta-1 | ISC License | https://github.com/ungoldman/style.css */
+/*! style.css v1.0.0 | ISC License | https://github.com/ungoldman/style.css */
 html {
   color: #303030;
   background-color: white;
@@ -56,10 +56,10 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 500;
   line-height: 1.25em;
-  margin-top: 2rem;
   margin-bottom: 1.25rem;
-  font-weight: 400;
+  margin-top: 2rem;
   position: relative;
 }
 
@@ -69,10 +69,9 @@ h3 small,
 h4 small,
 h5 small,
 h6 small {
-  font-weight: 300;
-  font-size: 0.7em;
-  margin-left: 0.5em;
   color: #777;
+  font-size: 0.7em;
+  font-weight: 300;
 }
 
 h1 code,
@@ -81,11 +80,11 @@ h3 code,
 h4 code,
 h5 code,
 h6 code {
-  font-size: 90%;
+  font-size: 0.9em;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.75em;
 }
 
 h2 {
