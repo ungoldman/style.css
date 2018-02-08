@@ -4,24 +4,23 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 500;
   line-height: 1.25em;
-  margin-top: 2rem;
   margin-bottom: 1.25rem;
-  font-weight: 400;
+  margin-top: 2rem;
   position: relative;
 
   // rep the smallies
   small {
-    font-weight: 300;
-    font-size: 0.7em;
-    margin-left: 0.5em;
     color: #777;
+    font-size: 0.7em;
+    font-weight: 300;
   }
 
-  code { font-size: 90% }
+  code { font-size: 0.9em }
 }
 
-h1 { font-size: 3em; }
+h1 { font-size: 2.75em; }
 h2 { font-size: 2.25em; }
 h3 { font-size: 1.75em; }
 h4 { font-size: 1.5em; }
