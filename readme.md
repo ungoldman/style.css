@@ -1,6 +1,6 @@
 # style.css
 
-A classless stylesheet for markdown documents.
+A classless stylesheet for HTML documents.
 
 [![latest version][npm-img]][npm-url] [![build status][travis-img]][travis-url] [![stability][stability-img]][stability-url] [![downloads][downloads-img]][npm-url]
 
@@ -12,14 +12,20 @@ A classless stylesheet for markdown documents.
 [stability-url]: https://iojs.org/api/documentation.html#documentation_stability_index
 [downloads-img]: https://img.shields.io/npm/dm/style.css.svg?style=flat-square
 
+## About
+
+Make a plain HTML page look good and readable with zero effort!
+
+It's just styles for all the basic elements. Check out the [style guide](https://ungoldman.github.io/style.css/guide.html) to see what it looks.
+
 ## Features
 
-- **minimal size:** weighs in at an adorable `7kb` unminified.
 - **system fonts:** looks native on macOS, iOS, windows, linux, firefox OS, android.
 - **great for text:** designed to be highly readable and easy on the eyes.
 - **very small API:** with zero classes, there's nothing to learn!
 - **expertly crafted:** composed out of a balanced selection of stylistic practices.
 - **we've got serif:** includes a serif variant for that edgy look.
+- **minimal size:** weighs in at a modest `7kb` unminified.
 - **very stylish:** indeed.
 
 ## Install
