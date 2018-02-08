@@ -38,7 +38,7 @@ A classless stylesheet for markdown documents.
 
 ```html
 <!-- CDN Production (specific release) -->
-<link rel="stylesheet" href="https://unpkg.com/style.css@1.0.0-beta">
+<link rel="stylesheet" href="https://unpkg.com/style.css@1.0.0">
 ```
 
 ```sh
