@@ -1,4 +1,4 @@
-# style guide
+# Style Guide
 
 See how elements are styled with `style.css`.
 
