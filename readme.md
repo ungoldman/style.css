@@ -8,8 +8,8 @@ A classless stylesheet for markdown documents.
 [npm-url]: https://www.npmjs.com/package/style.css
 [travis-img]: https://img.shields.io/travis/ungoldman/style.css.svg?style=flat-square
 [travis-url]: https://travis-ci.org/ungoldman/style.css
-[stability-img]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
-[stability-url]: https://nodejs.org/api/documentation.html#documentation_stability_index"
+[stability-img]: https://img.shields.io/badge/stability-stable-brightgreen.svg?style=flat-square
+[stability-url]: https://iojs.org/api/documentation.html#documentation_stability_index
 [downloads-img]: https://img.shields.io/npm/dm/style.css.svg?style=flat-square
 
 ## Features
