@@ -27,9 +27,9 @@ A classless stylesheet for markdown documents.
 [![download style.css][dl-sans-img]][dl-sans-url] [![download serif.css][dl-serif-img]][dl-serif-url]
 
 [dl-sans-img]: https://img.shields.io/badge/download-style.css-6495ED.svg?style=flat-square
-[dl-sans-url]: style.css
+[dl-sans-url]: https://unpkg.com/style.css
 [dl-serif-img]: https://img.shields.io/badge/download-serif.css-6495ED.svg?style=flat-square
-[dl-serif-url]: serif.css
+[dl-serif-url]: https://unpkg.com/style.css/serif.css
 
 ```html
 <!-- CDN Development (always latest) -->
@@ -199,7 +199,7 @@ The following projects were major influences on `style.css`:
 
 Contributions welcome! Please read the [contributing guidelines](contributing.md) first.
 
-### Sites Using `style.css`
+## Sites Using `style.css`
 
 - http://pdxnode.org
 - https://bret.io
