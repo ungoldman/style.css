@@ -16,7 +16,7 @@ A classless stylesheet for HTML documents.
 
 Make a plain HTML page look good and readable with zero effort!
 
-Check out the [style guide](https://ungoldman.github.io/style.css/guide.html) to see what it looks like.
+Check out the [style guide](https://css-pkg.github.io/style.css/guide.html) to see what it looks like.
 
 ## Features
 
