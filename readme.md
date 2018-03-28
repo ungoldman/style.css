@@ -6,8 +6,8 @@ A classless stylesheet for HTML documents.
 
 [npm-img]: https://img.shields.io/npm/v/style.css.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/style.css
-[travis-img]: https://img.shields.io/travis/ungoldman/style.css.svg?style=flat-square
-[travis-url]: https://travis-ci.org/ungoldman/style.css
+[travis-img]: https://img.shields.io/travis/css-pkg/style.css.svg?style=flat-square
+[travis-url]: https://travis-ci.org/css-pkg/style.css
 [stability-img]: https://img.shields.io/badge/stability-stable-brightgreen.svg?style=flat-square
 [stability-url]: https://iojs.org/api/documentation.html#documentation_stability_index
 [downloads-img]: https://img.shields.io/npm/dm/style.css.svg?style=flat-square
@@ -74,7 +74,7 @@ $ npm install style.css
 </html>
 ```
 
-The best way to get familiar with the look and feel of `style.css` is to visit the [style guide](https://ungoldman.github.io/style.css/guide.html). Detailed examples of every HTML element (and how to write them in markdown) are available there.
+The best way to get familiar with the look and feel of `style.css` is to visit the [style guide](https://css-pkg.github.io/style.css/guide.html). Detailed examples of every HTML element (and how to write them in markdown) are available there.
 
 ### Node
 
@@ -215,7 +215,7 @@ Contributions welcome! Please read the [contributing guidelines](contributing.md
 
 ## Note
 
-This module was rewritten after [`v0.1.16`](https://github.com/ungoldman/style.css/tree/v0.1.16#readme) to serve a slightly different purpose. All of the old releases along with their readme files are still available on the [releases](https://github.com/ungoldman/style.css/releases) page.
+This module was rewritten after [`v0.1.16`](https://github.com/css-pkg/style.css/tree/v0.1.16#readme) to serve a slightly different purpose. All of the old releases along with their readme files are still available on the [releases](https://github.com/css-pkg/style.css/releases) page.
 
 ## License
 
