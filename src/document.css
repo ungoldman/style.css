@@ -1,8 +1,8 @@
 /* html should be at the top */
 
 html {
-  color: var(--black);
-  background-color: var(--white);
+  /* color: var(--black); */
+  /* background-color: var(--white); */
   box-sizing: border-box;
   font-family: var(--font-body);
   font-size: calc(var(--font-size-body) + var(--font-size-scale));

@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+- refactor: use postcss and css variables instead of sass
+- refactor: remove old compatibility rules for browsers that don't support css variables
+- feature: add support for dark mode
+
 ## [1.0.0](https://github.com/ungoldman/style.css/releases/v1.0.0) - 2018-02-07
 
 ### Changes

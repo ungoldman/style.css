@@ -1,8 +1,8 @@
 blockquote {
   margin: 0 0 1rem;
   padding: 0 1rem;
-  color: var(--darker-gray);
-  border-left: 4px solid var(--light-gray);
+  color: var(--blockquote-color);
+  border-left: 4px solid var(--blockquote-color);
 
   & > :first-child { margin-top: 0; }
   & > :last-child { margin-bottom: 0; }

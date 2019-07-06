@@ -29,7 +29,7 @@ See how elements are styled with `style.css`.
 ##### h5 Heading `with code` <small>and small text</small>
 ###### h6 Heading `with code` <small>and small text</small>
 
-```
+```md
 # h1 Heading `with code` <small>and small text</small>
 ## h2 Heading `with code` <small>and small text</small>
 ### h3 Heading `with code` <small>and small text</small>
@@ -44,7 +44,7 @@ At the base of the mainmast, full beneath the doubloon and the flame, the Parsee
 
 "There it is again—under the hatches—don't you hear it—a cough—it sounded like a cough."
 
-```
+```md
 At the base of the mainmast, full beneath the doubloon and the flame, the Parsee was kneeling in Ahab's front, but with his head bowed away from him; while near by, from the arched and overhanging rigging, where they had just been engaged securing a spar, a number of the seamen, arrested by the glare, now cohered together, and hung pendulous, like a knot of numbed wasps from a drooping, orchard twig. In various enchanted attitudes, like the standing, or stepping, or running skeletons in Herculaneum, others remained rooted to the deck; but all their eyes upcast.
 
 "There it is again—under the hatches—don't you hear it—a cough—it sounded like a cough."
@@ -54,13 +54,13 @@ At the base of the mainmast, full beneath the doubloon and the flame, the Parsee
 
 [link text](http://dev.nodeca.com)
 
-```
+```md
 [link text](http://dev.nodeca.com)
 ```
 
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
-```
+```md
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
 ```
 
@@ -68,7 +68,7 @@ At the base of the mainmast, full beneath the doubloon and the flame, the Parsee
 
 [footnote style]: https://en.wikipedia.org/wiki/Note_(typography)
 
-```
+```md
 [link with footnote style syntax][footnote style]
 
 [footnote style]: https://en.wikipedia.org/wiki/Note_(typography)
@@ -86,7 +86,7 @@ At the base of the mainmast, full beneath the doubloon and the flame, the Parsee
     - Nulla volutpat aliquam velit
 + Very easy!
 
-```
+```md
 + Create a list by starting a line with `+`, `-`, or `*`
 + Sub-lists are made by indenting 2 spaces:
   - Marker character change forces new list start:
@@ -106,7 +106,7 @@ At the base of the mainmast, full beneath the doubloon and the flame, the Parsee
 1. You can use sequential numbers...
 1. ...or keep all the numbers as `1.`
 
-```
+```md
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
@@ -121,7 +121,7 @@ At the base of the mainmast, full beneath the doubloon and the flame, the Parsee
 57. foo
 1. bar
 
-```
+```md
 57. foo
 1. bar
 ```
@@ -154,7 +154,7 @@ This is a paragraph following a blockquote.
 - _This is also italic text_
 - ~~This is deleted text~~
 
-```
+```md
 - **This is bold text**
 - __This is also bold text__
 - *This is italic text*
@@ -234,7 +234,7 @@ console.log(foo(5));
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-```
+```md
 | Option | Description |
 | ------ | ----------- |
 | data   | path to data files to supply the data that will be passed into templates. |
@@ -250,7 +250,7 @@ Right aligned columns
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-```
+```md
 | Option | Description |
 | ------:| -----------:|
 | data   | path to data files to supply the data that will be passed into templates. |
@@ -266,7 +266,7 @@ ___
 
 ***
 
-```
+```md
 ___
 
 ---
@@ -278,13 +278,13 @@ ___
 
 ![Finn and Jake](http://38.media.tumblr.com/tumblr_mdo6z0KBpf1rwy00jo1_400.gif "One style is all that is needed.")
 
-```
+```md
 ![Finn and Jake](http://38.media.tumblr.com/tumblr_mdo6z0KBpf1rwy00jo1_400.gif "One style is all that is needed.")
 ```
 
 ![Captain Story-Martense House](https://upload.wikimedia.org/wikipedia/commons/6/66/1996.164.1-65_IMLS_SL2.jpg "Captain Story-Martense House, Front Door, Church Avenue and East 38th Street, Flatbush, Brooklyn, ca. 1899-1909.")
 
-```
+```md
 ![Captain Story-Martense House](https://upload.wikimedia.org/wikipedia/commons/6/66/1996.164.1-65_IMLS_SL2.jpg "Captain Story-Martense House, Front Door, Church Avenue and East 38th Street, Flatbush, Brooklyn, ca. 1899-1909.")
 ```
 
@@ -296,7 +296,7 @@ The reference defining the URL location can be later in the document.
 
 [id]: https://upload.wikimedia.org/wikipedia/commons/1/1f/Ries.PNG  "1550 Woodcut of 58-year-old Adam Ries, inscription: ANNO 1550 ADAM RIES SEINS ALTERS IM LVIII"
 
-```
+```md
 Like links, images also have a footnote style syntax.
 
 ![Alt text][id]
@@ -334,7 +334,7 @@ It converts "HTML" but keeps partial entries like "xxxHTMLyyy" intact.
 
 *[HTML]: Hyper Text Markup Language
 
-```
+```md
 This is a HTML abbreviation example.
 
 It converts "HTML" but keeps partial entries like "xxxHTMLyyy" intact.
@@ -368,7 +368,7 @@ Term 2
   ~ Definition 2a
   ~ Definition 2b
 
-```
+```md
 Term 1
 
 :   Definition 1
@@ -410,7 +410,7 @@ Duplicated footnote reference[^second].
 
 [^second]: Footnote text.
 
-```
+```md
 Footnote 1 link[^first].
 
 Footnote 2 link[^second].
@@ -433,7 +433,7 @@ Duplicated footnote reference[^second].
 - ++Inserted text++ (via [markdown-it-ins](https://github.com/markdown-it/markdown-it-ins))
 - ==Marked text== (via [markdown-it-mark](https://github.com/markdown-it/markdown-it-mark))
 
-```
+```md
 - Superscript: 19^th^ (via [markdown-it-sup](https://github.com/markdown-it/markdown-it-sup))
 - Subscript: H~2~O (via [markdown-it-sub](https://github.com/markdown-it/markdown-it-sub))
 - ++Inserted text++ (via [markdown-it-ins](https://github.com/markdown-it/markdown-it-ins))

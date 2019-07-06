@@ -27,7 +27,7 @@
     "postcss-reporter": "^6.0.1",
     "postcss-url": "^8.0.0",
     "rimraf": "^2.6.3",
-    "sitedown": "^3.3.2",
+    "sitedown": "hypermodules/sitedown#improve-hljs",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
     "top-bar.css": "^2.0.0"

@@ -13,15 +13,15 @@ table {
   & th,
   & td {
     padding: 6px 13px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--th-border-color);
   }
 
   & th { font-weight: bold; }
 
   & tr {
-    background-color: #fff;
-    border-top: 1px solid #ccc;
+    background-color: var(--tr-background-color);
+    border-top: 1px solid var(--tr-border-color);
 
-    &:nth-child(2n) { background-color: #f8f8f8; }
+    &:nth-child(2n) { background-color: var(--tr-background-color-alt); }
   }
 }

@@ -26,6 +26,7 @@ Check out the [style guide](https://css-pkg.github.io/style.css/guide.html) to s
 - **expertly crafted:** composed out of a balanced selection of stylistic practices.
 - **we've got serif:** includes a serif variant for that edgy look.
 - **minimal size:** weighs in at a modest `7kb` unminified.
+- **CSS variables** New in 2.0, control colors and other settings with native CSS variables.
 - **very stylish:** indeed.
 
 ## Install
@@ -98,64 +99,45 @@ Here are some other modules out there for requiring CSS using JavaScript that sh
 - [css-modules](https://github.com/css-modules/css-modules)
 - [parcelify](https://www.npmjs.com/package/parcelify)
 - [rework-npm](https://www.npmjs.com/package/rework-npm)
+- [postcss-import](https://github.com/postcss/postcss-import)
 
-### Sass
+### CSS Variables
 
-You can also use `style.css` with [Sass](http://sass-lang.com/).
+You can override defaults directly with CSS variables. Here are the default variable settings for `style.css`:
 
-```scss
-@import 'path/to/node_modules/style.css/style.scss';
+```css
+:root {
+  --font-body: var(--system-sans);
+  --font-code: var(--system-mono);
+  --font-size-body: 14px;
+  --font-size-scale: 0.25vw;
+  --line-height-body: 1.55;
+  --line-height-pre: 1.45;
+  --link-color: #0074d9;
+}
 ```
-
-Same goes for the serif variant.
-
-```scss
-@import 'path/to/node_modules/style.css/serif.scss';
-```
-
-Sass allows you to override defaults more directly. Here are the default settings for `style.css`:
-
-```scss
-$font-body:         $system-sans !default;
-$font-code:         $system-mono !default;
-$font-size-body:    14px !default;
-$font-size-scale:   0.25vw !default;
-$line-height-body:  1.55 !default;
-$line-height-pre:   1.45 !default;
-$link-color:        #0074d9 !default;
-```
-
-#### Using Sass with `node_modules`
-
-**Protip**: Sass is easier to use with `node_modules` when you use the `include-path` option. Here's an example of how to use it with `node-sass` on the command line.
-
-```
-node-sass style.scss -o style.css --include-path node_modules/
-```
-
-This way you can exclude the `node_modules/` path prefix in your Sass source code.
 
 #### Overriding settings
 
 You can override settings like so:
 
-```scss
-$font-size-body: 14px;
+```css
+@import 'style.css';
 
-@import 'style.css/style.scss';
+:root {
+  --font-size-body: 14px;
+}
 ```
 
 If you want to use the font stacks to override global font settings, you can do so like this:
 
-```scss
-@import 'style.css/src/scss/fonts.scss';
+```css
+@import 'style.css';
 
-$font-body: $system-serif;
-
-@import 'style.css/style.scss';
+:root {
+  --font-body: var(--system-serif);
+}
 ```
-
-The above snippet is how [`serif.css`](serif.css) is generated.
 
 ## Development
 
@@ -164,8 +146,8 @@ To get started, clone the repository and install dependencies with `npm install`
 ### Tinker
 
 - Run `npm start` to start the site.
-- Edit `scss` source files in `src/`.
-- Watch the style guide at `localhost:8000/guide.html` for changes.
+- Edit `css` source files in `src/`.
+- Watch the style guide at `localhost:9966/guide.html` for changes.
 
 ### Test
 
@@ -175,7 +157,7 @@ We're using [stylelint](https://github.com/stylelint/stylelint) with a slightly 
 
 ### Generate
 
-Generate `style.css` from `style.scss` by running `npm run generate`.
+Generate `style.css` from `src/index.css` by running `npm run build`.
 
 ### Release
 
@@ -192,6 +174,7 @@ The `prerelease` task will generate CSS, run tests, check if the git index is di
     <tr><th align="left">nikolaswise</th><td><a href="https://github.com/nikolaswise">github/nikolaswise</a></td></tr>
     <tr><th align="left">paulcpederson</th><td><a href="https://github.com/paulcpederson">github/paulcpederson</a></td></tr>
     <tr><th align="left">ungoldman</th><td><a href="https://github.com/ungoldman">github/ungoldman</a></td></tr>
+    <tr><th align="left">bcomnes</th><td><a href="https://github.com/bcomnes">github/bcomnes</a></td></tr>
   </tbody>
 </table>
 

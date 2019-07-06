@@ -2,8 +2,8 @@ figure {
   margin: 1em 0;
 
   & img {
-    background: var(--white);
-    border: 1px solid var(--gray);
+    background: var(--figure-background-color);
+    border: 1px solid var(--figure-border-color);
     padding: 0.25em;
   }
 }

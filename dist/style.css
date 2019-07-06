@@ -1,17 +1,17 @@
 /* variables */
 :root {
-  --white: hsl(0, 0%, 100%);
-  --off-white: hsl(0, 0%, 98%);
-  --gray-97: hsl(0, 0%, 97%);
-  --lightest-gray: hsl(0, 0%, 95%);
-  --lighter-gray: hsl(0, 0%, 90%);
-  --light-gray: hsl(0, 0%, 84%);
-  --gray: hsl(0, 0%, 78%);
-  --dark-gray: hsl(0, 0%, 64%);
-  --darker-gray: hsl(0, 0%, 49%);
-  --darkest-gray: hsl(0, 0%, 34%);
-  --off-black: hsl(0, 0%, 25%);
-  --black: hsl(0, 0%, 19%);
+  --white: hsla(0, 0%, 100%, 0%);
+  --off-white: hsla(0, 0%, 98%, 1);
+  --gray-97: hsla(0, 0%, 97%, 1);
+  --lightest-gray: hsla(0, 0%, 95%, 1);
+  --lighter-gray: hsla(0, 0%, 90%, 1);
+  --light-gray: hsla(0, 0%, 84%, 1);
+  --gray: hsla(0, 0%, 78%, 1);
+  --dark-gray: hsla(0, 0%, 64%, 1);
+  --darker-gray: hsla(0, 0%, 49%, 1);
+  --darkest-gray: hsla(0, 0%, 34%, 1);
+  --off-black: hsla(0, 0%, 25%, 1);
+  --black: hsla(0, 0%, 19%, 1);
 }
 /* stylelint-disable */
 :root {
@@ -39,8 +39,8 @@
 /* stylelint-enable */
 /* html should be at the top */
 html {
-  color: var(--black);
-  background-color: var(--white);
+  /* color: var(--black); */
+  /* background-color: var(--white); */
   box-sizing: border-box;
   font-family: var(--font-body);
   font-size: calc(var(--font-size-body) + var(--font-size-scale));
@@ -77,7 +77,7 @@ h6 {
   /* rep the smallies */
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    color: #777;
+    color: var(--small-color);
     font-size: 0.7em;
     font-weight: 300;
   }
@@ -87,7 +87,7 @@ h2 { font-size: 2.25em; }
 h3 { font-size: 1.75em; }
 h4 { font-size: 1.5em; }
 h5 { font-size: 1.25em; }
-h6 { font-size: 1.00em; color: var(--darkest-gray); letter-spacing: .025em;}
+h6 { font-size: 1.00em; color: var(--h6-color); letter-spacing: .025em;}
 /* tighten up body copy just a smidge */
 p { letter-spacing: -0.01em; }
 /* 1. Remove the gray background on active links in IE 10. */
@@ -128,11 +128,11 @@ li > p { margin-top: 1em; }
 blockquote {
   margin: 0 0 1rem;
   padding: 0 1rem;
-  color: var(--darker-gray);
-  border-left: 4px solid var(--light-gray)
+  color: var(--blockquote-color);
+  border-left: 4px solid var(--blockquote-color)
 }
-blockquote>:first-child { margin-top: 0; }
-blockquote>:last-child { margin-bottom: 0; }
+blockquote > :first-child { margin-top: 0; }
+blockquote > :last-child { margin-bottom: 0; }
 /* 1. Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
 /* 2. Add the correct font weight in Chrome, Edge, and Safari. */
 b,
@@ -142,8 +142,8 @@ strong {
 }
 /* Add the correct background and color in IE 9-.*/
 mark {
-  background-color: #ff0;
-  color: #000;
+  background-color: var(--mark-background-color);
+  color: var(--mark-color);
 }
 /* Prevent `sub` and `sup` elements from affecting the line height in
    all browsers. */
@@ -166,7 +166,7 @@ samp {
   font-size: 90%; /* 2 */
 }
 pre, code {
-  background-color: var(--lightest-gray);
+  background-color: var(--code-background-color);
   border-radius: 3px;
 }
 pre {
@@ -181,7 +181,6 @@ pre code {
     padding: 0;
     line-height: inherit;
     word-wrap: normal
-
     /* max-width: initial; declaration-block-no-ignored-properties
        margin: 0; declaration-block-no-ignored-properties
        overflow: initial; declaration-block-no-ignored-properties */
@@ -204,14 +203,14 @@ code::before,
     content: '\00a0';
   }
 kbd {
-  background-color: var(--lighter-gray);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--off-white)), to(var(--lighter-gray)));
-  background-image: linear-gradient(var(--off-white), var(--lighter-gray));
+  background-color: var(--kbd-background-color);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--kbd-background-color-highlight)), to(var(--kbd-background-color)));
+  background-image: linear-gradient(var(--kbd-background-color-highlight), var(--kbd-background-color));
   background-repeat: repeat-x;
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--kbd-border-color);
   border-radius: 2px;
-  box-shadow: 0 1px 0 var(--light-gray);
-  color: var(--black);
+  box-shadow: 0 1px 0 var(--kbd-border-color);
+  color: var(--kbd-color);
   display: inline-block;
   line-height: 0.95em;
   margin: 0 1px;
@@ -231,14 +230,14 @@ table {
 table th,
   table td {
     padding: 6px 13px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--th-border-color);
   }
 table th { font-weight: bold; }
 table tr {
-    background-color: #fff;
-    border-top: 1px solid #ccc
+    background-color: var(--tr-background-color);
+    border-top: 1px solid var(--tr-border-color)
   }
-table tr:nth-child(2n) { background-color: #f8f8f8; }
+table tr:nth-child(2n) { background-color: var(--tr-background-color-alt); }
 /* 1. Add the correct box sizing in Firefox. */
 /* 2. Show the overflow in Edge and IE. */
 hr {
@@ -248,7 +247,7 @@ hr {
   height: 4px;
   padding: 0;
   margin: 1em 0;
-  background-color: #e7e7e7;
+  background-color: var(--hr-color);
   border: 0 none
 }
 hr::before {
@@ -274,8 +273,8 @@ figure {
   margin: 1em 0
 }
 figure img {
-    background: var(--white);
-    border: 1px solid var(--gray);
+    background: var(--figure-background-color);
+    border: 1px solid var(--figure-border-color);
     padding: 0.25em;
   }
 figcaption {
@@ -284,8 +283,8 @@ figcaption {
   font-weight: 200;
   margin: 0;
 }
-/* 1. Remove the bottom border in Firefox 39-.*/
-/* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+/* 1. Remove the bottom border in Firefox 39-
+   2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
@@ -324,13 +323,47 @@ pre {
 small { font-size: 80%; }
 /* default settings */
 :root {
+  /* font family */
   --font-body: var(--system-sans);
   --font-code: var(--system-mono);
+
+  /* font size and spacing */
   --font-size-body: 14px;
   --font-size-scale: 0.25vw;
   --line-height-body: 1.55;
   --line-height-pre: 1.45;
-  --link-color: #0074d9;
+
+  /* colors */
+  --link-color: hsla(208, 100%, 50%, 1);
+  --blockquote-color: var(--darker-gray);
+  --code-background-color: var(--lightest-gray);
+  --pre-background-color: var(--lightest-gray);
+  --kbd-background-color: var(--lighter-gray);
+  --kbd-background-color-highlight: var(--off-white);
+  --kbd-border-color: var(--light-gray);
+  --kbd-color: var(--black);
+  --small-color: #777;
+  --mark-color: #000;
+  --mark-background-color: #ff0;
+  --figure-background-color: var(--white);
+  --figure-border-color: var(--gray);
+  --h6-color: var(--darkest-gray);
+  --hr-color: #e7e7e7;
+  --tr-background-color: #fff;
+  --tr-background-color-alt: #f8f8f8;
+  --tr-border-color: #ccc;
+  --th-border-color: #ddd;
+
+  /* dark mode */
+  supported-color-schemes: light dark;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --code-background-color: var(--black);
+    --link-color: hsl(206.7, 100%, 70%);
+    --pre-color: var(--black);
+  }
 }
 /* note: use unitless line heights
    https://css-tricks.com/almanac/properties/l/line-height/#article-header-id-0 */

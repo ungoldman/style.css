@@ -7,7 +7,7 @@ hr {
   height: 4px;
   padding: 0;
   margin: 1em 0;
-  background-color: #e7e7e7;
+  background-color: var(--hr-color);
   border: 0 none;
 
   &::before {

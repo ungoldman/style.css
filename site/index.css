@@ -4,13 +4,18 @@
 $top-bar-family: $system-sans;
 
 */
-@import 'highlight.js/styles/github.css';
 @import 'top-bar.css';
 @import '../src/index.css';
 @import './layout.css';
+@import 'highlight.js/styles/a11y-dark.css';
 
 .top-bar {
   font-family: inherit;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+pre {
+  /* copensating for hljs default styles */
+  padding: 0;
 }

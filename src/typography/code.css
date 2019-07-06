@@ -9,7 +9,7 @@ samp {
 }
 
 pre, code {
-  background-color: var(--lightest-gray);
+  background-color: var(--code-background-color);
   border-radius: 3px;
 }
 
@@ -25,7 +25,6 @@ pre {
     padding: 0;
     line-height: inherit;
     word-wrap: normal;
-
     /* max-width: initial; declaration-block-no-ignored-properties
        margin: 0; declaration-block-no-ignored-properties
        overflow: initial; declaration-block-no-ignored-properties */
@@ -54,13 +53,13 @@ code {
 }
 
 kbd {
-  background-color: var(--lighter-gray);
-  background-image: linear-gradient(var(--off-white), var(--lighter-gray));
+  background-color: var(--kbd-background-color);
+  background-image: linear-gradient(var(--kbd-background-color-highlight), var(--kbd-background-color));
   background-repeat: repeat-x;
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--kbd-border-color);
   border-radius: 2px;
-  box-shadow: 0 1px 0 var(--light-gray);
-  color: var(--black);
+  box-shadow: 0 1px 0 var(--kbd-border-color);
+  color: var(--kbd-color);
   display: inline-block;
   line-height: 0.95em;
   margin: 0 1px;
