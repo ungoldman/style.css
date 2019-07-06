@@ -1,0 +1,26 @@
+/* html should be at the top */
+
+html {
+  color: var(--black);
+  background-color: var(--white);
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: calc(var(--font-size-body) + var(--font-size-scale));
+  line-height: var(--line-height-body);
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "liga" 1, "calt" 0;
+}
+
+/* Remove the margin in all browsers. */
+body {
+  margin: 0;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change
+   https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

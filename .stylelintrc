@@ -3,7 +3,7 @@
   "rules": {
     "selector-list-comma-newline-after": "always-multi-line",
     "declaration-block-no-duplicate-properties": [true, {
-      ignore: ["consecutive-duplicates-with-different-values"]
+      "ignore": ["consecutive-duplicates-with-different-values"]
     }]
   }
 }

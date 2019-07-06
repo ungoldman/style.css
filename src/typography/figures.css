@@ -1,9 +1,9 @@
 figure {
   margin: 1em 0;
 
-  img {
-    background: $white;
-    border: 1px solid $gray;
+  & img {
+    background: var(--white);
+    border: 1px solid var(--gray);
     padding: 0.25em;
   }
 }

@@ -1,0 +1,338 @@
+/* variables */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 98%);
+  --gray-97: hsl(0, 0%, 97%);
+  --lightest-gray: hsl(0, 0%, 95%);
+  --lighter-gray: hsl(0, 0%, 90%);
+  --light-gray: hsl(0, 0%, 84%);
+  --gray: hsl(0, 0%, 78%);
+  --dark-gray: hsl(0, 0%, 64%);
+  --darker-gray: hsl(0, 0%, 49%);
+  --darkest-gray: hsl(0, 0%, 34%);
+  --off-black: hsl(0, 0%, 25%);
+  --black: hsl(0, 0%, 19%);
+}
+/* stylelint-disable */
+:root {
+  --system-sans: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, /* mac, ios */
+                 'segoe ui', /* windows */
+                 roboto, noto, 'droid sans', /* android */
+                'liberation sans', /* linux */
+                'lucida grande', 'helvetica neue', helvetica, /* old mac */
+                'franklin gothic medium', 'century gothic', /* old windows */
+                cantarell, oxygen, ubuntu, /* old linux */
+                sans-serif; /* fallback */
+  --system-mono:  menlo, /* mac */
+                  inconsolata, consolas, /* windows */
+                  'fira mono', /* firefox os */
+                  'noto mono', 'droid sans mono', /* android */
+                  'liberation mono', 'dejavu sans mono', 'ubuntu mono', /* linux */
+                  monaco, 'courier new', /* older systems */
+                  monospace; /* fallback */
+  --system-serif: charter, constantia, /* mac */
+                  'lucida bright', lucidabright, 'lucida serif', lucida, /* windows */
+                  'dejavu serif', 'bitstream vera serif', 'liberation serif', /* linux */
+                  georgia, /* old systems */
+                  serif; /* fallback */
+}
+/* stylelint-enable */
+/* html should be at the top */
+html {
+  color: var(--black);
+  background-color: var(--white);
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: calc(var(--font-size-body) + var(--font-size-scale));
+  line-height: var(--line-height-body);
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern", "liga" 1, "calt" 0;
+          font-feature-settings: "kern", "liga" 1, "calt" 0;
+}
+/* Remove the margin in all browsers. */
+body {
+  margin: 0;
+}
+/* apply a natural box layout model to all elements, but allowing components to change
+   https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.25em;
+  margin-bottom: 1.25rem;
+  margin-top: 2rem;
+  position: relative
+
+  /* rep the smallies */
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    color: #777;
+    font-size: 0.7em;
+    font-weight: 300;
+  }
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code { font-size: 0.9em }
+h1 { font-size: 2.75em; }
+h2 { font-size: 2.25em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1.00em; color: var(--darkest-gray); letter-spacing: .025em;}
+/* tighten up body copy just a smidge */
+p { letter-spacing: -0.01em; }
+/* 1. Remove the gray background on active links in IE 10. */
+/* 2. Remove gaps in links underline in iOS 8+ and Safari 8+. */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+  color: var(--link-color);
+  text-decoration: none
+
+
+  /* Remove the outline on focused links when they are also active or hovered */
+  /* in all browsers (opinionated). */
+}
+a:active,
+  a:hover {
+    outline-width: 0;
+    outline: 0;
+  }
+a:active,
+  a:focus,
+  a:hover { text-decoration: underline; }
+ul,
+ol {
+  padding: 0;
+  padding-left: 2em
+}
+ul ol, ol ol { list-style-type: lower-roman; }
+ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+    margin-top: 0;
+    margin-bottom: 0
+  }
+ul ul ol, ul ol ol, ol ul ol, ol ol ol { list-style-type: lower-alpha; }
+li > p { margin-top: 1em; }
+blockquote {
+  margin: 0 0 1rem;
+  padding: 0 1rem;
+  color: var(--darker-gray);
+  border-left: 4px solid var(--light-gray)
+}
+blockquote>:first-child { margin-top: 0; }
+blockquote>:last-child { margin-bottom: 0; }
+/* 1. Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
+/* 2. Add the correct font weight in Chrome, Edge, and Safari. */
+b,
+strong {
+  font-weight: inherit; /* 1 */
+  font-weight: 600; /* 2 */
+}
+/* Add the correct background and color in IE 9-.*/
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/* Prevent `sub` and `sup` elements from affecting the line height in
+   all browsers. */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
+/* 1. Correct the inheritance and scaling of font size in all browsers. */
+/* 2. Correct the odd `em` font sizing in all browsers. */
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-code); /* 1 */
+  font-size: 90%; /* 2 */
+}
+pre, code {
+  background-color: var(--lightest-gray);
+  border-radius: 3px;
+}
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  padding: 1em;
+  line-height: var(--line-height-pre)
+}
+pre code {
+    background: transparent;
+    display: inline;
+    padding: 0;
+    line-height: inherit;
+    word-wrap: normal
+
+    /* max-width: initial; declaration-block-no-ignored-properties
+       margin: 0; declaration-block-no-ignored-properties
+       overflow: initial; declaration-block-no-ignored-properties */
+  }
+pre code::before,
+    pre code::after { content: normal; }
+pre > code {
+    border: 0;
+    font-size: 1em;
+    white-space: pre;
+    word-break: normal;
+  }
+code {
+  padding: 0.2em 0;
+  margin: 0
+}
+code::before,
+  code::after {
+    letter-spacing: -0.2em;
+    content: '\00a0';
+  }
+kbd {
+  background-color: var(--lighter-gray);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--off-white)), to(var(--lighter-gray)));
+  background-image: linear-gradient(var(--off-white), var(--lighter-gray));
+  background-repeat: repeat-x;
+  border: 1px solid var(--light-gray);
+  border-radius: 2px;
+  box-shadow: 0 1px 0 var(--light-gray);
+  color: var(--black);
+  display: inline-block;
+  line-height: 0.95em;
+  margin: 0 1px;
+  padding: 5px 5px 1px;
+}
+td,
+th { padding: 0; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all
+}
+table th,
+  table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+  }
+table th { font-weight: bold; }
+table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc
+  }
+table tr:nth-child(2n) { background-color: #f8f8f8; }
+/* 1. Add the correct box sizing in Firefox. */
+/* 2. Show the overflow in Edge and IE. */
+hr {
+  box-sizing: content-box; /* 1 */
+  overflow: visible; /* 2 */
+  background: transparent;
+  height: 4px;
+  padding: 0;
+  margin: 1em 0;
+  background-color: #e7e7e7;
+  border: 0 none
+}
+hr::before {
+    display: table;
+    content: '';
+  }
+hr::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+/* Remove the border on images inside links in IE 10-. */
+img {
+  border-style: none;
+  border: 0;
+  max-width: 100%;
+}
+/* Hide the overflow in IE. */
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 0
+}
+figure img {
+    background: var(--white);
+    border: 1px solid var(--gray);
+    padding: 0.25em;
+  }
+figcaption {
+  font-style: italic;
+  font-size: 0.75em;
+  font-weight: 200;
+  margin: 0;
+}
+/* 1. Remove the bottom border in Firefox 39-.*/
+/* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+/* Add the correct font style in Android 4.3-. */
+dfn { font-style: italic; }
+dd { margin-left: 0; }
+dl {
+  padding: 0
+}
+dl dt {
+    padding: 0;
+    margin-top: 1em;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+  }
+dl dd {
+    padding: 0 1em;
+    margin-bottom: 1.25em;
+  }
+/* same margins for all typographic block elements */
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+  margin-top: 0;
+  margin-bottom: 1.25em;
+}
+/* Add the correct font size in all browsers. */
+small { font-size: 80%; }
+/* default settings */
+:root {
+  --font-body: var(--system-sans);
+  --font-code: var(--system-mono);
+  --font-size-body: 14px;
+  --font-size-scale: 0.25vw;
+  --line-height-body: 1.55;
+  --line-height-pre: 1.45;
+  --link-color: #0074d9;
+}
+/* note: use unitless line heights
+   https://css-tricks.com/almanac/properties/l/line-height/#article-header-id-0 */
+
+/*# sourceMappingURL=style.css.map */

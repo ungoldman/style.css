@@ -3,67 +3,71 @@
   "description": "Classless stylesheet for markdown documents.",
   "version": "1.0.0",
   "author": "Nate Goldman <ungoldman@gmail.com>",
+  "contributors": [
+    "Bret Comnes <bcomnes@gmail.com> (https://bret.io)"
+  ],
   "bugs": {
     "url": "https://github.com/css-pkg/style.css/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^6.4.1",
+    "autoprefixer": "^9.6.0",
+    "budo": "^11.6.2",
+    "cpx": "^1.5.0",
     "exit-on-dirty-git": "^1.0.1",
-    "gh-pages": "^0.11.0",
-    "gh-release": "^2.1.0",
-    "live-server": "^1.1.0",
-    "node-sass": "^3.9.3",
-    "npm-run-all": "^3.1.0",
-    "postcss-cli": "^2.6.0",
-    "sitedown": "^3.2.0",
-    "stylelint": "^7.2.0",
-    "stylelint-config-standard": "^13.0.0",
-    "top-bar.css": "^1.2.0"
+    "gh-pages": "^2.0.1",
+    "gh-release": "^3.5.0",
+    "highlight.js": "^9.15.8",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.17",
+    "postcss-browser-reporter": "^0.6.0",
+    "postcss-cli": "bcomnes/postcss-cli#fix-external-map-bug",
+    "postcss-import": "^12.0.1",
+    "postcss-nesting": "^7.0.0",
+    "postcss-reporter": "^6.0.1",
+    "postcss-url": "^8.0.0",
+    "rimraf": "^2.6.3",
+    "sitedown": "^3.3.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "top-bar.css": "^2.0.0"
   },
-  "files": [
-    "style.css",
-    "style.scss",
-    "serif.css",
-    "serif.scss",
-    "src/scss"
-  ],
   "homepage": "https://github.com/css-pkg/style.css",
   "keywords": [
     "css",
     "markdown",
-    "sass",
+    "postcss",
     "style"
   ],
   "license": "ISC",
-  "main": "style.css",
+  "main": "dist/style.css",
+  "style": "dist/style.css",
   "repository": {
     "type": "git",
     "url": "git@github.com:css-pkg/style.css.git"
   },
   "scripts": {
-    "generate": "run-s generate:**",
-    "generate:css": "run-p 'sass:* -- -o ./'",
-    "generate:prefix": "postcss -u autoprefixer -r style.css",
+    "pretest": "run-s build",
+    "test": "run-s test:*",
+    "test:stylelint": "stylelint 'src/**.css'",
+    "build": "run-s clean build:*",
+    "build:style.css": "postcss src/index.css -o dist/style.css",
+    "build:site.css": "postcss site/index.css -o dist/site.css",
+    "build:layout.css": "postcss site/layout.css -o dist/layout.css",
+    "build:md": "sitedown . -b dist/ -l site/layout.html --pretty=false",
+    "watch": "npm run clean && run-p watch:*",
+    "watch:site.css": "run-s 'build:site.css -- --watch'",
+    "watch:md": "npm run build:md -- -w",
+    "watch:js": "budo --dir dist --live --open",
+    "clean": "rimraf 'dist/*' && mkdirp dist",
+    "start": "npm run watch"
+  },
+  "scripts-old": {
     "generate:sign": "cat style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > style.css && pbpaste >> style.css",
-    "generate:sign-2": "cat serif.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > serif.css && pbpaste >> serif.css",
     "gh-pages": "npm run site && gh-pages -d site",
     "git-dirty": "exit-on-dirty-git",
     "prerelease": "run-s test generate git-dirty",
     "pretest": "npm run generate:css",
-    "release": "git push origin master && gh-release && npm publish",
-    "sass:serif": "node-sass serif.scss --output-style=expanded --include-path node_modules/",
-    "sass:style": "node-sass style.scss --output-style=expanded --include-path node_modules/",
-    "serve:site": "live-server site --port=8000",
-    "serve:watch": "run-p watch:*",
-    "site": "run-s site:**",
-    "site:clean": "rm -rf site",
-    "site:css": "node-sass src/site/site.scss --output-style=expanded --include-path node_modules/ -o ./site",
-    "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
-    "site:release": "cp *.css site",
-    "start": "npm-run-all site --parallel serve:*",
-    "test": "stylelint \"style.css\" && stylelint \"serif.css\"",
-    "watch:html": "npm run site:html -- -w",
-    "watch:scss": "run-p 'site:css -- -w'"
-  },
-  "style": "style.css"
+    "release": "git push origin master && gh-release && npm publish"
+  }
 }

@@ -1,5 +1,9 @@
 node_modules
-/site
 *.log
 yarn.lock
 package-lock.json
+dist/*
+!dist/style.css
+!dist/style.css.map
+!dist/layout.css
+!dist/layout.css.map

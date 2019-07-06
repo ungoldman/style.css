@@ -1,4 +1,4 @@
-// Add the correct font style in Android 4.3-.
+/* Add the correct font style in Android 4.3-. */
 dfn { font-style: italic; }
 
 dd { margin-left: 0; }
@@ -6,7 +6,7 @@ dd { margin-left: 0; }
 dl {
   padding: 0;
 
-  dt {
+  & dt {
     padding: 0;
     margin-top: 1em;
     font-size: 1em;
@@ -14,7 +14,7 @@ dl {
     font-weight: 600;
   }
 
-  dd {
+  & dd {
     padding: 0 1em;
     margin-bottom: 1.25em;
   }

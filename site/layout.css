@@ -1,0 +1,68 @@
+main {
+  max-width: 46em;
+  margin: 2em auto;
+  padding: 0 1em;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+main > *:first-child { margin-top: 0 !important; }
+main > *:last-child { margin-bottom: 0 !important; }
+
+@media screen and (min-width: 84em) {
+  .top-bar {
+    position: sticky;
+    top: -1px;
+  }
+}
+
+footer {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+footer a {
+  color: #777;
+  text-decoration: none;
+}
+
+/* style.css site specific stuff */
+.serif { font-family: var(--system-serif); }
+
+/* inherited from ungoldman.com
+   print styles */
+
+@media print {
+  @page {
+    margin: 3.75rem;
+  }
+
+  .page {
+    margin: 0;
+  }
+
+  .page > header {
+    display: none;
+  }
+
+  html { background: white; }
+  body { border: 0; }
+
+  .subject { display: none; }
+  .subject .title { margin: 0 auto 0.5rem; }
+  .content { padding: 0; }
+  .nav { display: none; }
+
+  .markdown-body {
+    font-size: 13px;
+  }
+  .markdown-body h1 { padding: 0; }
+
+  .page-break {
+    page-break-before: always;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  .pdf-download { display: none; }
+}

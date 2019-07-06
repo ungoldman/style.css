@@ -10,15 +10,15 @@ table {
   word-break: normal;
   word-break: keep-all;
 
-  th,
-  td {
+  & th,
+  & td {
     padding: 6px 13px;
     border: 1px solid #ddd;
   }
 
-  th { font-weight: bold; }
+  & th { font-weight: bold; }
 
-  tr {
+  & tr {
     background-color: #fff;
     border-top: 1px solid #ccc;
 

@@ -1,0 +1,19 @@
+/* variables */
+@import './color-vars.css';
+@import './system-fonts-vars.css';
+@import './document.css';
+@import './typography/index.css';
+
+/* default settings */
+:root {
+  --font-body: var(--system-sans);
+  --font-code: var(--system-mono);
+  --font-size-body: 14px;
+  --font-size-scale: 0.25vw;
+  --line-height-body: 1.55;
+  --line-height-pre: 1.45;
+  --link-color: #0074d9;
+}
+
+/* note: use unitless line heights
+   https://css-tricks.com/almanac/properties/l/line-height/#article-header-id-0 */

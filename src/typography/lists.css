@@ -3,14 +3,14 @@ ol {
   padding: 0;
   padding-left: 2em;
 
-  ol { list-style-type: lower-roman; }
+  & ol { list-style-type: lower-roman; }
 
-  ul,
-  ol {
+  & ul,
+  & ol {
     margin-top: 0;
     margin-bottom: 0;
 
-    ol { list-style-type: lower-alpha; }
+    & ol { list-style-type: lower-alpha; }
   }
 }
 
