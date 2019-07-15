@@ -39,7 +39,7 @@
 
   /* dark mode */
   supported-color-schemes: light dark;
-  color-scheme: light dark;
+  color-scheme: light dark; /* stylelint-disable-line */
 }
 
 @media (prefers-color-scheme: dark) {
