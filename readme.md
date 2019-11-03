@@ -210,8 +210,7 @@ Contributions welcome! Please read the [contributing guidelines](contributing.md
 - http://pdxnode.org
 - https://bret.io
 - https://ungoldman.com
-- https://hypermodules.github.io/sitedown
-- https://ungoldman.github.io/style.css
+- https://ln.bigsun.xyz
 
 ## Note
 
