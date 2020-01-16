@@ -1,19 +1,19 @@
 {
-  "name": "style.css",
-  "description": "Classless stylesheet for markdown documents.",
+  "name": "mine.css",
+  "description": "Classless stylesheet for markdown documents evolved from style.css",
   "version": "1.0.0",
   "author": "Nate Goldman <ungoldman@gmail.com>",
   "contributors": [
     "Bret Comnes <bcomnes@gmail.com> (https://bret.io)"
   ],
   "bugs": {
-    "url": "https://github.com/css-pkg/style.css/issues"
+    "url": "https://github.com/bcomnes/mine.css/issues"
   },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.6.0",
     "budo": "^11.6.2",
-    "cpx": "^1.5.0",
-    "exit-on-dirty-git": "^1.0.1",
+    "cpx2": "^2.0.0",
     "gh-pages": "^2.0.1",
     "gh-release": "^3.5.0",
     "highlight.js": "^9.15.8",
@@ -21,30 +21,30 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.17",
     "postcss-browser-reporter": "^0.6.0",
-    "postcss-cli": "^6.1.3",
+    "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
     "postcss-nesting": "^7.0.0",
     "postcss-reporter": "^6.0.1",
     "postcss-url": "^8.0.0",
-    "rimraf": "^2.6.3",
-    "sitedown": "hypermodules/sitedown#improve-hljs",
-    "stylelint": "^10.1.0",
-    "stylelint-config-standard": "^18.3.0",
+    "rimraf": "^3.0.0",
+    "sitedown": "^4.0.0",
+    "stylelint": "^13.0.0",
+    "stylelint-config-standard": "^19.0.0",
     "top-bar.css": "^2.0.0"
   },
-  "homepage": "https://github.com/css-pkg/style.css",
+  "homepage": "https://github.com/bcomnes/mine.css",
   "keywords": [
     "css",
     "markdown",
     "postcss",
     "style"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/style.css",
   "style": "dist/style.css",
   "repository": {
     "type": "git",
-    "url": "git@github.com:css-pkg/style.css.git"
+    "url": "https://github.com/bcomnes/mine.css.git"
   },
   "scripts": {
     "pretest": "run-s build",
@@ -61,13 +61,5 @@
     "watch:js": "budo --dir dist --live --open",
     "clean": "rimraf 'dist/*' && mkdirp dist",
     "start": "npm run watch"
-  },
-  "scripts-old": {
-    "generate:sign": "cat style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > style.css && pbpaste >> style.css",
-    "gh-pages": "npm run site && gh-pages -d site",
-    "git-dirty": "exit-on-dirty-git",
-    "prerelease": "run-s test generate git-dirty",
-    "pretest": "npm run generate:css",
-    "release": "git push origin master && gh-release && npm publish"
   }
 }

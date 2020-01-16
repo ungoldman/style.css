@@ -48,8 +48,7 @@ html {
   -webkit-font-kerning: normal;
           font-kerning: normal;
   text-rendering: optimizeLegibility;
-  -webkit-font-feature-settings: "kern", "liga" 1, "calt" 0;
-          font-feature-settings: "kern", "liga" 1, "calt" 0;
+  font-feature-settings: "kern", "liga" 1, "calt" 0;
 }
 /* Remove the margin in all browsers. */
 body {
