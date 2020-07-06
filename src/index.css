@@ -6,6 +6,8 @@
 
 /* default settings */
 :root {
+  /* TODO: Audit these vars */
+
   /* font family */
   --font-body: var(--system-sans);
   --font-code: var(--system-mono);
@@ -38,6 +40,7 @@
   --th-border-color: #ddd;
 
   /* dark mode */
+  /* TODO: Fix dark mode to work with near stock darkmode */
   supported-color-schemes: light dark;
   color-scheme: light dark; /* stylelint-disable-line */
 }

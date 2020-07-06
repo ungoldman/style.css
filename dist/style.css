@@ -14,6 +14,7 @@
   --black: hsla(0, 0%, 19%, 1);
 }
 /* stylelint-disable */
+/* TODO: Make sure this is up to date */
 :root {
   --system-sans: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, /* mac, ios */
                  'segoe ui', /* windows */
@@ -48,7 +49,8 @@ html {
   -webkit-font-kerning: normal;
           font-kerning: normal;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "kern", "liga" 1, "calt" 0;
+  /* TODO: Figure out whtas going on with these*/
+  font-feature-settings: normal;
 }
 /* Remove the margin in all browsers. */
 body {
@@ -67,6 +69,7 @@ h3,
 h4,
 h5,
 h6 {
+  /* TODO: Needed? */
   font-weight: 500;
   line-height: 1.25em;
   margin-bottom: 1.25rem;
@@ -92,6 +95,7 @@ p { letter-spacing: -0.01em; }
 /* 1. Remove the gray background on active links in IE 10. */
 /* 2. Remove gaps in links underline in iOS 8+ and Safari 8+. */
 a {
+  /* TODO: Fix the underline cuts on safari */
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
   color: var(--link-color);
@@ -155,6 +159,7 @@ sup {
 }
 sub { bottom: -0.25em; }
 sup { top: -0.5em; }
+/*TODO: Get rid of the double border with highlight JS*/
 /* 1. Correct the inheritance and scaling of font size in all browsers. */
 /* 2. Correct the odd `em` font sizing in all browsers. */
 code,
@@ -171,13 +176,12 @@ pre, code {
 pre {
   overflow: auto;
   word-wrap: normal;
-  padding: 1em;
   line-height: var(--line-height-pre)
 }
 pre code {
     background: transparent;
-    display: inline;
-    padding: 0;
+    display: block;
+    padding: 0.5em;
     line-height: inherit;
     word-wrap: normal
     /* max-width: initial; declaration-block-no-ignored-properties
@@ -203,7 +207,6 @@ code::before,
   }
 kbd {
   background-color: var(--kbd-background-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--kbd-background-color-highlight)), to(var(--kbd-background-color)));
   background-image: linear-gradient(var(--kbd-background-color-highlight), var(--kbd-background-color));
   background-repeat: repeat-x;
   border: 1px solid var(--kbd-border-color);
@@ -322,6 +325,8 @@ pre {
 small { font-size: 80%; }
 /* default settings */
 :root {
+  /* TODO: Audit these vars */
+
   /* font family */
   --font-body: var(--system-sans);
   --font-code: var(--system-mono);
@@ -354,6 +359,7 @@ small { font-size: 80%; }
   --th-border-color: #ddd;
 
   /* dark mode */
+  /* TODO: Fix dark mode to work with near stock darkmode */
   supported-color-schemes: light dark;
   color-scheme: light dark; /* stylelint-disable-line */
 }

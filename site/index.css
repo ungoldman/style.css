@@ -6,7 +6,7 @@ $top-bar-family: $system-sans;
 */
 @import 'top-bar.css';
 @import '../src/index.css';
-@import './layout.css';
+@import '../src/layout.css';
 @import 'highlight.js/styles/a11y-dark.css';
 
 .top-bar {

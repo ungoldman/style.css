@@ -9,7 +9,8 @@ html {
   line-height: var(--line-height-body);
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "kern", "liga" 1, "calt" 0;
+  /* TODO: Figure out whtas going on with these*/
+  font-feature-settings: normal;
 }
 
 /* Remove the margin in all browsers. */

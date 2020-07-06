@@ -1,3 +1,5 @@
+/*TODO: Get rid of the double border with highlight JS*/
+
 /* 1. Correct the inheritance and scaling of font size in all browsers. */
 /* 2. Correct the odd `em` font sizing in all browsers. */
 code,
@@ -16,13 +18,12 @@ pre, code {
 pre {
   overflow: auto;
   word-wrap: normal;
-  padding: 1em;
   line-height: var(--line-height-pre);
 
   & code {
     background: transparent;
-    display: inline;
-    padding: 0;
+    display: block;
+    padding: 0.5em;
     line-height: inherit;
     word-wrap: normal;
     /* max-width: initial; declaration-block-no-ignored-properties
