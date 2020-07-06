@@ -9,7 +9,8 @@ html {
   line-height: var(--line-height-body);
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-  /* TODO: Figure out whtas going on with these*/
+
+  /* TODO: Figure out whtas going on with these */
   font-feature-settings: normal;
 }
 

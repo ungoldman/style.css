@@ -49,7 +49,8 @@ html {
   -webkit-font-kerning: normal;
           font-kerning: normal;
   text-rendering: optimizeLegibility;
-  /* TODO: Figure out whtas going on with these*/
+
+  /* TODO: Figure out whtas going on with these */
   font-feature-settings: normal;
 }
 /* Remove the margin in all browsers. */
@@ -359,6 +360,7 @@ small { font-size: 80%; }
   --th-border-color: #ddd;
 
   /* dark mode */
+
   /* TODO: Fix dark mode to work with near stock darkmode */
   supported-color-schemes: light dark;
   color-scheme: light dark; /* stylelint-disable-line */
