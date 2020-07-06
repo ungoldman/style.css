@@ -3,14 +3,15 @@
   "description": "Classless stylesheet for markdown documents evolved from style.css",
   "version": "2.0.0",
   "author": "Nate Goldman <ungoldman@gmail.com>",
-  "contributors": [
-    "Bret Comnes <bcomnes@gmail.com> (https://bret.io)"
-  ],
   "bugs": {
     "url": "https://github.com/bcomnes/mine.css/issues"
   },
+  "contributors": [
+    "Bret Comnes <bcomnes@gmail.com> (https://bret.io)"
+  ],
   "dependencies": {},
   "devDependencies": {
+    "auto-changelog": "^2.0.0",
     "autoprefixer": "^9.6.0",
     "budo": "^11.6.2",
     "cpx2": "^2.0.0",
@@ -41,25 +42,28 @@
   ],
   "license": "MIT",
   "main": "dist/style.css",
-  "style": "dist/style.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/bcomnes/mine.css.git"
   },
   "scripts": {
+    "build": "run-s clean build:*",
+    "build:layout.css": "postcss src/layout.css -o dist/layout.css",
+    "build:md": "sitedown . -b public/ -l site/layout.html --pretty=false",
+    "build:site.css": "postcss site/index.css -o public/site.css",
+    "build:style.css": "postcss src/index.css -o dist/style.css",
+    "clean": "rimraf 'dist/*' 'public/*' && mkdirp dist public",
+    "prepare": "npm run build",
+    "prepublishOnly": "git push --follow-tags && gh-release",
     "pretest": "run-s build",
+    "start": "npm run watch",
     "test": "run-s test:*",
     "test:stylelint": "stylelint 'src/**.css'",
-    "build": "run-s clean build:*",
-    "build:style.css": "postcss src/index.css -o dist/style.css",
-    "build:layout.css": "postcss src/layout.css -o dist/layout.css",
-    "build:site.css": "postcss site/index.css -o public/site.css",
-    "build:md": "sitedown . -b public/ -l site/layout.html --pretty=false",
+    "version": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md",
     "watch": "npm run clean && run-p watch:*",
-    "watch:site.css": "run-s 'build:site.css -- --watch'",
-    "watch:md": "npm run build:md -- -w",
     "watch:js": "budo --dir public --live --open",
-    "clean": "rimraf 'dist/*' 'public/*' && mkdirp dist public",
-    "start": "npm run watch"
-  }
+    "watch:md": "npm run build:md -- -w",
+    "watch:site.css": "run-s 'build:site.css -- --watch'"
+  },
+  "style": "dist/style.css"
 }
