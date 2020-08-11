@@ -210,6 +210,16 @@ console.log(foo(5));
     console.log(foo(5));
     ```
 
+Code blocks without any highlight.js theme:
+
+<pre><code>// Syntax highlighting
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5)); console.log(foo(5)); console.log(foo(5)); console.log(foo(5));
+</code></pre>
+
 ### <a id="user-input" href="#user-input">User Input</a>
 
 <kbd>ctrl</kbd><kbd>alt</kbd><kbd>delete</kbd>

@@ -1,45 +1,11 @@
-/*TODO: Get rid of the double border with highlight JS*/
-
-/* 1. Correct the inheritance and scaling of font size in all browsers. */
-/* 2. Correct the odd `em` font sizing in all browsers. */
+/* 1. Correct the inheritance and scaling of font size in all browsers.
+   2. Correct the odd `em` font sizing in all browsers. */
 code,
 pre,
 kbd,
 samp {
   font-family: var(--font-code); /* 1 */
   font-size: 90%; /* 2 */
-}
-
-pre, code {
-  background-color: var(--code-background-color);
-  border-radius: 3px;
-}
-
-pre {
-  overflow: auto;
-  word-wrap: normal;
-  line-height: var(--line-height-pre);
-
-  & code {
-    background: transparent;
-    display: block;
-    padding: 0.5em;
-    line-height: inherit;
-    word-wrap: normal;
-    /* max-width: initial; declaration-block-no-ignored-properties
-       margin: 0; declaration-block-no-ignored-properties
-       overflow: initial; declaration-block-no-ignored-properties */
-
-    &::before,
-    &::after { content: normal; }
-  }
-
-  & > code {
-    border: 0;
-    font-size: 1em;
-    white-space: pre;
-    word-break: normal;
-  }
 }
 
 code {
@@ -53,16 +19,33 @@ code {
   }
 }
 
-kbd {
-  background-color: var(--kbd-background-color);
-  background-image: linear-gradient(var(--kbd-background-color-highlight), var(--kbd-background-color));
-  background-repeat: repeat-x;
-  border: 1px solid var(--kbd-border-color);
-  border-radius: 2px;
-  box-shadow: 0 1px 0 var(--kbd-border-color);
-  color: var(--kbd-color);
-  display: inline-block;
-  line-height: 0.95em;
-  margin: 0 1px;
-  padding: 5px 5px 1px;
+pre,
+code {
+  background-color: var(--code-background-color);
+  border-radius: 5px;
+  border: 1px solid var(--code-background-color);
+}
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  line-height: var(--line-height-pre);
+
+  & code {
+    background: transparent;
+    display: block;
+    padding: 0.5em;
+    line-height: inherit;
+    word-wrap: normal;
+
+    &::before,
+    &::after { content: normal; }
+  }
+
+  & > code {
+    border: 0;
+    font-size: 1em;
+    white-space: pre;
+    word-break: normal;
+  }
 }

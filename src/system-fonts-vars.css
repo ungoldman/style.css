@@ -1,7 +1,7 @@
 /* stylelint-disable */
 /* TODO: Make sure this is up to date */
 :root {
-  --system-sans: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, /* mac, ios */
+  --system-sans: system-ui, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, /* mac, ios */
                  'segoe ui', /* windows */
                  roboto, noto, 'droid sans', /* android */
                 'liberation sans', /* linux */
@@ -9,9 +9,8 @@
                 'franklin gothic medium', 'century gothic', /* old windows */
                 cantarell, oxygen, ubuntu, /* old linux */
                 sans-serif; /* fallback */
-  --system-mono:  menlo, /* mac */
+  --system-mono:  system-ui-monospaced, menlo, /* mac */
                   inconsolata, consolas, /* windows */
-                  'fira mono', /* firefox os */
                   'noto mono', 'droid sans mono', /* android */
                   'liberation mono', 'dejavu sans mono', 'ubuntu mono', /* linux */
                   monaco, 'courier new', /* older systems */

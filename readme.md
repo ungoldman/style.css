@@ -2,7 +2,7 @@
 
 A classless stylesheet for HTML documents and evolution of [style.css][style].
 
-[![latest version][npm-img]][npm-url] [![Actions Status][action-img]][action-url] [![stability][stability-img]][stability-url] [![downloads][downloads-img]][npm-url]
+[![latest version][npm-img]][npm-url] [![Actions Status][action-img]][action-url] [![downloads][downloads-img]][npm-url]
 
 [npm-img]: https://img.shields.io/npm/v/mine.css.svg
 [npm-url]: https://www.npmjs.com/package/mine.css
@@ -24,7 +24,7 @@ Some differences from [style.css][style]:
 - Dark Mode
 - Remove some old browser support
 - Use post-css build pipeline
-- Minor differences
+- Small stylistic differences
 
 ## Install
 
@@ -62,7 +62,7 @@ $ npm install mine.css
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello World</title>
-    <link rel="stylesheet" href="https://unpkg.com/mine.css@latest/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/mine.css@^1.0.0/style.css">
   </head>
   <body>
     <h1>Hooray!</h1>

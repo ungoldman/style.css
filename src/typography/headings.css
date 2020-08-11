@@ -18,7 +18,7 @@ h6 {
     font-weight: 300;
   }
 
-  & code { font-size: 0.9em }
+  & code { font-size: 0.9em; }
 }
 
 h1 { font-size: 2.75em; }
@@ -26,4 +26,9 @@ h2 { font-size: 2.25em; }
 h3 { font-size: 1.75em; }
 h4 { font-size: 1.5em; }
 h5 { font-size: 1.25em; }
-h6 { font-size: 1.00em; color: var(--h6-color); letter-spacing: .025em;}
+
+h6 {
+  font-size: 1em;
+  color: var(--h6-color);
+  letter-spacing: 00.025em;
+}

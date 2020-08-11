@@ -1,16 +1,12 @@
 /* html should be at the top */
 
 html {
-  /* color: var(--black);
-     background-color: var(--white); */
   box-sizing: border-box;
   font-family: var(--font-body);
   font-size: calc(var(--font-size-body) + var(--font-size-scale));
   line-height: var(--line-height-body);
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-
-  /* TODO: Figure out whtas going on with these */
   font-feature-settings: normal;
 }
 
@@ -25,4 +21,14 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+/* Mobile gutter padding */
+@supports (padding: max(0)) {
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }

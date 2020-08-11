@@ -1,0 +1,23 @@
+input[type=reset],
+input[type=submit],
+button {
+  /* Button */
+}
+
+input[type=reset]:hover,
+input[type=submit]:hover,
+button:hover {
+  /* Hover state */
+}
+
+input[type=reset]:active,
+input[type=submit]:active,
+button:active {
+  /* Active state */
+}
+
+input[type=reset]:disabled,
+input[type=submit]:disabled,
+button:disabled {
+  /* Disabled state */
+}

@@ -15,7 +15,10 @@
   /* font size and spacing */
   --font-size-body: 14px;
   --font-size-scale: 0.25vw;
-  --line-height-body: 1.55;
+
+  /* note: use unitless line heights
+   https://css-tricks.com/almanac/properties/l/line-height/#article-header-id-0 */
+  --line-height-body: 1.75;
   --line-height-pre: 1.45;
 
   /* colors */
@@ -27,17 +30,17 @@
   --kbd-background-color-highlight: var(--off-white);
   --kbd-border-color: var(--light-gray);
   --kbd-color: var(--black);
-  --small-color: #777;
-  --mark-color: #000;
-  --mark-background-color: #ff0;
+  --small-color: var(--darker-gray);
+  --mark-color: var(--dark-black);
+  --mark-background-color: var(--mark-yellow);
   --figure-background-color: var(--white);
   --figure-border-color: var(--gray);
   --h6-color: var(--darkest-gray);
-  --hr-color: #e7e7e7;
-  --tr-background-color: #fff;
-  --tr-background-color-alt: #f8f8f8;
-  --tr-border-color: #ccc;
-  --th-border-color: #ddd;
+  --hr-color: var(--lighter-gray);
+  --tr-background-color: hsla(0, 0%, 100%, 0);
+  --tr-background-color-alt: var(--gray-97);
+  --tr-border-color: var(--light-gray);
+  --th-border-color: var(--light-gray);
 
   /* dark mode */
 

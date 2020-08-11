@@ -13,7 +13,7 @@
   "devDependencies": {
     "auto-changelog": "^2.0.0",
     "autoprefixer": "^9.6.0",
-    "budo": "^11.6.2",
+    "browser-sync": "^2.26.7",
     "cpx2": "^2.0.0",
     "gh-release": "^3.5.0",
     "highlight.js": "^10.1.1",
@@ -51,6 +51,7 @@
     "build:md": "sitedown . -b public/ -l site/layout.html --pretty=false",
     "build:site.css": "postcss site/index.css -o public/site.css",
     "build:style.css": "postcss src/index.css -o dist/style.css",
+    "build:static": "cpx 'site/**/*.{jpg,png,svg,ico}' public",
     "clean": "rimraf 'dist/*' 'public/*' && mkdirp dist public",
     "prepare": "npm run build",
     "prepublishOnly": "git push --follow-tags && gh-release",
@@ -60,7 +61,8 @@
     "test:stylelint": "stylelint 'src/**.css'",
     "version": "npm run build && auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md dist",
     "watch": "npm run clean && run-p watch:*",
-    "watch:js": "budo --dir public --live --open",
+    "watch:static": "npm run build:static -- -w",
+    "watch:serve": "browser-sync start --server 'public' --files 'public'",
     "watch:md": "npm run build:md -- -w",
     "watch:site.css": "run-s 'build:site.css -- --watch'"
   },
