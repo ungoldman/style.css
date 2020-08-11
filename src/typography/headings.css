@@ -15,7 +15,7 @@ h6 {
   & small {
     color: var(--small-color);
     font-size: 0.7em;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   & code { font-size: 0.9em; }

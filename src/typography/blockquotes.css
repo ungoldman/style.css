@@ -2,7 +2,7 @@ blockquote {
   margin: 0 0 1rem;
   padding: 0 1rem;
   color: var(--blockquote-color);
-  border-left: 4px solid var(--blockquote-color);
+  border-left: 4px solid var(--blockquote-asside-color);
 
   & > :first-child { margin-top: 0; }
   & > :last-child { margin-bottom: 0; }

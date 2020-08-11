@@ -1,0 +1,94 @@
+/* variable settings */
+:root {
+  /* font family */
+  --font-body: var(--system-sans);
+  --font-code: var(--system-mono);
+
+  /* font size and spacing */
+  --font-size-body: 14px;
+  --font-size-scale: 0.25vw;
+
+  /* note: use unitless line heights
+   https://css-tricks.com/almanac/properties/l/line-height/#article-header-id-0 */
+  --line-height-body: 1.75;
+  --line-height-pre: 1.45;
+
+  /* light/dark colors */
+  --mine-transparent: hsla(0, 0%, 100%, 0); /* #fff */
+  --mine-black: hsla(0, 0%, 7%, 1); /* #111 */
+
+  /* light colors */
+  --light-link-blue: hsla(208, 100%, 50%, 1); /* #08f */
+  --light-mark-yellow: hsla(60, 100%, 50%, 1); /* #ff0 */
+  --light-black: hsla(0, 0%, 7%, 1); /* #111 */
+  --light-accent-background: hsla(0, 0%, 95%, 1); /* #f2f2f2 */
+  --light-accent-midground: hsla(0, 0%, 84%, 1); /* #d6d6d6 */
+  --light-accent-foreground: hsla(0, 0%, 49%, 1); /* #7d7d7d */
+
+  /* dark colors */
+  --dark-link-blue: hsl(206, 100%, 70%); /* #66bdff */
+  --dark-mark-yellow: hsla(58, 66%, 30%, 1); /* #ff0 */
+  --dark-white: white;
+  --dark-accent-background: hsla(0, 0%, 25%, 1); /* #404040 */
+  --dark-accent-midground: hsla(0, 0%, 30%, 1); /* #d6d6d6 */
+  --dark-accent-foreground: hsla(0, 0%, 60%, 1); /* #7d7d7d */
+
+  /* main colors */
+  --text-color: var(--mine-black);
+  --background-color: var(--mine-transparent);
+  --accent-background: var(--light-accent-background);
+  --accent-midground: var(--light-accent-midground);
+  --accent-foreground: var(--light-accent-foreground);
+
+  /* misc colors */
+  --link-color: var(--light-link-blue);
+  --mark-background-color: var(--light-mark-yellow);
+
+  /* text color map */
+  --body-color: var(--text-color);
+  --kbd-color: var(--text-color);
+  --mark-color: var(--text-color);
+  --code-color: var(--text-color);
+
+  /* background color map */
+  --figure-background-color: var(--background-color);
+  --tr-background-color: var(--background-color);
+  --kbd-background-color: var(--background-color);
+
+  /* accent background map */
+  --code-background-color: var(--accent-background);
+  --pre-background-color: var(--accent-background);
+  --tr-background-color-alt: var(--accent-background);
+  --kbd-background-color-highlight: var(--accent-background);
+
+  /* accent midground map */
+  --tr-border-color: var(--accent-midground);
+  --th-border-color: var(--accent-midground);
+  --blockquote-asside-color: var(--accent-midground);
+  --hr-color: var(--accent-midground);
+  --figure-border-color: var(--accent-midground);
+  --kbd-border-color: var(--accent-midground);
+
+  /* accent foreground map */
+  --blockquote-color: var(--accent-foreground);
+  --small-color: var(--accent-foreground);
+  --h6-color: var(--accent-foreground);
+
+  /* enable dark mode */
+  supported-color-schemes: light dark;
+  color-scheme: light dark; /* stylelint-disable-line */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* main colors */
+    --text-color: var(--dark-white);
+    --accent-background: var(--dark-accent-background);
+    --accent-midground: var(--dark-accent-midground);
+    --accent-foreground: var(--dark-accent-foreground);
+
+    /* misc colors */
+    --link-color: var(--dark-link-blue);
+    --mark-background-color: var(--dark-mark-yellow);
+  }
+}

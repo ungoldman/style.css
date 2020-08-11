@@ -8,6 +8,7 @@ html {
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   font-feature-settings: normal;
+  color: var(--body-color);
 }
 
 /* Remove the margin in all browsers. */
