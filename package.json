@@ -22,6 +22,7 @@
     "postcss": "^7.0.17",
     "postcss-browser-reporter": "^0.6.0",
     "postcss-cli": "^7.1.0",
+    "postcss-extend": "^1.0.5",
     "postcss-import": "^12.0.1",
     "postcss-nesting": "^7.0.0",
     "postcss-reporter": "^6.0.1",
@@ -40,7 +41,8 @@
     "style"
   ],
   "license": "MIT",
-  "main": "dist/style.css",
+  "main": "src/theme-switcher.js",
+  "style": "dist/style.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/bcomnes/mine.css.git"
@@ -52,6 +54,7 @@
     "build:site.css": "postcss site/index.css -o public/site.css",
     "build:style.css": "postcss src/index.css -o dist/style.css",
     "build:static": "cpx 'site/**/*.{jpg,png,svg,ico}' public",
+    "build:js": "cpx 'src/theme-switcher.js' public",
     "clean": "rimraf 'dist/*' 'public/*' && mkdirp dist public",
     "prepare": "npm run build",
     "prepublishOnly": "git push --follow-tags && gh-release",
@@ -62,9 +65,9 @@
     "version": "npm run build && auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md dist",
     "watch": "npm run clean && run-p watch:*",
     "watch:static": "npm run build:static -- -w",
+    "watch:js": "npm run build:js -- -w",
     "watch:serve": "browser-sync start --server 'public' --files 'public'",
     "watch:md": "npm run build:md -- -w",
     "watch:site.css": "run-s 'build:site.css -- --watch'"
-  },
-  "style": "dist/style.css"
+  }
 }

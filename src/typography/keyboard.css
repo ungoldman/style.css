@@ -1,13 +1,13 @@
 /* Keyboard kbd shortcut key style */
 
 kbd {
-  background-color: var(--kbd-background-color);
-  background-image: linear-gradient(var(--kbd-background-color), var(--kbd-background-color-highlight) 75%);
+  background-color: var(--layer-background-color);
+  background-image: linear-gradient(var(--layer-background-color), var(--accent-background) 75%);
   background-repeat: repeat-x;
-  border: 1px solid var(--kbd-border-color);
+  border: 1px solid var(--accent-midground);
   border-radius: 2px;
-  box-shadow: 0 1px 0 var(--kbd-border-color); /* depth */
-  color: var(--kbd-color);
+  box-shadow: 0 1px 0 var(--accent-midground); /* depth */
+  color: var(--text-color);
   display: inline-block;
   line-height: 0.95em;
   margin: 0 1px;

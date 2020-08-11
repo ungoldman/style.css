@@ -13,7 +13,7 @@ h6 {
 
   /* rep the smallies */
   & small {
-    color: var(--small-color);
+    color: var(--accent-foreground);
     font-size: 0.7em;
     font-weight: 400;
   }
@@ -29,6 +29,6 @@ h5 { font-size: 1.25em; }
 
 h6 {
   font-size: 1em;
-  color: var(--h6-color);
+  color: var(--accent-foreground);
   letter-spacing: 00.025em;
 }

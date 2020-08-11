@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>css-pkg/style.css</title>
     <link rel="stylesheet" href="./site.css">
+    <script type="module">
+      import {toggleTheme} from '/theme-switcher.js';
+
+      window.toggleTheme = toggleTheme
+    </script>
   </head>
   <body>
     <nav class="top-bar">
@@ -12,7 +17,7 @@
         <span>📦</span>
         <a href="https://css-pkg.github.io">css-pkg</a>
         <span>/</span>
-        <a href="./">style.css</a>
+        <a href="./">mine.css</a>
       </div>
       <a class="top-bar-link" href="./guide.html">style guide</a>
       <a class="top-bar-link style-sans current-page">sans</a>

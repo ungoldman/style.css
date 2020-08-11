@@ -9,6 +9,7 @@ module.exports = (ctx) => ({
     },
     'autoprefixer': {},
     'postcss-nesting': {},
+    'postcss-extend': {},
     'postcss-browser-reporter': {},
     'postcss-reporter': {}
   }

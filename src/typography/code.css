@@ -6,7 +6,7 @@ kbd,
 samp {
   font-family: var(--font-code); /* 1 */
   font-size: 90%; /* 2 */
-  color: var(--code-color);
+  color: var(--text-color);
 }
 
 code {
@@ -22,7 +22,7 @@ code {
 
 pre,
 code {
-  background-color: var(--code-background-color);
+  background-color: var(--accent-background);
   border-radius: 5px;
 }
 
@@ -30,7 +30,7 @@ pre {
   overflow: auto;
   word-wrap: normal;
   line-height: var(--line-height-pre);
-  border: 1px solid var(--code-background-color);
+  border: 1px solid var(--accent-background);
 
   & code {
     background: transparent;

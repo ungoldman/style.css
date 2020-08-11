@@ -8,12 +8,13 @@ html {
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   font-feature-settings: normal;
-  color: var(--body-color);
 }
 
 /* Remove the margin in all browsers. */
 body {
   margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change
