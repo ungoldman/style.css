@@ -17,21 +17,21 @@
   --transparent: hsla(0, 0%, 100%, 0); /* #fff */
 
   /* light colors */
+  --light-text-color: hsla(0, 0%, 7%, 1); /* #111 */
   --light-background: white;
   --light-layer-background: var(--transparent);
   --light-link-blue: hsla(208, 100%, 50%, 1); /* #08f */
   --light-mark-yellow: hsla(60, 100%, 50%, 1); /* #ff0 */
-  --light-black: hsla(0, 0%, 7%, 1); /* #111 */
   --light-accent-background: hsla(0, 0%, 95%, 1); /* #f2f2f2 */
   --light-accent-midground: hsla(0, 0%, 84%, 1); /* #d6d6d6 */
   --light-accent-foreground: hsla(0, 0%, 49%, 1); /* #7d7d7d */
 
   /* dark colors */
+  --dark-text-color: white;
   --dark-background: hsla(0, 0%, 12%, 1); /* #1f1f1f from safari */
   --dark-layer-background: var(--transparent);
   --dark-link-blue: hsl(206, 100%, 70%); /* #66bdff */
   --dark-mark-yellow: hsla(58, 66%, 30%, 1); /* #7f7c1a */
-  --dark-white: white;
   --dark-accent-background: hsla(0, 0%, 20%, 1); /* #333 */
   --dark-accent-midground: hsla(0, 0%, 30%, 1); /* #4d4d4d */
   --dark-accent-foreground: hsla(0, 0%, 60%, 1); /* #999 */
@@ -44,7 +44,7 @@
 :root,
 .light-mode {
   /* main colors */
-  --text-color: var(--light-black);
+  --text-color: var(--light-text-color);
   --background-color: var(--light-background);
   --layer-background-color: var(--light-layer-background);
   --accent-background: var(--light-accent-background);
@@ -58,7 +58,7 @@
 
 .dark-mode {
   /* main colors */
-  --text-color: var(--dark-white);
+  --text-color: var(--dark-text-color);
   --background-color: var(--dark-background);
   --layer-background-color: var(--dark-layer-background);
   --accent-background: var(--dark-accent-background);

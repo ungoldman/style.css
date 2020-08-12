@@ -10,12 +10,10 @@ main > *:first-child { margin-top: 0 !important; }
 
 main > *:last-child { margin-bottom: 0 !important; }
 
-@media screen and (min-width: 84em) {
-  .top-bar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: -1px;
-  }
+.top-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 footer {
