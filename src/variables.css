@@ -18,6 +18,7 @@
 
   /* light colors */
   --light-background: white;
+  --light-layer-background: var(--transparent);
   --light-link-blue: hsla(208, 100%, 50%, 1); /* #08f */
   --light-mark-yellow: hsla(60, 100%, 50%, 1); /* #ff0 */
   --light-black: hsla(0, 0%, 7%, 1); /* #111 */
@@ -27,6 +28,7 @@
 
   /* dark colors */
   --dark-background: hsla(0, 0%, 12%, 1); /* #1f1f1f from safari */
+  --dark-layer-background: var(--transparent);
   --dark-link-blue: hsl(206, 100%, 70%); /* #66bdff */
   --dark-mark-yellow: hsla(58, 66%, 30%, 1); /* #7f7c1a */
   --dark-white: white;
@@ -44,7 +46,7 @@
   /* main colors */
   --text-color: var(--light-black);
   --background-color: var(--light-background);
-  --layer-background-color: var(--transparent);
+  --layer-background-color: var(--light-layer-background);
   --accent-background: var(--light-accent-background);
   --accent-midground: var(--light-accent-midground);
   --accent-foreground: var(--light-accent-foreground);
@@ -58,7 +60,7 @@
   /* main colors */
   --text-color: var(--dark-white);
   --background-color: var(--dark-background);
-  --layer-background-color: var(--transparent);
+  --layer-background-color: var(--dark-layer-background);
   --accent-background: var(--dark-accent-background);
   --accent-midground: var(--dark-accent-midground);
   --accent-foreground: var(--dark-accent-foreground);

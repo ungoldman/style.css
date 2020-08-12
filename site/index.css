@@ -13,9 +13,72 @@ $top-bar-family: $system-sans;
   font-family: inherit;
   margin-bottom: 0;
   margin-top: 0;
+  backdrop-filter: contrast(100%) blur(10px);
+}
+
+.top-bar-link {
+  font-weight: 400;
+  color: var(--accent-foreground);
+}
+
+.top-bar-link.current-page,
+.top-bar-link.current-page:hover,
+.top-bar-link:hover {
+  color: var(--text-color);
 }
 
 pre {
   /* copensating for hljs default styles */
   padding: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-click {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(540deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.dark-icon {
+  animation-name: spin-reverse;
+  animation-duration: 0.2s;
+}
+
+.dark-icon:hover {
+  animation-name: spin;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.dark-icon:active {
+  animation-name: spin-click;
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+}
+
+:not(.light-mode).dark-mode .dark-icon {
+  filter: invert(95%);
 }

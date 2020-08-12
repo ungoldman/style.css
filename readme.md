@@ -14,7 +14,7 @@ A classless stylesheet for HTML documents and evolution of [style.css][style].
 
 Make a plain HTML page look good and readable with zero effort!  Serves as a nice base layer default.
 
-Check out the [style guide](https://bcomnes.github.io/mine.css/guide.html) to see what it looks like.
+Check out the [style guide][guide] to see what it looks like.
 
 ## Differences
 
@@ -24,7 +24,7 @@ Some differences from [style.css][style]:
 - Dark Mode
 - Remove some old browser support
 - Use post-css build pipeline
-- Small stylistic differences
+- Minor stylistic differences
 
 ## Install
 
@@ -70,11 +70,11 @@ $ npm install mine.css
 </html>
 ```
 
-The best way to get familiar with the look and feel of `mine.css` is to visit the [style guide](https://bcomnes.github.io/mine.css/guide.html). Detailed examples of every HTML element (and how to write them in markdown) are available there.
+The best way to get familiar with the look and feel of `mine.css` is to visit the [style guide][guide]. Detailed examples of every HTML element (and how to write them in markdown) are available there.
 
 ### Node
 
-```
+```console
 npm install mine.css --save-dev
 ```
 
@@ -88,7 +88,7 @@ Here are some modules out there for requiring CSS using JavaScript that should a
 
 ### CSS Variables
 
-You can override defaults directly with CSS variables. Here are the default variable settings for `style.css`:
+You can override defaults directly with CSS variables. Here are the default variable settings for `mine.css`:
 
 ```css
 :root {
@@ -96,9 +96,28 @@ You can override defaults directly with CSS variables. Here are the default vari
   --font-code: var(--system-mono);
   --font-size-body: 14px;
   --font-size-scale: 0.25vw;
-  --line-height-body: 1.55;
+  --line-height-body: 1.75;
   --line-height-pre: 1.45;
-  --link-color: #0074d9;
+
+  /* light colors */
+  --light-background: white;
+  --light-layer-background: var(--transparent);
+  --light-link-blue: hsla(208, 100%, 50%, 1); /* #08f */
+  --light-mark-yellow: hsla(60, 100%, 50%, 1); /* #ff0 */
+  --light-black: hsla(0, 0%, 7%, 1); /* #111 */
+  --light-accent-background: hsla(0, 0%, 95%, 1); /* #f2f2f2 */
+  --light-accent-midground: hsla(0, 0%, 84%, 1); /* #d6d6d6 */
+  --light-accent-foreground: hsla(0, 0%, 49%, 1); /* #7d7d7d */
+
+  /* dark colors */
+  --dark-background: hsla(0, 0%, 12%, 1); /* #1f1f1f from safari */
+  --dark-layer-background: var(--transparent);
+  --dark-link-blue: hsl(206, 100%, 70%); /* #66bdff */
+  --dark-mark-yellow: hsla(58, 66%, 30%, 1); /* #7f7c1a */
+  --dark-white: white;
+  --dark-accent-background: hsla(0, 0%, 20%, 1); /* #333 */
+  --dark-accent-midground: hsla(0, 0%, 30%, 1); /* #4d4d4d */
+  --dark-accent-foreground: hsla(0, 0%, 60%, 1); /* #999 */
 }
 ```
 
@@ -107,7 +126,7 @@ You can override defaults directly with CSS variables. Here are the default vari
 You can override settings like so:
 
 ```css
-@import 'style.css';
+@import 'mine.css';
 
 :root {
   --font-size-body: 14px;
@@ -117,7 +136,7 @@ You can override settings like so:
 If you want to use the font stacks to override global font settings, you can do so like this:
 
 ```css
-@import 'style.css';
+@import 'mine.css';
 
 :root {
   --font-body: var(--system-serif);
@@ -127,7 +146,7 @@ If you want to use the font stacks to override global font settings, you can do 
 
 ## Thanks
 
-`mine.css` is only possible due to the excellent work laid by the contributors to [style.css]().  Thank you!
+`mine.css` stands on the shoulders of giants from the excellent work found in [style.css][style]. Thank you!
 
 ## Contributing
 
@@ -137,4 +156,6 @@ Contributions welcome! Please read the [contributing guidelines](contributing.md
 
 [ISC](LICENSE.md)
 
-[style]: https://github.com/css-pkg/style.css
+[style]: https://css-pkg.github.io/style.css/
+[style-gh]: https://github.com/css-pkg/style.css
+[guide]: https://mine-css.neocities.com/guide.html

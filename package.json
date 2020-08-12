@@ -41,7 +41,7 @@
     "style"
   ],
   "license": "MIT",
-  "main": "src/theme-switcher.js",
+  "module": "src/theme-switcher.js",
   "style": "dist/style.css",
   "repository": {
     "type": "git",
