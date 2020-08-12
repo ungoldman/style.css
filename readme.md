@@ -158,4 +158,4 @@ Contributions welcome! Please read the [contributing guidelines](contributing.md
 
 [style]: https://css-pkg.github.io/style.css/
 [style-gh]: https://github.com/css-pkg/style.css
-[guide]: https://mine-css.neocities.com/guide.html
+[guide]: https://mine-css.neocities.org/guide.html
