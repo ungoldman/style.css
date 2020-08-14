@@ -3,7 +3,7 @@
 a {
   background-color: transparent; /* 1 */
   text-decoration-skip: auto; /* 2 */
-  color: var(--link-color);
+  color: var(--link-text);
   text-decoration: none;
 
   /* Remove the outline on focused links when they are also active or hovered

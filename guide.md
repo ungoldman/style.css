@@ -1,6 +1,6 @@
 # Style Guide
 
-See how elements are styled with `style.css`.
+See how elements are styled with `mine.css`.
 
 <details>
   <summary><strong>Table of Contents</strong></summary>

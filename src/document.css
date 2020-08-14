@@ -13,8 +13,8 @@ html {
 /* Remove the margin in all browsers. */
 body {
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change
@@ -23,14 +23,4 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-/* Mobile gutter padding */
-@supports (padding: max(0)) {
-  body {
-    padding-top: env(safe-area-inset-top);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-    padding-bottom: env(safe-area-inset-bottom);
-  }
 }

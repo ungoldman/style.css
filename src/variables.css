@@ -13,28 +13,25 @@
   --line-height-body: 1.75;
   --line-height-pre: 1.45;
 
-  /* light/dark colors */
-  --transparent: hsla(0, 0%, 100%, 0); /* #fff */
-
   /* light colors */
-  --light-text-color: hsla(0, 0%, 7%, 1); /* #111 */
+  --light-text: hsla(0, 0%, 7%, 1); /* #111 */
   --light-background: white;
-  --light-layer-background: var(--transparent);
-  --light-link-blue: hsla(208, 100%, 50%, 1); /* #08f */
-  --light-mark-yellow: hsla(60, 100%, 50%, 1); /* #ff0 */
+  --light-layer-background: hsla(0, 0%, 100%, 0); /* #fff */
   --light-accent-background: hsla(0, 0%, 95%, 1); /* #f2f2f2 */
   --light-accent-midground: hsla(0, 0%, 84%, 1); /* #d6d6d6 */
   --light-accent-foreground: hsla(0, 0%, 49%, 1); /* #7d7d7d */
+  --light-link-text: hsla(208, 100%, 50%, 1); /* #08f */
+  --light-mark-background: hsla(60, 100%, 50%, 1); /* #ff0 */
 
   /* dark colors */
-  --dark-text-color: white;
+  --dark-text: white;
   --dark-background: hsla(0, 0%, 12%, 1); /* #1f1f1f from safari */
   --dark-layer-background: var(--transparent);
-  --dark-link-blue: hsl(206, 100%, 70%); /* #66bdff */
-  --dark-mark-yellow: hsla(58, 66%, 30%, 1); /* #7f7c1a */
   --dark-accent-background: hsla(0, 0%, 20%, 1); /* #333 */
   --dark-accent-midground: hsla(0, 0%, 30%, 1); /* #4d4d4d */
   --dark-accent-foreground: hsla(0, 0%, 60%, 1); /* #999 */
+  --dark-link-text: hsl(206, 100%, 70%); /* #66bdff */
+  --dark-mark-background: hsla(58, 66%, 30%, 1); /* #7f7c1a */
 
   /* enable dark mode */
   supported-color-schemes: light dark;
@@ -44,30 +41,36 @@
 :root,
 .light-mode {
   /* main colors */
-  --text-color: var(--light-text-color);
-  --background-color: var(--light-background);
-  --layer-background-color: var(--light-layer-background);
+  --text: var(--light-text);
+  --background: var(--light-background);
+  --layer-background: var(--light-layer-background);
   --accent-background: var(--light-accent-background);
   --accent-midground: var(--light-accent-midground);
   --accent-foreground: var(--light-accent-foreground);
 
   /* misc colors */
-  --link-color: var(--light-link-blue);
-  --mark-background-color: var(--light-mark-yellow);
+  --link-text: var(--light-link-text);
+  --mark-background: var(--light-mark-background);
+  --code-text: var(--light-text);
+  --code-background: var(--light-accent-background);
+  --code-border: var(--light-accent-midground);
 }
 
 .dark-mode {
   /* main colors */
-  --text-color: var(--dark-text-color);
-  --background-color: var(--dark-background);
-  --layer-background-color: var(--dark-layer-background);
+  --text: var(--dark-text);
+  --background: var(--dark-background);
+  --layer-background: var(--dark-layer-background);
   --accent-background: var(--dark-accent-background);
   --accent-midground: var(--dark-accent-midground);
   --accent-foreground: var(--dark-accent-foreground);
 
   /* misc colors */
-  --link-color: var(--dark-link-blue);
-  --mark-background-color: var(--dark-mark-yellow);
+  --link-text: var(--dark-link-text);
+  --mark-background: var(--dark-mark-background);
+  --code-text: var(--dark-text);
+  --code-background: var(--dark-accent-background);
+  --code-border: var(--dark-accent-midground);
 }
 
 @media (prefers-color-scheme: dark) {

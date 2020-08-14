@@ -1,13 +1,13 @@
 /* Keyboard kbd shortcut key style */
 
 kbd {
-  background-color: var(--layer-background-color);
-  background-image: linear-gradient(var(--layer-background-color), var(--accent-background) 75%);
+  background-color: var(--layer-background);
+  background-image: linear-gradient(var(--layer-background), var(--accent-background) 75%);
   background-repeat: repeat-x;
   border: 1px solid var(--accent-midground);
   border-radius: 2px;
   box-shadow: 0 1px 0 var(--accent-midground); /* depth */
-  color: var(--text-color);
+  color: var(--text);
   display: inline-block;
   line-height: 0.95em;
   margin: 0 1px;

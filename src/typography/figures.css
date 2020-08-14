@@ -2,7 +2,7 @@ figure {
   margin: 1em 0;
 
   & img {
-    background: var(--layer-background-color);
+    background: var(--layer-background);
     border: 1px solid var(--accent-midground);
     padding: 0.25em;
   }

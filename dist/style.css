@@ -38,28 +38,25 @@
   --line-height-body: 1.75;
   --line-height-pre: 1.45;
 
-  /* light/dark colors */
-  --transparent: hsla(0, 0%, 100%, 0); /* #fff */
-
   /* light colors */
-  --light-text-color: hsla(0, 0%, 7%, 1); /* #111 */
+  --light-text: hsla(0, 0%, 7%, 1); /* #111 */
   --light-background: white;
-  --light-layer-background: var(--transparent);
-  --light-link-blue: hsla(208, 100%, 50%, 1); /* #08f */
-  --light-mark-yellow: hsla(60, 100%, 50%, 1); /* #ff0 */
+  --light-layer-background: hsla(0, 0%, 100%, 0); /* #fff */
   --light-accent-background: hsla(0, 0%, 95%, 1); /* #f2f2f2 */
   --light-accent-midground: hsla(0, 0%, 84%, 1); /* #d6d6d6 */
   --light-accent-foreground: hsla(0, 0%, 49%, 1); /* #7d7d7d */
+  --light-link-text: hsla(208, 100%, 50%, 1); /* #08f */
+  --light-mark-background: hsla(60, 100%, 50%, 1); /* #ff0 */
 
   /* dark colors */
-  --dark-text-color: white;
+  --dark-text: white;
   --dark-background: hsla(0, 0%, 12%, 1); /* #1f1f1f from safari */
   --dark-layer-background: var(--transparent);
-  --dark-link-blue: hsl(206, 100%, 70%); /* #66bdff */
-  --dark-mark-yellow: hsla(58, 66%, 30%, 1); /* #7f7c1a */
   --dark-accent-background: hsla(0, 0%, 20%, 1); /* #333 */
   --dark-accent-midground: hsla(0, 0%, 30%, 1); /* #4d4d4d */
   --dark-accent-foreground: hsla(0, 0%, 60%, 1); /* #999 */
+  --dark-link-text: hsl(206, 100%, 70%); /* #66bdff */
+  --dark-mark-background: hsla(58, 66%, 30%, 1); /* #7f7c1a */
 
   /* enable dark mode */
   supported-color-schemes: light dark;
@@ -67,40 +64,49 @@
 }
 :root, .light-mode {
   /* main colors */
-  --text-color: var(--light-text-color);
-  --background-color: var(--light-background);
-  --layer-background-color: var(--light-layer-background);
+  --text: var(--light-text);
+  --background: var(--light-background);
+  --layer-background: var(--light-layer-background);
   --accent-background: var(--light-accent-background);
   --accent-midground: var(--light-accent-midground);
   --accent-foreground: var(--light-accent-foreground);
 
   /* misc colors */
-  --link-color: var(--light-link-blue);
-  --mark-background-color: var(--light-mark-yellow);
+  --link-text: var(--light-link-text);
+  --mark-background: var(--light-mark-background);
+  --code-text: var(--light-text);
+  --code-background: var(--light-accent-background);
+  --code-border: var(--light-accent-midground);
 }
 .dark-mode {
   /* main colors */
-  --text-color: var(--dark-text-color);
-  --background-color: var(--dark-background);
-  --layer-background-color: var(--dark-layer-background);
+  --text: var(--dark-text);
+  --background: var(--dark-background);
+  --layer-background: var(--dark-layer-background);
   --accent-background: var(--dark-accent-background);
   --accent-midground: var(--dark-accent-midground);
   --accent-foreground: var(--dark-accent-foreground);
 
   /* misc colors */
-  --link-color: var(--dark-link-blue);
-  --mark-background-color: var(--dark-mark-yellow);
+  --link-text: var(--dark-link-text);
+  --mark-background: var(--dark-mark-background);
+  --code-text: var(--dark-text);
+  --code-background: var(--dark-accent-background);
+  --code-border: var(--dark-accent-midground);
 }
 @media (prefers-color-scheme: dark) {
   :root { /* stylelint-disable-line at-rule-no-unknown */
-  	--text-color: var(--dark-text-color);
-  	--background-color: var(--dark-background);
-  	--layer-background-color: var(--dark-layer-background);
+  	--text: var(--dark-text);
+  	--background: var(--dark-background);
+  	--layer-background: var(--dark-layer-background);
   	--accent-background: var(--dark-accent-background);
   	--accent-midground: var(--dark-accent-midground);
   	--accent-foreground: var(--dark-accent-foreground);
-  	--link-color: var(--dark-link-blue);
-  	--mark-background-color: var(--dark-mark-yellow);
+  	--link-text: var(--dark-link-text);
+  	--mark-background: var(--dark-mark-background);
+  	--code-text: var(--dark-text);
+  	--code-background: var(--dark-accent-background);
+  	--code-border: var(--dark-accent-midground);
   }
 }
 /* html should be at the top */
@@ -117,22 +123,13 @@ html {
 /* Remove the margin in all browsers. */
 body {
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--background);
+  color: var(--text);
 }
 /* apply a natural box layout model to all elements, but allowing components to change
    https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 *, *::before, *::after {
   box-sizing: inherit;
-}
-/* Mobile gutter padding */
-@supports (padding: max(0)) {
-  body {
-    padding-top: env(safe-area-inset-top);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-    padding-bottom: env(safe-area-inset-bottom);
-  }
 }
 h1, h2, h3, h4, h5, h6 {
   /* TODO: Needed? */
@@ -168,7 +165,7 @@ a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: auto;
           text-decoration-skip: auto; /* 2 */
-  color: var(--link-color);
+  color: var(--link-text);
   text-decoration: none
 
   /* Remove the outline on focused links when they are also active or hovered
@@ -206,8 +203,8 @@ b, strong {
 }
 /* Add the correct background and color in IE 9-. */
 mark {
-  background-color: var(--mark-background-color);
-  color: var(--text-color);
+  background-color: var(--mark-background);
+  color: var(--text);
 }
 /* Prevent `sub` and `sup` elements from affecting the line height in
    all browsers. */
@@ -224,7 +221,7 @@ sup { top: -0.5em; }
 code, pre, kbd, samp {
   font-family: var(--font-code); /* 1 */
   font-size: 90%; /* 2 */
-  color: var(--text-color);
+  color: var(--code-text);
 }
 code {
   padding: 0.2em 0;
@@ -235,14 +232,14 @@ code::before, code::after {
     content: '\00a0';
   }
 pre, code {
-  background-color: var(--accent-background);
+  background-color: var(--code-background);
   border-radius: 5px;
 }
 pre {
   overflow: auto;
   word-wrap: normal;
   line-height: var(--line-height-pre);
-  border: 1px solid var(--accent-background)
+  border: 1px solid var(--code-border)
 }
 pre code {
     background: transparent;
@@ -260,13 +257,13 @@ pre > code {
   }
 /* Keyboard kbd shortcut key style */
 kbd {
-  background-color: var(--layer-background-color);
-  background-image: linear-gradient(var(--layer-background-color), var(--accent-background) 75%);
+  background-color: var(--layer-background);
+  background-image: linear-gradient(var(--layer-background), var(--accent-background) 75%);
   background-repeat: repeat-x;
   border: 1px solid var(--accent-midground);
   border-radius: 2px;
   box-shadow: 0 1px 0 var(--accent-midground); /* depth */
-  color: var(--text-color);
+  color: var(--text);
   display: inline-block;
   line-height: 0.95em;
   margin: 0 1px;
@@ -288,7 +285,7 @@ table th, table td {
   }
 table th { font-weight: bold; }
 table tr {
-    background-color: var(--layer-background-color);
+    background-color: var(--layer-background);
     border-top: 1px solid var(--accent-midground)
   }
 table tr:nth-child(2n) { background-color: var(--accent-background); }
@@ -327,7 +324,7 @@ figure {
   margin: 1em 0
 }
 figure img {
-    background: var(--layer-background-color);
+    background: var(--layer-background);
     border: 1px solid var(--accent-midground);
     padding: 0.25em;
   }

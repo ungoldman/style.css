@@ -40,7 +40,7 @@ Some differences from [style.css][style]:
 
 ```html
 <!-- CDN Production (specific release) -->
-<link rel="stylesheet" href="https://unpkg.com/mine.css@1.0.0">
+<link rel="stylesheet" href="https://unpkg.com/mine.css@^4.0.0">
 ```
 
 ```sh
@@ -50,7 +50,7 @@ $ npm install mine.css
 
 ```css
 /* CSS file */
-@import url('https://unpkg.com/style.css/mine.css');
+@import url('https://unpkg.com/mine.css');
 ```
 
 ## Usage
@@ -62,7 +62,7 @@ $ npm install mine.css
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello World</title>
-    <link rel="stylesheet" href="https://unpkg.com/mine.css@^1.0.0/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/mine.css@^4.0.0">
   </head>
   <body>
     <h1>Hooray!</h1>
@@ -80,10 +80,6 @@ npm install mine.css --save-dev
 
 Here are some modules out there for requiring CSS using JavaScript that should also work just fine:
 
-- [browserify-css](https://www.npmjs.com/package/browserify-css)
-- [css-modules](https://github.com/css-modules/css-modules)
-- [parcelify](https://www.npmjs.com/package/parcelify)
-- [rework-npm](https://www.npmjs.com/package/rework-npm)
 - [postcss-import](https://github.com/postcss/postcss-import)
 
 ### CSS Variables
@@ -92,32 +88,38 @@ You can override defaults directly with CSS variables. Here are the default vari
 
 ```css
 :root {
+  /* font family */
   --font-body: var(--system-sans);
   --font-code: var(--system-mono);
+
+  /* font size and spacing */
   --font-size-body: 14px;
   --font-size-scale: 0.25vw;
+
+  /* note: use unitless line heights
+   https://css-tricks.com/almanac/properties/l/line-height/#article-header-id-0 */
   --line-height-body: 1.75;
   --line-height-pre: 1.45;
 
   /* light colors */
+  --light-text: hsla(0, 0%, 7%, 1); /* #111 */
   --light-background: white;
-  --light-layer-background: var(--transparent);
-  --light-link-blue: hsla(208, 100%, 50%, 1); /* #08f */
-  --light-mark-yellow: hsla(60, 100%, 50%, 1); /* #ff0 */
-  --light-black: hsla(0, 0%, 7%, 1); /* #111 */
+  --light-layer-background: hsla(0, 0%, 100%, 0); /* #fff */
   --light-accent-background: hsla(0, 0%, 95%, 1); /* #f2f2f2 */
   --light-accent-midground: hsla(0, 0%, 84%, 1); /* #d6d6d6 */
   --light-accent-foreground: hsla(0, 0%, 49%, 1); /* #7d7d7d */
+  --light-link-text: hsla(208, 100%, 50%, 1); /* #08f */
+  --light-mark-background: hsla(60, 100%, 50%, 1); /* #ff0 */
 
   /* dark colors */
+  --dark-text: white;
   --dark-background: hsla(0, 0%, 12%, 1); /* #1f1f1f from safari */
   --dark-layer-background: var(--transparent);
-  --dark-link-blue: hsl(206, 100%, 70%); /* #66bdff */
-  --dark-mark-yellow: hsla(58, 66%, 30%, 1); /* #7f7c1a */
-  --dark-white: white;
   --dark-accent-background: hsla(0, 0%, 20%, 1); /* #333 */
   --dark-accent-midground: hsla(0, 0%, 30%, 1); /* #4d4d4d */
   --dark-accent-foreground: hsla(0, 0%, 60%, 1); /* #999 */
+  --dark-link-text: hsl(206, 100%, 70%); /* #66bdff */
+  --dark-mark-background: hsla(58, 66%, 30%, 1); /* #7f7c1a */
 }
 ```
 
@@ -143,6 +145,97 @@ If you want to use the font stacks to override global font settings, you can do 
 }
 ```
 
+#### Customizing colors
+
+To customize colors, override the color variable for dark and light mode:
+
+```css
+:root{
+  --light-text: red
+  --light-background: blue;
+
+  --dark-text: blue;
+  --dark-background: red;
+}
+```
+
+If you want to implement other styles that follow the light/dark mode pattern in mine.css, use the theme agnostic color var:
+
+
+```css
+.some-class {
+  color: var(--accent-foreground)
+}
+```
+
+The theme agnostic variables are as follows:
+
+```css
+.light-mode {
+  /* main colors */
+  --text: var(--light-text);
+  --background: var(--light-background);
+  --layer-background: var(--light-layer-background);
+  --accent-background: var(--light-accent-background);
+  --accent-midground: var(--light-accent-midground);
+  --accent-foreground: var(--light-accent-foreground);
+
+  /* misc colors */
+  --link-text: var(--light-link-text);
+  --mark-background: var(--light-mark-background);
+  --code-text: var(--light-text);
+  --code-background: var(--light-accent-background);
+  --code-border: var(--light-accent-midground);
+}
+
+.dark-mode {
+  /* main colors */
+  --text: var(--dark-text);
+  --background: var(--dark-background);
+  --layer-background: var(--dark-layer-background);
+  --accent-background: var(--dark-accent-background);
+  --accent-midground: var(--dark-accent-midground);
+  --accent-foreground: var(--dark-accent-foreground);
+
+  /* misc colors */
+  --link-text: var(--dark-link-text);
+  --mark-background: var(--dark-mark-background);
+  --code-text: var(--dark-text);
+  --code-background: var(--dark-accent-background);
+  --code-border: var(--dark-accent-midground);
+}
+```
+
+## Overriding the system theme
+
+If you want to allow users to switch between light and dark, indipendent of the system theme, you can apply the `.light-mode` or `.dark-mode` class the the document body.
+
+Thought there is a subtle relationship between the class and the system preference, so it is better to use the theme switcher script ([./src/theme-switcher.js](./src/theme-switcher.js)) which handles user preference while still following the system preference.
+
+Usage:
+
+```html
+<script type="module">
+  import { toggleTheme } from 'https://unpkg.com/bcomnes/mine.css@^4.0.0?module';
+
+  window.toggleTheme = toggleTheme
+</script>
+```
+
+The `toggleTheme` export is exclusively offered as an ESM module.  If you need CJS, just vendor it.
+
+See [./site/](./site/) for examples of this in action.
+
+## Layout
+
+`mine.css` doesn't include any layout css, thought it does ship a simple layout css file that provides basic layout for a page and supports `safe-area` that accommodates cell phone notches and whatnot.
+
+```html
+<!-- CDN Production (specific release) -->
+<link rel="stylesheet" href="https://unpkg.com/mine.css@^4.0.0/dist/layout.css">
+```
+
+You can see this layout style in action on the [`mine.css`][guide] website.
 
 ## Thanks
 

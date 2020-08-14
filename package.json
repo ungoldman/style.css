@@ -42,7 +42,9 @@
   ],
   "license": "MIT",
   "module": "src/theme-switcher.js",
-  "style": "dist/style.css",
+  "exports": "./src/theme-switcher.js",
+  "style": "dist/mine.css",
+  "main": "dist/mine.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/bcomnes/mine.css.git"

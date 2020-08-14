@@ -8,8 +8,8 @@ strong {
 
 /* Add the correct background and color in IE 9-. */
 mark {
-  background-color: var(--mark-background-color);
-  color: var(--text-color);
+  background-color: var(--mark-background);
+  color: var(--text);
 }
 
 /* Prevent `sub` and `sup` elements from affecting the line height in

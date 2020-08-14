@@ -14,6 +14,8 @@ $top-bar-family: $system-sans;
   margin-bottom: 0;
   margin-top: 0;
   backdrop-filter: contrast(100%) blur(10px);
+  position: sticky;
+  top: 0;
 }
 
 .top-bar-link {
@@ -24,12 +26,17 @@ $top-bar-family: $system-sans;
 .top-bar-link.current-page,
 .top-bar-link.current-page:hover,
 .top-bar-link:hover {
-  color: var(--text-color);
+  color: var(--text);
 }
 
-pre {
-  /* copensating for hljs default styles */
-  padding: 0;
+footer {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+footer a {
+  color: #777;
+  text-decoration: none;
 }
 
 @keyframes spin {
