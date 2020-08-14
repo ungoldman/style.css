@@ -241,10 +241,6 @@ You can see this layout style in action on the [`mine.css`][guide] website.
 
 `mine.css` stands on the shoulders of giants from the excellent work found in [style.css][style]. Thank you!
 
-## Contributing
-
-Contributions welcome! Please read the [contributing guidelines](contributing.md) first.
-
 ## License
 
 [ISC](LICENSE.md)
