@@ -17,8 +17,35 @@ See how elements are styled with `mine.css`.
     <li><a href="#images">Images</a></li>
     <li><a href="#figures">Figures</a></li>
     <li><a href="#extras">Extras</a></li>
+    <li>
+      <a href="#input-types">Input Types</a>
+      <ul>
+        <li><a href="#button">Button</a></li>
+        <li><a href="#checkbox">Checkbox</a></li>
+        <li><a href="#color">Color</a></li>
+        <li><a href="#date">Date</a></li>
+        <li><a href="#datetime-local">Datetie Local</a></li>
+        <li><a href="#email">Email</a></li>
+        <li><a href="#file">File</a></li>
+        <li><a href="#image-input">Image</a></li>
+        <li><a href="#month">Month</a></li>
+        <li><a href="#number">Number</a></li>
+        <li><a href="#password">Password</a></li>
+        <li><a href="#radio">Radio</a></li>
+        <li><a href="#range">Range</a></li>
+        <li><a href="#reset">Reset</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#submit">Submit</a></li>
+        <li><a href="#tel">Tel</a></li>
+        <li><a href="#text">Text</a></li>
+        <li><a href="#time">Time</a></li>
+        <li><a href="#url">URL</a></li>
+        <li><a href="#week">Week</a></li>
+      </ul>
+    </li>
   </ul>
 </details>
+
 
 ## <a id="headings" href="#headings">Headings</a>
 
@@ -449,3 +476,353 @@ Duplicated footnote reference[^second].
 - ++Inserted text++ (via [markdown-it-ins](https://github.com/markdown-it/markdown-it-ins))
 - ==Marked text== (via [markdown-it-mark](https://github.com/markdown-it/markdown-it-mark))
 ```
+
+## <a id="input-types" href="#input-types">Input Types</a>
+
+Mine.css offers improved default styling of built in HTML form inputs with dark mode override support.
+
+- [`<input>` element][input]
+- [HTML5 input types](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types)
+
+[input]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+#### <a id="buttons" href="#buttons">Button</a>
+
+> [`<input>`][input] elements of type `button` are rendered as simple push buttons, which can be programmed to control custom functionality anywhere on a webpage as required when assigned an event handler function (typically for the [`click`](https://wiki.developer.mozilla.org/en-US/docs/Web/Events/click) event). --[mdn](https://wiki.developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
+
+<input type="button" value="Button">
+<input type="button" value="Button">
+<input type="button" value="Button">
+
+```html
+<input type="button" value="Button">
+<input type="button" value="Button">
+<input type="button" value="Button">
+```
+
+#### <a id="checkbox" href="#checkbox">Checkbox</a>
+
+> [`<input>`][input] elements of type `checkbox` are rendered by default as boxes that are checked (ticked) when activated, like you might see in an official government paper form. The exact appearance depends upon the operating system configuration under which the browser is running. Generally this is a square but it may have rounded corners. A checkbox allows you to select single values for submission in a form (or not). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
+
+<div>
+  <input type="checkbox" id="scales" name="scales" checked>
+  <label for="scales">Scales</label>
+</div>
+
+<div>
+  <input type="checkbox" id="horns" name="horns">
+  <label for="horns">Horns</label>
+</div>
+
+```html
+<div>
+  <input type="checkbox" id="scales" name="scales" checked>
+  <label for="scales">Scales</label>
+</div>
+
+<div>
+  <input type="checkbox" id="horns" name="horns">
+  <label for="horns">Horns</label>
+</div>
+```
+
+#### <a id="color" href="#color">Color</a>
+
+> [`<input>`][input] elements of type `color` provide a user interface element that lets a user specify a color, either by using a visual color picker interface or by entering the color into a text field in `#rrggbb` hexadecimal format. Only simple colors (without alpha channel) are allowed though CSS colors has more formats, e.g. color names, functional notations and a hexadecimal format with an alpha channel.
+>
+> The element's presentation may vary substantially from one browser and/or platform to another—it might be a simple textual input that automatically validates to ensure that the color information is entered in the proper format, or a platform-standard color picker, or some kind of custom color picker window. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color)
+
+<div>
+    <input type="color" id="head" name="head" value="#e66465">
+    <label for="head">Head</label>
+</div>
+
+<div>
+    <input type="color" id="body" name="body" value="#f6b73c">
+    <label for="body">Body</label>
+</div>
+
+```html
+<div>
+  <input type="color" id="head" name="head" value="#e66465">
+  <label for="head">Head</label>
+</div>
+
+<div>
+  <input type="color" id="body" name="body" value="#f6b73c">
+  <label for="body">Body</label>
+</div>
+```
+
+#### <a id="date" href="#date">Date</a>
+
+> [`<input>`][input] elements of `type="date"` create input fields that let the user enter a date, either with a textbox that validates the input or a special date picker interface.
+>
+> The resulting value includes the year, month, and day, but not the time. The [time](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time) and [datetime-local](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local) input types support time and date+time input. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
+
+<label for="start">Start date:</label>
+<input type="date" id="start" name="trip-start" value="2020-08-15">
+
+```html
+<label for="start">Start date:</label>
+<input type="date" id="start" name="trip-start" value="2020-08-15">
+```
+
+#### <a id="datetime-local" href="#datetime-local">Datetime Local</a>
+
+> [`<input>`][input] elements of type `datetime-local` create input controls that let the user easily enter both a date and a time, including the year, month, and day as well as the time in hours and minutes. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local)
+
+<label for="meeting-time">Datetime Local:</label>
+<input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+
+```html
+<label for="start">Start date:</label>
+<input type="date" id="start" name="trip-start" value="2020-08-15">
+```
+
+#### <a id="email" href="#email">Email</a>
+
+> [`<input>`][input] elements of type `email` are used to let the user enter and edit an e-mail address, or, if the [`multiple`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/multiple) attribute is specified, a list of e-mail addresses. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email)
+
+<label for="email">Email:</label>
+<input type="email" id="email">
+
+```html
+<label for="email">Email:</label>
+<input type="email" id="email">
+```
+
+#### <a id="file" href="#file">File</a>
+
+> [`<input>`][input] elements with `type="file"` let the user choose one or more files from their device storage. Once chosen, the files can be uploaded to a server using [form submission](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms), or manipulated using JavaScript code and [the File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
+
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+
+```html
+<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+```
+
+#### <a id="image-input" href="#image-input">Image</a>
+
+> [`<input>`][input] elements of type `image` are used to create graphical submit buttons, i.e. submit buttons that take the form of an image rather than text. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image)
+
+<input class="dark-icon" type="image" alt="Login" src="/light-dark.svg">
+
+```html
+<input class="dark-icon" type="image" id="image" alt="Login" src="/light-dark.svg">
+```
+
+#### <a id="month" href="#month">Month</a>
+
+> [`<input>`][input] elements of type `month` create input fields that let the user enter a month and year allowing a month and year to be easily entered. The value is a string whose value is in the format "YYYY-MM", where YYYY is the four-digit year and MM is the month number. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month)
+
+<label for="start">Month:</label>
+<input type="month" id="start" name="start" min="2018-03" value="2020-08">
+
+```html
+<label for="start">Month:</label>
+<input type="month" id="start" name="start" min="2018-03" value="2020-08">
+```
+
+#### <a id="number" href="#number">Number</a>
+
+> [`<input>`][input] elements of type `number` are used to let the user enter a number. They include built-in validation to reject non-numerical entries. The browser may opt to provide stepper arrows to let the user increase and decrease the value using their mouse or by simply tapping with a fingertip. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number)
+
+<label for="tentacles">Number of tentacles (10-100):</label>
+<input type="number" id="tentacles" name="tentacles" min="10" max="100" value="5">
+
+```html
+<label for="tentacles">Number of tentacles (10-100):</label>
+<input type="number" id="tentacles" name="tentacles" min="10" max="100" value="5">
+```
+
+#### <a id="password" href="#password">Password</a>
+
+> [`<input>`][input] elements of type `password` provide a way for the user to securely enter a password. The element is presented as a one-line plain text editor control in which the text is obscured so that it cannot be read, usually by replacing each character with a symbol such as the asterisk ("\*") or a dot ("•"). This character will vary depending on the [user agent](https://developer.mozilla.org/en-US/docs/Glossary/user_agent) and OS. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password)
+
+<label for="pass">Password:</label>
+<input type="password" id="pass" name="password" minlength="8">
+
+```html
+<label for="pass">Password:</label>
+<input type="password" id="pass" name="password" minlength="8">
+```
+
+#### <a id="radio" href="#radio">Radio</a>
+
+> [`<input>`][input] elements of type `radio` are generally used in `radio groups`—collections of radio buttons describing a set of related options. Only one radio button in a given group can be selected at the same time. Radio buttons are typically rendered as small circles, which are filled or highlighted when selected. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
+
+<div>
+  <input type="radio" id="huey" name="drone" value="huey"
+         checked>
+  <label for="huey">Huey</label>
+</div>
+
+<div>
+  <input type="radio" id="dewey" name="drone" value="dewey">
+  <label for="dewey">Dewey</label>
+</div>
+
+<div>
+  <input type="radio" id="louie" name="drone" value="louie">
+  <label for="louie">Louie</label>
+</div>
+
+```html
+<div>
+  <input type="radio" id="huey" name="drone" value="huey"
+         checked>
+  <label for="huey">Huey</label>
+</div>
+
+<div>
+  <input type="radio" id="dewey" name="drone" value="dewey">
+  <label for="dewey">Dewey</label>
+</div>
+
+<div>
+  <input type="radio" id="louie" name="drone" value="louie">
+  <label for="louie">Louie</label>
+</div>
+```
+
+#### <a id="range" href="#range">Range</a>
+
+> [`<input>`][input] elements of type `range` let the user specify a numeric value which must be no less than a given value, and no more than another given value. The precise value, however, is not considered important. This is typically represented using a slider or dial control rather than a text entry box like the [number](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) input type. Because this kind of widget is imprecise, it shouldn't typically be used unless the control's exact value isn't important. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+
+<div>
+  <input type="range" id="volume" name="volume" min="0" max="11">
+  <label for="volume">Volume</label>
+</div>
+
+<div>
+  <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+  <label for="cowbell">Cowbell</label>
+</div>
+
+```html
+<div>
+  <input type="range" id="volume" name="volume" min="0" max="11">
+  <label for="volume">Volume</label>
+</div>
+
+<div>
+  <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+  <label for="cowbell">Cowbell</label>
+</div>
+```
+
+#### <a id="reset" href="#reset">Reset</a>
+
+> [`<input>`][input] elements of type `"reset"`  are rendered as buttons, with a default [`click`](https://developer.mozilla.org/en-US/docs/Web/Events/click) event handler that resets all of the inputs in the form to their initial values. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset)
+
+<form>
+  <div class="controls">
+    <label for="id">User ID:</label>
+    <input type="text" id="id" name="id" />
+    <input type="reset" value="Reset">
+  </div>
+</form>
+
+```html
+<form>
+  <div class="controls">
+    <label for="id">User ID:</label>
+    <input type="text" id="id" name="id" />
+    <input type="reset" value="Reset">
+  </div>
+</form>
+```
+
+#### <a id="search" href="#search">Search</a>
+
+> [`<input>`][input]  elements of type `search` are text fields designed for the user to enter search queries into. These are functionally identical to [`text`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text) inputs, but may be styled differently by the [user agent](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search)
+
+<input type="search" id="site-search" name="q" aria-label="Search through site content">
+
+```html
+<input type="search" id="site-search" name="q" aria-label="Search through site content">
+```
+
+#### <a id="submit" href="#submit">Submit</a>
+
+> [`<input>`][input] elements of type `submit` are rendered as buttons. When the [`click`](https://developer.mozilla.org/en-US/docs/Web/Events/click) event occurs (typically because the user clicked the button), the [user agent](https://developer.mozilla.org/en-US/docs/Glossary/user_agent) attempts to submit the form to the server. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit)
+
+<input type="submit" value="Send Request">
+
+```html
+<input type="submit" value="Send Request">
+```
+
+
+#### <a id="tel" href="#tel">Tel</a>
+
+> [`<input>`][input] elements of type `tel` are used to let the user enter and edit a telephone number. Unlike [`<input type="email">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email) and [`<input type="url">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url) , the input value is not automatically validated to a particular format before the form can be submitted, because formats for telephone numbers vary so much around the world. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel)
+
+<label for="phone">Enter your phone number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+<small>Format: 123-456-7890</small>
+
+```html
+<label for="phone">Enter your phone number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+<small>Format: 123-456-7890</small>
+```
+
+#### <a id="text" href="#text">Text</a>
+
+> [`<input>`][input] elements of type `text` create basic single-line text fields. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text)
+
+<label for="name">Name (4 to 8 characters):</label>
+<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+
+```html
+<label for="name">Name (4 to 8 characters):</label>
+<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+```
+
+#### <a id="time" href="#time">Time</a>
+
+> [`<input>`][input] elements of type `time` create input fields designed to let the user easily enter a time (hours and minutes, and optionally seconds). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time)
+
+The control's user interface will vary from browser to browser. Support is good in modern browsers, with Safari being the sole major browser not yet implementing it; in Safari, and any other browsers that don't support `<time>`, it degrades gracefully to [`<input type="text">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text).
+
+<label for="appt">Choose a time for your meeting:</label>
+<input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+<small>Office hours are 9am to 6pm</small>
+
+```html
+<label for="appt">Choose a time for your meeting:</label>
+<input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+<small>Office hours are 9am to 6pm</small>
+```
+
+#### <a id="url" href="#url">URL</a>
+
+> [`<input>`][input] elements of type `url` are used to let the user enter and edit a URL. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url)
+
+
+<label for="url">Enter an https:// URL:</label>
+<input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+
+```html
+<label for="url">Enter an https:// URL:</label>
+<input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+```
+
+#### <a id="week" href="#week">Week</a>
+
+> [`<input>`][input] elements of type `week` create input fields allowing easy entry of a year plus the [ISO 8601 week number](https://en.wikipedia.org/wiki/ISO_8601#Week_dates) during that year (i.e., week 1 to [52 or 53](https://en.wikipedia.org/wiki/ISO_8601#Week_dates)). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week)
+
+<label for="week">Choose a week in May or June:</label>
+<input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+
+```html
+<label for="week">Choose a week in May or June:</label>
+<input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+```
+
+
+

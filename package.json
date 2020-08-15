@@ -51,7 +51,7 @@
   },
   "scripts": {
     "build": "run-s clean build:*",
-    "build:md": "sitedown . -b public/ -l site/layout.html --pretty=false",
+    "build:md": "sitedown . -b public/ -l site/layout.html",
     "build:site.css": "postcss site/index.css -o public/site.css",
     "build:mine.css": "postcss src/index.css -o dist/mine.css",
     "build:layout.css": "postcss src/layout.css -o dist/layout.css",

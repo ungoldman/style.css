@@ -25,6 +25,7 @@ Some differences from [style.css][style]:
 - Remove some old browser support
 - Use post-css build pipeline
 - Minor stylistic differences
+- [CHANGELOG.md](./CHANGELOG.md)
 
 ## Install
 
@@ -291,4 +292,4 @@ You can see this layout style in action on the [`mine.css`][guide] website.
 
 [style]: https://css-pkg.github.io/style.css/
 [style-gh]: https://github.com/css-pkg/style.css
-[guide]: https://mine-css.neocities.org/guide.html
+[guide]: https://mine-css.neocities.org/guide/
