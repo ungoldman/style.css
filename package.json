@@ -70,6 +70,8 @@
     "watch:js": "npm run build:js -- -w",
     "watch:serve": "browser-sync start --server 'public' --files 'public'",
     "watch:md": "npm run build:md -- -w",
-    "watch:site.css": "run-s 'build:site.css -- --watch'"
+    "watch:site.css": "run-s 'build:site.css -- --watch'",
+    "watch:mine.css": "run-s 'build:mine.css -- --watch'",
+    "watch:layout.css": "run-s 'build:layout.css -- --watch'"
   }
 }

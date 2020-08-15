@@ -10,20 +10,21 @@ samp {
 }
 
 code {
-  padding: 0.2em 0;
+  padding: 0.2em 0.4em;
   margin: 0;
-
-  &::before,
-  &::after {
-    letter-spacing: -0.2em;
-    content: '\00a0';
-  }
 }
 
 pre,
 code {
   background-color: var(--code-background);
   border-radius: 5px;
+}
+
+a code,
+pre,
+kbd,
+samp {
+  color: var(--link-text);
 }
 
 pre {

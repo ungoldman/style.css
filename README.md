@@ -110,6 +110,9 @@ You can override defaults directly with CSS variables. Here are the default vari
   --light-accent-foreground: hsla(0, 0%, 49%, 1); /* #7d7d7d */
   --light-link-text: hsla(208, 100%, 50%, 1); /* #08f */
   --light-mark-background: hsla(60, 100%, 50%, 1); /* #ff0 */
+  --light-code-text: var(--light-text);
+  --light-code-background: var(--light-accent-background);
+  --light-code-border: var(--light-accent-midground);
 
   /* dark colors */
   --dark-text: white;
@@ -120,6 +123,9 @@ You can override defaults directly with CSS variables. Here are the default vari
   --dark-accent-foreground: hsla(0, 0%, 60%, 1); /* #999 */
   --dark-link-text: hsl(206, 100%, 70%); /* #66bdff */
   --dark-mark-background: hsla(58, 66%, 30%, 1); /* #7f7c1a */
+  --dark-code-text: var(--dark-text);
+  --dark-code-background: var(--dark-accent-background);
+  --dark-code-border: var(--dark-accent-midground);
 }
 ```
 
@@ -171,6 +177,7 @@ If you want to implement other styles that follow the light/dark mode pattern in
 The theme agnostic variables are as follows:
 
 ```css
+:root,
 .light-mode {
   /* main colors */
   --text: var(--light-text);
@@ -183,9 +190,9 @@ The theme agnostic variables are as follows:
   /* misc colors */
   --link-text: var(--light-link-text);
   --mark-background: var(--light-mark-background);
-  --code-text: var(--light-text);
-  --code-background: var(--light-accent-background);
-  --code-border: var(--light-accent-midground);
+  --code-text: var(--light-code-text);
+  --code-background: var(--light-code-background);
+  --code-border: var(--light-code-border);
 }
 
 .dark-mode {
@@ -200,9 +207,15 @@ The theme agnostic variables are as follows:
   /* misc colors */
   --link-text: var(--dark-link-text);
   --mark-background: var(--dark-mark-background);
-  --code-text: var(--dark-text);
-  --code-background: var(--dark-accent-background);
-  --code-border: var(--dark-accent-midground);
+  --code-text: var(--dark-code-text);
+  --code-background: var(--dark-code-background);
+  --code-border: var(--dark-code-border);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @extend .dark-mode; /* stylelint-disable-line at-rule-no-unknown */
+  }
 }
 ```
 
@@ -226,9 +239,40 @@ The `toggleTheme` export is exclusively offered as an ESM module.  If you need C
 
 See [./site/](./site/) for examples of this in action.
 
+Additionally, when using `theme-switcher.js`, you can easily target dark mode using the following selector:
+
+```css
+.dark-mode:not(.light-mode) {
+  /* additional dark mode styles go here */
+}
+```
+
+and the body tag will stay in sync with the system preferenc or user override.  Otherwise you need to define duplicate css rules in the dark mode media query:
+
+```css
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* duplicate your dark mode styles here if not using theme-switcher.js */
+  }
+}
+```
+
+## Dark mode images
+
+Images can be swapped out using the `<picture>` tag.
+
+```html
+<picture>
+    <source srcset="mojave-night.jpg" media="(prefers-color-scheme: dark)">
+    <img src="mojave-day.jpg">
+</picture>
+```
+
+See [this webkit blogpost](https://webkit.org/blog/8840/dark-mode-support-in-webkit/) for more info on dark mode.
+
 ## Layout
 
-`mine.css` doesn't include any layout css, thought it does ship a simple layout css file that provides basic layout for a page and supports `safe-area` that accommodates cell phone notches and whatnot.
+`mine.css` doesn't include any layout css, thought it does ship a simple layout css file that provides basic layout for a page and supports [`safe-area` that accommodates cell phone notches and whatnot](https://webkit.org/blog/7929/designing-websites-for-iphone-x/).
 
 ```html
 <!-- CDN Production (specific release) -->

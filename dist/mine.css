@@ -47,6 +47,9 @@
   --light-accent-foreground: hsla(0, 0%, 49%, 1); /* #7d7d7d */
   --light-link-text: hsla(208, 100%, 50%, 1); /* #08f */
   --light-mark-background: hsla(60, 100%, 50%, 1); /* #ff0 */
+  --light-code-text: var(--light-text);
+  --light-code-background: var(--light-accent-background);
+  --light-code-border: var(--light-accent-midground);
 
   /* dark colors */
   --dark-text: white;
@@ -57,6 +60,9 @@
   --dark-accent-foreground: hsla(0, 0%, 60%, 1); /* #999 */
   --dark-link-text: hsl(206, 100%, 70%); /* #66bdff */
   --dark-mark-background: hsla(58, 66%, 30%, 1); /* #7f7c1a */
+  --dark-code-text: var(--dark-text);
+  --dark-code-background: var(--dark-accent-background);
+  --dark-code-border: var(--dark-accent-midground);
 
   /* enable dark mode */
   supported-color-schemes: light dark;
@@ -74,9 +80,9 @@
   /* misc colors */
   --link-text: var(--light-link-text);
   --mark-background: var(--light-mark-background);
-  --code-text: var(--light-text);
-  --code-background: var(--light-accent-background);
-  --code-border: var(--light-accent-midground);
+  --code-text: var(--light-code-text);
+  --code-background: var(--light-code-background);
+  --code-border: var(--light-code-border);
 }
 .dark-mode {
   /* main colors */
@@ -90,9 +96,9 @@
   /* misc colors */
   --link-text: var(--dark-link-text);
   --mark-background: var(--dark-mark-background);
-  --code-text: var(--dark-text);
-  --code-background: var(--dark-accent-background);
-  --code-border: var(--dark-accent-midground);
+  --code-text: var(--dark-code-text);
+  --code-background: var(--dark-code-background);
+  --code-border: var(--dark-code-border);
 }
 @media (prefers-color-scheme: dark) {
   :root { /* stylelint-disable-line at-rule-no-unknown */
@@ -104,9 +110,9 @@
   	--accent-foreground: var(--dark-accent-foreground);
   	--link-text: var(--dark-link-text);
   	--mark-background: var(--dark-mark-background);
-  	--code-text: var(--dark-text);
-  	--code-background: var(--dark-accent-background);
-  	--code-border: var(--dark-accent-midground);
+  	--code-text: var(--dark-code-text);
+  	--code-background: var(--dark-code-background);
+  	--code-border: var(--dark-code-border);
   }
 }
 /* html should be at the top */
@@ -224,16 +230,15 @@ code, pre, kbd, samp {
   color: var(--code-text);
 }
 code {
-  padding: 0.2em 0;
-  margin: 0
+  padding: 0.2em 0.4em;
+  margin: 0;
 }
-code::before, code::after {
-    letter-spacing: -0.2em;
-    content: '\00a0';
-  }
 pre, code {
   background-color: var(--code-background);
   border-radius: 5px;
+}
+a code, pre, kbd, samp {
+  color: var(--link-text);
 }
 pre {
   overflow: auto;
