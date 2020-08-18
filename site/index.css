@@ -16,6 +16,7 @@ $top-bar-family: $system-sans;
   backdrop-filter: contrast(100%) blur(10px);
   position: sticky;
   top: 0;
+  z-index: 1; /* float over interactive content below */
 }
 
 .top-bar-link {
