@@ -31,5 +31,6 @@ input[type=week] {
 
   &:disabled {
     /* Form disabled */
+    background-color: var(--accent-background)
   }
 }

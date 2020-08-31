@@ -408,6 +408,7 @@ input[type=date]:focus, input[type=datetime-local]:focus, input[type=email]:focu
   }
 input[type=date]:disabled, input[type=datetime-local]:disabled, input[type=email]:disabled, input[type=month]:disabled, input[type=number]:disabled, input[type=password]:disabled, input[type=search]:disabled, input[type=tel]:disabled, input[type=text]:disabled, input[type=time]:disabled, input[type=url]:disabled, input[type=week]:disabled {
     /* Form disabled */
+    background-color: var(--accent-background)
   }
 label {
   /* Input labels */
