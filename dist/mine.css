@@ -381,10 +381,12 @@ input[type=reset], input[type=submit], input[type=button], button {
   font-size: 1em;
 }
 input[type=checkbox] {
-  transform: scale(1.5);
+  /* fix iOS Safari clipping */
+  transform: translate(0);
 }
 input[type=radio] {
-  transform: scale(1.5);
+  /* fix iOS Safari clipping */
+  transform: translate(0);
 }
 input[type=search] {
   /* Fix search box appearance safari */

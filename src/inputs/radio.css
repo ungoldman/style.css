@@ -1,3 +1,4 @@
 input[type=radio] {
-  transform: scale(1.5);
+  /* fix iOS Safari clipping */
+  transform: translate(0);
 }
