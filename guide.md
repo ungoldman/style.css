@@ -488,7 +488,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="buttons" href="#buttons">Button</a>
 
-> [`<input>`][input] elements of type `button` are rendered as simple push buttons, which can be programmed to control custom functionality anywhere on a webpage as required when assigned an event handler function (typically for the [`click`](https://wiki.developer.mozilla.org/en-US/docs/Web/Events/click) event). --[mdn](https://wiki.developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
+<details>
+  <summary><strong>Description</strong></summary>
+  <blockquote>
+    <p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>button</code> are rendered as simple push buttons, which can be programmed to control custom functionality anywhere on a webpage as required when assigned an event handler function (typically for the <a href="https://wiki.developer.mozilla.org/en-US/docs/Web/Events/click"><code>click</code></a> event). –<a href="https://wiki.developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button">mdn</a>
+    </p>
+  </blockquote>
+</details>
 
 <p>
   <input type="button" value="Button">
@@ -506,7 +513,12 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="checkbox" href="#checkbox">Checkbox</a>
 
-> [`<input>`][input] elements of type `checkbox` are rendered by default as boxes that are checked (ticked) when activated, like you might see in an official government paper form. The exact appearance depends upon the operating system configuration under which the browser is running. Generally this is a square but it may have rounded corners. A checkbox allows you to select single values for submission in a form (or not). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
+<details>
+  <summary><strong>Description</strong></summary>
+  <blockquote>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>checkbox</code> are rendered by default as boxes that are checked (ticked) when activated, like you might see in an official government paper form. The exact appearance depends upon the operating system configuration under which the browser is running. Generally this is a square but it may have rounded corners. A checkbox allows you to select single values for submission in a form (or not). –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox">mdn</a></p>
+  </blockquote>
+</details>
 
 <p>
   <div>
@@ -544,9 +556,13 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="color" href="#color">Color</a>
 
-> [`<input>`][input] elements of type `color` provide a user interface element that lets a user specify a color, either by using a visual color picker interface or by entering the color into a text field in `#rrggbb` hexadecimal format. Only simple colors (without alpha channel) are allowed though CSS colors has more formats, e.g. color names, functional notations and a hexadecimal format with an alpha channel.
->
-> The element's presentation may vary substantially from one browser and/or platform to another—it might be a simple textual input that automatically validates to ensure that the color information is entered in the proper format, or a platform-standard color picker, or some kind of custom color picker window. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color)
+<details>
+  <summary><strong>Description</strong></summary>
+  <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>color</code> provide a user interface element that lets a user specify a color, either by using a visual color picker interface or by entering the color into a text field in <code>#rrggbb</code> hexadecimal format. Only simple colors (without alpha channel) are allowed though CSS colors has more formats, e.g. color names, functional notations and a hexadecimal format with an alpha channel.</p>
+<p>The element’s presentation may vary substantially from one browser and/or platform to another—it might be a simple textual input that automatically validates to ensure that the color information is entered in the proper format, or a platform-standard color picker, or some kind of custom color picker window. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color">mdn</a></p>
+</blockquote>
+</details>
 
 <p>
   <div>
@@ -582,9 +598,13 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="date" href="#date">Date</a>
 
-> [`<input>`][input] elements of `type="date"` create input fields that let the user enter a date, either with a textbox that validates the input or a special date picker interface.
->
-> The resulting value includes the year, month, and day, but not the time. The [time](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time) and [datetime-local](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local) input types support time and date+time input. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
+<details>
+  <summary><strong>Description</strong></summary>
+  <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of <code>type="date"</code> create input fields that let the user enter a date, either with a textbox that validates the input or a special date picker interface.</p>
+<p>The resulting value includes the year, month, and day, but not the time. The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time">time</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local">datetime-local</a> input types support time and date+time input. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date">mdn</a></p>
+</blockquote>
+</details>
 
 <p>
   <label class="block" for="start">Start date:</label>
@@ -602,7 +622,12 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="datetime-local" href="#datetime-local">Datetime Local</a>
 
-> [`<input>`][input] elements of type `datetime-local` create input controls that let the user easily enter both a date and a time, including the year, month, and day as well as the time in hours and minutes. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local)
+<details>
+  <summary><strong>Description</strong></summary>
+  <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>datetime-local</code> create input controls that let the user easily enter both a date and a time, including the year, month, and day as well as the time in hours and minutes. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local">mdn</a></p>
+</blockquote>
+</details>
 
 <p>
   <label class="block" for="meeting-time">Datetime Local:</label>
@@ -620,7 +645,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="email" href="#email">Email</a>
 
-> [`<input>`][input] elements of type `email` are used to let the user enter and edit an e-mail address, or, if the [`multiple`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/multiple) attribute is specified, a list of e-mail addresses. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email)
+<p>
+<details>
+  <summary><strong>Description</strong></summary>
+  <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>email</code> are used to let the user enter and edit an e-mail address, or, if the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/multiple"><code>multiple</code></a> attribute is specified, a list of e-mail addresses. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email">mdn</a></p>
+</blockquote>
+</details>
+</p>
 
 <p>
   <label class="block" for="email">Email:</label>
@@ -636,7 +668,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="file" href="#file">File</a>
 
-> [`<input>`][input] elements with `type="file"` let the user choose one or more files from their device storage. Once chosen, the files can be uploaded to a server using [form submission](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms), or manipulated using JavaScript code and [the File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
+<p>
+<details>
+  <summary><strong>Description</strong></summary>
+  <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements with <code>type="file"</code> let the user choose one or more files from their device storage. Once chosen, the files can be uploaded to a server using <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms">form submission</a>, or manipulated using JavaScript code and <a href="https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications">the File API</a>. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file">mdn</a></p>
+</blockquote>
+</details>
+</p>
 
 <p>
   <input type="file"
@@ -654,7 +693,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="image-input" href="#image-input">Image</a>
 
-> [`<input>`][input] elements of type `image` are used to create graphical submit buttons, i.e. submit buttons that take the form of an image rather than text. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image)
+<p>
+<details>
+  <summary><strong>Description</strong></summary>
+  <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>image</code> are used to create graphical submit buttons, i.e. submit buttons that take the form of an image rather than text. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image">mdn</a></p>
+</blockquote>
+</details>
+</p>
 
 <p>
   <input class="dark-icon" type="image" alt="Login" src="/light-dark.svg">
@@ -666,7 +712,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="month" href="#month">Month</a>
 
-> [`<input>`][input] elements of type `month` create input fields that let the user enter a month and year allowing a month and year to be easily entered. The value is a string whose value is in the format "YYYY-MM", where YYYY is the four-digit year and MM is the month number. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>month</code> create input fields that let the user enter a month and year allowing a month and year to be easily entered. The value is a string whose value is in the format “YYYY-MM”, where YYYY is the four-digit year and MM is the month number. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <label class="block" for="start-month">Month:</label>
@@ -682,7 +735,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="number" href="#number">Number</a>
 
-> [`<input>`][input] elements of type `number` are used to let the user enter a number. They include built-in validation to reject non-numerical entries. The browser may opt to provide stepper arrows to let the user increase and decrease the value using their mouse or by simply tapping with a fingertip. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>number</code> are used to let the user enter a number. They include built-in validation to reject non-numerical entries. The browser may opt to provide stepper arrows to let the user increase and decrease the value using their mouse or by simply tapping with a fingertip. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <label class="block" for="tentacles">Number of tentacles (10-100):</label>
@@ -698,7 +758,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="password" href="#password">Password</a>
 
-> [`<input>`][input] elements of type `password` provide a way for the user to securely enter a password. The element is presented as a one-line plain text editor control in which the text is obscured so that it cannot be read, usually by replacing each character with a symbol such as the asterisk ("\*") or a dot ("•"). This character will vary depending on the [user agent](https://developer.mozilla.org/en-US/docs/Glossary/user_agent) and OS. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>password</code> provide a way for the user to securely enter a password. The element is presented as a one-line plain text editor control in which the text is obscured so that it cannot be read, usually by replacing each character with a symbol such as the asterisk ("*") or a dot ("•"). This character will vary depending on the <a href="https://developer.mozilla.org/en-US/docs/Glossary/user_agent">user agent</a> and OS. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <label class="block" for="pass">Password:</label>
@@ -714,7 +781,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="radio" href="#radio">Radio</a>
 
-> [`<input>`][input] elements of type `radio` are generally used in `radio groups`—collections of radio buttons describing a set of related options. Only one radio button in a given group can be selected at the same time. Radio buttons are typically rendered as small circles, which are filled or highlighted when selected. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>radio</code> are generally used in <code>radio groups</code>—collections of radio buttons describing a set of related options. Only one radio button in a given group can be selected at the same time. Radio buttons are typically rendered as small circles, which are filled or highlighted when selected. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <div>
@@ -754,7 +828,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="range" href="#range">Range</a>
 
-> [`<input>`][input] elements of type `range` let the user specify a numeric value which must be no less than a given value, and no more than another given value. The precise value, however, is not considered important. This is typically represented using a slider or dial control rather than a text entry box like the [number](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) input type. Because this kind of widget is imprecise, it shouldn't typically be used unless the control's exact value isn't important. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>range</code> let the user specify a numeric value which must be no less than a given value, and no more than another given value. The precise value, however, is not considered important. This is typically represented using a slider or dial control rather than a text entry box like the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number">number</a> input type. Because this kind of widget is imprecise, it shouldn’t typically be used unless the control’s exact value isn’t important. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <div>
@@ -782,8 +863,15 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="reset" href="#reset">Reset</a>
 
-> [`<input>`][input] elements of type `"reset"`  are rendered as buttons, with a default [`click`](https://developer.mozilla.org/en-US/docs/Web/Events/click) event handler that resets all of the inputs in the form to
-their initial values. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>"reset"</code>  are rendered as buttons, with a default <a href="https://developer.mozilla.org/en-US/docs/Web/Events/click"><code>click</code></a> event handler that resets all of the inputs in the form to
+their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <form>
@@ -808,7 +896,14 @@ their initial values. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 #### <a id="search" href="#search">Search</a>
 
-> [`<input>`][input]  elements of type `search` are text fields designed for the user to enter search queries into. These are functionally identical to [`text`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text) inputs, but may be styled differently by the [user agent](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>  elements of type <code>search</code> are text fields designed for the user to enter search queries into. These are functionally identical to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text"><code>text</code></a> inputs, but may be styled differently by the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search">user agent</a>. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <input placeholder="Search..." type="search" id="site-search" name="q" aria-label="Search through site content">
@@ -821,7 +916,14 @@ their initial values. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 #### <a id="submit" href="#submit">Submit</a>
 
-> [`<input>`][input] elements of type `submit` are rendered as buttons. When the [`click`](https://developer.mozilla.org/en-US/docs/Web/Events/click) event occurs (typically because the user clicked the button), the [user agent](https://developer.mozilla.org/en-US/docs/Glossary/user_agent) attempts to submit the form to the server. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>submit</code> are rendered as buttons. When the <a href="https://developer.mozilla.org/en-US/docs/Web/Events/click"><code>click</code></a> event occurs (typically because the user clicked the button), the <a href="https://developer.mozilla.org/en-US/docs/Glossary/user_agent">user agent</a> attempts to submit the form to the server. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <input type="submit" value="Send Request">
@@ -835,7 +937,14 @@ their initial values. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 #### <a id="tel" href="#tel">Tel</a>
 
-> [`<input>`][input] elements of type `tel` are used to let the user enter and edit a telephone number. Unlike [`<input type="email">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email) and [`<input type="url">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url) , the input value is not automatically validated to a particular format before the form can be submitted, because formats for telephone numbers vary so much around the world. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>tel</code> are used to let the user enter and edit a telephone number. Unlike <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email"><code>&lt;input type="email"&gt;</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url"><code>&lt;input type="url"&gt;</code></a> , the input value is not automatically validated to a particular format before the form can be submitted, because formats for telephone numbers vary so much around the world. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <label class="block" for="phone">Enter your phone number:</label>
@@ -852,7 +961,14 @@ their initial values. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 #### <a id="text" href="#text">Text</a>
 
-> [`<input>`][input] elements of type `text` create basic single-line text fields. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>text</code> create basic single-line text fields. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <label for="name">Name (4 to 8 characters):</label>
@@ -867,9 +983,14 @@ their initial values. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 #### <a id="time" href="#time">Time</a>
 
-> [`<input>`][input] elements of type `time` create input fields designed to let the user easily enter a time (hours and minutes, and optionally seconds). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time)
-
-The control's user interface will vary from browser to browser. Support is good in modern browsers, with Safari being the sole major browser not yet implementing it; in Safari, and any other browsers that don't support `<time>`, it degrades gracefully to [`<input type="text">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text).
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>time</code> create input fields designed to let the user easily enter a time (hours and minutes, and optionally seconds). The control’s user interface will vary from browser to browser. Support is good in modern browsers, with Safari being the sole major browser not yet implementing it; in Safari, and any other browsers that don’t support <code>&lt;time&gt;</code>, it degrades gracefully to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text"><code>&lt;input type="text"&gt;</code></a>. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <label class="block" for="appt">Choose a time for your meeting:</label>
@@ -886,8 +1007,14 @@ The control's user interface will vary from browser to browser. Support is good 
 
 #### <a id="url" href="#url">URL</a>
 
-> [`<input>`][input] elements of type `url` are used to let the user enter and edit a URL. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url)
-
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>url</code> are used to let the user enter and edit a URL. –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <label class="block" for="url">Enter an https:// URL:</label>
@@ -902,7 +1029,14 @@ The control's user interface will vary from browser to browser. Support is good 
 
 #### <a id="week" href="#week">Week</a>
 
-> [`<input>`][input] elements of type `week` create input fields allowing easy entry of a year plus the [ISO 8601 week number](https://en.wikipedia.org/wiki/ISO_8601#Week_dates) during that year (i.e., week 1 to [52 or 53](https://en.wikipedia.org/wiki/ISO_8601#Week_dates)). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week)
+<p>
+  <details>
+    <summary><strong>Description</strong></summary>
+    <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> elements of type <code>week</code> create input fields allowing easy entry of a year plus the <a href="https://en.wikipedia.org/wiki/ISO_8601#Week_dates">ISO 8601 week number</a> during that year (i.e., week 1 to <a href="https://en.wikipedia.org/wiki/ISO_8601#Week_dates">52 or 53</a>). –<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week">mdn</a></p>
+</blockquote>
+  </details>
+</p>
 
 <p>
   <label class="block" for="week">Choose a week in May or June:</label>
@@ -917,8 +1051,8 @@ The control's user interface will vary from browser to browser. Support is good 
     <fieldset>
       <legend>Log into your account:</legend>
       <div>
-        <label class="block" for="username">Username:</label>
-        <input type="text" name="username">
+        <label class="block" for="email">Email:</label>
+        <input type="email" name="username">
       </div>
       <div>
         <label class="block" for="password">Password:</label>
