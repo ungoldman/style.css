@@ -501,6 +501,7 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
   <input type="button" value="Button">
   <input type="button" value="Button">
   <input type="button" value="Button">
+  <button>Hey Hi</button>
   <input disabled type="button" value="Disabled Button">
 </p>
 
@@ -508,6 +509,7 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 <input type="button" value="Button">
 <input type="button" value="Button">
 <input type="button" value="Button">
+<button>Hey Hi</button>
 <input disabled type="button" value="Disabled Button">
 ```
 
