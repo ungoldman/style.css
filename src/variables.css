@@ -38,10 +38,6 @@
   --dark-code-text: var(--dark-text);
   --dark-code-background: var(--dark-accent-background);
   --dark-code-border: var(--dark-accent-midground);
-
-  /* enable dark mode */
-  supported-color-schemes: light dark;
-  color-scheme: light dark; /* stylelint-disable-line */
 }
 
 :root,
@@ -60,6 +56,9 @@
   --code-text: var(--light-code-text);
   --code-background: var(--light-code-background);
   --code-border: var(--light-code-border);
+
+  color-scheme: light;
+  supported-color-schemes: light;
 }
 
 .dark-mode {
@@ -77,6 +76,9 @@
   --code-text: var(--dark-code-text);
   --code-background: var(--dark-code-background);
   --code-border: var(--dark-code-border);
+
+  color-scheme: dark;
+  supported-color-schemes: dark;
 }
 
 @media (prefers-color-scheme: dark) {

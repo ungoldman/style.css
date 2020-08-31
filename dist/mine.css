@@ -63,10 +63,6 @@
   --dark-code-text: var(--dark-text);
   --dark-code-background: var(--dark-accent-background);
   --dark-code-border: var(--dark-accent-midground);
-
-  /* enable dark mode */
-  supported-color-schemes: light dark;
-  color-scheme: light dark; /* stylelint-disable-line */
 }
 :root, .light-mode {
   /* main colors */
@@ -83,6 +79,9 @@
   --code-text: var(--light-code-text);
   --code-background: var(--light-code-background);
   --code-border: var(--light-code-border);
+
+  color-scheme: light;
+  supported-color-schemes: light;
 }
 .dark-mode {
   /* main colors */
@@ -99,6 +98,9 @@
   --code-text: var(--dark-code-text);
   --code-background: var(--dark-code-background);
   --code-border: var(--dark-code-border);
+
+  color-scheme: dark;
+  supported-color-schemes: dark;
 }
 @media (prefers-color-scheme: dark) {
   :root { /* stylelint-disable-line at-rule-no-unknown */
@@ -113,6 +115,9 @@
   	--code-text: var(--dark-code-text);
   	--code-background: var(--dark-code-background);
   	--code-border: var(--dark-code-border);
+
+  	color-scheme: dark;
+  	supported-color-schemes: dark;
   }
 }
 /* html should be at the top */
@@ -371,5 +376,70 @@ p, blockquote, ul, ol, dl, table, pre {
 }
 /* Add the correct font size in all browsers. */
 small { font-size: 80%; }
+input[type=reset], input[type=submit], input[type=button], button {
+  /* Button */
+  font-size: 1em;
+}
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+input[type=radio] {
+  transform: scale(1.5);
+}
+input[type=search] {
+  /* Fix search box appearance safari */
+  -webkit-appearance: textfield;
+}
+input[type=date], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week] {
+  border-color: var(--accent-midground);
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 1.2em;
+  padding: 0.4em;
+  color: var(--text);
+  background-color: var(--background);
+  width: 15.5em
+}
+input[type=date]:focus, input[type=datetime-local]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus {
+    /* Form focused */
+  }
+input[type=date]:disabled, input[type=datetime-local]:disabled, input[type=email]:disabled, input[type=month]:disabled, input[type=number]:disabled, input[type=password]:disabled, input[type=search]:disabled, input[type=tel]:disabled, input[type=text]:disabled, input[type=time]:disabled, input[type=url]:disabled, input[type=week]:disabled {
+    /* Form disabled */
+  }
+label {
+  /* Input labels */
+  font-weight: 600
+}
+label.block {
+    display: block;
+  }
+label.inline-block {
+    display: inline-block;
+  }
+label.inline-flex {
+    display: inline-flex;
+  }
+label.inline-grid {
+    display: inline-grid;
+  }
+fieldset {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--accent-midground);
+}
+input.block {
+    display: block;
+  }
+input.inline-block {
+    display: inline-block;
+  }
+input.inline-flex {
+    display: inline-flex;
+  }
+input.inline-grid {
+    display: inline-grid;
+  }
 
 /*# sourceMappingURL=mine.css.map */

@@ -490,29 +490,40 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `button` are rendered as simple push buttons, which can be programmed to control custom functionality anywhere on a webpage as required when assigned an event handler function (typically for the [`click`](https://wiki.developer.mozilla.org/en-US/docs/Web/Events/click) event). --[mdn](https://wiki.developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
 
-<input type="button" value="Button">
-<input type="button" value="Button">
-<input type="button" value="Button">
+<p>
+  <input type="button" value="Button">
+  <input type="button" value="Button">
+  <input type="button" value="Button">
+  <input disabled type="button" value="Disabled Button">
+</p>
 
 ```html
 <input type="button" value="Button">
 <input type="button" value="Button">
 <input type="button" value="Button">
+<input disabled type="button" value="Disabled Button">
 ```
 
 #### <a id="checkbox" href="#checkbox">Checkbox</a>
 
 > [`<input>`][input] elements of type `checkbox` are rendered by default as boxes that are checked (ticked) when activated, like you might see in an official government paper form. The exact appearance depends upon the operating system configuration under which the browser is running. Generally this is a square but it may have rounded corners. A checkbox allows you to select single values for submission in a form (or not). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
 
-<div>
-  <input type="checkbox" id="scales" name="scales" checked>
-  <label for="scales">Scales</label>
-</div>
+<p>
+  <div>
+    <input type="checkbox" id="scales" name="scales" checked>
+    <label for="scales">Scales</label>
+  </div>
 
-<div>
-  <input type="checkbox" id="horns" name="horns">
-  <label for="horns">Horns</label>
-</div>
+  <div>
+    <input type="checkbox" id="horns" name="horns">
+    <label for="horns">Horns</label>
+  </div>
+
+  <div>
+    <input disabled type="checkbox" id="teeth" name="teeth">
+    <label for="teeth">Teeth (disabled)</label>
+  </div>
+</p>
 
 ```html
 <div>
@@ -523,6 +534,11 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 <div>
   <input type="checkbox" id="horns" name="horns">
   <label for="horns">Horns</label>
+</div>
+
+<div>
+  <input disabled type="checkbox" id="teeth" name="teeth">
+  <label for="teeth">Teeth (disabled)</label>
 </div>
 ```
 
@@ -532,15 +548,21 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 >
 > The element's presentation may vary substantially from one browser and/or platform to another—it might be a simple textual input that automatically validates to ensure that the color information is entered in the proper format, or a platform-standard color picker, or some kind of custom color picker window. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color)
 
-<div>
+<p>
+  <div>
     <input type="color" id="head" name="head" value="#e66465">
     <label for="head">Head</label>
-</div>
+  </div>
 
-<div>
+  <div>
     <input type="color" id="body" name="body" value="#f6b73c">
     <label for="body">Body</label>
-</div>
+  </div>
+  <div>
+    <input disabled type="color" id="foot" name="foot" value="#0083f5">
+    <label for="foot">Footer (disabled)</label>
+  </div>
+</p>
 
 ```html
 <div>
@@ -552,6 +574,10 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
   <input type="color" id="body" name="body" value="#f6b73c">
   <label for="body">Body</label>
 </div>
+<div>
+  <input disabled type="color" id="foot" name="foot" value="#0083f5">
+  <label for="foot">Footer (disabled)</label>
+</div>
 ```
 
 #### <a id="date" href="#date">Date</a>
@@ -560,8 +586,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 >
 > The resulting value includes the year, month, and day, but not the time. The [time](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time) and [datetime-local](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local) input types support time and date+time input. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
 
-<label for="start">Start date:</label>
-<input type="date" id="start" name="trip-start" value="2020-08-15">
+<p>
+  <label class="block" for="start">Start date:</label>
+  <input type="date" id="start" name="trip-start" value="2020-08-15">
+  <label class="block" for="placeholder-date">Placeholder date:</label>
+  <input type="date" name="placeholder-date" placeholder="2020-08-25">
+  <label class="block" for="start">Disabled date:</label>
+  <input disabled type="date" id="end" name="trip-end" value="2020-08-25">
+</p>
 
 ```html
 <label for="start">Start date:</label>
@@ -572,8 +604,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `datetime-local` create input controls that let the user easily enter both a date and a time, including the year, month, and day as well as the time in hours and minutes. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local)
 
-<label for="meeting-time">Datetime Local:</label>
-<input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+<p>
+  <label class="block" for="meeting-time">Datetime Local:</label>
+  <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+  <label class="block" for="meeting-time-placeholder">Datetime Placeholder:</label>
+  <input type="datetime-local" name="meeting-time-placeholder" placeholder="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+  <label class="block" for="meeting-time-end">Datetime Disabled:</label>
+  <input disabled type="datetime-local" id="meeting-time-end" name="meeting-time-end" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+</p>
 
 ```html
 <label for="start">Start date:</label>
@@ -584,8 +622,12 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `email` are used to let the user enter and edit an e-mail address, or, if the [`multiple`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/multiple) attribute is specified, a list of e-mail addresses. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email)
 
-<label for="email">Email:</label>
-<input type="email" id="email">
+<p>
+  <label class="block" for="email">Email:</label>
+  <input placeholder="bob@example.com" type="email" id="email">
+  <label class="block" for="email-repeat">Email Disabled:</label>
+  <input placeholder="bob@example.com" disabled type="email" id="email-repeat">
+</p>
 
 ```html
 <label for="email">Email:</label>
@@ -596,9 +638,15 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements with `type="file"` let the user choose one or more files from their device storage. Once chosen, the files can be uploaded to a server using [form submission](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms), or manipulated using JavaScript code and [the File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
 
-<input type="file"
-       id="avatar" name="avatar"
-       accept="image/png, image/jpeg">
+<p>
+  <input type="file"
+         id="avatar" name="avatar"
+         accept="image/png, image/jpeg">
+  <input type="file"
+         disabled
+         id="avatar" name="avatar"
+         accept="image/png, image/jpeg">
+</p>
 
 ```html
 <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
@@ -608,7 +656,9 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `image` are used to create graphical submit buttons, i.e. submit buttons that take the form of an image rather than text. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image)
 
-<input class="dark-icon" type="image" alt="Login" src="/light-dark.svg">
+<p>
+  <input class="dark-icon" type="image" alt="Login" src="/light-dark.svg">
+</p>
 
 ```html
 <input class="dark-icon" type="image" id="image" alt="Login" src="/light-dark.svg">
@@ -618,8 +668,12 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `month` create input fields that let the user enter a month and year allowing a month and year to be easily entered. The value is a string whose value is in the format "YYYY-MM", where YYYY is the four-digit year and MM is the month number. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month)
 
-<label for="start">Month:</label>
-<input type="month" id="start" name="start" min="2018-03" value="2020-08">
+<p>
+  <label class="block" for="start-month">Month:</label>
+  <input type="month" id="start" name="start" min="2018-03" placeholder="2020-08">
+  <label class="block" for="end-month">Month:</label>
+  <input disabled type="month" name="end-month" min="2018-03" placeholder="2020-08">
+</p>
 
 ```html
 <label for="start">Month:</label>
@@ -630,8 +684,12 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `number` are used to let the user enter a number. They include built-in validation to reject non-numerical entries. The browser may opt to provide stepper arrows to let the user increase and decrease the value using their mouse or by simply tapping with a fingertip. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number)
 
-<label for="tentacles">Number of tentacles (10-100):</label>
-<input type="number" id="tentacles" name="tentacles" min="10" max="100" value="5">
+<p>
+  <label class="block" for="tentacles">Number of tentacles (10-100):</label>
+  <input type="number" id="tentacles" name="tentacles" min="10" max="100" placeholder="12">
+  <label class="block" for="suckers">Number of tentacles (10-100):</label>
+  <input disabled type="number" name="suckers" min="2" max="100" value="5">
+</p>
 
 ```html
 <label for="tentacles">Number of tentacles (10-100):</label>
@@ -642,8 +700,12 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `password` provide a way for the user to securely enter a password. The element is presented as a one-line plain text editor control in which the text is obscured so that it cannot be read, usually by replacing each character with a symbol such as the asterisk ("\*") or a dot ("•"). This character will vary depending on the [user agent](https://developer.mozilla.org/en-US/docs/Glossary/user_agent) and OS. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password)
 
-<label for="pass">Password:</label>
-<input type="password" id="pass" name="password" minlength="8">
+<p>
+  <label class="block" for="pass">Password:</label>
+  <input placeholder="••••••••" type="password" id="pass" name="password" minlength="8">
+  <label class="block" for="pass">Password (Disabled):</label>
+  <input disabled placeholder="••••••••" type="password" id="pass" name="password" minlength="8">
+</p>
 
 ```html
 <label for="pass">Password:</label>
@@ -654,21 +716,23 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `radio` are generally used in `radio groups`—collections of radio buttons describing a set of related options. Only one radio button in a given group can be selected at the same time. Radio buttons are typically rendered as small circles, which are filled or highlighted when selected. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
 
-<div>
-  <input type="radio" id="huey" name="drone" value="huey"
-         checked>
-  <label for="huey">Huey</label>
-</div>
+<p>
+  <div>
+    <input type="radio" id="huey" name="drone" value="huey"
+           checked>
+    <label for="huey">Huey</label>
+  </div>
 
-<div>
-  <input type="radio" id="dewey" name="drone" value="dewey">
-  <label for="dewey">Dewey</label>
-</div>
+  <div>
+    <input type="radio" id="dewey" name="drone" value="dewey">
+    <label for="dewey">Dewey</label>
+  </div>
 
-<div>
-  <input type="radio" id="louie" name="drone" value="louie">
-  <label for="louie">Louie</label>
-</div>
+  <div>
+    <input disabled type="radio" id="louie" name="drone" value="louie">
+    <label for="louie">Louie</label>
+  </div>
+</p>
 
 ```html
 <div>
@@ -692,15 +756,17 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `range` let the user specify a numeric value which must be no less than a given value, and no more than another given value. The precise value, however, is not considered important. This is typically represented using a slider or dial control rather than a text entry box like the [number](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) input type. Because this kind of widget is imprecise, it shouldn't typically be used unless the control's exact value isn't important. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
 
-<div>
-  <input type="range" id="volume" name="volume" min="0" max="11">
-  <label for="volume">Volume</label>
-</div>
+<p>
+  <div>
+    <input type="range" id="volume" name="volume" min="0" max="11">
+    <label for="volume">Volume</label>
+  </div>
 
-<div>
-  <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
-  <label for="cowbell">Cowbell</label>
-</div>
+  <div>
+    <input disabled type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+    <label for="cowbell">Cowbell</label>
+  </div>
+</p>
 
 ```html
 <div>
@@ -716,15 +782,19 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 #### <a id="reset" href="#reset">Reset</a>
 
-> [`<input>`][input] elements of type `"reset"`  are rendered as buttons, with a default [`click`](https://developer.mozilla.org/en-US/docs/Web/Events/click) event handler that resets all of the inputs in the form to their initial values. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset)
+> [`<input>`][input] elements of type `"reset"`  are rendered as buttons, with a default [`click`](https://developer.mozilla.org/en-US/docs/Web/Events/click) event handler that resets all of the inputs in the form to
+their initial values. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset)
 
-<form>
-  <div class="controls">
-    <label for="id">User ID:</label>
-    <input type="text" id="id" name="id" />
-    <input type="reset" value="Reset">
-  </div>
-</form>
+<p>
+  <form>
+    <div class="controls">
+      <label for="id">User ID:</label>
+      <input type="text" id="id" name="id" />
+      <input type="reset" value="Reset">
+      <input disabled type="reset" value="Reset (Disabled)">
+    </div>
+  </form>
+</p>
 
 ```html
 <form>
@@ -740,7 +810,10 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input]  elements of type `search` are text fields designed for the user to enter search queries into. These are functionally identical to [`text`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text) inputs, but may be styled differently by the [user agent](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search)
 
-<input type="search" id="site-search" name="q" aria-label="Search through site content">
+<p>
+  <input placeholder="Search..." type="search" id="site-search" name="q" aria-label="Search through site content">
+  <input placeholder="Search..." disabled type="search" id="site-search" name="q" aria-label="Search through site content">
+</p>
 
 ```html
 <input type="search" id="site-search" name="q" aria-label="Search through site content">
@@ -750,7 +823,10 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `submit` are rendered as buttons. When the [`click`](https://developer.mozilla.org/en-US/docs/Web/Events/click) event occurs (typically because the user clicked the button), the [user agent](https://developer.mozilla.org/en-US/docs/Glossary/user_agent) attempts to submit the form to the server. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit)
 
-<input type="submit" value="Send Request">
+<p>
+  <input type="submit" value="Send Request">
+  <input disabled type="submit" value="Send Request">
+</p>
 
 ```html
 <input type="submit" value="Send Request">
@@ -761,9 +837,12 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `tel` are used to let the user enter and edit a telephone number. Unlike [`<input type="email">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email) and [`<input type="url">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url) , the input value is not automatically validated to a particular format before the form can be submitted, because formats for telephone numbers vary so much around the world. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel)
 
-<label for="phone">Enter your phone number:</label>
-<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-<small>Format: 123-456-7890</small>
+<p>
+  <label class="block" for="phone">Enter your phone number:</label>
+  <input class="block" placeholder="123-456-7890" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  <small>Format: 123-456-7890</small>
+  <input class="block" placeholder="123-456-7890" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required disabled>
+</p>
 
 ```html
 <label for="phone">Enter your phone number:</label>
@@ -775,8 +854,11 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 > [`<input>`][input] elements of type `text` create basic single-line text fields. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text)
 
-<label for="name">Name (4 to 8 characters):</label>
-<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+<p>
+  <label for="name">Name (4 to 8 characters):</label>
+  <input class="block" placeholder="Jon Smith" type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+  <input class="block" disabled placeholder="Jon Smith" type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+</p>
 
 ```html
 <label for="name">Name (4 to 8 characters):</label>
@@ -789,9 +871,12 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 The control's user interface will vary from browser to browser. Support is good in modern browsers, with Safari being the sole major browser not yet implementing it; in Safari, and any other browsers that don't support `<time>`, it degrades gracefully to [`<input type="text">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text).
 
-<label for="appt">Choose a time for your meeting:</label>
-<input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-<small>Office hours are 9am to 6pm</small>
+<p>
+  <label class="block" for="appt">Choose a time for your meeting:</label>
+  <input type="time" id="appt" name="appt" min="09:00" max="18:00" required placeholder="9:00">
+  <small>Office hours are 9am to 6pm</small>
+  <input class="block" disabled placeholder="9:00" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+</p>
 
 ```html
 <label for="appt">Choose a time for your meeting:</label>
@@ -804,8 +889,11 @@ The control's user interface will vary from browser to browser. Support is good 
 > [`<input>`][input] elements of type `url` are used to let the user enter and edit a URL. --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url)
 
 
-<label for="url">Enter an https:// URL:</label>
-<input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+<p>
+  <label class="block" for="url">Enter an https:// URL:</label>
+  <input class="block" type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+  <input disabled class="block" type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+</p>
 
 ```html
 <label for="url">Enter an https:// URL:</label>
@@ -816,8 +904,30 @@ The control's user interface will vary from browser to browser. Support is good 
 
 > [`<input>`][input] elements of type `week` create input fields allowing easy entry of a year plus the [ISO 8601 week number](https://en.wikipedia.org/wiki/ISO_8601#Week_dates) during that year (i.e., week 1 to [52 or 53](https://en.wikipedia.org/wiki/ISO_8601#Week_dates)). --[mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week)
 
-<label for="week">Choose a week in May or June:</label>
-<input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+<p>
+  <label class="block" for="week">Choose a week in May or June:</label>
+  <input class="block" placeholder="2018-W18" type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+  <input class="block" disabled placeholder="2018-W18" type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+</p>
+
+### <a id="fieldset" href="#fieldset">Fieldset</a>
+
+<p>
+  <form style="display: inline-block;">
+    <fieldset>
+      <legend>Log into your account:</legend>
+      <div>
+        <label class="block" for="username">Username:</label>
+        <input type="text" name="username">
+      </div>
+      <div>
+        <label class="block" for="password">Password:</label>
+        <input type="password" name="password">
+      </div>
+      <input style="width:100%" type="submit" value="Login">
+    </fieldset>
+  </form>
+</p>
 
 ```html
 <label for="week">Choose a week in May or June:</label>

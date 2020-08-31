@@ -1,3 +1,25 @@
 @import './buttons.css';
+@import './checkbox.css';
+@import './radio.css';
 @import './text-input.css';
 @import './label.css';
+@import './fieldset.css';
+
+input {
+  &.block {
+    display: block;
+  }
+
+  &.inline-block {
+    display: inline-block;
+  }
+
+  &.inline-flex {
+    display: inline-flex;
+  }
+
+  &.inline-grid {
+    display: inline-grid;
+  }
+}
+

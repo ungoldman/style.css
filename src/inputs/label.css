@@ -1,3 +1,21 @@
 label {
   /* Input labels */
+  font-weight: 600;
+
+  &.block {
+    display: block;
+  }
+
+  &.inline-block {
+    display: inline-block;
+  }
+
+  &.inline-flex {
+    display: inline-flex;
+  }
+
+  &.inline-grid {
+    display: inline-grid;
+  }
 }
+
