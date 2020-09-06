@@ -90,3 +90,7 @@ footer a {
 :not(.light-mode).dark-mode .dark-icon {
   filter: invert(95%);
 }
+
+.paragraph {
+  @extend p;
+}
