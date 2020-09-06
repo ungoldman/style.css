@@ -501,8 +501,8 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
   <input type="button" value="Button">
   <input type="button" value="Button">
   <input type="button" value="Button">
-  <button>Hey Hi</button>
-  <input disabled type="button" value="Disabled Button">
+  <button>Button Element</button>
+  <input disabled type="button" value="Input Button">
 </p>
 
 ```html
@@ -526,35 +526,35 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 <div class="paragraph">
   <div>
-    <input type="checkbox" id="scales" name="scales" checked>
+    <input type="checkbox" name="scales" checked>
     <label for="scales">Scales</label>
   </div>
 
   <div>
-    <input type="checkbox" id="horns" name="horns">
+    <input type="checkbox" name="horns">
     <label for="horns">Horns</label>
   </div>
 
   <div>
-    <input disabled type="checkbox" id="teeth" name="teeth">
-    <label for="teeth">Teeth (disabled)</label>
+    <input disabled type="checkbox" name="teeth">
+    <label for="teeth">Teeth (Disabled)</label>
   </div>
 </div>
 
 ```html
 <div>
-  <input type="checkbox" id="scales" name="scales" checked>
+  <input type="checkbox" name="scales" checked>
   <label for="scales">Scales</label>
 </div>
 
 <div>
-  <input type="checkbox" id="horns" name="horns">
+  <input type="checkbox" name="horns">
   <label for="horns">Horns</label>
 </div>
 
 <div>
-  <input disabled type="checkbox" id="teeth" name="teeth">
-  <label for="teeth">Teeth (disabled)</label>
+  <input disabled type="checkbox" name="teeth">
+  <label for="teeth">Teeth (Disabled)</label>
 </div>
 ```
 
@@ -572,32 +572,32 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 <div class="paragraph">
   <div>
-    <input type="color" id="head" name="head" value="#e66465">
+    <input type="color" name="head" value="#e66465">
     <label for="head">Head</label>
   </div>
 
   <div>
-    <input type="color" id="body" name="body" value="#f6b73c">
+    <input type="color" name="body" value="#f6b73c">
     <label for="body">Body</label>
   </div>
   <div>
-    <input disabled type="color" id="foot" name="foot" value="#0083f5">
-    <label for="foot">Footer (disabled)</label>
+    <input disabled type="color" name="foot" value="#0083f5">
+    <label for="foot">Footer (Disabled)</label>
   </div>
-</p>
+</div>
 
 ```html
 <div>
-  <input type="color" id="head" name="head" value="#e66465">
+  <input type="color" name="head" value="#e66465">
   <label for="head">Head</label>
 </div>
 
 <div>
-  <input type="color" id="body" name="body" value="#f6b73c">
+  <input type="color" name="body" value="#f6b73c">
   <label for="body">Body</label>
 </div>
 <div>
-  <input disabled type="color" id="foot" name="foot" value="#0083f5">
+  <input disabled type="color" name="foot" value="#0083f5">
   <label for="foot">Footer (disabled)</label>
 </div>
 ```
@@ -615,17 +615,21 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 </div>
 
 <div class="paragraph">
-  <label class="block" for="start">Start date:</label>
-  <input type="date" id="start" name="trip-start" value="2020-08-15">
-  <label class="block" for="placeholder-date">Placeholder date:</label>
+  <label class="block" for="trip-start">Date:</label>
+  <input type="date" name="trip-start" value="2020-08-15">
+  <label class="block" for="placeholder-date">Date (Placeholder):</label>
   <input type="date" name="placeholder-date" placeholder="2020-08-25">
-  <label class="block" for="start">Disabled date:</label>
-  <input disabled type="date" id="end" name="trip-end" value="2020-08-25">
+  <label class="block" for="trip-end">Date (Disabled):</label>
+  <input disabled type="date" name="trip-end" value="2020-08-25">
 </div>
 
 ```html
-<label for="start">Start date:</label>
-<input type="date" id="start" name="trip-start" value="2020-08-15">
+<label class="block" for="trip-start">Start date:</label>
+<input type="date" name="trip-start" value="2020-08-15">
+<label class="block" for="placeholder-date">Placeholder date:</label>
+<input type="date" name="placeholder-date" placeholder="2020-08-25">
+<label class="block" for="trip-end">Disabled date:</label>
+<input disabled type="date" name="trip-end" value="2020-08-25">
 ```
 
 #### <a id="datetime-local" href="#datetime-local">Datetime Local</a>
@@ -641,11 +645,11 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 <div class="paragraph">
   <label class="block" for="meeting-time">Datetime Local:</label>
-  <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
-  <label class="block" for="meeting-time-placeholder">Datetime Placeholder:</label>
+  <input type="datetime-local" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+  <label class="block" for="meeting-time-placeholder">Datetime (Placeholder):</label>
   <input type="datetime-local" name="meeting-time-placeholder" placeholder="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
-  <label class="block" for="meeting-time-end">Datetime Disabled:</label>
-  <input disabled type="datetime-local" id="meeting-time-end" name="meeting-time-end" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+  <label class="block" for="meeting-time-end">Datetime (Disabled):</label>
+  <input disabled type="datetime-local" name="meeting-time-end" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
 </div>
 
 ```html
@@ -666,14 +670,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 <div class="paragraph">
   <label class="block" for="email">Email:</label>
-  <input placeholder="bob@example.com" type="email" id="email">
-  <label class="block" for="email-repeat">Email Disabled:</label>
-  <input placeholder="bob@example.com" disabled type="email" id="email-repeat">
+  <input placeholder="bob@example.com" type="email" name="email">
+  <label class="block" for="email-repeat">Email (Disabled):</label>
+  <input placeholder="bob@example.com" disabled type="email" name="email-repeat">
 </div>
 
 ```html
 <label for="email">Email:</label>
-<input type="email" id="email">
+<input type="email" name="email">
 ```
 
 #### <a id="file" href="#file">File</a>
@@ -688,12 +692,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 </div>
 
 <div class="paragraph">
+  <label class="block" for="avatar">Avatar:</label>
   <input type="file"
-         id="avatar" name="avatar"
+         name="avatar"
          accept="image/png, image/jpeg">
+  <label class="block" for="avatar-disabled">Avatar (Disabled):</label>
   <input type="file"
          disabled
-         id="avatar" name="avatar"
+         name="avatar-disabled"
          accept="image/png, image/jpeg">
 </div>
 
@@ -733,8 +739,8 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 <div class="paragraph">
   <label class="block" for="start-month">Month:</label>
-  <input type="month" id="start" name="start" min="2018-03" placeholder="2020-08">
-  <label class="block" for="end-month">Month:</label>
+  <input type="month" name="start-month" min="2018-03" placeholder="2020-08">
+  <label class="block" for="end-month">Month (Disabled):</label>
   <input disabled type="month" name="end-month" min="2018-03" placeholder="2020-08">
 </div>
 
@@ -755,15 +761,15 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 </div>
 
 <div class="paragraph">
-  <label class="block" for="tentacles">Number of tentacles (10-100):</label>
-  <input type="number" id="tentacles" name="tentacles" min="10" max="100" placeholder="12">
-  <label class="block" for="suckers">Number of tentacles (10-100):</label>
-  <input disabled type="number" name="suckers" min="2" max="100" value="5">
+  <label class="block" for="number">Number (10-100):</label>
+  <input type="number" name="number" min="10" max="100" placeholder="12">
+  <label class="block" for="number-disabled">Number (disabled):</label>
+  <input disabled type="number" name="number-disabled" min="2" max="100" value="5">
 </div>
 
 ```html
-<label for="tentacles">Number of tentacles (10-100):</label>
-<input type="number" id="tentacles" name="tentacles" min="10" max="100" value="5">
+<label class="block" for="number">Number (10-100):</label>
+<input type="number" name="number" min="10" max="100" placeholder="12">
 ```
 
 #### <a id="password" href="#password">Password</a>
@@ -779,14 +785,14 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 <div class="paragraph">
   <label class="block" for="pass">Password:</label>
-  <input placeholder="••••••••" type="password" id="pass" name="password" minlength="8">
-  <label class="block" for="pass">Password (Disabled):</label>
-  <input disabled placeholder="••••••••" type="password" id="pass" name="password" minlength="8">
+  <input placeholder="••••••••" type="password" name="pass" minlength="8">
+  <label class="block" for="pass-disabled">Password (Disabled):</label>
+  <input disabled placeholder="••••••••" type="password" name="pass-disabled" minlength="8">
 </div>
 
 ```html
-<label for="pass">Password:</label>
-<input type="password" id="pass" name="password" minlength="8">
+<label class="block" for="pass">Password:</label>
+<input placeholder="••••••••" type="password" name="pass" minlength="8">
 ```
 
 #### <a id="radio" href="#radio">Radio</a>
@@ -802,36 +808,36 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 <div class="paragraph">
   <div>
-    <input type="radio" id="huey" name="drone" value="huey"
+    <input type="radio" name="drone" value="huey"
            checked>
     <label for="huey">Huey</label>
   </div>
 
   <div>
-    <input type="radio" id="dewey" name="drone" value="dewey">
+    <input type="radio" name="dewey" value="dewey">
     <label for="dewey">Dewey</label>
   </div>
 
   <div>
-    <input disabled type="radio" id="louie" name="drone" value="louie">
+    <input disabled type="radio" name="louie" value="louie">
     <label for="louie">Louie</label>
   </div>
 </div>
 
 ```html
 <div>
-  <input type="radio" id="huey" name="drone" value="huey"
+  <input type="radio" name="drone" value="huey"
          checked>
   <label for="huey">Huey</label>
 </div>
 
 <div>
-  <input type="radio" id="dewey" name="drone" value="dewey">
+  <input type="radio" name="dewey" value="dewey">
   <label for="dewey">Dewey</label>
 </div>
 
 <div>
-  <input type="radio" id="louie" name="drone" value="louie">
+  <input disabled type="radio" name="louie" value="louie">
   <label for="louie">Louie</label>
 </div>
 ```
@@ -849,25 +855,25 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 <div class="paragraph">
   <div>
-    <input type="range" id="volume" name="volume" min="0" max="11">
+    <input type="range" name="volume" min="0" max="11">
     <label for="volume">Volume</label>
   </div>
 
   <div>
-    <input disabled type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
-    <label for="cowbell">Cowbell</label>
+    <input disabled type="range" name="cowbell" min="0" max="100" value="90" step="10">
+    <label for="cowbell">Cowbell (Disabled)</label>
   </div>
 </div>
 
 ```html
 <div>
-  <input type="range" id="volume" name="volume" min="0" max="11">
+  <input type="range" name="volume" min="0" max="11">
   <label for="volume">Volume</label>
 </div>
 
 <div>
-  <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
-  <label for="cowbell">Cowbell</label>
+  <input disabled type="range" name="cowbell" min="0" max="100" value="90" step="10">
+  <label for="cowbell">Cowbell (Disabled)</label>
 </div>
 ```
 
@@ -887,7 +893,7 @@ their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/H
   <form>
     <div class="controls">
       <label for="id">User ID:</label>
-      <input type="text" id="id" name="id" />
+      <input type="text" name="id" />
       <input type="reset" value="Reset">
       <input disabled type="reset" value="Reset (Disabled)">
     </div>
@@ -898,8 +904,9 @@ their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/H
 <form>
   <div class="controls">
     <label for="id">User ID:</label>
-    <input type="text" id="id" name="id" />
+    <input type="text" name="id" />
     <input type="reset" value="Reset">
+    <input disabled type="reset" value="Reset (Disabled)">
   </div>
 </form>
 ```
@@ -916,12 +923,12 @@ their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/H
 </div>
 
 <div class="paragraph">
-  <input placeholder="Search..." type="search" id="site-search" name="q" aria-label="Search through site content">
-  <input placeholder="Search..." disabled type="search" id="site-search" name="q" aria-label="Search through site content">
+  <input placeholder="Search..." type="search" name="search">
+  <input placeholder="Search..." disabled type="search" name="search-disabled">
 </div>
 
 ```html
-<input type="search" id="site-search" name="q" aria-label="Search through site content">
+<input placeholder="Search..." type="search" name="search">
 ```
 
 #### <a id="submit" href="#submit">Submit</a>
@@ -936,12 +943,12 @@ their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/H
 </div>
 
 <div class="paragraph">
-  <input type="submit" value="Send Request">
-  <input disabled type="submit" value="Send Request">
+  <input type="submit" value="Submit">
+  <input disabled type="submit" value="Submit (Disabled)">
 </div>
 
 ```html
-<input type="submit" value="Send Request">
+<input type="submit" value="Submit">
 ```
 
 
@@ -957,10 +964,11 @@ their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/H
 </div>
 
 <div class="paragraph">
-  <label class="block" for="phone">Enter your phone number:</label>
-  <input class="block" placeholder="123-456-7890" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  <label class="block" for="phone">Tel:</label>
+  <input class="block" placeholder="123-456-7890" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
   <small>Format: 123-456-7890</small>
-  <input class="block" placeholder="123-456-7890" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required disabled>
+  <label class="block" for="phone-disabled">Tel (Disabled):</label>
+  <input class="block" placeholder="123-456-7890" type="tel" name="phone-disabled" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required disabled>
 </div>
 
 ```html
@@ -982,8 +990,9 @@ their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/H
 
 <div class="paragraph">
   <label for="name">Name (4 to 8 characters):</label>
-  <input class="block" placeholder="Jon Smith" type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
-  <input class="block" disabled placeholder="Jon Smith" type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+  <input class="block" placeholder="Jon Smith" type="text" name="name" required minlength="4" maxlength="8" size="10">
+  <label for="name-disabled">Name (Disabled):</label>
+  <input class="block" disabled placeholder="Jon Smith" type="text" name="name-disabled" required minlength="4" maxlength="8" size="10">
 </div>
 
 ```html
@@ -1004,9 +1013,10 @@ their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/H
 
 <div class="paragraph">
   <label class="block" for="appt">Choose a time for your meeting:</label>
-  <input type="time" id="appt" name="appt" min="09:00" max="18:00" required placeholder="9:00">
+  <input type="time" name="appt" min="09:00" max="18:00" required placeholder="9:00">
   <small>Office hours are 9am to 6pm</small>
-  <input class="block" disabled placeholder="9:00" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+  <label class="block" for="appt-disabled">Time (Disabled):</label>
+  <input class="block" disabled placeholder="9:00" type="time" name="appt-disabled" min="09:00" max="18:00" required>
 </div>
 
 ```html
@@ -1028,8 +1038,9 @@ their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/H
 
 <div class="paragraph">
   <label class="block" for="url">Enter an https:// URL:</label>
-  <input class="block" type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
-  <input disabled class="block" type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+  <input class="block" type="url" name="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+  <label class="block" for="url-disabled">Enter an https:// URL (Disabled):</label>
+  <input disabled class="block" type="url" name="url-disabled" placeholder="https://example.com" pattern="https://.*" size="30" required>
 </div>
 
 ```html
@@ -1049,10 +1060,12 @@ their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/H
 </div>
 
 <div class="paragraph">
-  <label class="block" for="week">Choose a week in May or June:</label>
-  <input class="block" placeholder="2018-W18" value="2017-W01" type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
-  <input class="block" placeholder="2018-W18" type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
-  <input class="block" disabled placeholder="2018-W18" value="2017-W01" type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+  <label class="block" for="week">Week:</label>
+  <input class="block" placeholder="2018-W18" value="2017-W01" type="week" name="week" min="2018-W18" max="2018-W26" required>
+  <label class="block" for="week-placeholder">Week (Placeholder):</label>
+  <input class="block" placeholder="2018-W18" type="week" name="week-placeholder" min="2018-W18" max="2018-W26" required>
+  <label class="block" for="week-disabled">Week (Disabled):</label>
+  <input class="block" disabled placeholder="2018-W18" value="2017-W01" type="week" name="week-disabled" min="2018-W18" max="2018-W26" required>
 </div>
 
 ### <a id="fieldset" href="#fieldset">Fieldset</a>
