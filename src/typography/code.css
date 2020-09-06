@@ -39,6 +39,7 @@ pre {
     padding: 0.5em;
     line-height: inherit;
     word-wrap: normal;
+    border-radius: unset;
 
     &::before,
     &::after { content: normal; }
