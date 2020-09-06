@@ -100,8 +100,11 @@
   --code-border: var(--dark-code-border);
 
   color-scheme: dark;
-  supported-color-schemes: dark;
+  supported-color-schemes: dark
 }
+.dark-mode input[type=search]::-webkit-search-cancel-button {
+    -webkit-filter: invert(100%);
+  }
 @media (prefers-color-scheme: dark) {
   :root { /* stylelint-disable-line at-rule-no-unknown */
   	--text: var(--dark-text);
@@ -118,6 +121,13 @@
 
   	color-scheme: dark;
   	supported-color-schemes: dark;
+  }
+  :root input[type=search]::-webkit-search-cancel-button {
+    	-webkit-filter: invert(100%);
+  }
+
+  .light-mode input[type=search]::-webkit-search-cancel-button {
+    -webkit-filter: initial;
   }
 }
 /* html should be at the top */
@@ -256,7 +266,8 @@ pre code {
     display: block;
     padding: 0.5em;
     line-height: inherit;
-    word-wrap: normal
+    word-wrap: normal;
+    border-radius: unset
   }
 pre code::before, pre code::after { content: normal; }
 pre > code {
@@ -292,6 +303,7 @@ table {
 table th, table td {
     padding: 6px 13px;
     border: 1px solid var(--accent-midground);
+    border-radius: 5px;
   }
 table th { font-weight: bold; }
 table tr {
@@ -336,6 +348,7 @@ figure {
 figure img {
     background: var(--layer-background);
     border: 1px solid var(--accent-midground);
+    border-radius: 5px;
     padding: 0.25em;
   }
 figcaption {
@@ -404,10 +417,14 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=mont
 }
 input[type=date]:focus, input[type=datetime-local]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus {
     /* Form focused */
+    border-color: var(--accent-foreground);
   }
 input[type=date]:disabled, input[type=datetime-local]:disabled, input[type=email]:disabled, input[type=month]:disabled, input[type=number]:disabled, input[type=password]:disabled, input[type=search]:disabled, input[type=tel]:disabled, input[type=text]:disabled, input[type=time]:disabled, input[type=url]:disabled, input[type=week]:disabled {
     /* Form disabled */
-    background-color: var(--accent-background)
+    background-color: var(--accent-background);
+  }
+input[type=date]:hover:not([disabled]), input[type=datetime-local]:hover:not([disabled]), input[type=email]:hover:not([disabled]), input[type=month]:hover:not([disabled]), input[type=number]:hover:not([disabled]), input[type=password]:hover:not([disabled]), input[type=search]:hover:not([disabled]), input[type=tel]:hover:not([disabled]), input[type=text]:hover:not([disabled]), input[type=time]:hover:not([disabled]), input[type=url]:hover:not([disabled]), input[type=week]:hover:not([disabled]) {
+    border-color: var(--accent-foreground);
   }
 label {
   /* Input labels */
