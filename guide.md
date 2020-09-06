@@ -787,7 +787,7 @@ Mine.css offers improved default styling of built in HTML form inputs with dark 
 
 <div class="paragraph">
   <label class="block" for="pass">Password:</label>
-  <input placeholder="••••••••" type="password" name="pass" name="id" minlength="8">
+  <input placeholder="••••••••" type="password" name="pass" id="pass" minlength="8">
   <label class="block" for="pass-disabled">Password (Disabled):</label>
   <input disabled placeholder="••••••••" type="password" name="pass-disabled" id="pass-disabled" minlength="8">
 </div>
