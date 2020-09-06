@@ -303,7 +303,6 @@ table {
 table th, table td {
     padding: 6px 13px;
     border: 1px solid var(--accent-midground);
-    border-radius: 5px;
   }
 table th { font-weight: bold; }
 table tr {
