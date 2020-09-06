@@ -4,6 +4,7 @@ figure {
   & img {
     background: var(--layer-background);
     border: 1px solid var(--accent-midground);
+    border-radius: 5px;
     padding: 0.25em;
   }
 }
