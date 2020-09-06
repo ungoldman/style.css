@@ -27,10 +27,15 @@ input[type=week] {
 
   &:focus {
     /* Form focused */
+    border-color: var(--accent-foreground);
   }
 
   &:disabled {
     /* Form disabled */
-    background-color: var(--accent-background)
+    background-color: var(--accent-background);
+  }
+
+  &:hover:not([disabled]) {
+    border-color: var(--accent-foreground);
   }
 }
