@@ -10,13 +10,11 @@
 .mine-layout > *:last-child { margin-bottom: 0 !important; }
 
 /* Mobile gutter padding */
-@supports (padding: max(0)) {
-  .safe-area-inset {
-    padding-top: env(safe-area-inset-top);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-    padding-bottom: env(safe-area-inset-bottom);
-  }
+.safe-area-inset {
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* style.css site specific stuff */
