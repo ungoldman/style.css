@@ -1042,8 +1042,9 @@ their initial values. –<a href="https://developer.mozilla.org/en-US/docs/Web/H
 
 <p>
   <label class="block" for="week">Choose a week in May or June:</label>
+  <input class="block" placeholder="2018-W18" value="2017-W01" type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
   <input class="block" placeholder="2018-W18" type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
-  <input class="block" disabled placeholder="2018-W18" type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+  <input class="block" disabled placeholder="2018-W18" value="2017-W01" type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
 </p>
 
 ### <a id="fieldset" href="#fieldset">Fieldset</a>
