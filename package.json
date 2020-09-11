@@ -59,7 +59,7 @@
     "build:js": "cpx 'src/theme-switcher.js' public",
     "clean": "rimraf 'dist/*' 'public/*' && mkdirp dist public",
     "prepare": "npm run build",
-    "prepublishOnly": "git push --follow-tags && gh-release",
+    "prepublishOnly": "git push --follow-tags && gh-release -y",
     "pretest": "run-s build",
     "start": "npm run watch",
     "test": "run-s test:*",
