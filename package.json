@@ -1,7 +1,7 @@
 {
   "name": "mine.css",
   "description": "Classless stylesheet for markdown documents evolved from style.css",
-  "version": "4.2.4",
+  "version": "4.2.5",
   "author": "Nate Goldman <ungoldman@gmail.com>",
   "bugs": {
     "url": "https://github.com/bcomnes/mine.css/issues"
