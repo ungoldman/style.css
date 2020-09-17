@@ -25,6 +25,7 @@ jobs:
         registry-url: 'https://registry.npmjs.org'
     - run: npm i
     - run: npm test
+    - run: git clean -fd
     - uses: bcomnes/npm-bump@v2.0.1
       with:
         git_email: bcomnes@gmail.com
