@@ -64,7 +64,7 @@
     "start": "npm run watch",
     "test": "run-s test:*",
     "test:stylelint": "stylelint 'src/**.css'",
-    "version": "run-s prepare verslion:*",
+    "version": "run-s prepare version:*",
     "version:changelog": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:'",
     "version:git": "git add CHANGELOG.md dist",
     "watch": "npm run clean && run-p watch:*",
