@@ -350,6 +350,10 @@ figure img {
     border-radius: 5px;
     padding: 0.25em;
   }
+figure.borderless img {
+    border: none;
+    padding: 0;
+  }
 figcaption {
   font-style: italic;
   font-size: 0.75em;

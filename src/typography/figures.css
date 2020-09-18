@@ -7,6 +7,11 @@ figure {
     border-radius: 5px;
     padding: 0.25em;
   }
+
+  &.borderless img {
+    border: none;
+    padding: 0;
+  }
 }
 
 figcaption {
