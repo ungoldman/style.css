@@ -351,8 +351,11 @@ The reference defining the URL location can be later in the document.
 </figure>
 
 <figure class="borderless">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Helsinki_z00.jpg/1920px-Helsinki_z00.jpg" alt="Helsinki">
-  <figcaption>Panoramic view of <a href="//commons.wikimedia.org/wiki/Helsinki" title="Helsinki">Helsinki</a>, Finland from the Ateljee bar of <a href="https://en.wikipedia.org/wiki/Hotel_Torni" title="en:Hotel Torni">Hotel Torni</a>.</figcaption>
+  <picture>
+    <source srcset="../fork-dark.png" alt="Screenshot of Fork.app" media="(prefers-color-scheme: dark)">
+    <img src="../fork-light.png" alt="Screenshot of Fork.app">
+  </picture>
+  <figcaption>Light and dark mode images with the <code>&lt;picture&gt;</code> tag.</figcaption>
 </figure>
 
 ```html
@@ -362,8 +365,11 @@ The reference defining the URL location can be later in the document.
 </figure>
 
 <figure class="borderless">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Helsinki_z00.jpg/1920px-Helsinki_z00.jpg" alt="Helsinki">
-  <figcaption>Panoramic view of <a href="//commons.wikimedia.org/wiki/Helsinki" title="Helsinki">Helsinki</a>, Finland from the Ateljee bar of <a href="https://en.wikipedia.org/wiki/Hotel_Torni" title="en:Hotel Torni">Hotel Torni</a>.</figcaption>
+  <picture>
+    <source srcset="./fork-dark.png" media="(prefers-color-scheme: dark)">
+    <img src="./fork-light.png" alt="Screenshot of Fork.app">
+  </picture>
+  <figcaption>Light and dark mode images with the <code>&lt;picture&gt;</code> tag.</figcaption>
 </figure>
 ```
 
