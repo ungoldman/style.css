@@ -352,11 +352,13 @@ The reference defining the URL location can be later in the document.
 
 <figure class="borderless">
   <picture>
-    <source srcset="../fork-dark.png" alt="Screenshot of Fork.app" media="(prefers-color-scheme: dark)">
+    <source srcset="../fork-dark.png" media="(prefers-color-scheme: dark)">
     <img src="../fork-light.png" alt="Screenshot of Fork.app">
   </picture>
   <figcaption>Light and dark mode images with the <code>&lt;picture&gt;</code> tag.</figcaption>
 </figure>
+
+**Note:** Light/Dark mode override cannot correctly select the correct image, so `srcset` will only be honored when the system mode is changed.
 
 ```html
 <figure>
