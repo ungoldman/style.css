@@ -344,13 +344,13 @@ svg:not(:root) {
 figure {
   margin: 1em 0
 }
-figure img {
+figure img, figure video {
     background: var(--layer-background);
     border: 1px solid var(--accent-midground);
     border-radius: 5px;
     padding: 0.25em;
   }
-figure.borderless img {
+figure.borderless img, figure.borderless video {
     border: none;
     padding: 0;
   }

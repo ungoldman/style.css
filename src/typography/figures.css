@@ -1,14 +1,16 @@
 figure {
   margin: 1em 0;
 
-  & img {
+  & img,
+  & video {
     background: var(--layer-background);
     border: 1px solid var(--accent-midground);
     border-radius: 5px;
     padding: 0.25em;
   }
 
-  &.borderless img {
+  &.borderless img,
+  &.borderless video {
     border: none;
     padding: 0;
   }
