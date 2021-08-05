@@ -24,7 +24,7 @@
     "postcss-cli": "^8.0.0",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^14.0.2",
-    "postcss-nesting": "^7.0.0",
+    "postcss-nesting": "^8.0.1",
     "postcss-reporter": "^7.0.1",
     "postcss-url": "^10.1.0",
     "rimraf": "^3.0.0",
