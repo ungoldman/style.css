@@ -14,10 +14,19 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node }}
-      uses: actions/setup-node@v2.3.2
+      uses: actions/setup-node@v2.4.0
       with:
         node-version: ${{ matrix.node }}
     - name: npm install && npm test
       run: |
         npm i
         npm test
+
+  automerge:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fastify/github-action-merge-dependabot@v2.2.0
+        if: ${{ github.actor == 'dependabot[bot]' && github.event_name == 'pull_request' && contains(github.head_ref, 'dependabot/github_actions') }}
+        with:
+          github-token: ${{secrets.github_token}}
