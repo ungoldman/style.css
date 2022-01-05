@@ -205,15 +205,6 @@ The following projects were major influences on `style.css`:
 
 Contributions welcome! Please read the [contributing guidelines](contributing.md) first.
 
-## Sites Using `style.css`
-
-- http://pdxnode.org
-- https://bret.io
-- https://ungoldman.com
-- https://css-pkg.github.io/style.css/
-- https://hypermodules.github.io/sitedown
-- https://ln.bigsun.xyz
-
 ## Note
 
 This module was rewritten after [`v0.1.16`](https://github.com/css-pkg/style.css/tree/v0.1.16#readme) to serve a slightly different purpose. All of the old releases along with their readme files are still available on the [releases](https://github.com/css-pkg/style.css/releases) page.
