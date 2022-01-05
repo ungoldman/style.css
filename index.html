@@ -53,10 +53,10 @@
 $ npm install style.css
 </code></pre>
 <pre><code class="language-css"><span class="hljs-comment">/* CSS file */</span>
-@<span class="hljs-keyword">import</span> url(<span class="hljs-string">&apos;https://unpkg.com/style.css/style.css&apos;</span>);
+<span class="hljs-keyword">@import</span> url(<span class="hljs-string">&apos;https://unpkg.com/style.css/style.css&apos;</span>);
 </code></pre>
 <h2>Usage</h2>
-<pre><code class="language-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<pre><code class="language-html"><span class="hljs-meta">&lt;!doctype <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
@@ -88,10 +88,10 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 </ul>
 <h3>Sass</h3>
 <p>You can also use <code>style.css</code> with <a href="http://sass-lang.com/">Sass</a>.</p>
-<pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;path/to/node_modules/style.css/style.scss&apos;</span>;
+<pre><code class="language-scss"><span class="hljs-keyword">@import</span> <span class="hljs-string">&apos;path/to/node_modules/style.css/style.scss&apos;</span>;
 </code></pre>
 <p>Same goes for the serif variant.</p>
-<pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;path/to/node_modules/style.css/serif.scss&apos;</span>;
+<pre><code class="language-scss"><span class="hljs-keyword">@import</span> <span class="hljs-string">&apos;path/to/node_modules/style.css/serif.scss&apos;</span>;
 </code></pre>
 <p>Sass allows you to override defaults more directly. Here are the default settings for <code>style.css</code>:</p>
 <pre><code class="language-scss"><span class="hljs-variable">$font-body</span>:         <span class="hljs-variable">$system-sans</span> !default;
@@ -111,14 +111,14 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 <p>You can override settings like so:</p>
 <pre><code class="language-scss"><span class="hljs-variable">$font-size-body</span>: <span class="hljs-number">14px</span>;
 
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;style.css/style.scss&apos;</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">&apos;style.css/style.scss&apos;</span>;
 </code></pre>
 <p>If you want to use the font stacks to override global font settings, you can do so like this:</p>
-<pre><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;style.css/src/scss/fonts.scss&apos;</span>;
+<pre><code class="language-scss"><span class="hljs-keyword">@import</span> <span class="hljs-string">&apos;style.css/src/scss/fonts.scss&apos;</span>;
 
 <span class="hljs-variable">$font-body</span>: <span class="hljs-variable">$system-serif</span>;
 
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;style.css/style.scss&apos;</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">&apos;style.css/style.scss&apos;</span>;
 </code></pre>
 <p>The above snippet is how <a href="serif.css"><code>serif.css</code></a> is generated.</p>
 <h2>Development</h2>
@@ -154,14 +154,6 @@ sf(<span class="hljs-string">&apos;style.css&apos;</span>)
 </ul>
 <h2>Contributing</h2>
 <p>Contributions welcome! Please read the <a href="contributing.html">contributing guidelines</a> first.</p>
-<h2>Sites Using <code>style.css</code></h2>
-<ul>
-<li><a href="http://pdxnode.org">http://pdxnode.org</a></li>
-<li><a href="https://bret.io">https://bret.io</a></li>
-<li><a href="https://ungoldman.com">https://ungoldman.com</a></li>
-<li><a href="https://hypermodules.github.io/sitedown">https://hypermodules.github.io/sitedown</a></li>
-<li><a href="https://ungoldman.github.io/style.css">https://ungoldman.github.io/style.css</a></li>
-</ul>
 <h2>Note</h2>
 <p>This module was rewritten after <a href="https://github.com/css-pkg/style.css/tree/v0.1.16#readme"><code>v0.1.16</code></a> to serve a slightly different purpose. All of the old releases along with their readme files are still available on the <a href="https://github.com/css-pkg/style.css/releases">releases</a> page.</p>
 <h2>License</h2>
