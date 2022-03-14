@@ -7,7 +7,7 @@
     "url": "https://github.com/ungoldman/style.css/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^6.4.1",
+    "autoprefixer": "^10.4.2",
     "exit-on-dirty-git": "^1.0.1",
     "gh-pages": "^0.11.0",
     "gh-release": "^6.0.1",
