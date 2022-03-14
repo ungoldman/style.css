@@ -1,7 +1,7 @@
 {
   "name": "style.css",
   "description": "Classless stylesheet for markdown documents.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Nate Goldman <ungoldman@gmail.com>",
   "bugs": {
     "url": "https://github.com/ungoldman/style.css/issues"
@@ -44,8 +44,8 @@
     "generate": "run-s generate:**",
     "generate:css": "run-p 'sass:* -- -o ./'",
     "generate:prefix": "postcss -u autoprefixer -r style.css",
-    "generate:sign": "cat style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > style.css && pbpaste >> style.css",
-    "generate:sign-2": "cat serif.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | $npm_package_license License | $npm_package_homepage */\" > serif.css && pbpaste >> serif.css",
+    "generate:sign": "cat style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | ISC License | https://github.com/ungoldman/style.css */\" > style.css && pbpaste >> style.css",
+    "generate:sign-2": "cat serif.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | ISC License | https://github.com/ungoldman/style.css */\" > serif.css && pbpaste >> serif.css",
     "gh-pages": "npm run site && gh-pages -d site",
     "git-dirty": "exit-on-dirty-git",
     "prerelease": "run-s test generate git-dirty",
@@ -63,7 +63,8 @@
     "start": "npm-run-all site --parallel serve:*",
     "test": "stylelint \"style.css\" && stylelint \"serif.css\"",
     "watch:html": "npm run site:html -- -w",
-    "watch:scss": "run-p 'site:css -- -w'"
+    "watch:scss": "run-p 'site:css -- -w'",
+    "env": "env"
   },
   "style": "style.css"
 }
