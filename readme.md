@@ -2,16 +2,15 @@
 
 A classless stylesheet for HTML documents.
 
-[![latest version][npm-img]][npm-url]
-[![build status][travis-img]][travis-url]
-[![stability][stability-img]][stability-url]
-[![downloads][downloads-img]][npm-url]
+[![npm][npm-image]][npm-url]
+[![build][build-image]][build-url]
+[![downloads][downloads-image]][npm-url]
 
-[npm-img]: https://img.shields.io/npm/v/style.css.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/style.css.svg
 [npm-url]: https://www.npmjs.com/package/style.css
-[stability-img]: https://img.shields.io/badge/stability-stable-brightgreen.svg?style=flat-square
-[stability-url]: https://iojs.org/api/documentation.html#documentation_stability_index
-[downloads-img]: https://img.shields.io/npm/dm/style.css.svg?style=flat-square
+[build-image]: https://github.com/ungoldman/style.css/actions/workflows/tests.yml/badge.svg
+[build-url]: https://github.com/ungoldman/style.css/actions/workflows/tests.yml
+[downloads-image]: https://img.shields.io/npm/dm/style.css.svg
 
 ## About
 
