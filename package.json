@@ -9,7 +9,7 @@
   "devDependencies": {
     "autoprefixer": "^6.4.1",
     "exit-on-dirty-git": "^1.0.1",
-    "gh-pages": "^0.11.0",
+    "gh-pages": "^3.2.3",
     "gh-release": "^6.0.1",
     "live-server": "^1.1.0",
     "node-sass": "^7.0.1",
