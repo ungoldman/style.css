@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "author": "Nate Goldman <ungoldman@gmail.com>",
   "bugs": {
-    "url": "https://github.com/css-pkg/style.css/issues"
+    "url": "https://github.com/ungoldman/style.css/issues"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
@@ -27,7 +27,7 @@
     "serif.scss",
     "src/scss"
   ],
-  "homepage": "https://github.com/css-pkg/style.css",
+  "homepage": "https://github.com/ungoldman/style.css",
   "keywords": [
     "css",
     "markdown",
@@ -38,7 +38,7 @@
   "main": "style.css",
   "repository": {
     "type": "git",
-    "url": "git@github.com:css-pkg/style.css.git"
+    "url": "git@github.com:ungoldman/style.css.git"
   },
   "scripts": {
     "generate": "run-s generate:**",
