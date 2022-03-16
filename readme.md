@@ -203,11 +203,11 @@ The following projects were major influences on `style.css`:
 
 ## Contributing
 
-Contributions welcome! Please read the [contributing guidelines](contributing.md) first.
+Contributions welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
 
-## Note
+## Version History
 
-This module was rewritten after [`v0.1.16`](https://github.com/ungoldman/style.css/tree/v0.1.16#readme) to serve a slightly different purpose. All of the old releases along with their readme files are still available on the [releases](https://github.com/ungoldman/style.css/releases) page.
+Please see the [Change Log](CHANGELOG.md) for a list of all notable changes between versions.
 
 ## License
 
