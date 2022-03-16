@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
-    "exit-on-dirty-git": "^1.0.1",
     "gh-pages": "^3.2.3",
     "gh-release": "^6.0.1",
     "live-server": "^1.1.0",
@@ -48,7 +47,7 @@
     "generate:sign": "cat style.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | ISC License | https://github.com/ungoldman/style.css */\" > style.css && pbpaste >> style.css",
     "generate:sign-2": "cat serif.css | pbcopy && echo \"/*! $npm_package_name v$npm_package_version | ISC License | https://github.com/ungoldman/style.css */\" > serif.css && pbpaste >> serif.css",
     "gh-pages": "npm run site && gh-pages -d site",
-    "git-dirty": "exit-on-dirty-git",
+    "git-dirty": "./scripts/is-git-dirty.sh",
     "prerelease": "run-s test generate git-dirty",
     "pretest": "npm run generate:css",
     "release": "git push origin master && gh-release && npm publish",
