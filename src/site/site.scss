@@ -40,10 +40,10 @@ footer {
 // style.css site specific stuff
 .serif { font-family: $system-serif; }
 
-// header styling
+// repo site hero header styling
 .hero {
   border-bottom: 1px solid #ddd;
-  padding: 1em;
+  padding: 1em 0;
 }
 .hero h1,
 .hero > :last-child {
