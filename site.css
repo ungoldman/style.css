@@ -593,7 +593,7 @@ footer a {
 
 .hero {
   border-bottom: 1px solid #ddd;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .hero h1,
