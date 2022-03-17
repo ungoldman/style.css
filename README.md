@@ -32,7 +32,6 @@ Check out the [style guide](https://ungoldman.github.io/style.css/guide.html) to
 - **expertly crafted:** composed out of a balanced selection of stylistic practices.
 - **we've got serif:** includes a serif variant for that edgy look.
 - **minimal size:** weighs in at a modest `7kb` unminified.
-- **very stylish:** indeed.
 
 ## Install
 
