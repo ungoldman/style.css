@@ -50,6 +50,34 @@ footer {
   margin: 0;
 }
 
+// fiddling with top-bar for small screens
+.top-bar-btn-group,
+.top-bar-text {
+  float: left;
+}
+.top-bar-text {
+  color: #aaa;
+  float: left;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 1rem 0;
+  margin-left: .25rem;
+}
+.top-bar-btn-group {
+  margin-left: 1rem;
+}
+.top-bar-btn-group > :first-child {
+  margin-left: 0;
+}
+.top-bar-btn-group .top-bar-link {
+  margin-left: .25rem;
+}
+@media screen and (max-width: 600px) {
+  .xs-hide { display: none }
+  .top-bar-link,
+  .top-bar-btn-group { margin-left: .5rem }
+}
+
 // inherited from ungoldman.com
 /* print styles */
 
