@@ -513,10 +513,6 @@ template {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
 }
 
-.page .top-bar {
-  padding: 0;
-}
-
 .top-bar-link, .top-bar-title {
   color: #aaa;
   cursor: pointer;
@@ -593,6 +589,16 @@ footer a {
 
 .serif {
   font-family: charter, constantia, "lucida bright", lucidabright, "lucida serif", lucida, "dejavu serif", "bitstream vera serif", "liberation serif", georgia, serif;
+}
+
+.hero {
+  border-bottom: 1px solid #ddd;
+  padding: 1em;
+}
+
+.hero h1,
+.hero > :last-child {
+  margin: 0;
 }
 
 /* print styles */
