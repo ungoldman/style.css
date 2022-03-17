@@ -1,3 +1,7 @@
+<div class="hero" align="center">
+
+<img src="./shoshinsha.png" alt="shoshinsha">
+
 # style.css
 
 A classless stylesheet for HTML documents.
@@ -11,6 +15,8 @@ A classless stylesheet for HTML documents.
 [build-image]: https://github.com/ungoldman/style.css/actions/workflows/tests.yml/badge.svg
 [build-url]: https://github.com/ungoldman/style.css/actions/workflows/tests.yml
 [downloads-image]: https://img.shields.io/npm/dm/style.css.svg
+
+</div>
 
 ## About
 
@@ -212,3 +218,5 @@ Please see the [Change Log](CHANGELOG.md) for a list of all notable changes betw
 ## License
 
 [ISC](LICENSE.md)
+
+Shoshinsha image is from [emojipedia](https://emojipedia.org/japanese-symbol-for-beginner/).

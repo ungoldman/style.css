@@ -40,6 +40,16 @@ footer {
 // style.css site specific stuff
 .serif { font-family: $system-serif; }
 
+// header styling
+.hero {
+  border-bottom: 1px solid #ddd;
+  padding: 1em;
+}
+.hero h1,
+.hero > :last-child {
+  margin: 0;
+}
+
 // inherited from ungoldman.com
 /* print styles */
 
