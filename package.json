@@ -63,8 +63,7 @@
     "start": "npm-run-all site --parallel serve:*",
     "test": "stylelint \"style.scss\" && stylelint \"serif.scss\"",
     "watch:html": "npm run site:html -- -w",
-    "watch:scss": "run-p 'site:css -- -w'",
-    "env": "env"
+    "watch:scss": "run-p 'site:css -- -w'"
   },
   "style": "style.css"
 }
