@@ -4,14 +4,8 @@
 $top-bar-family: $system-sans;
 
 main {
-  max-width: 46em;
-  margin: 2em auto;
-  padding: 0 1em;
-  overflow: hidden;
-  word-wrap: break-word;
-
-  > *:first-child { margin-top: 0 !important; }
-  > *:last-child { margin-bottom: 0 !important; }
+  > *:first-child { margin-top: 0 }
+  > *:last-child { margin-bottom: 0 }
 }
 
 .top-bar {
@@ -23,7 +17,7 @@ main {
 @media screen and (min-width: 84em) {
   .top-bar {
     position: sticky;
-    top: -1px;
+    top: 0px;
   }
 }
 
@@ -42,7 +36,7 @@ footer {
 
 // repo site hero header styling
 .hero {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 4px solid #0006;
   padding: 1em 0;
 }
 .hero h1,

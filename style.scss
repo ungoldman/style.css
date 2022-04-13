@@ -7,8 +7,8 @@
 
 $font-body: $system-sans !default;
 $font-code: $system-mono !default;
-$font-size-body: 14px !default;
-$font-size-scale: 0.25vw !default;
+$font-size-body: 16px !default;
+// $font-size-scale: 0.25vw !default;
 $line-height-body: 1.55 !default;
 $line-height-pre: 1.45 !default;
 $link-color: #0074d9 !default;
@@ -23,3 +23,4 @@ $link-color: #0074d9 !default;
 @import "src/scss/interactive";
 @import "src/scss/scripting";
 @import "src/scss/hidden";
+@import "src/scss/dark";

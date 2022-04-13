@@ -5,7 +5,7 @@ pre,
 kbd,
 samp {
   font-family: $font-code; // 1
-  font-size: 90%; // 2
+  font-size: 0.9em; // 2
 }
 
 pre, code {
@@ -16,13 +16,12 @@ pre, code {
 pre {
   overflow: auto;
   word-wrap: normal;
-  padding: 1em;
   line-height: $line-height-pre;
 
   code {
     background: transparent;
     display: inline;
-    padding: 0;
+    padding: 1em;
     line-height: inherit;
     word-wrap: normal;
 
@@ -36,9 +35,8 @@ pre {
 
   > code {
     border: 0;
-    font-size: 1em;
-    white-space: pre;
-    word-break: normal;
+    white-space: pre-wrap;
+    word-break: break-word;
   }
 }
 

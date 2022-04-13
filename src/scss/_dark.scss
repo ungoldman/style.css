@@ -1,0 +1,33 @@
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #12171e;
+    color: #ddd;
+  }
+  a { color: #18e }
+  blockquote { border-left: 6px solid #0006 }
+  p {
+    // color: #bbb;
+  }
+  figure img {
+    background: #222c;
+    border: 1px solid #333;
+  }
+  pre, code {
+    background-color: #111;
+    border-radius: 3px;
+    border: 1px solid #333;
+  }
+
+
+  table tr {
+    background-color: #4443;
+    border-top: 1px solid #444;
+  }
+  table tr:nth-child(2n) {
+    background-color: #4446;
+  }
+  table th, table td {
+    padding: 6px 13px;
+    border: 1px solid #444;
+  }
+}
