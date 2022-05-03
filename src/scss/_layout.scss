@@ -1,6 +1,12 @@
 main {
-  max-width: 46em;
-  margin: 2em auto 1em;
+  max-width: 48em;
+  margin: 3em auto;
   padding: 0 1em;
   word-wrap: break-word;
+}
+
+@media screen and (min-width: 50em) {
+  main {
+    margin-top: 10vh;
+  }
 }
