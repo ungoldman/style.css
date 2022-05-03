@@ -1,0 +1,41 @@
+@media (prefers-color-scheme: dark) {
+  html {
+    background: $black;
+    color: $lighter-gray;
+  }
+  a { color: #09f }
+  blockquote { border-left: 6px solid $off-black }
+  // pre, code { background-color: $dark-black }
+  code,
+  hr { background-color: $off-black }
+
+  // TODO: redo tables :(
+  table {
+    th,
+    td {
+      padding: 6px 13px;
+      border: 1px solid $black;
+    }
+
+    tr {
+      background-color: $near-black;
+      border-top-color: $black;
+
+      &:nth-child(even) { background-color: $off-black; }
+    }
+    thead tr { background-color: $off-black; }
+  }
+
+  figure img {
+    background: $off-black;
+    border-color: $darkest-gray;
+  }
+
+  kbd {
+    background-color: $darkest-gray;
+    background-image: linear-gradient($darkest-gray, $darker-gray);
+    border: 1px solid $darker-gray;
+    box-shadow: 0 1px 0 $darkest-gray;
+    color: $white;
+  }
+}
