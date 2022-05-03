@@ -5,7 +5,7 @@ html {
   box-sizing: border-box;
   font-family: $font-body;
   font-size: $font-size-body;
-  font-size: clamp($font-size-body, 1.25vw, 19px);
+  font-size: clamp($font-size-body, 1.25vw, 20px);
   line-height: $line-height-body;
 
   font-kerning: normal;

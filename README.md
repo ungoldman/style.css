@@ -16,6 +16,14 @@ A classless stylesheet for HTML documents.
 [build-url]: https://github.com/ungoldman/style.css/actions/workflows/tests.yml
 [downloads-image]: https://img.shields.io/npm/dm/style.css.svg
 
+[![download style.css][dl-sans-img]][dl-sans-url]
+[![download serif.css][dl-serif-img]][dl-serif-url]
+
+[dl-sans-img]: https://img.shields.io/badge/download-style.css-6495ED.svg?style=for-the-badge
+[dl-sans-url]: https://unpkg.com/style.css
+[dl-serif-img]: https://img.shields.io/badge/download-serif.css-6495ED.svg?style=for-the-badge
+[dl-serif-url]: https://unpkg.com/style.css/serif.css
+
 </div>
 
 ## About
@@ -30,39 +38,22 @@ Check out the [style guide](https://ungoldman.github.io/style.css/guide.html) to
 - **great for text:** designed to be highly readable and easy on the eyes.
 - **very small API:** with zero classes, there's nothing to learn!
 - **expertly crafted:** composed out of a balanced selection of stylistic practices.
+- **markdown friendly:** designed from the ground up for markdown content.
 - **we've got serif:** includes a serif variant for that edgy look.
 - **minimal size:** weighs in at a modest `7kb` unminified.
 
-## Install
-
-[![download style.css][dl-sans-img]][dl-sans-url] [![download serif.css][dl-serif-img]][dl-serif-url]
-
-[dl-sans-img]: https://img.shields.io/badge/download-style.css-6495ED.svg?style=flat-square
-[dl-sans-url]: https://unpkg.com/style.css
-[dl-serif-img]: https://img.shields.io/badge/download-serif.css-6495ED.svg?style=flat-square
-[dl-serif-url]: https://unpkg.com/style.css/serif.css
-
-```html
-<!-- CDN Development (always latest) -->
-<link rel="stylesheet" href="https://unpkg.com/style.css">
-```
-
-```html
-<!-- CDN Production (specific release) -->
-<link rel="stylesheet" href="https://unpkg.com/style.css@1.0.0">
-```
-
-```sh
-# npm package
-$ npm install style.css
-```
-
-```css
-/* CSS file */
-@import url('https://unpkg.com/style.css/style.css');
-```
-
 ## Usage
+
+### HTML
+
+```html
+<!-- latest -->
+<link rel="stylesheet" href="https://unpkg.com/style.css">
+<!-- specific version -->
+<link rel="stylesheet" href="https://unpkg.com/style.css@1.0.0">
+<!-- serif -->
+<link rel="stylesheet" href="https://unpkg.com/style.css/serif.css">
+```
 
 ```html
 <!doctype html>
@@ -74,12 +65,25 @@ $ npm install style.css
     <link rel="stylesheet" href="https://unpkg.com/style.css@latest/style.css">
   </head>
   <body>
-    <h1>Hooray!</h1>
+    <main>
+      <h1>Hooray!</h1>
+    </main>
   </body>
 </html>
 ```
 
 The best way to get familiar with the look and feel of `style.css` is to visit the [style guide](https://ungoldman.github.io/style.css/guide.html). Detailed examples of every HTML element (and how to write them in markdown) are available there.
+
+### CSS
+
+```css
+/* latest */
+@import url('https://unpkg.com/style.css/style.css');
+/* specific version */
+@import url('https://unpkg.com/style.css/style.css@1.0.0');
+/* serif */
+@import url('https://unpkg.com/style.css/style.css/serif.css');
+```
 
 ### Node
 
