@@ -8,27 +8,24 @@ samp {
   font-size: 90%; // 2
 }
 
-pre, code {
-  background-color: $gray-97;
+code {
   border-radius: 3px;
 }
 
 pre {
   overflow: auto;
   word-wrap: normal;
-  padding: 1em;
+  padding: 0;
   line-height: $line-height-pre;
+  // border: 1px solid $darkest-gray;
 
   code {
-    background: transparent;
+    background: unset;
+    border-radius: 0;
     display: inline;
     padding: 0;
     line-height: inherit;
-    word-wrap: normal;
-
-    // max-width: initial; declaration-block-no-ignored-properties
-    // margin: 0; declaration-block-no-ignored-properties
-    // overflow: initial; declaration-block-no-ignored-properties
+    word-wrap: break-word;
 
     &::before,
     &::after { content: normal; }
@@ -36,19 +33,21 @@ pre {
 
   > code {
     border: 0;
-    font-size: 1em;
-    white-space: pre;
+    font-size: 0.8em;
+    padding: 1.25em;
+    white-space: pre-wrap;
     word-break: normal;
   }
 }
 
 code {
-  padding: 0.2em 0;
+  background-color: $gray-97;
+  padding: 0.1em 0;
   margin: 0;
 
   &::before,
   &::after {
-    letter-spacing: -0.2em;
+    letter-spacing: -0.25em;
     content: '\00a0';
   }
 }
@@ -65,4 +64,8 @@ kbd {
   line-height: 0.95em;
   margin: 0 1px;
   padding: 5px 5px 1px;
+}
+
+pre code.hljs {
+  padding: 1rem;
 }

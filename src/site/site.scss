@@ -3,21 +3,17 @@
 
 $top-bar-family: $system-sans;
 
-main {
-  max-width: 46em;
-  margin: 2em auto;
-  padding: 0 1em;
-  overflow: hidden;
-  word-wrap: break-word;
-
-  > *:first-child { margin-top: 0 !important; }
-  > *:last-child { margin-bottom: 0 !important; }
-}
-
 .top-bar {
   font-family: inherit;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+.top-bar-link,
+.top-bar-title,
+.top-bar-text {
+  font-size: $font-size-body;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 84em) {
@@ -42,12 +38,16 @@ footer {
 
 // repo site hero header styling
 .hero {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #d6d6d6;
   padding: 1em 0;
 }
 .hero h1,
 .hero > :last-child {
   margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero { border-bottom-color: $darkest-gray; }
 }
 
 // fiddling with top-bar for small screens
@@ -58,7 +58,6 @@ footer {
 .top-bar-text {
   color: #aaa;
   float: left;
-  font-size: 1rem;
   text-decoration: none;
   padding: 1rem 0;
   margin-left: .25rem;
