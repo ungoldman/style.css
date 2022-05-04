@@ -22,6 +22,13 @@ See how elements are styled with `style.css`.
 
 ## <a id="headings" href="#headings">Headings</a>
 
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+
 # h1 Heading `with code` <small>and small text</small>
 ## h2 Heading `with code` <small>and small text</small>
 ### h3 Heading `with code` <small>and small text</small>
@@ -29,13 +36,34 @@ See how elements are styled with `style.css`.
 ##### h5 Heading `with code` <small>and small text</small>
 ###### h6 Heading `with code` <small>and small text</small>
 
+# A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+## A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+### A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+#### A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+##### A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+###### A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+
 ```
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+
 # h1 Heading `with code` <small>and small text</small>
 ## h2 Heading `with code` <small>and small text</small>
 ### h3 Heading `with code` <small>and small text</small>
 #### h4 Heading `with code` <small>and small text</small>
 ##### h5 Heading `with code` <small>and small text</small>
 ###### h6 Heading `with code` <small>and small text</small>
+
+# A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+## A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+### A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+#### A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+##### A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
+###### A Very Long Heading With Quite A Lot More Words Than One Might Expect Or Event Want
 ```
 
 ## <a id="paragraphs" href="#paragraphs">Paragraphs</a>
