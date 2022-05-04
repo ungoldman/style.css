@@ -28,9 +28,9 @@ A classless stylesheet for HTML documents.
 
 ## About
 
-Make a plain HTML page look good and readable with zero effort!
+`style.css` is a lightweight stylesheet designed to make plain semantic HTML elegant and readable with as little effort as possible. It's perfect for articles, wikis, documentation, small websites, and markdown-based content.
 
-Check out the [style guide](https://ungoldman.github.io/style.css/guide.html) to see what it looks like.
+Check out the [Style Guide](https://ungoldman.github.io/style.css/guide.html) to see what it looks like.
 
 ## Features
 
@@ -40,7 +40,7 @@ Check out the [style guide](https://ungoldman.github.io/style.css/guide.html) to
 - **expertly crafted:** composed out of a balanced selection of stylistic practices.
 - **markdown friendly:** designed from the ground up for markdown content.
 - **we've got serif:** includes a serif variant for that edgy look.
-- **minimal size:** weighs in at a modest `7kb` unminified.
+- **minimal size:** weighs in at a modest `2kb` ([minified & gzipped](https://css-tricks.com/the-difference-between-minification-and-gzipping/)).
 
 ## Usage
 
