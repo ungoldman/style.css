@@ -1,6 +1,6 @@
 <div class="hero" align="center">
 
-<img src="./shoshinsha.png" alt="shoshinsha">
+<img src="./shoshinsha.png" width="120" alt="shoshinsha">
 
 # style.css
 
@@ -16,31 +16,32 @@ A classless stylesheet for HTML documents.
 [build-url]: https://github.com/ungoldman/style.css/actions/workflows/tests.yml
 [downloads-image]: https://img.shields.io/npm/dm/style.css.svg
 
-[![download style.css][dl-sans-img]][dl-sans-url]
-[![download serif.css][dl-serif-img]][dl-serif-url]
+[![download style.css][dl-img]][dl-url]
 
-[dl-sans-img]: https://img.shields.io/badge/download-style.css-6495ED.svg?style=for-the-badge
-[dl-sans-url]: https://unpkg.com/style.css
-[dl-serif-img]: https://img.shields.io/badge/download-serif.css-6495ED.svg?style=for-the-badge
-[dl-serif-url]: https://unpkg.com/style.css/serif.css
+[dl-img]: https://img.shields.io/badge/download-style.css-6495ED.svg?style=for-the-badge
+[dl-url]: https://unpkg.com/style.css
 
 </div>
 
 ## About
 
-`style.css` is a lightweight stylesheet designed to make plain semantic HTML elegant and readable with as little effort as possible. It's perfect for articles, wikis, documentation, small websites, and markdown-based content.
-
-Check out the [Style Guide](https://ungoldman.github.io/style.css/guide.html) to see what it looks like.
+`style.css` is a lightweight stylesheet designed to make plain semantic HTML elegant and readable with as little effort as possible. It has no CSS classes and only adds style rules for basic HTML elements used in written content. It's great for articles, wikis, documentation, and any markdown-based content.
 
 ## Features
 
 - **system fonts:** looks native on macOS, iOS, windows, linux, firefox OS, android.
 - **great for text:** designed to be highly readable and easy on the eyes.
-- **very small API:** with zero classes, there's nothing to learn!
+- **dark mode**: includes light and dark themes based on user's system setting.
+- **zero config:** with zero classes, there's nothing to learn!
 - **expertly crafted:** composed out of a balanced selection of stylistic practices.
 - **markdown friendly:** designed from the ground up for markdown content.
-- **we've got serif:** includes a serif variant for that edgy look.
-- **minimal size:** weighs in at a modest `2kb` ([minified & gzipped](https://css-tricks.com/the-difference-between-minification-and-gzipping/)).
+- **minimal size:** weighs in at a modest `2kb` minified & gzipped.
+
+## Examples
+
+Check out the [Style Guide](https://ungoldman.github.io/style.css/guide.html) to see what it looks like.
+
+The [website for style.css](https://ungoldman.com/style.css) is built with `style.css`.
 
 ## Usage
 
@@ -51,8 +52,6 @@ Check out the [Style Guide](https://ungoldman.github.io/style.css/guide.html) to
 <link rel="stylesheet" href="https://unpkg.com/style.css">
 <!-- specific version -->
 <link rel="stylesheet" href="https://unpkg.com/style.css@1.0.0">
-<!-- serif -->
-<link rel="stylesheet" href="https://unpkg.com/style.css/serif.css">
 ```
 
 ```html
@@ -81,8 +80,6 @@ The best way to get familiar with the look and feel of `style.css` is to visit t
 @import url('https://unpkg.com/style.css/style.css');
 /* specific version */
 @import url('https://unpkg.com/style.css/style.css@1.0.0');
-/* serif */
-@import url('https://unpkg.com/style.css/style.css/serif.css');
 ```
 
 ### Node
@@ -114,12 +111,6 @@ You can also use `style.css` with [Sass](http://sass-lang.com/).
 
 ```scss
 @import 'path/to/node_modules/style.css/style.scss';
-```
-
-Same goes for the serif variant.
-
-```scss
-@import 'path/to/node_modules/style.css/serif.scss';
 ```
 
 Sass allows you to override defaults more directly. Here are the default settings for `style.css`:
@@ -164,8 +155,6 @@ $font-body: $system-serif;
 @import 'style.css/style.scss';
 ```
 
-The above snippet is how [`serif.css`](serif.css) is generated.
-
 ## Development
 
 To get started, clone the repository and install dependencies with `npm install`.
@@ -192,6 +181,14 @@ Publish a new release with `npm run release`.
 
 The `prerelease` task will generate CSS, run tests, check if the git index is dirty, and exit if there are any problems. If all goes well, `gh-release` and `npm publish` will be run sequentially.
 
+## Contributing
+
+Contributions welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
+
+## Version History
+
+Please see the [Change Log](CHANGELOG.md) for a list of all notable changes between versions.
+
 ## Thanks
 
 `style.css` is only possible due to the excellent work of the following collaborators:
@@ -209,14 +206,6 @@ The following projects were major influences on `style.css`:
 - **[writ](https://writ.cmcenroe.me)** by [programble](https://github.com/programble)
 - **[normalize.css](https://github.com/necolas/normalize.css)** by [necolas](https://github.com/necolas)
 - **[css-system-fonts](https://github.com/mrmrs/css-system-fonts/)** by [mrmrs](https://github.com/mrmrs)
-
-## Contributing
-
-Contributions welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
-
-## Version History
-
-Please see the [Change Log](CHANGELOG.md) for a list of all notable changes between versions.
 
 ## License
 

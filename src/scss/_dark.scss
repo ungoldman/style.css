@@ -1,34 +1,42 @@
 @media (prefers-color-scheme: dark) {
   html {
-    background: $black;
-    color: $lighter-gray;
+    background: $background-dark;
+    color: $color-dark;
   }
   a { color: #09f }
-  blockquote { border-left: 6px solid $off-black }
-  // pre, code { background-color: $dark-black }
-  code,
-  hr { background-color: $off-black }
-  h6 { color: $dark-gray }
+  blockquote {
+    background: #fff1;
+    padding: 0.75em 1em;
+    color: $gray;
+    border-left: 6px solid #fff2;
+  }
+  // pre, code { background-color: $gray-06 }
+  pre > code,
+  code {
+    background: #0004;
+    color: $lightest-gray;
+  }
+  hr { background-color: #fff2 }
 
   // TODO: redo tables :(
   table {
     th,
     td {
       padding: 6px 13px;
-      border: 1px solid $black;
+      border: 1px solid $background-dark;
     }
 
     tr {
-      background-color: $near-black;
-      border-top-color: $black;
+      background-color: #fff1;
+      border-top-color: $background-dark;
 
-      &:nth-child(even) { background-color: $off-black; }
+      &:nth-child(even) { background-color: #fff2; }
     }
-    thead tr { background-color: $off-black; }
+    thead tr { background-color: #fff2; }
   }
 
   figure img {
-    background: $off-black;
+    background: $gray-40;
     border-color: $darkest-gray;
   }
 

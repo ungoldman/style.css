@@ -59,7 +59,7 @@
     "site": "run-s site:**",
     "site:clean": "rm -rf site",
     "site:css": "node-sass src/site/site.scss --output-style=compressed --include-path node_modules/ -o ./site",
-    "site:html": "sitedown . -b site/ -l src/site/layout.html --pretty=false",
+    "site:html": "sitedown . -e main -b site/ -l src/site/layout.html --pretty=false",
     "site:release": "cp *.css shoshinsha.png site",
     "start": "npm-run-all site --parallel serve:*",
     "test": "stylelint \"style.scss\" && stylelint \"serif.scss\"",
