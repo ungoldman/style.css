@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>style.css</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔰</text></svg>">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/rainbow.min.css">
-    <link rel="stylesheet" href="./site.css">
+    <link id="site-css" rel="stylesheet" href="./site.css">
   </head>
   <body>
     <nav class="top-bar">
@@ -16,34 +15,38 @@
         <a title="style.css home" href="./">🔰 style.css</a>
       </div>
       <a class="top-bar-link" href="./guide.html">style guide</a>
-      <div class="top-bar-btn-group">
-        <span class="top-bar-text">(</span>
-        <a class="top-bar-link style-sans current-page">sans</a>
-        <span class="top-bar-text">/</span>
-        <a class="top-bar-link style-serif">serif</a>
-        <span class="top-bar-text">)</span>
-      </div>
       <div class="top-bar-right">
         <a title="github repo" class="top-bar-link" href="https://github.com/ungoldman/style.css/">🐈<span class="xs-hide"> github</span></a>
       </div>
     </nav>
-    <main class="markdown-body"></main>
+    <main></main>
     <script>
-      (function () {
-        var page = document.querySelector('body')
-        var sansButton = document.querySelector('.style-sans')
-        var serifButton = document.querySelector('.style-serif')
-        var toggle = document.querySelector('.id')
+      document.querySelectorAll('.top-bar-link').forEach(a => {
+        const { href, pathname, origin } = a
+        let sameOrigin = window.location.origin === origin
+        // console.log({ href, pathname, origin, sameOrigin })
+        if (!sameOrigin) return
 
-        function swap () {
-          page.classList.toggle('serif')
-          sansButton.classList.toggle('current-page')
-          serifButton.classList.toggle('current-page')
-        }
 
-        sansButton.addEventListener('click', swap)
-        serifButton.addEventListener('click', swap)
-      })()
+        let builtURL = new URL(a.href, document.baseURI).href
+        const isCurrent = builtURL === window.location.href
+        console.log(a.href, document.baseURI, builtURL, isCurrent)
+        if (!isCurrent) return
+        a.classList.add('top-bar-current')
+      })
+    </script>
+
+    <script>
+      const div = document.createElement('div')
+      div.classList.add('top-bar-text')
+      div.innerHTML = '<input toggle" type="checkbox" checked=""> CSS'
+      const rightNav = document.querySelector('.top-bar-right')
+      rightNav.prepend(div)
+      const link = document.querySelector('link[rel="stylesheet"]')
+      const toggle = div.querySelector('input')
+      toggle.onchange = function() {
+        link.disabled = !toggle.checked
+      }
     </script>
   </body>
 </html>

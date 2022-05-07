@@ -4,6 +4,7 @@ h3,
 h4,
 h5,
 h6 {
+  // font-family: $system-serif;
   font-weight: 500;
   line-height: 1.25em;
   margin-bottom: 1.25rem;
@@ -20,9 +21,9 @@ h6 {
   code { font-size: 0.9em }
 }
 
-h1 { font-size: 2.75em; }
-h2 { font-size: 2.25em; }
-h3 { font-size: 1.75em; }
-h4 { font-size: 1.5em; }
-h5 { font-size: 1.25em; }
-h6 { font-size: 1.15em; color: $darkest-gray; }
+h1 { font-size: 2.6em; }
+h2 { font-size: 2.1em; }
+h3 { font-size: 1.7em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.1em; }

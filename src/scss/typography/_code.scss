@@ -1,14 +1,18 @@
 // 1. Correct the inheritance and scaling of font size in all browsers.
 // 2. Correct the odd `em` font sizing in all browsers.
 code,
-pre,
 kbd,
 samp {
   font-family: $font-code; // 1
   font-size: 90%; // 2
 }
 
+pre {
+  font-size: 90%;
+}
+
 code {
+  background: $lightest-gray;
   border-radius: 3px;
 }
 
@@ -17,7 +21,8 @@ pre {
   word-wrap: normal;
   padding: 0;
   line-height: $line-height-pre;
-  // border: 1px solid $darkest-gray;
+  white-space: pre-wrap;
+  word-break: break-word;
 
   code {
     background: unset;
@@ -32,16 +37,18 @@ pre {
   }
 
   > code {
+    display: block;
+    overflow-x: auto;
+    color: $gray-33;
+    background: $lightest-gray;
     border: 0;
-    font-size: 0.8em;
-    padding: 1.25em;
+    padding: 1.5em;
     white-space: pre-wrap;
-    word-break: normal;
+    word-break: break-word;
   }
 }
 
 code {
-  background-color: $gray-97;
   padding: 0.1em 0;
   margin: 0;
 
@@ -59,13 +66,9 @@ kbd {
   border: 1px solid $light-gray;
   border-radius: 2px;
   box-shadow: 0 1px 0 $light-gray;
-  color: $black;
+  color: $gray-33;
   display: inline-block;
   line-height: 0.95em;
   margin: 0 1px;
   padding: 5px 5px 1px;
-}
-
-pre code.hljs {
-  padding: 1rem;
 }

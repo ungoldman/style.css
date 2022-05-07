@@ -1,19 +1,23 @@
-$system-sans:  'san francisco', // mac, ios
+$system-sans:  -apple-system, BlinkMacSystemFont, 'avenir next', avenir, // mac, ios
                'segoe ui', // windows
+               'fira sans', // firefox os
+               roboto, noto, 'droid sans', // android
                'liberation sans', // linux
-               roboto, // android
-               helvetica, // old systems
+               'lucida grande', 'helvetica neue', helvetica, // old mac
+               'franklin gothic medium', 'century gothic', // old windows
+               cantarell, oxygen, ubuntu, // old linux
                sans-serif; // fallback
 
 $system-mono:  menlo, // mac
-               inconsolata, // windows
-               'liberation mono', // linux
-               'noto mono', // android
-               monaco, 'courier new', // old systems
+               inconsolata, consolas, // windows
+               'fira mono', // firefox os
+               'noto mono', 'droid sans mono', // android
+               'liberation mono', 'dejavu sans mono', 'ubuntu mono', // linux
+               monaco, 'courier new', // older systems
                monospace; // fallback
 
-$system-serif: charter, // mac
-               'lucida bright', // windows
-               'liberation serif', // linux
+$system-serif: charter, constantia, // mac
+               'lucida bright', lucidabright, 'lucida serif', lucida, // windows
+               'dejavu serif', 'bitstream vera serif', 'liberation serif', // linux
                georgia, // old systems
                serif; // fallback

@@ -12,14 +12,13 @@ $top-bar-family: $system-sans;
 .top-bar-link,
 .top-bar-title,
 .top-bar-text {
-  font-size: $font-size-body;
   font-size: 16px;
 }
 
 @media screen and (min-width: 84em) {
   .top-bar {
     position: sticky;
-    top: -1px;
+    top: 0px;
   }
 }
 
@@ -38,16 +37,12 @@ footer {
 
 // repo site hero header styling
 .hero {
-  border-bottom: 1px solid #d6d6d6;
+  text-align: center;
   padding-bottom: 2em;
 }
 .hero h1,
 .hero > :last-child {
   margin: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  .hero { border-bottom-color: $darkest-gray; }
 }
 
 // fiddling with top-bar for small screens
@@ -70,6 +65,11 @@ footer {
 }
 .top-bar-btn-group .top-bar-link {
   margin-left: .25rem;
+}
+.top-bar-current {
+  cursor: default;
+  color: #555;
+  text-decoration: dashed underline;
 }
 @media screen and (max-width: 600px) {
   .xs-hide { display: none }

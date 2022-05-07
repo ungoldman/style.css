@@ -1,11 +1,10 @@
 // html should be at the top
 html {
-  color: $black;
-  background-color: $white;
+  color: $color-light;
+  background-color: $background-light;
   box-sizing: border-box;
   font-family: $font-body;
   font-size: $font-size-body;
-  font-size: clamp($font-size-body, 1.25vw, 20px);
   line-height: $line-height-body;
 
   font-kerning: normal;
@@ -23,4 +22,17 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+main {
+  max-width: $main-width;
+  margin: 3em auto;
+  padding: 0 1em;
+  word-wrap: break-word;
+}
+
+@media screen and (min-width: 50em) {
+  main {
+    margin: 10vh auto;
+  }
 }
