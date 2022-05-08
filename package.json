@@ -49,6 +49,7 @@
     "generate:sign-2": "cat serif.css | pbcopy && echo \"/* $npm_package_name v$npm_package_version ungoldman.com/style.css */\" > serif.css && pbpaste >> serif.css",
     "gh-pages": "npm run site && gh-pages -d site",
     "git-dirty": "./scripts/is-git-dirty.sh",
+    "prepublishOnly": "npm run prerelease",
     "prerelease": "run-s test generate git-dirty",
     "pretest": "npm run generate:css",
     "release": "git push origin master && gh-release && npm publish",
