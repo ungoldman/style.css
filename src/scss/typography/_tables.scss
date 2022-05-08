@@ -14,15 +14,33 @@ table {
   th,
   td {
     padding: 6px 13px;
-    border: 1px solid #ddd;
+    border: 1px solid $light-gray;
   }
 
   th { font-weight: bold; }
 
   tr {
-    background-color: #fff;
-    border-top: 1px solid #ccc;
+    background-color: $lighter-gray;
+    border-top: 1px solid $light-gray;
 
-    &:nth-child(2n) { background-color: #f8f8f8; }
+    &:nth-child(2n) { background-color: $lightest-gray; }
+  }
+  thead tr { background-color: $off-white; }
+}
+
+@media (prefers-color-scheme: dark) {
+  table {
+    th,
+    td {
+      border-color: $dark-gunmetal;
+    }
+
+    tr {
+      background-color: $darkest-gray;
+      border-top-color: $dark-gunmetal;
+
+      &:nth-child(even) { background-color: $darker-gray; }
+    }
+    thead tr { background-color: $darker-gray; }
   }
 }

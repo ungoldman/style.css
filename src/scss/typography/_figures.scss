@@ -3,7 +3,7 @@ figure {
 
   img {
     background: $white;
-    border: 1px solid $gray;
+    border: 1px solid $light-gray;
     padding: 0.25em;
   }
 }
@@ -13,4 +13,11 @@ figcaption {
   font-size: 0.75em;
   font-weight: 200;
   margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  figure img {
+    background: $darkest-gray;
+    border-color: $darker-gray;
+  }
 }

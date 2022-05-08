@@ -1,13 +1,20 @@
 // html should be at the top
 html {
   color: $color-light;
-  background-color: $background-light;
+  background-color: $bg-light;
   box-sizing: border-box;
   font-family: $font-body;
-  font-size: $font-size-body;
+  font-size: clamp($font-size-body, $font-size-scale, $font-size-max);
   line-height: $line-height-body;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color: $color-dark;
+    background-color: $bg-dark;
+  }
 }
 
 // Remove the margin in all browsers.

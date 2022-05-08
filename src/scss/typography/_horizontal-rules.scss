@@ -21,3 +21,7 @@ hr {
     content: '';
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  hr { background-color: $darker-gray }
+}
