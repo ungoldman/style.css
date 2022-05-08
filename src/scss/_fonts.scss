@@ -1,14 +1,14 @@
 $system-sans:  -apple-system, BlinkMacSystemFont, // mac, ios
                'segoe ui', // windows
-               roboto, // android
                'liberation sans', // linux
+               roboto, // android
                helvetica, // old systems
                sans-serif; // fallback
 
 $system-mono:  menlo, // mac
                inconsolata, // windows
-               'noto mono', // android
                'liberation mono', // linux
+               'noto mono', // android
                monaco, 'courier new', // older systems
                monospace; // fallback
 

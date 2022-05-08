@@ -1,3 +1,14 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"
+  media="screen"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/dracula.min.css"
+  media="screen and (prefers-color-scheme: dark)"
+/>
+
 <div class="hero" align="center">
 
 <img src="./shoshinsha.png" width="120" alt="shoshinsha">
@@ -30,8 +41,8 @@ A classless stylesheet for HTML documents.
 ## Features
 
 - **system fonts:** looks native on macOS, iOS, windows, linux, firefox OS, android.
+- **light & dark mode**: uses light or dark theme based on user's system setting.
 - **great for text:** designed to be highly readable and easy on the eyes.
-- **dark mode**: includes light and dark themes based on user's system setting.
 - **zero config:** with zero classes, there's nothing to learn!
 - **expertly crafted:** composed out of a balanced selection of stylistic practices.
 - **markdown friendly:** designed from the ground up for markdown content.
@@ -71,7 +82,7 @@ The [website for style.css](https://ungoldman.com/style.css) is built with `styl
 </html>
 ```
 
-The best way to get familiar with the look and feel of `style.css` is to visit the [style guide](https://ungoldman.github.io/style.css/guide.html). Detailed examples of every HTML element (and how to write them in markdown) are available there.
+Detailed examples of each styled HTML element are available on the [Style Guide](https://ungoldman.github.io/style.css/guide.html) page.
 
 ### CSS
 

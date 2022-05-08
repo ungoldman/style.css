@@ -1,9 +1,18 @@
 blockquote {
   margin: 0 0 1rem;
-  padding: 0 1rem;
-  color: $darker-gray;
-  border-left: 4px solid $light-gray;
+  padding: 0.25em 1em;
+  font-size: 1.1em;
+
+  color: $dark-gray;
+  border-left: 6px solid $lighter-gray;
 
   &>:first-child { margin-top: 0; }
   &>:last-child { margin-bottom: 0; }
+}
+
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    color: $white;
+    border-color: $darker-gray;
+  }
 }

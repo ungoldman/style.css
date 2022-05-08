@@ -1,5 +1,6 @@
 // 1. Correct the inheritance and scaling of font size in all browsers.
 // 2. Correct the odd `em` font sizing in all browsers.
+pre,
 code,
 kbd,
 samp {
@@ -7,13 +8,20 @@ samp {
   font-size: 90%; // 2
 }
 
-pre {
-  font-size: 90%;
+pre, code {
+  border: 1px solid $lighter-gray;
 }
 
 code {
   background: $lightest-gray;
-  border-radius: 3px;
+  padding: 0.1em 0;
+  margin: 0;
+
+  &::before,
+  &::after {
+    letter-spacing: -0.25em;
+    content: '\00a0';
+  }
 }
 
 pre {
@@ -23,10 +31,10 @@ pre {
   line-height: $line-height-pre;
   white-space: pre-wrap;
   word-break: break-word;
+  // border: 1px solid $light-gray;
 
   code {
     background: unset;
-    border-radius: 0;
     display: inline;
     padding: 0;
     line-height: inherit;
@@ -39,36 +47,45 @@ pre {
   > code {
     display: block;
     overflow-x: auto;
-    color: $gray-33;
+    color: $charcoal;
     background: $lightest-gray;
     border: 0;
-    padding: 1.5em;
+    padding: 1em;
     white-space: pre-wrap;
     word-break: break-word;
   }
 }
 
-code {
-  padding: 0.1em 0;
-  margin: 0;
-
-  &::before,
-  &::after {
-    letter-spacing: -0.25em;
-    content: '\00a0';
-  }
-}
-
 kbd {
   background-color: $lighter-gray;
-  background-image: linear-gradient($off-white, $lighter-gray);
+  background-image: linear-gradient($lightest-gray, $lighter-gray);
   background-repeat: repeat-x;
   border: 1px solid $light-gray;
   border-radius: 2px;
   box-shadow: 0 1px 0 $light-gray;
-  color: $gray-33;
+  color: $charcoal;
   display: inline-block;
   line-height: 0.95em;
   margin: 0 1px;
   padding: 5px 5px 1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  pre, code {
+    border-color: $light-gunmetal;
+  }
+
+  pre > code,
+  code {
+    background: $dark-gunmetal;
+    color: $lighter-gray;
+  }
+
+  kbd {
+    background-color: $darkest-gray;
+    background-image: linear-gradient($darkest-gray, $darker-gray);
+    border: 1px solid $darker-gray;
+    box-shadow: 0 1px 0 $darkest-gray;
+    color: $white;
+  }
 }

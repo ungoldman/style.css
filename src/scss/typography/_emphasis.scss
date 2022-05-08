@@ -1,12 +1,9 @@
-// 1. Prevent the duplicate application of `bolder` by the next rule in Safari 6.
-// 2. Add the correct font weight in Chrome, Edge, and Safari.
+// Add the correct font weight in Chrome, Edge, and Safari.
 b,
 strong {
-  font-weight: inherit; // 1
-  font-weight: 600; // 2
+  font-weight: 600;
 }
 
-// Add the correct background and color in IE 9-.
 mark {
   background-color: #ff0;
   color: #000;

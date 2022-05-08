@@ -12,11 +12,12 @@ See how elements are styled with `style.css`.
     <li><a href="#blockquotes">Blockquotes</a></li>
     <li><a href="#emphasis">Emphasis</a></li>
     <li><a href="#code">Code</a></li>
-    <li><a href="#tables">Tables</a></li>
+    <li><a href="#user-input">User Input</a></li>
     <li><a href="#horizontal-rules">Horizontal Rules</a></li>
     <li><a href="#images">Images</a></li>
     <li><a href="#figures">Figures</a></li>
-    <li><a href="#extras">Extras</a></li>
+    <li><a href="#definitions">Definitions</a></li>
+    <li><a href="#abbreviations">Abbreviations</a></li>
   </ul>
 </details>
 

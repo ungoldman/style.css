@@ -5,16 +5,28 @@
 
 // default settings
 
-$color-light: $gray-33;
+// colors
+
+$color-light: $charcoal;
+$bg-light: $white;
+$link-color-light: #0074d9 !default;
+
 $color-dark: $off-white;
-$background-light: #fff;
-$background-dark: #252a30;
+$bg-dark: $gunmetal;
+$link-color-dark: #3af !default;
+
+// typography
+
 $font-body: $system-sans !default;
 $font-code: $system-mono !default;
 $font-size-body: 16px !default;
+$font-size-scale: 1.25vw !default;
+$font-size-max: 18px !default;
 $line-height-body: 1.55 !default;
 $line-height-pre: 1.45 !default;
-$link-color: #0074d9 !default;
+
+// layout
+
 $main-width: 44em !default;
 
 // note: use unitless line heights
@@ -25,4 +37,3 @@ $main-width: 44em !default;
 @import "src/scss/forms";
 @import "src/scss/interactive";
 @import "src/scss/hidden";
-@import "src/scss/dark";
