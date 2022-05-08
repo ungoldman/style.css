@@ -51,7 +51,7 @@
     "prepublishOnly": "npm run prerelease",
     "prerelease": "run-s test generate git-dirty",
     "pretest": "npm run generate:css",
-    "release": "git push origin master && gh-release && npm publish",
+    "release": "gh-release && npm publish",
     "sass:serif": "node-sass serif.scss --output-style=compressed --include-path node_modules/",
     "sass:style": "node-sass style.scss --output-style=compressed --include-path node_modules/",
     "serve:site": "serve site",
