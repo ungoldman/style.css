@@ -15,7 +15,7 @@
     "postcss-cli": "^10.0.0",
     "sass": "^1.56.2",
     "serve": "^14.1.2",
-    "sitedown": "^5.0.1",
+    "sitedown": "^5.1.2",
     "stylelint": "^14.16.0",
     "stylelint-config-standard-scss": "^6.1.0",
     "top-bar.css": "^3.0.0"
@@ -60,7 +60,6 @@
     "site:clean": "rm -rf site",
     "site:css": "node-sass src/site/site.scss --output-style=compressed --include-path node_modules/ -o ./site",
     "site:html": "sitedown . -e main -b site/ -l src/site/layout.html --pretty=false",
-    "site:release": "cp *.css shoshinsha.png site",
     "start": "npm-run-all site --parallel serve:*",
     "test": "stylelint \"style.scss\" && stylelint \"serif.scss\"",
     "watch:html": "npm run site:html -- -w",

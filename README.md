@@ -11,7 +11,7 @@
 
 <div class="hero" align="center">
 
-<img src="./shoshinsha.png" width="120" alt="shoshinsha">
+<img src="./assets/shoshinsha.png" width="120" alt="shoshinsha">
 
 # style.css
 
