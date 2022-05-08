@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.0-0](https://github.com/ungoldman/style.css/releases/v2.0.0-0) - 2022-05-07
+
+**ALPHA RELEASE**
+
+This release is currently only available on the `next` dist-tag.
+
+Install like this:
+
+```
+npm install style.css@next
+```
+
+Or try it out via CDN:
+
+```
+https://unpkg.com/style.css@next
+```
+
+### Breaking Changes
+
+- Now includes dark mode. Switches between light & dark themes automatically based on user's system settings.
+- Reworked colors, fonts, header sizes.
+- Many miscellaneous tweaks. Will document when release is stable.
+
 ## [1.0.3](https://github.com/ungoldman/style.css/releases/v1.0.3) - 2022-03-16
 
 ### Fixes
